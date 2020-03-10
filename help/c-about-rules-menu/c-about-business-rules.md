@@ -84,10 +84,10 @@ En los pasos siguientes se asume que está utilizando el Generador de reglas vis
 
    En la [!DNL Business Rules] página, utilice la **[!UICONTROL Filter by tag]** característica para filtrar las reglas que coinciden con una etiqueta determinada. 1. En la [!DNL Business Rule Builder] página, configure los activadores y las acciones que desee utilizar.
 
-       **Opciones de activador**
- Los     
-     activadores son las condiciones que deben cumplirse para que se ejecute una regla comercial. Cuando una regla comercial tiene varios activadores, puede configurar la forma en que los activadores responden con uno de los tres métodos siguientes:
-   
+   **Opciones de activador**
+ 
+   Los activadores son las condiciones que deben cumplirse para que se ejecute una regla comercial. Cuando una regla comercial tiene varios activadores, puede configurar la forma en que los activadores responden con uno de los tres métodos siguientes:
+
    * Una respuesta en la que todos los activadores deben ser verdaderos (la configuración predeterminada) como en el siguiente ejemplo:
 
       `if a AND b AND c then ...`
