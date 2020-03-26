@@ -7,7 +7,7 @@ title: Acerca de las reglas comerciales
 topic: Rules,Site search and merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
-source-git-commit: 2dd205d3034e8397d88007a1618a121f0b6087a8
+source-git-commit: fc1f0b15a15a9d0308494fc23c5b4258442c8aab
 
 ---
 
@@ -40,11 +40,11 @@ Las reglas comerciales pueden tener uno de los tres estados siguientes: Aprobado
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Aprobado </p> </td> 
-   <td colname="col2"> <p>Las reglas comerciales aprobadas se ejecutan en su entorno activo y en su entorno de ensayo. Puede aprobar una regla comercial en el Generador de reglas avanzado. </p> </td> 
+   <td colname="col2"> <p>Las reglas comerciales aprobadas se ejecutan en el entorno activo y en el entorno de ensayo. Puede aprobar una regla comercial en el Generador de reglas avanzado. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Suspendido </p> </td> 
-   <td colname="col2"> <p>Las reglas comerciales suspendidas nunca se ejecutan en su entorno de ensayo o en su entorno de lanzamiento. </p> </td> 
+   <td colname="col2"> <p>Las reglas comerciales suspendidas nunca se ejecutan en el entorno de ensayo o en el entorno activo. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>WIP </p> </td> 
@@ -53,13 +53,13 @@ Las reglas comerciales pueden tener uno de los tres estados siguientes: Aprobado
  </tbody> 
 </table>
 
-Las reglas comerciales se aprueban y se insertan en directo para que se ejecuten en el entorno de lanzamiento. Actualmente, solo puede insertar *todas* las reglas en directo. Sin embargo, puede cambiar el estado de una regla para tener control sobre qué reglas se ejecutan y no se ejecutan en el entorno de lanzamiento.
+Usted aprueba las reglas comerciales y las inserta en directo para que se ejecuten en su entorno activo. Actualmente, solo puede insertar *todas* las reglas en directo. Sin embargo, puede cambiar el estado de una regla para tener control sobre qué reglas se ejecutan y no se ejecutan en el entorno activo.
 
 De forma predeterminada, las reglas se ejecutan cada vez que se cumplen los activadores asociados. Sin embargo, si lo desea, puede programar una regla para que se ejecute en un intervalo de fecha y hora específico.
 
 Además, de forma predeterminada, las reglas se ejecutan cada vez que se cumplen sus activadores asociados para todas las tiendas. Si desea que la regla solo se aplique a determinadas tiendas, puede utilizar el panel Tiendas para seleccionar una o varias tiendas a las que se aplique la regla.
 
-## Adición de una nueva regla comercial {#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7}
+## Añadir una nueva regla comercial {#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7}
 
 Puede usar [!DNL Visual Rule Builder] o [!DNL Advanced Rule Builder] agregar reglas comerciales que adapten la experiencia de búsqueda de su cliente.
 
@@ -84,8 +84,8 @@ En los pasos siguientes se asume que está utilizando el Generador de reglas vis
 
    En la [!DNL Business Rules] página, utilice la **[!UICONTROL Filter by tag]** característica para filtrar las reglas que coinciden con una etiqueta determinada. 1. En la [!DNL Business Rule Builder] página, configure los activadores y las acciones que desee utilizar.
 
-   **Opciones de activador**
- 
+   **Opciones de activación**
+
    Los activadores son las condiciones que deben cumplirse para que se ejecute una regla comercial. Cuando una regla comercial tiene varios activadores, puede configurar la forma en que los activadores responden con uno de los tres métodos siguientes:
 
    * Una respuesta en la que todos los activadores deben ser verdaderos (la configuración predeterminada) como en el siguiente ejemplo:
@@ -120,7 +120,7 @@ En los pasos siguientes se asume que está utilizando el Generador de reglas vis
       <td colname="col2"> <p>El activador es verdadero cuando el término de búsqueda coincide con la palabra clave que distingue entre mayúsculas y minúsculas dada. El activador es verdadero tanto para la palabra clave como para todos sus sinónimos, tal como se define en el diccionario lingüístico. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Coincidencias de consultas </p> </td> 
+      <td colname="col1"> <p> Coincidencias de Consulta </p> </td> 
       <td colname="col2"> <p> El activador es true cuando coinciden todos los parámetros de búsqueda. </p> </td> 
       </tr> 
       <tr> 
@@ -158,8 +158,8 @@ En los pasos siguientes se asume que está utilizando el Generador de reglas vis
       <td colname="col2"> <p> Coloca el grupo de resultados de búsqueda definido por los criterios de búsqueda especificados en una posición específica. </p> <p>Al insertar un grupo de resultados de búsqueda no se agrega implícitamente el grupo. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Agregar grupo </p> </td> 
-      <td colname="col2"> <p> Agregue el grupo de resultados de búsqueda según los criterios de búsqueda especificados. </p> </td> 
+      <td colname="col1"> <p>Añadir grupo </p> </td> 
+      <td colname="col2"> <p> Añada el grupo de resultados de búsqueda según los criterios de búsqueda especificados. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Quitar grupo </p> </td> 
@@ -170,8 +170,8 @@ En los pasos siguientes se asume que está utilizando el Generador de reglas vis
       <td colname="col2"> <p> Coloca el resultado de búsqueda individual en la posición seleccionada. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Agregar una sola </p> </td> 
-      <td colname="col2"> <p> Agrega un resultado de búsqueda individual a la posición seleccionada. </p> </td> 
+      <td colname="col1"> <p>Añadir una sola </p> </td> 
+      <td colname="col2"> <p> Añade un resultado de búsqueda individual a la posición seleccionada. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Eliminar una sola </p> </td> 
@@ -187,8 +187,8 @@ En los pasos siguientes se asume que está utilizando el Generador de reglas vis
       <td colname="col2"> <p> Cambia la pancarta en el área de la pancarta seleccionada. </p> <p>Esta opción está disponible cuando se hace clic con el botón derecho en un letrero del área de visualización de la página web. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Agregar comandos de pancarta </p> </td> 
-      <td colname="col2"> <p>Solo se aplica a plantillas de Adobe Dynamic Media Classic. </p> <p>Permite cambiar los parámetros predeterminados que se utilizan en la plantilla de pancarta. </p> <p>Consulte la tabla de opciones en <a scope="local" href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita"> Adición de letreros con Adobe Dynamic Media Classic </a>. </p> <p>Consulte también <a href="../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9" type="task" format="dita" scope="local"> Edición de letreros con Adobe Dynamic Media Classic </a>. </p> </td> 
+      <td colname="col1"> <p>Añadir comandos de pancarta </p> </td> 
+      <td colname="col2"> <p>Solo se aplica a plantillas de Adobe Dynamic Media Classic. </p> <p>Permite cambiar los parámetros predeterminados que se utilizan en la plantilla de pancarta. </p> <p>Consulte la tabla de opciones para <a scope="local" href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita"> Añadir un letrero con Adobe Dynamic Media Classic </a>. </p> <p>Consulte también <a href="../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9" type="task" format="dita" scope="local"> Edición de letreros con Adobe Dynamic Media Classic </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Eliminar pancarta </p> </td> 
@@ -242,7 +242,7 @@ En los pasos siguientes se asume que está utilizando el Generador de reglas vis
 
    * En el área de plantilla de presentación de la [!DNL Business Rule Builder] página, haga clic con el botón secundario en un letrero de plantilla de Adobe Dynamic Media Classic cuyos parámetros desee cambiar y, a continuación, haga clic en **[!UICONTROL Add banner commands]**. En el cuadro [!DNL Change Parameters] de diálogo, establezca las opciones de parámetro que desee.
 
-      Consulte la tabla de opciones en [Adición de letreros con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
+      Consulte la tabla de opciones para [Añadir un letrero con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
       Haga clic **[!UICONTROL Save]**.
 
@@ -291,7 +291,7 @@ Puede utilizar el Generador de reglas visuales o el Generador de reglas avanzado
 
    No haga clic **[!UICONTROL Save Rule]** aún. 1. En la [!DNL Business Rule Builder] página, configure los activadores y las acciones que desee utilizar.
 
-   Consulte la tabla de opciones en [Adición de una nueva regla](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)comercial.
+   Consulte la tabla de opciones en [Añadir una nueva regla](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)comercial.
 1. (Opcional) En cualquier **[!UICONTROL Business Rule Builder]** panel ( [!DNL Triggers], [!DNL Actions]o [!DNL Schedule], realice una de las siguientes acciones:
 
    * En el área de la plantilla de presentación de la [!DNL Business Rule Builder] página, haga clic con el botón secundario en un letrero y, a continuación, haga clic en **[!UICONTROL Select different banner]**. En la [!DNL Pick Banner page], haga clic **[!UICONTROL Pick this banner]** debajo de la miniatura de la pancarta para agregarla a la plantilla de presentación. Solo los letreros que coincidan con el tamaño y el área del letrero original en la plantilla de presentación están disponibles para que pueda seleccionarlos.
@@ -300,7 +300,7 @@ Puede utilizar el Generador de reglas visuales o el Generador de reglas avanzado
 
    * En el área de plantilla de presentación de la [!DNL Business Rule Builder] página, haga clic con el botón secundario en un letrero de plantilla de Adobe Dynamic Media Classic cuyos parámetros desee cambiar y, a continuación, haga clic en **[!UICONTROL Add banner commands]**. En el cuadro [!DNL Change Parameters] de diálogo, establezca las opciones de parámetro que desee.
 
-      Consulte la tabla de opciones en [Adición de letreros con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
+      Consulte la tabla de opciones para [Añadir un letrero con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
       Haga clic **[!UICONTROL Save]**.
 
@@ -338,7 +338,7 @@ Puede copiar una regla comercial existente para utilizarla como base para una nu
 **Para copiar una regla comercial**
 
 1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**.
-1. En la **[!UICONTROL Business Rules]** página, en la lista desplegable situada junto al nombre de una regla comercial que desee copiar, haga clic en **[!UICONTROL Copy rule]**.
+1. En la **[!UICONTROL Business Rules]** página, en la lista desplegable al lado del nombre de una regla comercial que desee copiar, haga clic en **[!UICONTROL Copy rule]**.
 1. Edite la regla comercial copiada como de costumbre.
 
    See [Editing a business rule](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
