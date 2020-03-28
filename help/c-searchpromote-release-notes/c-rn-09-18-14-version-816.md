@@ -7,7 +7,7 @@ title: Notas de revisión de Search&Promote 8.16.0 (18/9/2014)
 topic: Release Notes,Site search and merchandising
 uuid: 0a59858b-213b-40d6-aea1-d085c4d6d2fa
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * Almacenamiento en caché de los resultados de la búsqueda en Búsqueda guiada 3 (GS3): para configurar esta función personalizada para que pueda utilizarla en su cuenta, póngase en contacto con el administrador de cuentas técnicas de Adobe.
 * Actualizaciones verticales para campos modificados con frecuencia: ahora puede actualizar rápidamente todos los valores de un conjunto de campos de metadatos sin necesidad de volver a indexar completamente el contenido.
 
-   Consulte la opción Campo de actualización vertical de la tabla en [Adición de un nuevo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5) de etiqueta meta y [Acerca de actualización](../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899)vertical.
+   Consulte la opción Campo de actualización vertical en la tabla para [Añadir un nuevo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5) de etiqueta meta y [Acerca de actualización](../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899)vertical.
 
    This feature can only be used on [!DNL Adobe Search&Promote] accounts that use Index Connector. Si quiere configurar esta función personalizada para que pueda usarla en su cuenta, póngase en contacto con su administrador de cuenta técnica de Adobe.
 
@@ -50,5 +50,5 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * The Index Connector **[!UICONTROL Strip HTML]** setting was always displaying as checked.
 * Inconsistent search results were experienced with the **[!UICONTROL Common Phrases]** feature.
 * La presentación de nombres de atributos se truncaban en los resúmenes de lista de reglas.
-* La publicación de una regla comercial individual estaba publicando todas las reglas comerciales.
+* Impulsar una regla comercial individual en vivo estaba impulsando todas las reglas comerciales en vivo.
 
