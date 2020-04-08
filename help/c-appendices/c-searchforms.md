@@ -7,7 +7,7 @@ title: Buscar formularios
 topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
+source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
 
 ---
 
@@ -151,7 +151,7 @@ El proceso de configuración de conjuntos de marcos es el siguiente:
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
    <td colname="col02"> <p>Pruebe el formulario de búsqueda. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Prueba del formulario de búsqueda </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Prueba del formulario de búsqueda </a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -286,7 +286,7 @@ Con el siguiente formulario de búsqueda avanzada de ejemplo, el resto de este t
 
 Puede realizar la vista de todo el código HTML de formulario de búsqueda avanzada del ejemplo anterior.
 
-Consulte Código [HTML de formulario de búsqueda](../c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9)avanzada.
+Consulte Código [HTML de formulario de búsqueda](#reference_9AAD4A46B68D4D48865508982CB86DB9)avanzada.
 
 Consulte [Configuración de CSS](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)de finalización automática.
 
@@ -435,7 +435,7 @@ Consulte [Copia del código HTML del formulario de búsqueda en el...](../c-abou
 
 El código de formulario HTML que se utiliza para generar el formulario de búsqueda avanzada que se muestra en la parte superior del tema de formulario de búsqueda avanzada de muestra.
 
-Consulte [Ejemplo de formulario](../c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A)de búsqueda avanzada.
+Consulte [Ejemplo de formulario](#reference_82E1051918744EBA88A01E9E6AE42C4A)de búsqueda avanzada.
 
 Si utiliza este código, recuerde reemplazar el `sp_a` valor de `sp99999999` por su número de cuenta real.
 
