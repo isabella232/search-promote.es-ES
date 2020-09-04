@@ -8,9 +8,9 @@ title: Acerca del menú Metadatos
 topic: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
-source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
 workflow-type: tm+mt
-source-wordcount: '8064'
+source-wordcount: '8039'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Utilice el menú Metadatos para personalizar las definiciones de búsqueda y las
 
 Puede utilizar [!DNL Definitions] para personalizar el contenido y la relevancia de los campos de metadatos y HTML que se tienen en cuenta cuando un cliente envía una consulta de búsqueda.
 
-Puede editar los campos que ya están predefinidos. O bien, también puede crear nuevos campos definidos por el usuario en función del contenido de las etiquetas de metadatos. Cada definición se muestra en una sola línea de la [!DNL Staged Definitions] página.
+Puede editar los campos que ya están predefinidos. O bien, también puede crear campos nuevos definidos por el usuario basados en el contenido de etiquetas de metadatos. Cada definición se muestra en una sola línea de la [!DNL Staged Definitions] página.
 
 Consulte también [Acerca de las Vistas](../c-about-reports-menu/c-about-data-views.md#concept_DCA897D074464BC1861AA47B40CC86C3)de datos.
 
@@ -68,10 +68,9 @@ Antes de que los clientes vean los efectos de la nueva definición de etiqueta m
       </tr> 
       <tr> 
       <td colname="col1"> <p>Meta Tag Name(s) </p> </td> 
-      <td colname="col2"> <p>Determina el contenido asociado al campo definido. </p> <p>La lista de nombres puede tener hasta 255 caracteres. Y, el nombre puede contener cualquier carácter permitido en el atributo name de una etiqueta meta HTML. </p> <p>Puede especificar varias etiquetas meta en una sola definición de campo. </p> <p>Los valores múltiples deben estar separados por comas y el nombre de la etiqueta meta que se encuentra más a la izquierda en cualquier página Web tiene prioridad. </p> <p>Por ejemplo, supongamos que ha definido un campo llamado "auth". El nombre del campo tiene las etiquetas meta asociadas "author, dc.author". En este caso, el contenido de la etiqueta meta "author" se indexará y buscará sobre el de "dc.author" si ambas etiquetas meta aparecen en una página web. </p> <p>Los campos definidos por el usuario deben tener al menos un nombre de etiqueta meta en su definición. Los campos predefinidos no necesitan tener una etiqueta meta asociada. Sin embargo, si se especifican una o varias etiquetas meta, el contenido de las etiquetas meta sobrescribe el origen de datos actual para cada etiqueta. </p> <p>Por ejemplo, si la etiqueta meta "dc.title" está asociada al campo predefinido "title", el contenido de la etiqueta meta "dc.title" se indexará sobre el de la etiqueta 
-      <userinput>
+      <td colname="col2"> <p>Determina el contenido asociado al campo definido. </p> <p>La lista de nombres puede tener hasta 255 caracteres. Y, el nombre puede contener cualquier carácter permitido en el atributo name de una etiqueta meta HTML. </p> <p>Puede especificar varias etiquetas meta en una sola definición de campo. </p> <p>Los valores múltiples deben estar separados por comas y el nombre de la etiqueta meta que se encuentra más a la izquierda en cualquier página Web tiene prioridad. </p> <p>Por ejemplo, supongamos que ha definido un campo llamado "auth". El nombre del campo tiene las etiquetas meta asociadas "author, dc.author". En este caso, el contenido de la etiqueta meta "author" se indexará y buscará sobre el de "dc.author" si ambas etiquetas meta aparecen en una página web. </p> <p>Los campos definidos por el usuario deben tener al menos un nombre de etiqueta meta en su definición. Los campos predefinidos no necesitan tener una etiqueta meta asociada. Sin embargo, si se especifican una o varias etiquetas meta, el contenido de las etiquetas meta sobrescribe el origen de datos actual para cada etiqueta. </p> <p>Por ejemplo, si la etiqueta meta "dc.title" está asociada al campo predefinido "title", el contenido de la etiqueta meta "dc.title" se indexará sobre el de la <code>
         &lt;title&gt; 
-      </userinput> para cualquier documento en particular. </p> <p>Estos son algunos ejemplos: </p> <p> 
+      </code> etiqueta para cualquier documento en particular. </p> <p>Estos son algunos ejemplos: </p> <p> 
       <ul id="ul_0132E15FC19E4C0CA13CD5A12EA3BBEC"> 
       <li id="li_ECD3B194FECB4C2090CAEC8449320D3F"> dc.date </li> 
       <li id="li_09C76BC7AC7348859D01989697212E31"> description </li> 
@@ -96,38 +95,31 @@ Antes de que los clientes vean los efectos de la nueva definición de etiqueta m
       </ul> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Permitir listas </p> </td> 
-      <td colname="col2"> <p>Solo está disponible si se selecciona el tipo de datos <span class="uicontrol"> Texto </span>o <span class="uicontrol"> Número </span> . </p> <p>Indique por separado los valores delimitados en el contenido de metadatos de este campo. </p> <p>Por ejemplo, el contenido "Rojo, Amarillo, Verde, Azul" se trata como cuatro valores separados en lugar de uno cuando se selecciona "Permitir listas". Este tratamiento resulta más útil con la búsqueda de rango (mediante 
-      <userinput>
+      <td colname="col1"> <p>listas de permitidos </p> </td> 
+      <td colname="col2"> <p>Solo está disponible si se selecciona el tipo de datos <span class="uicontrol"> Texto </span>o <span class="uicontrol"> Número </span> . </p> <p>Indique por separado los valores delimitados en el contenido de metadatos de este campo. </p> <p>Por ejemplo, el contenido "Rojo, Amarillo, Verde, Azul" se trata como cuatro valores distintos en lugar de uno cuando se selecciona "Listas de permitidos". Este tratamiento es más útil con la búsqueda de rango (usando <code>
         sp_q_min 
-      </userinput>, 
-      <userinput>
+      </code>, <code>
         sp_q_max 
-      </userinput> o 
-      <userinput>
-        sp_q_exacto 
-      </userinput>) y con el 
-      <userinput>
-        &lt;search-field-value-lista&gt; 
-      </userinput>, 
-      <userinput>
+      </code>, o <code>
+        sp_q_exact 
+      </code>) y con el <code>
+        &lt;search-field-value-list&gt; 
+      </code>, <code>
         &lt;search-field-values&gt; 
-      </userinput>, y 
-      <userinput>
+      </code>, y <code>
         &lt;search-display-field-values&gt; 
-      </userinput>. </p> <p>No disponible si se selecciona el tipo de datos Versión. </p> </td> 
+      </code>. </p> <p>No disponible si se selecciona el tipo de datos Versión. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Faceta dinámica </p> </td> 
       <td colname="col2"> <p> 
-        <!--NEW 2/2/2014--> <p>Nota: Esta característica no está activada de forma predeterminada. Póngase en contacto con el servicio de asistencia técnica para activarlo para su uso. Una vez activado, aparece en la interfaz de usuario. </p> </p> <p>Establece la faceta identificada como dinámica. </p> <p>Las facetas se crean sobre los campos de etiquetas meta. Un campo de etiqueta meta es una capa de búsqueda básica de bajo nivel de Adobe Search&amp;Promote. Por otro lado, las facetas forman parte de GS (Búsqueda guiada), la capa de presentación de alto nivel de Adobe Search&amp;Promote. Sin embargo, las facetas tienen campos de etiquetas meta propios, los campos de etiquetas meta no saben nada acerca de las facetas. </p> <p>Consulte <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Acerca de las facetas dinámicas </a>. </p> </td> 
+        <!--NEW 2/2/2014--> <p>Nota: Esta característica no está activada de forma predeterminada. Póngase en contacto con el servicio de asistencia técnica para activarlo para su uso. Una vez activado, aparece en la interfaz de usuario. </p> </p> <p>Establece la faceta identificada como dinámica. </p> <p>Las facetas se crean sobre los campos de etiquetas meta. Un campo de etiqueta meta es una capa de búsqueda básica de bajo nivel de Search&amp;Promote de Adobe. Por otro lado, las facetas son parte de GS (Búsqueda guiada): la capa de presentación de alto nivel de Search&amp;Promote de Adobe. Sin embargo, las facetas tienen campos de etiquetas meta propios, los campos de etiquetas meta no saben nada acerca de las facetas. </p> <p>Consulte <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Acerca de las facetas dinámicas </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Permitir deduplicación </p> </td> 
-      <td colname="col2"> <p>Marque esta opción para habilitar la deduplicación para este campo. Es decir, permita que este campo se especifique en tiempo de búsqueda mediante la variable 
-        <userinput>
+      <td colname="col2"> <p>Marque esta opción para habilitar la deduplicación para este campo. Es decir, permita que este campo se especifique en tiempo de búsqueda mediante el parámetro <code>
           sp_dedupe_field 
-        </userinput> Buscar parámetro CGI. </p> <p>Consulte <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Buscar parámetros CGI </a>. </p> </td> 
+        </code> Buscar CGI. </p> <p>Consulte <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Buscar parámetros CGI </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nombre de tabla </p> </td> 
@@ -135,7 +127,7 @@ Antes de que los clientes vean los efectos de la nueva definición de etiqueta m
       </tr> 
       <tr> 
       <td colname="col1"> <p>Delimitadores de lista </p> </td> 
-      <td colname="col2"> <p>Solo está disponible si <span class="uicontrol"> Permitir listas </span> está seleccionado. </p> <p>Especifica qué caracteres separan valores de lista individuales. Puede especificar varios caracteres, cada uno de los cuales se trata como un separador de valores. </p> </td> 
+      <td colname="col2"> <p>Solo está disponible si <span class="uicontrol"> hay Listas de permitidos </span> seleccionadas. </p> <p>Especifica qué caracteres separan valores de lista individuales. Puede especificar varios caracteres, cada uno de los cuales se trata como un separador de valores. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Buscar de forma predeterminada </p> </td> 
@@ -151,10 +143,9 @@ Antes de que los clientes vean los efectos de la nueva definición de etiqueta m
       </tr> 
       <tr> 
       <td colname="col1"> <p>Clasificación </p> </td> 
-      <td colname="col2"> <p>Especifica cuándo se ordenan los resultados por el campo con nombre, a través de la variable 
-        <userinput>
+      <td colname="col2"> <p>Especifica cuándo se ordenan los resultados por el campo con nombre, a través del parámetro CGI de <code>
           sp_s 
-        </userinput> Buscar parámetro CGI. </p> <p>Consulte <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Buscar parámetros CGI </a>. </p> </td> 
+        </code> búsqueda. </p> <p>Consulte <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Buscar parámetros CGI </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Idioma  </p> </td> 
@@ -186,16 +177,13 @@ Antes de que los clientes vean los efectos de la nueva definición de etiqueta m
       </tr> 
       <tr> 
       <td colname="col1"> <p>Unidades predeterminadas </p> </td> 
-      <td colname="col2"> <p>Solo está disponible si el tipo de datos Ubicación <span class="uicontrol"> </span> está seleccionado como Tipo de datos. </p> <p>Controla el tratamiento de los valores de distancia para las búsquedas de proximidad. </p> <p>Si establece las unidades predeterminadas en <span class="uicontrol"> Millas </span>, cualquier criterio de distancia mínima/máxima de búsqueda de proximidad que se aplique a este campo (mediante la variable 
-      <userinput>
+      <td colname="col2"> <p>Solo está disponible si el tipo de datos Ubicación <span class="uicontrol"> </span> está seleccionado como Tipo de datos. </p> <p>Controla el tratamiento de los valores de distancia para las búsquedas de proximidad. </p> <p>Si establece las unidades predeterminadas en <span class="uicontrol"> Millas </span>, cualquier criterio de distancia mínima/máxima de búsqueda de proximidad que se aplique a este campo (a través de los parámetros <code>
         sp_q_min[_#] 
-      </userinput> o bien 
-      <userinput>
+      </code> o CGI de <code>
         sp_q_max[_#] 
-      </userinput> Los parámetros CGI de búsqueda) se tratan como millas, o como kilómetros. </p> <p>Esta opción también controla las unidades de distancia predeterminadas que se aplican a la salida de la variable 
-      <userinput>
+      </code> búsqueda) se tratará como millas, de lo contrario como kilómetros. </p> <p>Esta opción también controla las unidades de distancia predeterminadas que se aplican al resultado de la etiqueta de plantilla de resultados de <code>
         &lt;Search-Display-Field&gt; 
-      </userinput> etiqueta de plantilla de resultados de búsqueda cuando se aplica a un campo de salida de búsqueda de proximidad. </p> <p>Consulte <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> Acerca de la búsqueda de proximidad </a>. </p> </td> 
+      </code> búsqueda cuando se aplican a un campo de salida de búsqueda proximidad. </p> <p>Consulte <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> Acerca de la búsqueda de proximidad </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>¿Crear descripción de rango? </p> </td> 
@@ -426,7 +414,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
       <li id="li_FD0B1CD9E6304B18B9D7F57E61015107"> <span class="codeph"> destinatario </span> </li> 
       <li id="li_400D7E3F3E9B47EFB2FF5C0D278DB573"> <span class="codeph"> title </span> </li> 
       <li id="li_449BCBEE4F64424BB69F780C10F5956C"> <span class="codeph"> url </span> </li> 
-     </ul> </p> <p>Cada nombre de campo corresponde a los elementos de las páginas del sitio. Si especifica el nombre del campo <span class="codeph"> desc </span> , por ejemplo, puede agregar el valor de definición de inyección al campo que corresponde a las etiquetas Meta de descripción en las páginas del sitio. </p> <p>Si no hay ninguna etiqueta Meta de descripción en las páginas, el contenido definido crea la etiqueta por usted. El contenido especificado en una inyección de <span class="codeph"> desc </span> se muestra en la página de resultados del mismo modo que el contenido de Meta-description codificado. </p> <p>También puede crear varias definiciones con el mismo nombre de campo. Por ejemplo, se supone que tiene las siguientes inyecciones: </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/&nbsp;Welcome&nbsp;to&nbsp;My&nbsp;Site </code> </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/company/*.html&nbsp;My&nbsp;Site:&nbsp;Contact </code> </p> <p>Todas las páginas del sitio en el ejemplo anterior reciben un título insertado "Bienvenido a mi sitio". Las páginas de la carpeta "/compañía/" se insertan con un nuevo título "Mi sitio: Contáctenos" que sustituye al anterior. </p> <p>Observe que las inyecciones se aplican en el orden en que aparecen en el cuadro de texto Definiciones de inyección de <span class="wintitle"> campo </span> . Si el mismo campo ("título" en este ejemplo) se define más de una vez para las páginas en la misma ubicación, la definición posterior tiene prioridad. </p> <p> <span class="codeph"> [regexp] </span> : opcional. Si decide utilizar la opción <span class="codeph"> regexp </span> , la URL definida se tratará como una expresión normal. </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expresiones regulares </a>. </p> <p>En la siguiente definición: </p> <p> <code> replace&nbsp;target&nbsp; <b>regexp&amp;nbsp;^.*/products/.*\.html$</b>&nbsp;Important&nbsp;information </code> </p> <p> "Información importante" se inserta en el campo "destinatario" en todas las páginas que coinciden con la expresión normal <span class="codeph"> ^.*/informe de productos/.*\.html$ </span>. </p> <p>Por lo tanto, tiene lo siguiente: </p> <p> <code> https://www.mydomain.com/products/page1.html 
+     </ul> </p> <p>Cada nombre de campo corresponde a los elementos de las páginas del sitio. Si especifica el nombre del campo <span class="codeph"> desc </span> , por ejemplo, puede agregar el valor de definición de inyección al campo que corresponde a las etiquetas Meta de descripción en las páginas del sitio. </p> <p>Si no hay ninguna etiqueta Meta de descripción en las páginas, el contenido definido crea la etiqueta por usted. El contenido especificado en una inyección de <span class="codeph"> desc </span> se muestra en la página de resultados del mismo modo que el contenido de Meta-description codificado. </p> <p>También puede crear varias definiciones con el mismo nombre de campo. Por ejemplo, se supone que tiene las siguientes inyecciones: </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/&nbsp;Welcome&nbsp;to&nbsp;My&nbsp;Site </code> </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/company/*.html&nbsp;My&nbsp;Site:&nbsp;Contact </code> </p> <p>Todas las páginas del sitio en el ejemplo anterior reciben un título insertado "Bienvenido a mi sitio". Las páginas de la carpeta "/compañía/" se insertan con un nuevo título "Mi sitio: Contáctenos" que sustituye al anterior. </p> <p>Observe que las inyecciones se aplican en el orden en que aparecen en el cuadro de texto Definiciones de inyección de <span class="wintitle"> campo </span> . Si el mismo campo ("título" en este ejemplo) se define más de una vez para las páginas en la misma ubicación, la definición posterior tiene prioridad. </p> <p> <span class="codeph"> [regexp] </span> : opcional. Si decide utilizar la opción <span class="codeph"> regexp </span> , la URL definida se trata como una expresión normal. </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expresiones regulares </a>. </p> <p>En la siguiente definición: </p> <p> <code> replace&nbsp;target&nbsp; <b>regexp&amp;nbsp;^.*/products/.*\.html$</b>&nbsp;Important&nbsp;information </code> </p> <p> "Información importante" se inserta en el campo "destinatario" en todas las páginas que coinciden con la expresión normal <span class="codeph"> ^.*/informe de productos/.*\.html$ </span>. </p> <p>Por lo tanto, tiene lo siguiente: </p> <p> <code> https://www.mydomain.com/products/page1.html 
       &nbsp;&nbsp;&nbsp;&nbsp;(Will&nbsp;receive&nbsp;"target"&nbsp;content) </code> </p> <p> <code> https://www.mydomain.com/product/oldstuff.html 
       &nbsp;&nbsp;&nbsp;&nbsp;(Will&nbsp;not&nbsp;receive&nbsp;"target"&nbsp;content) </code> </p> <p>En el siguiente ejemplo: </p> <p> <code> append&amp;nbsp;title&amp;nbsp;regexp&amp;nbsp;^.*\.pdf$&amp;nbsp;Millennium&amp;nbsp;Science </code> </p> <p>La inyección añade "Millennium Science" al contenido "title" de todas las páginas que finalizan con una extensión de nombre de archivo ".pdf". </p> </td> 
   </tr> 
@@ -480,7 +468,7 @@ Se utiliza [!DNL Attribute Loader] para definir fuentes de entrada adicionales p
 
 >[!NOTE]
 >
->Para utilizar el cargador de atributos, es posible que su representante de cuentas de Adobe o el servicio de asistencia técnica de Adobe deban habilitarlo en su cuenta.
+>Para utilizar el cargador de atributos, es posible que deba habilitarlo en su cuenta por parte del representante de cuentas de Adobe o de la asistencia de Adobes.
 
 Puede utilizar un origen de entrada de fuente de datos para acceder al contenido almacenado en un formulario distinto del que se suele descubrir en un sitio web. Esto se realiza mediante uno de los métodos de rastreo disponibles. Los datos de estas fuentes se pueden insertar en los datos de contenido rastreado.
 
@@ -590,7 +578,7 @@ Cada configuración del cargador de atributos define un origen de datos y asigna
 
 >[!NOTE]
 >
->Para utilizar el cargador de atributos, es posible que su representante de cuentas de Adobe o el servicio de asistencia técnica de Adobe deban habilitarlo en su cuenta.
+>Para utilizar el cargador de atributos, es posible que deba habilitarlo en su cuenta por parte del representante de cuentas de Adobe o de la asistencia de Adobes.
 
 Antes de que los clientes vean los efectos de la definición nueva y habilitada, vuelva a generar el índice del sitio.
 
@@ -712,7 +700,7 @@ Antes de que los clientes vean los efectos de la definición nueva y habilitada,
       </tr> 
       <tr> 
       <td colname="col1"> <p>Itemtag </p> </td> 
-      <td colname="col2"> <p>Identifica el elemento XML que puede utilizar para identificar líneas XML individuales en el archivo de origen de datos que especificó. </p> <p>Por ejemplo, en el siguiente fragmento de fuente de un documento Adobe XML, el valor de la etiqueta de elemento es <span class="codeph"> record </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>Identifica el elemento XML que puede utilizar para identificar líneas XML individuales en el archivo de origen de datos que especificó. </p> <p>Por ejemplo, en el siguiente fragmento de fuente de un documento XML de Adobe, el valor de Itemtag es <span class="codeph"> record </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; 
         &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
@@ -763,7 +751,7 @@ Antes de que los clientes vean los efectos de la definición nueva y habilitada,
       <td colname="col1"> <p>Mapa </p> </td> 
       <td colname="col2"> <p>Permite especificar asignaciones de elementos XML a metadatos mediante expresiones XPath. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Etiqueta </span> <p>Especifica una representación XPath de los datos XML analizados. Utilizando el ejemplo de documento XML de Adobe anterior, en la opción Itemtag, se puede asignar con la siguiente sintaxis: </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Etiqueta </span> <p>Especifica una representación XPath de los datos XML analizados. Utilizando el documento XML de Adobe de ejemplo anterior, en la opción Itemtag, se puede asignar con la siguiente sintaxis: </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>La sintaxis anterior se traduce como: </p> <p> 
@@ -774,7 +762,7 @@ Antes de que los clientes vean los efectos de la definición nueva y habilitada,
         <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>El <span class="codeph"> atributo content </span> de cualquier <span class="codeph"> meta </span> contenido dentro de un <span class="codeph"> elemento de metadatos </span> , que se encuentra dentro del elemento <span class="codeph"> record </span> , cuyo atributo name es <span class="codeph"> description </span><span class="codeph"> </span>, se asigna al cuerpo del campo de metadatos. </p> </li> 
         </ul> </p> <p>XPath es una notación relativamente complicada. Hay más información disponible en la siguiente ubicación: </p> <p>Consulte <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Campo </span> <p>Define el valor del atributo name que se utiliza para cada etiqueta <span class="codeph"> &lt;meta&gt; </span> generada. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadatos? </span> <p>Hace que <span class="uicontrol"> Campo </span> se convierta en una lista desplegable desde la que puede seleccionar campos de metadatos definidos para la cuenta actual. </p> <p>El valor <span class="uicontrol"> Campo </span> puede ser un campo de metadatos no definido, si lo desea. Un campo de metadatos no definido a veces resulta útil para crear contenido utilizado por <span class="wintitle"> Filtrado de secuencias de comandos </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Acerca del filtrado de secuencias de comandos </a>. </p> <p>Cuando el cargador de atributos procesa documentos XML con varias visitas en cualquier campo de mapa, los valores múltiples se concatenan en un solo valor en el documento en caché resultante. De forma predeterminada, estos valores se combinan con un delimitador de coma. Sin embargo, supongamos que el valor <span class="wintitle"> Campo </span> es un campo de metadatos definido. Además, ese campo tiene el <span class="wintitle"> atributo Permitir listas definido </span> . En este caso, el valor Delimitadores de Lista del campo, que es el primer delimitador definido, se utiliza en la concatenación. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadatos? </span> <p>Hace que <span class="uicontrol"> Campo </span> se convierta en una lista desplegable desde la que puede seleccionar campos de metadatos definidos para la cuenta actual. </p> <p>El valor <span class="uicontrol"> Campo </span> puede ser un campo de metadatos no definido, si lo desea. Un campo de metadatos no definido a veces resulta útil para crear contenido utilizado por <span class="wintitle"> Filtrado de secuencias de comandos </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Acerca del filtrado de secuencias de comandos </a>. </p> <p>Cuando el cargador de atributos procesa documentos XML con varias visitas en cualquier campo de mapa, los valores múltiples se concatenan en un solo valor en el documento en caché resultante. De forma predeterminada, estos valores se combinan con un delimitador de coma. Sin embargo, supongamos que el valor <span class="wintitle"> Campo </span> es un campo de metadatos definido. Además, ese campo tiene el conjunto de atributos <span class="wintitle"> Listas de permitidos </span> . En este caso, el valor Delimitadores de Lista del campo, que es el primer delimitador definido, se utiliza en la concatenación. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> ¿Clave principal? </span> <p>Solo se identifica un campo como clave principal. Este campo se utilizará como "clave externa" para hacer coincidir los datos del cargador de atributos con el documento correspondiente en el índice. </p> </li> 
       <li id="li_80D6AF130FCE40AC972FE4B605B86BF6"> <span class="uicontrol"> ¿Eliminar HTML? </span> <p>Cuando se selecciona esta opción, se eliminan todas las etiquetas HTML que se encuentren en los datos de este campo. </p> </li> 
       <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Acción </span> <p>Permite agregar filas al mapa o quitar filas del mapa. El orden de las filas no es importante. </p> </li> 
@@ -806,14 +794,14 @@ Puede editar un cargador de atributos existente que haya definido.
 
 >[!NOTE]
 >
->Para utilizar el cargador de atributos, es posible que su representante de cuentas de Adobe o el servicio de asistencia técnica de Adobe deban habilitarlo en su cuenta.
+>Para utilizar el cargador de atributos, es posible que deba habilitarlo en su cuenta por parte del representante de cuentas de Adobe o de la asistencia de Adobes.
 
 No todas las opciones del cargador de atributos están disponibles para que pueda cambiarlas, como el nombre del cargador de atributos o el tipo desde la lista [!DNL Type] desplegable.
 
 **Para editar una definición de cargador de atributos**
 
 1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. En la [!DNL Attribute Loader] página, bajo el encabezado de la [!DNL Actions] columna, haga clic en **[!UICONTROL Edit]** para obtener un nombre de definición del cargador de atributos cuya configuración desee cambiar.
+1. En la [!DNL Attribute Loader] página, debajo del encabezado de la [!DNL Actions] columna, haga clic en **[!UICONTROL Edit]** para obtener un nombre de definición del cargador de atributos cuya configuración desee cambiar.
 1. En la [!DNL Attribute Loader Edit] página, configure las opciones que desee.
 
    Consulte la tabla de opciones en [Añadir una definición](../c-about-settings-menu/c-about-metadata-menu.md#task_A735E5EF763343A9B675E1A3B09AFDBC)de cargador de atributos.
@@ -839,7 +827,7 @@ Puede copiar una definición de cargador de atributos existente para utilizarla 
 
 >[!NOTE]
 >
->Para utilizar el cargador de atributos, es posible que su representante de cuentas de Adobe o el servicio de asistencia técnica de Adobe deban habilitarlo en su cuenta.
+>Para utilizar el cargador de atributos, es posible que deba habilitarlo en su cuenta por parte del representante de cuentas de Adobe o de la asistencia de Adobes.
 
 Al copiar una definición de cargador de atributos, la definición copiada se desactiva de forma predeterminada. Para habilitar o &quot;activar&quot; la definición, debe editarla desde la [!DNL Attribute Loader Edit] página y seleccionar **[!UICONTROL Enable]**.
 
@@ -871,7 +859,7 @@ Puede cambiar el nombre de una definición de cargador de atributos existente.
 
 >[!NOTE]
 >
->Para utilizar el cargador de atributos, es posible que su representante de cuentas de Adobe o el servicio de asistencia técnica de Adobe deban habilitarlo en su cuenta.
+>Para utilizar el cargador de atributos, es posible que deba habilitarlo en su cuenta por parte del representante de cuentas de Adobe o de la asistencia de Adobes.
 
 **Cambio del nombre de una definición de cargador de atributos**
 
@@ -958,7 +946,7 @@ Consulte [Carga de datos](../c-about-settings-menu/c-about-metadata-menu.md#task
 1. Realice una de las siguientes acciones:
 
    * Haga clic en **[!UICONTROL Download to Desktop]** para descargar y guardar la tabla como archivo .xlt.
-   * Cierre la página cuando haya terminado de obtener una vista previa de los datos del cargador de atributos y vuelva a la página vista anteriormente.
+   * Cierre la página cuando haya terminado de obtener una vista previa de los datos del cargador de atributos y vuelva a la página que ha visto anteriormente.
 
 ## Visualización de la configuración de una definición de cargador de atributos {#task_EA99A9694FE948ADA82C1DBA0667851B}
 
@@ -968,9 +956,9 @@ Después de agregar una definición de cargador de atributos a la [!DNL Attribut
 
 >[!NOTE]
 >
->Para utilizar el cargador de atributos, es posible que su representante de cuentas de Adobe o el servicio de asistencia técnica de Adobe deban habilitarlo en su cuenta.
+>Para utilizar el cargador de atributos, es posible que deba habilitarlo en su cuenta por parte del representante de cuentas de Adobe o de la asistencia de Adobes.
 
-**vista de la configuración de una definición de cargador de atributos**
+**Vista de la configuración de una definición de cargador de atributos**
 
 1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
 1. En la [!DNL Attribute Loader] página, bajo el encabezado de la [!DNL Actions] columna, haga clic en **[!UICONTROL Edit]** para obtener un nombre de definición del cargador de atributos cuya configuración desee revisar o editar.
@@ -994,7 +982,7 @@ Puede eliminar una definición de cargador de atributos existente que ya no nece
 
 >[!NOTE]
 >
->Para utilizar el cargador de atributos, es posible que su representante de cuentas de Adobe o el servicio de asistencia técnica de Adobe deban habilitarlo en su cuenta.
+>Para utilizar el cargador de atributos, es posible que deba habilitarlo en su cuenta por parte del representante de cuentas de Adobe o de la asistencia de Adobes.
 
 **Para eliminar una definición de cargador de atributos**
 
