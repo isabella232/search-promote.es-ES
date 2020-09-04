@@ -8,7 +8,10 @@ title: Acerca de los menús
 topic: Design,Site search and merchandising
 uuid: 011050cd-21b6-4150-9503-18fa3f771626
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ Puede utilizar menús para personalizar la capa de presentación.
 
 ## Uso de menús {#concept_68123CE5CF4447B59217B5D721424E32}
 
-Agregue menús que se asignen a la configuración de la búsqueda. Cada elemento de un menú especifica el valor para la configuración del menú. También puede personalizar las etiquetas de menú.
+Añada los menús que se asignan a la configuración de la búsqueda. Cada elemento de un menú especifica el valor para la configuración del menú. También puede personalizar las etiquetas de menú.
 
 En la plantilla de presentación, puede hacer referencia a los menús definidos. A continuación, puede colocarlos en cualquier componente HTML que desee, como un control de selección. Esta combinación permite a los usuarios personalizar sus resultados de búsqueda. Se admiten tres tipos de menú: ordenación, recuento y navegación.
 
@@ -70,12 +73,12 @@ t_adding_a_new_menu.xml
       <li id="li_D81876660A8B48AFB70D3317063FBF6F"> <span class="uicontrol"> Ordenar </span> <p>Organiza la búsqueda según cualquiera de los tipos de metadatos definidos. </p> <p>Por ejemplo, puede definir un menú de ordenación con los siguientes tipos de metadatos: tres temas pertinentes; un campo de metadatos personalizado, como un código de disponibilidad; y precio. Los tres elementos pueden recibir las etiquetas "Ordenar por relevancia", "Ordenar por disponibilidad" y "Ordenar por precio", respectivamente. Al incluir esto en la plantilla de presentación, el cliente puede utilizar este control para ordenar los resultados de búsqueda. </p> </li> 
       <li id="li_63AE06B544B64DCAA8C55031B3DFFFF7"> <span class="uicontrol"> Recuento </span> <p>Define el número de resultados de búsqueda que se mostrarán. Este tipo de menú se asigna al parámetro cgi <span class="varname"> sp_c </span>. </p> <p>Consulte <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" format="dita" scope="local"> Parámetros CGI de búsqueda back-end </a>. </p> </li> 
       <li id="li_EEC810D420FF41498ECE49EBAAB33BE5"> <span class="uicontrol"> Navegación </span> <p>Especifica un conjunto de direcciones URL estáticas asociadas a elementos de menú. Normalmente, se utiliza un menú de navegación para crear una barra de navegación de nivel superior en la página de resultados de búsqueda. </p> <p>Por ejemplo, puede crear un menú que incluya a mujeres, hombres, niños y niñas, donde los elementos de menú sean como los siguientes: 
-      <userinput>
-        /?q1=mujeres;x1=género 
-      </userinput>, 
-      <userinput>
+      <code>
+        /?q1=womens;x1=gender 
+      </code>, 
+      <code>
         /?q1=mens;x1=gender 
-      </userinput> </p> </li> 
+      </code> </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -103,7 +106,7 @@ t_adding_a_new_menu.xml
       <td colname="col1"> <p>Etiqueta de elemento </p> </td> 
       <td colname="col2"> <p>La etiqueta del elemento depende del tipo de menú que haya definido. </p> 
         <ul id="ul_957BF01235F84748B5EB7062D6AEAC41"> 
-        <li id="li_03FB2E2C96134A2B8E08154F87F0CD55"> Tipo de menú Ordenar <p>Identifica la etiqueta personalizada que desea que el cliente vea cuando vea este elemento en el menú. </p> </li> 
+        <li id="li_03FB2E2C96134A2B8E08154F87F0CD55"> Tipo de menú Ordenar <p>Identifica la etiqueta personalizada que desea que vea el cliente cuando vista este elemento en el menú. </p> </li> 
         <li id="li_C9FE2BC46D9443FB85FEB837C7CA45E1"> Tipo de menú de recuento <p>Identifica la etiqueta personalizada que desea que se muestre para este elemento de menú. </p> </li> 
         </ul> </td> 
       </tr> 
@@ -142,10 +145,10 @@ t_editing_a_menu.xml
 **Para editar un menú**
 
 1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]**.
-1. En la [!DNL Menus] página, haga clic **[!UICONTROL Edit]** en el extremo derecho del nombre de un menú.
+1. En la [!DNL Menus] página, haga clic en **[!UICONTROL Edit]** en el extremo derecho del nombre de un menú.
 1. En la [!DNL Edit Menu] página, configure las opciones que desee.
 
-   Consulte la tabla de opciones en [Adición de un nuevo menú](../c-about-design-menu/c-about-menus.md#task_EE171532D3AE477FAFE8C2F4077A6D73).
+   Consulte la tabla de opciones en [Añadir un nuevo menú](../c-about-design-menu/c-about-menus.md#task_EE171532D3AE477FAFE8C2F4077A6D73).
 1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) En la [!DNL Menus] página, realice una de las siguientes acciones:
 
@@ -174,7 +177,7 @@ t_deleting_a_menu.xml
 **Para eliminar un menú**
 
 1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]**
-1. En la [!DNL Menus] página, haga clic **[!UICONTROL Delete]** en el extremo derecho del nombre de un menú.
+1. En la [!DNL Menus] página, haga clic en **[!UICONTROL Delete]** en el extremo derecho del nombre de un menú.
 1. En el cuadro de diálogo [!DNL Confirmation] , haga clic en **[!UICONTROL OK]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
