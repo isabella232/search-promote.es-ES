@@ -7,7 +7,10 @@ title: Acerca de banners
 topic: Design,Site search and merchandising
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
 translation-type: tm+mt
-source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '4810'
+ht-degree: 1%
 
 ---
 
@@ -26,17 +29,17 @@ c_about_banners.xml
 
 Existen dos métodos que puede utilizar para agregar publicidades de titular al sitio web.
 
-El primer método consiste en agregar letreros mediante Target, Search&amp;Promote. Los letreros son fragmentos de código HTML que se muestran en el momento en que un cliente busca en el sitio web. La pancarta puede incluir texto o una imagen en formato GIF, JPEG o PNG, o una combinación de ambos. Puede seleccionar entre los tamaños preestablecidos o definir sus propias dimensiones personalizadas para que se ajusten a la página. El código HTML que se utiliza para mostrar la pancarta también puede especificar elementos como el estilo de fuente que se va a utilizar y el borde. Este método de adición de letreros ofrece funcionalidad básica y no requiere software adicional.
+El primer método es agregar letreros mediante Destinatario, Search&amp;Promote. Los letreros son fragmentos de código HTML que se muestran en el momento en que un cliente busca en el sitio web. La pancarta puede incluir texto o una imagen en formato GIF, JPEG o PNG, o una combinación de ambos. Puede seleccionar entre los tamaños preestablecidos o definir sus propias dimensiones personalizadas para que se ajusten a la página. El código HTML que se utiliza para mostrar la pancarta también puede especificar elementos como el estilo de fuente que se va a utilizar y el borde. Este método de adición de una pancarta oferta la funcionalidad básica y no requiere software adicional.
 
-El segundo método consiste en utilizar Adobe Dynamic Media Classic, un servicio de administración y publicación de medios dinámicos. Una cuenta válida de Adobe Dynamic Media Classic le permite administrar y entregar contenido de letreros directamente en Target, Search&amp;Promote, mediante Dynamic Media Classic. En la búsqueda y comercialización del sitio, se configura el acceso a su cuenta de Dynamic Media Classic. A continuación, abra el navegador de medios de Dynamic Media Classic y seleccione un recurso de medios dinámicos que desee que sirva como pancarta.
+El segundo método consiste en utilizar Adobe Dynamic Media Classic, un servicio de administración y publicación de medios dinámicos. Una cuenta válida de Adobe Dynamic Media Classic le permite administrar y distribuir contenido de letreros directamente en Destinatario, Search&amp;Promote, mediante Dynamic Media Classic. En la búsqueda y comercialización del sitio, se configura el acceso a su cuenta de Dynamic Media Classic. A continuación, abra el navegador de medios de Dynamic Media Classic y seleccione un recurso de medios dinámicos que desee que sirva como pancarta.
 
 >[!NOTE]
 >
->Antes de utilizar los recursos de medios dinámicos como pancartas en la búsqueda o comercialización del sitio, los recursos se cargan y preparan para su publicación en Scene7 Publishing System. Puede cargar recursos desde la búsqueda o comercialización del sitio y prepararlos automáticamente para su publicación en Scene7 Publishing System. O bien, puede cargar y publicar recursos desde Scene7 Publishing System.
+>Antes de poder utilizar recursos de medios dinámicos como pancartas en la búsqueda o comercialización del sitio, los recursos se cargan y preparan para su publicación en Scene7 Publishing System. Puede cargar recursos desde la búsqueda o comercialización del sitio y prepararlos automáticamente para su publicación en Scene7 Publishing System. O bien, puede cargar y publicar recursos desde Scene7 Publishing System.
 
 ## Integración de letreros con Adobe Scene7 Publishing System {#section_D4D7ADEA6A6348E68EDA138E184FE579}
 
-Puede utilizar los tipos de recursos de Dynamic Media Classic como pancartas en la búsqueda o comercialización del sitio, incluidas imágenes, pancartas dinámicas y plantillas, como plantillas de imagen o plantillas Flash.
+Puede utilizar los tipos de recursos de Dynamic Media Classic como pancartas en la búsqueda o comercialización del sitio, incluidas las imágenes, los letreros dinámicos y las plantillas, como las plantillas de imagen o las plantillas de Flash.
 
 Las plantillas son archivos de imagen direccionables en capas creados de forma dinámica, como archivos con capas en aplicaciones de edición de imágenes como Adobe Photoshop®. A diferencia de un archivo de imagen estático, una plantilla puede incluir parámetros. Mediante parámetros, puede personalizar las propiedades de imagen variables y el contenido de la imagen.
 
@@ -56,15 +59,15 @@ Consulte Conceptos básicos [de plantilla](https://help.adobe.com/en_US/scene7/u
 
 **Carga y publicación de recursos**
 
-Debe cargar y publicar recursos en Dynamic Media Classic para poder utilizarlos en los letreros de la búsqueda o comercialización del sitio. Este requisito previo también incluye los recursos que utiliza una plantilla de imagen o una plantilla Flash. Utilice su cuenta de Dynamic Media Classic para cargar y publicar recursos digitales. O bien, puede utilizar la búsqueda o comercialización del sitio para cargar un recurso digital y, a continuación, hacer que Dynamic Media Classic lo publique automáticamente en función de la configuración de carga. Si intenta elegir un recurso que aún no se ha cargado ni publicado, se le notificará en la interfaz de usuario y se le dará la opción de cargarlo antes de continuar.
+Debe cargar y publicar recursos en Dynamic Media Classic para poder utilizarlos en los letreros de la búsqueda o comercialización del sitio. Este requisito previo también incluye los recursos que utiliza una plantilla de imagen o una plantilla de Flash. Utilice su cuenta de Dynamic Media Classic para cargar y publicar recursos digitales. O bien, puede utilizar la búsqueda o comercialización del sitio para cargar un recurso digital y, a continuación, hacer que Dynamic Media Classic lo publique automáticamente en función de la configuración de carga. Si intenta elegir un recurso que aún no se ha cargado ni publicado, se le notificará en la interfaz de usuario y se le dará la opción de cargarlo antes de continuar.
 
-Puede obtener más información sobre la carga y publicación de recursos digitales con Scene7 Publishing System.
+Puede obtener más información sobre la carga y publicación de recursos digitales mediante Scene7 Publishing System.
 
 Consulte [Carga y publicación de recursos](https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html) en la Guía del usuario de Dynamic Media Classic (Scene7).
 
 >[!NOTE]
 >
->Para utilizar la funcionalidad de carga en el visor de recursos de Dynamic Media Classic, asegúrese de que la cuenta de Dynamic Media Classic que utiliza ya tiene la función de &quot;Administrador de la empresa de SPS&quot; establecida.
+>Para utilizar la función de carga en el visor de recursos de Dynamic Media Classic, asegúrese de que la cuenta de Dynamic Media Classic que utiliza ya tiene la función de &quot;Administrador de Compañías de SPS&quot; definida.
 
 Consulte Ajustes [de](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) administración en la Guía del usuario de Dynamic Media Classic (Scene7).
 
@@ -72,11 +75,11 @@ Consulte Ajustes [de](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-
 
 Si ha agregado un recurso de Dynamic Media Classic como letrero, puede utilizarlo [!DNL Visual Rule Builder] en [!DNL Business Rules] para agregarlo a cualquier área de letrero del sitio web. Por ejemplo: agrega la pancarta a las páginas de resultados de búsqueda, como lo haría con cualquier otra pancarta. También puede anular los valores de parámetro predeterminados en las plantillas de Dynamic Media Classic personalizándolos según sus necesidades específicas. Este tipo de funcionalidad le permite personalizar plantillas de Dynamic Media Classic con diferentes mensajes de marketing e hipervínculos a diferentes extremos.
 
-Consulte también [Adición de una nueva regla](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)comercial.
+Consulte también [Añadir una nueva regla](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)comercial.
 
 Consulte también [Edición de una regla](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087)comercial.
 
-## Adición de una pancarta {#task_549D02B5F73B4158B105A94E39D937B7}
+## Añadir un letrero {#task_549D02B5F73B4158B105A94E39D937B7}
 
 Puede utilizar [!DNL Banners] para administrar las publicidades de titular y su ubicación en el sitio web. Al agregar un letrero, se hace referencia externamente a la imagen mediante fragmentos de código HTML que se muestran en el momento de la búsqueda.
 
@@ -88,15 +91,15 @@ t_adding_a_new_banner.xml
 
 Si tiene una cuenta válida de Adobe Dynamic Media Classic, puede agregar anuncios de letreros a través de Scene7 Publishing System.
 
-Consulte [Adición de letreros con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
+Consulte [Añadir un letrero con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
 Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D)de Adobe Dynamic Media Classic.
 
 **Para agregar una pancarta**
 
 1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
-1. En la lista [!DNL Banners] desplegable de la **[!UICONTROL Add Banner]** página, seleccione **[!UICONTROL HTML code]**.
-1. En el cuadro de diálogo [!DNL Add Banner] , configure las opciones que desee.
+1. En la [!DNL Banners] página, en la **[!UICONTROL Add Banner]** lista desplegable, seleccione **[!UICONTROL HTML code]**.
+1. En el cuadro [!DNL Add Banner] de diálogo, configure las opciones que desee.
 
    <table> 
     <thead> 
@@ -108,17 +111,15 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Nombre </p> </td> 
-      <td colname="col2"> <p>Requerido. Identifica el nombre del letrero. El nombre se utiliza para hacer referencia a la pancarta cuando se agrega en el Generador de reglas visuales en reglas comerciales. El nombre no aparece en la pancarta misma. </p> <p>Consulte <a href="../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7" type="task" format="dita" scope="local"> Adición de una nueva regla comercial.</a> </p> </td> 
+      <td colname="col2"> <p>Requerido. Identifica el nombre del letrero. El nombre se utiliza para hacer referencia a la pancarta cuando se agrega en el Generador de reglas visuales en reglas comerciales. El nombre no aparece en la pancarta misma. </p> <p>Consulte <a href="../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7" type="task" format="dita" scope="local"> Añadir una nueva regla comercial.</a> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>HTML de pancarta </p> </td> 
-      <td colname="col2"> <p> Permite pegar el código HTML asociado a la pancarta. </p> <p>Se acepta cualquier código HTML, incluido el código CSS rodeado por 
-        <userinput>
-          &lt;estilo&gt; 
-        </userinput> o código JavaScript rodeado por 
-        <userinput>
+      <td colname="col2"> <p> Permite pegar el código HTML asociado a la pancarta. </p> <p>Se acepta cualquier código HTML, incluido el código CSS rodeado de <code>
+          &lt;style&gt; 
+        </code> etiquetas, o código JavaScript rodeado de <code>
           &lt;script&gt; 
-        </userinput> etiquetas. Por ejemplo, el siguiente bloque de código es para una pancarta de texto de tipo Horizontal top: <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
+        </code> etiquetas. Por ejemplo, el siguiente bloque de código es para una pancarta de texto de tipo Horizontal top: <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
           padding-top:&nbsp;10px;&nbsp;padding-bottom:&nbsp;10px;&nbsp;color:&nbsp;white;&nbsp;font-family:&nbsp;verdana;&nbsp; 
           text-align:&nbsp;center;&nbsp;font-size:&nbsp;20px;"&gt;&nbsp;Sound&nbsp;Study&nbsp;ships&nbsp;free!&nbsp;&lt;/div&gt; </code>En el ejemplo siguiente, el bloque de código es para una imagen de bienvenida completa: <code> &lt;img&amp;nbsp;src='https://geometrixx.com/images/GEOAds/geometrixx-beauty-home-01.jpg'&amp;nbsp;border="0"&amp;nbsp;/&gt; </code> </p> </td> 
       </tr> 
@@ -134,7 +135,7 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
       </tr> 
       <tr> 
       <td colname="col1"> <p>Etiquetas </p> </td> 
-      <td colname="col2"> <p>Agrega etiquetas o "palabras clave" que desea asociar con la pancarta. Si utiliza muchos letreros, la adición de etiquetas puede ayudarle a restringir la búsqueda de letreros para que pueda localizar rápidamente el letrero adecuado según sus necesidades. También puede eliminar cualquier etiqueta que haya agregado. </p> </td> 
+      <td colname="col2"> <p>Añade las etiquetas o "palabras clave" que desea asociar con la pancarta. Si utiliza muchos letreros, la adición de etiquetas puede ayudarle a restringir la búsqueda de letreros para que pueda localizar rápidamente el letrero adecuado según sus necesidades. También puede eliminar cualquier etiqueta que haya agregado. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -176,7 +177,7 @@ Consulte también [Edición de letreros con Adobe Dynamic Media Classic](../c-ab
    encima de una miniatura de pancarta que desee editar.
 1. En la [!DNL Edit Banner] página, configure las opciones que desee.
 
-   Consulte la tabla de opciones en [Adición de un letrero](../c-about-design-menu/c-about-banners.md#task_549D02B5F73B4158B105A94E39D937B7).
+   Consulte la tabla de opciones en [Añadir un letrero](../c-about-design-menu/c-about-banners.md#task_549D02B5F73B4158B105A94E39D937B7).
 1. Cuando haya terminado de editar la pancarta, haga clic en **[!UICONTROL Save]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
@@ -192,7 +193,7 @@ Consulte también [Edición de letreros con Adobe Dynamic Media Classic](../c-ab
 
       Consulte [Inserción de la configuración del escenario en directo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Adición de una pancarta con Adobe Dynamic Media Classic {#task_AD1E0C00A9E04B1FA819EB93288786B3}
+## Añadir un letrero con Adobe Dynamic Media Classic {#task_AD1E0C00A9E04B1FA819EB93288786B3}
 
 Puede utilizar [!DNL Banners] para administrar las publicidades de titular del sitio web. Al agregar un letrero con Adobe Dynamic Media Classic, puede elegir entre cualquier recurso digital que haya cargado en Scene7 Publishing System.
 
@@ -202,14 +203,14 @@ t_adding_a_banner_using_adobe_scene7.xml
 
  -->
 
-Para agregar un letrero con Adobe Dynamic Media Classic, asegúrese de haber configurado el acceso a su cuenta válida de Dynamic Media Classic.
+Para agregar una pancarta con Adobe Dynamic Media Classic, asegúrese de haber configurado el acceso a su cuenta válida de Dynamic Media Classic.
 
 Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D)de Adobe Dynamic Media Classic.
 
 **Adición de letreros mediante Adobe Dynamic Media Classic**
 
 1. En el menú del producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Banners.]**
-1. En la [!DNL Banners] lista **[!UICONTROL Add Banner]** desplegable de la página, haga clic en **[!UICONTROL Adobe Scene7]**.
+1. En la [!DNL Banners] página, en la **[!UICONTROL Add Banner]** lista desplegable, haga clic en **[!UICONTROL Adobe Scene7]**.
 1. En el cuadro de diálogo [!DNL Pick an Asset] , en el panel izquierdo, utilice las opciones de navegación de la interfaz de usuario para localizar la carpeta que contiene el recurso digital que desea utilizar para un letrero.
 
    Con excepción de las opciones de navegación de recursos, el resto de las opciones dependen del recurso digital que haya seleccionado para agregar o editar.
@@ -234,7 +235,7 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/S7_folders.png"> </p> </td> 
-      <td colname="col2"> <p>Permite seleccionar la cuenta de Dynamic Media Classic para una empresa en particular en la lista desplegable y también desplazarse por las carpetas de recursos digitales de esa cuenta. </p> <p>Al seleccionar una carpeta, el panel derecho del cuadro de diálogo <span class="wintitle"> Elegir un recurso </span> muestra todos los recursos digitales disponibles que se encuentran en esa carpeta. </p> </td> 
+      <td colname="col2"> <p>Permite seleccionar la cuenta de Dynamic Media Classic para una compañía concreta en la lista desplegable y desplazarse por las carpetas de recursos digitales de esa cuenta. </p> <p>Al seleccionar una carpeta, el panel derecho del cuadro de diálogo <span class="wintitle"> Elegir un recurso </span> muestra todos los recursos digitales disponibles que se encuentran en esa carpeta. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_folderhistory.png"> </p> </td> 
@@ -254,7 +255,7 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_upload.png"> </p> </td> 
-      <td colname="col2"> <p>Abre el cuadro de diálogo <span class="wintitle"> Cargar </span> , donde puede cargar un recurso digital seleccionado desde el escritorio o desde un servidor externo para que pueda utilizarlo como letrero. </p> <p>Después de cargar el recurso, un trabajo de publicación se programa automáticamente en Scene7 Publishing System. </p> <p>Consulte la tabla de opciones en <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> Adición de letreros con Adobe Dynamic Media Classic </a>. </p> <p>Puede obtener más información sobre la carga y publicación de recursos digitales con Scene7 Publishing System. </p> <p>Consulte <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Carga y publicación de recursos </a> en la Guía del usuario de Scene7 Publishing System. </p> </td> 
+      <td colname="col2"> <p>Abre el cuadro de diálogo <span class="wintitle"> Cargar </span> , donde puede cargar un recurso digital seleccionado desde el escritorio o desde un servidor externo para que pueda utilizarlo como letrero. </p> <p>Después de cargar el recurso, un trabajo de publicación se programa automáticamente en Scene7 Publishing System. </p> <p>Consulte la tabla de opciones para <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> Añadir un letrero con Adobe Dynamic Media Classic </a>. </p> <p>Puede obtener más información sobre la carga y publicación de recursos digitales mediante Scene7 Publishing System. </p> <p>Consulte <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Carga y publicación de recursos </a> en la Guía del usuario de Scene7 Publishing System. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_searchfield.png"> </p> </td> 
@@ -262,15 +263,15 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_addfilter.png"> </p> </td> 
-      <td colname="col2"> <p>Agrega otro filtro de recursos para que pueda reducir aún más la lista de recursos digitales mostrados por tipo o por una fecha específica. </p> </td> 
+      <td colname="col2"> <p>Añade otro filtro de recursos para poder reducir aún más la lista de los recursos digitales mostrados por tipo o por una fecha específica. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_Kindfilter.png"> </p> </td> 
-      <td colname="col2"> <p>Restrinja la lista de recursos digitales mostrados para mostrar solo aquellos de un tipo determinado, como Flash, Imagen, Plantilla o Cualquiera. </p> <p>Haga clic en <img src="assets/s7_deletefilter.png"> para eliminar el filtro de la búsqueda. </p> </td> 
+      <td colname="col2"> <p>Restrinja la lista de los recursos digitales mostrados para mostrar solo aquellos de un tipo determinado, como Flash, Imagen, Plantilla o Cualquiera. </p> <p>Haga clic en <img src="assets/s7_deletefilter.png"> para eliminar el filtro de la búsqueda. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_datefilter.png"> </p> </td> 
-      <td colname="col2"> <p>Restrinja la lista de recursos digitales mostrados para mostrar solo los creados o editados antes de una fecha determinada o después de una fecha determinada. </p> <p>Haga clic en <img src="assets/s7_deletefilter.png" /> para eliminar el filtro de la búsqueda. </p> </td> 
+      <td colname="col2"> <p>Restrinja la lista de los recursos digitales mostrados para mostrar solo aquellos creados o editados antes de una fecha determinada o después de una fecha determinada. </p> <p>Haga clic en <img src="assets/s7_deletefilter.png" /> para eliminar el filtro de la búsqueda. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_assetzoom.png"> </p> </td> 
@@ -281,7 +282,7 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
 
    **Opciones de propiedades**
 
-   Las opciones de Propiedades aparecen si selecciona una plantilla Flash, una plantilla de imagen o una imagen. Según el recurso digital que elija, no todas las opciones están disponibles.
+   Las opciones de Propiedades aparecen si selecciona una plantilla de Flash, una plantilla de imagen o una imagen. Según el recurso digital que elija, no todas las opciones están disponibles.
 
    <table> 
     <thead> 
@@ -304,19 +305,19 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
         <li id="li_4EDDFD7C8AB04677BEC20EFC9AEBBF1F">png-alpha </li> 
         <li id="li_4FCB03C29AE647ACBAF5105016DF7579">gif </li> 
         <li id="li_B884BD7DFF1845FAA9C58EF09B888A77">gif-alpha </li> 
-        </ul> <p>Esta opción no se aplica a las plantillas Flash. </p> </td> 
+        </ul> <p>Esta opción no se aplica a las plantillas de Flash. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Calidad </p> </td> 
-      <td colname="col2"> <p>Controla el nivel de compresión de las imágenes en formato JPEG o GIF. Esta configuración afecta tanto al tamaño del archivo como a la calidad de la imagen. La escala de calidad es de 1 a 100. </p> <p>Al arrastrar el control deslizante hacia la izquierda o la derecha, la imagen de la ventana de vista previa se actualiza para reflejar el cambio de calidad. </p> <p>Esta opción no se aplica a las plantillas Flash. </p> </td> 
+      <td colname="col2"> <p>Controla el nivel de compresión de las imágenes en formato JPEG o GIF. Esta configuración afecta tanto al tamaño del archivo como a la calidad de la imagen. La escala de calidad es de 1 a 100. </p> <p>Al arrastrar el control deslizante hacia la izquierda o la derecha, la imagen de la ventana de previsualización se actualiza para reflejar el cambio de calidad. </p> <p>Esta opción no se aplica a las plantillas de Flash. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Anchura </p> </td> 
-      <td colname="col2"> <p>Especifica la anchura del recurso digital, en píxeles. Esta dimensión es la anchura con la que los clientes que visitan el sitio web ven el recurso. </p> <p>Esta opción no se aplica a las plantillas Flash. </p> </td> 
+      <td colname="col2"> <p>Especifica la anchura del recurso digital, en píxeles. Esta dimensión es la anchura con la que los clientes que visitan el sitio web ven el recurso. </p> <p>Esta opción no se aplica a las plantillas de Flash. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Altura </p> </td> 
-      <td colname="col2"> <p>Especifica la altura del recurso digital, en píxeles. Esta dimensión es la altura en la que el recurso lo ven los clientes que visitan el sitio web. </p> <p>Esta opción no se aplica a las plantillas Flash. </p> </td> 
+      <td colname="col2"> <p>Especifica la altura del recurso digital, en píxeles. Esta dimensión es la altura en la que el recurso lo ven los clientes que visitan el sitio web. </p> <p>Esta opción no se aplica a las plantillas de Flash. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -346,7 +347,7 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
 
    **Modificar vínculos, opción**
 
-   La opción Modificar vínculos aparece únicamente si ha seleccionado una plantilla Flash para el letrero.
+   La opción Modificar vínculos aparece únicamente si ha seleccionado una plantilla de Flash para el letrero.
 
    <table> 
     <thead> 
@@ -358,16 +359,16 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img placement="inline" id="image_EBB8159690C74D4692B5DF945B045E0B" src="assets/icon_edit_16.gif" /> </p> </td> 
-      <td colname="col2"> <p>Permite editar el campo de vínculo URL que se utiliza en la plantilla Flash. </p> </td> 
+      <td colname="col2"> <p>Permite editar el campo de vínculo URL que se utiliza en la plantilla de Flash. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
    **Opciones de Reemplazar texto**
 
-   Las opciones Reemplazar texto solo aparecen si selecciona una plantilla Flash para el letrero que tenga capas de texto editables.
+   Las opciones Reemplazar texto solo aparecen si selecciona una plantilla de Flash para el letrero que tenga capas de texto editables.
 
-   Los cambios que realice en el texto de la plantilla Flash se reflejarán en la ventana Vista previa.
+   Los cambios que realice en el texto de la plantilla de Flash se reflejarán en la ventana Previsualización.
 
    >[!NOTE]
    >
@@ -383,7 +384,7 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_addfilter.png"> </p> </td> 
-      <td colname="col2"> <p>Agrega un campo de búsqueda y reemplazo. </p> </td> 
+      <td colname="col2"> <p>Añade un campo de búsqueda y reemplazo. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_deletefilter.png"> </p> </td> 
@@ -391,30 +392,30 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
       </tr> 
       <tr> 
       <td colname="col1"> <p>Búsqueda  </p> </td> 
-      <td colname="col2"> <p>Permite introducir un término de búsqueda de texto no vinculado dentro de las capas de la plantilla Flash. </p> </td> 
+      <td colname="col2"> <p>Permite introducir un término de búsqueda de texto no vinculado dentro de las capas de la plantilla de Flash. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Sustituya </p> </td> 
-      <td colname="col2"> <p>Permite especificar el texto que desea insertar en lugar del texto que busca. </p> <p>Al pulsar <span class="uicontrol"> Intro </span> en este campo, la ventana de vista previa se actualiza con el texto de reemplazo. </p> </td> 
+      <td colname="col2"> <p>Permite especificar el texto que desea insertar en lugar del texto que busca. </p> <p>Al pulsar <span class="uicontrol"> Intro </span> en este campo, la ventana de previsualización se actualiza con el texto de reemplazo. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
    **Opciones de parámetros**
 
-   Las opciones de parámetros solo aparecen si selecciona una plantilla de imagen o una plantilla Flash para la pancarta. Las opciones de parámetro reales varían según cómo se haya creado y parametrizado la plantilla en Scene7 Publishing System. Por ejemplo, la plantilla puede parametrizar campos que le permiten cambiar cosas como texto, estilo de fuente, precio, códigos especiales utilizados para el envío gratuito, el tamaño de la imagen dentro de la pancarta o incluso buscar una imagen diferente para utilizarla.
+   Las opciones de parámetros solo aparecen si selecciona una plantilla de imagen o una plantilla de Flash para la pancarta. Las opciones de parámetro reales varían según cómo se haya creado y parametrizado la plantilla en Scene7 Publishing System. Por ejemplo, la plantilla puede parametrizar campos que le permiten cambiar cosas como texto, estilo de fuente, precio, códigos especiales utilizados para el envío gratuito, el tamaño de la imagen dentro de la pancarta o incluso buscar una imagen diferente para utilizarla.
 
    >[!NOTE]
    >
    >Tenga en cuenta que cualquier cambio que realice en los parámetros puede ser anulado por las reglas comerciales. Los parámetros solo funcionan como predeterminados cuando no se crean reglas comerciales que cambiarían los parámetros de otro modo.
 
-   Consulte [Adición de una nueva regla](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)comercial.
+   Consulte [Añadir una nueva regla](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)comercial.
 
    See [Editing a business rule](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
 
    **Alternar las opciones de visibilidad de capa**
 
-   La opción Alternar visibilidad de capa solo se aplica si selecciona una plantilla Flash para el letrero.
+   La opción Alternar visibilidad de capa solo se aplica si selecciona una plantilla de Flash para el letrero.
 
    <table> 
     <thead> 
@@ -426,7 +427,7 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_togglelayervisibility.png"> </p> </td> 
-      <td colname="col2"> <p>Permite activar o desactivar la visibilidad de las distintas capas que componen el archivo de plantilla Flash. </p> <p>Cada vez que se activa o desactiva la visibilidad de una capa, se actualiza la ventana de vista previa para actualizar la visualización. </p> </td> 
+      <td colname="col2"> <p>Permite activar o desactivar la visibilidad de las distintas capas que componen el archivo de plantilla de Flash. </p> <p>Cada vez que se activa o desactiva la visibilidad de una capa, se actualiza la ventana de previsualización para actualizar la visualización. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -435,9 +436,9 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
 
    >[!NOTE]
    >
-   >Si desea utilizar la función de carga en el visor de recursos de Scene7, asegúrese de que la cuenta de Scene7 que utiliza ya tiene definida la función &quot;Administrador de la empresa de SPS&quot;.
+   >Si desea utilizar la funcionalidad de carga en el visor de recursos de Scene7, asegúrese de que la cuenta de Scene7 que utiliza ya tiene la función &quot;Administrador de Compañías de SPS&quot; definida.
 
-   Consulte Ajustes [de](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) administración en la Guía del usuario de Scene7 Publishing System.
+   Consulte Ajustes [de administración](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) en la Guía del usuario de Scene7 Publishing System.
 
    **Opciones básicas**
 
@@ -468,7 +469,7 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
 
    Al cargar archivos de imagen PostScript (EPS) o Illustrator (AI), puede darles formato de varias formas. Puede rasterizar los archivos, convertirlos a FXG para la publicación de plantillas, mantener el fondo transparente, elegir una resolución y elegir un espacio de color.
 
-   Los archivos PSD (Photoshop Document) se utilizan con mayor frecuencia en Dynamic Media Classic para crear plantillas. Al cargar un archivo PSD, puede crear una plantilla de Dynamic Media Classic automáticamente a partir del archivo (seleccione la **[!UICONTROL Create Template]** opción).
+   Los archivos PSD (archivos Documento de Photoshop) se utilizan con mayor frecuencia en Dynamic Media Classic para crear plantillas. Al cargar un archivo PSD, puede crear una plantilla de Dynamic Media Classic automáticamente a partir del archivo (seleccione la **[!UICONTROL Create Template]** opción).
 
    Scene7 Publishing System crea varias imágenes a partir de un archivo PSD con capas si se utiliza el archivo para crear una plantilla; crea una imagen para cada capa.
 
@@ -482,7 +483,7 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>Opciones de perfil de color </p> </td> 
+      <td colname="col1"> <p>Opciones de Perfil de color </p> </td> 
       <td colname="col02"> <p>Perfil de color </p> </td> 
       <td colname="col2"> <p> Permite elegir entre las siguientes opciones: </p> 
         <ul id="ul_6927BC08CA2647EDB2C85DAD2B82AE31"> 
@@ -508,7 +509,7 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
       <tr> 
       <td colname="col1"> <p> Opciones de PostScript </p> <p>Opciones de Illustrator </p> </td> 
       <td colname="col02"> <p> Espacio de color </p> </td> 
-      <td colname="col2"> <p>Permite elegir un espacio de color para el archivo de Illustrator. El espacio de color RGB es preferible para la visualización en línea. </p> <p>Puede elegir entre las siguientes opciones de espacio de color: </p> 
+      <td colname="col2"> <p>Permite elegir un espacio de color para el archivo Illustrator. El espacio de color RGB es preferible para la visualización en línea. </p> <p>Puede elegir entre las siguientes opciones de espacio de color: </p> 
         <ul id="ul_0E83E2762A574480B243F963A7FB2ACD"> 
         <li id="li_B9FEC7D220D04CCABACD30839051DAE4"> <span class="uicontrol"> Detectar automáticamente </span> <p> Conserva el espacio de color del archivo PDF. </p> </li> 
         <li id="li_ED0EB3B12BCF41C7AFC435447010B6FF"> <span class="uicontrol"> Forzar RGB </span> <p> Convierte al espacio de color RGB. </p> </li> 
@@ -592,10 +593,10 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
     </tbody> 
     </table>
 
-1. En el panel derecho, haga clic en la imagen, plantilla o archivo Flash que desee.
+1. En el panel derecho, haga clic en el archivo de imagen, plantilla o Flash que desee.
 
    Aparece la ventana [!DNL Pick An Asset] emergente.
-1. (Opcional) En la lista desplegable de la ventana [!DNL Pick An Asset] emergente, realice una de las [!DNL Actions] siguientes acciones:
+1. (Opcional) En la ventana [!DNL Pick An Asset] emergente, en la lista [!DNL Actions] desplegable, realice una de las siguientes acciones:
 
    * Haga clic **[!UICONTROL Move]**. En el cuadro de diálogo [!DNL Select a folder to move to] , seleccione la carpeta a la que desea mover el recurso digital. Haga clic **[!UICONTROL Move]**.
 
@@ -625,7 +626,7 @@ Consulte [Configuración del acceso a su cuenta](../c-about-settings-menu/c-abou
 
 ## Edición de letreros con Adobe Dynamic Media Classic {#task_C3E782477FBF428ABEA220751781ACA9}
 
-Utilícelo [!DNL Edit Banner] para cambiar las propiedades y los parámetros de un letrero que ha agregado con Adobe Dynamic Media Classic.
+Se utiliza [!DNL Edit Banner] para cambiar las propiedades y los parámetros de un letrero que se ha agregado con Adobe Dynamic Media Classic.
 
 <!-- 
 
@@ -674,7 +675,7 @@ t_deleting_banners.xml
 
    * En la [!DNL Banners] página, seleccione el tipo de pancarta que desee buscar en la lista **[!UICONTROL Find banner of type]** desplegable. Si lo desea, especifique un nombre de etiqueta en el campo de **[!UICONTROL with tag]** texto o un nombre de tipo de pancarta en el campo de **[!UICONTROL with name]** texto. Haga clic **[!UICONTROL Find.]**
 
-   * En la lista **[!UICONTROL Sort]** desplegable, seleccione cómo desea ordenar la lista de letreros.
+   * En la lista **[!UICONTROL Sort]** desplegable, seleccione cómo desea ordenar la lista de los letreros.
    * En la lista **[!UICONTROL Show]** desplegable, seleccione el número de pancartas que desea cargar en la página actual que está viendo.
 
 1. Realice uno de los siguientes pasos:
@@ -700,7 +701,7 @@ t_deleting_banners.xml
 
 ## Vista previa de pancartas {#task_6AB1F81A984A4DC2ACACD1FE030545E2}
 
-Puede examinar las pancartas agregadas a la [!DNL Banners] página para ver su tamaño completo. No se muestra ninguna CSS de la plantilla que afecte a la pancarta.
+Puede examinar las pancartas que ha agregado a la [!DNL Banners] página para realizar la vista de su tamaño completo. No se muestra ninguna CSS de la plantilla que afecte a la pancarta.
 
 <!-- 
 
@@ -708,21 +709,21 @@ t_previewing_banners.xml
 
  -->
 
-**Para obtener una vista previa de los letreros**
+**A pancartas de previsualización**
 
 1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
 1. (Opcional) Realice una o varias de las acciones siguientes:
 
    * En la [!DNL Banners] página, seleccione el tipo de pancarta que desee buscar en la lista **[!UICONTROL Find banner of type]** desplegable. Si lo desea, especifique un nombre de etiqueta en el campo de **[!UICONTROL with tag]** texto o un nombre de tipo de pancarta en el campo de **[!UICONTROL with name]** texto. Haga clic **[!UICONTROL Find.]**
 
-   * En la lista **[!UICONTROL Sort]** desplegable, seleccione cómo desea ordenar la lista de letreros.
+   * En la lista **[!UICONTROL Sort]** desplegable, seleccione cómo desea ordenar la lista de los letreros.
    * En la lista **[!UICONTROL Show]** desplegable, seleccione el número de pancartas que desea cargar en la página actual que está viendo.
 
-1. En la página, haga clic en una miniatura de la pancarta para ver su tamaño completo. [!DNL Banners]
+1. En la página, haga clic en una miniatura de pancarta para vista de su tamaño completo. [!DNL Banners]
 1. Realice uno de los siguientes pasos:
 
-   * En el cuadro de diálogo de vista previa de letreros, haga clic en la flecha izquierda o derecha para navegar y ver los letreros de tamaño completo que ha agregado.
-   * Haga clic en el botón Cerrar para cerrar el cuadro de diálogo de vista previa de letreros y volver a la [!DNL Banners] página.
+   * En el cuadro de diálogo previsualización de letreros, haga clic en la flecha izquierda o derecha para desplazarse y realizar la vista de los letreros de tamaño completo que ha agregado.
+   * Haga clic en el botón Cerrar para cerrar el cuadro de diálogo de previsualización de letreros y volver a la [!DNL Banners] página.
 
 ## Inserción de letreros activos {#task_161F4FEC8362474296A566E64BF05B97}
 
@@ -745,7 +746,7 @@ Consulte [Inserción de la configuración del escenario en directo](../c-about-s
 
    * En la [!DNL Banners] página, seleccione el tipo de pancarta que desee buscar en la lista **[!UICONTROL Find banner of type]** desplegable. Si lo desea, especifique un nombre de etiqueta en el campo de **[!UICONTROL with tag]** texto o un nombre de tipo de pancarta en el campo de **[!UICONTROL with name]** texto. Haga clic **[!UICONTROL Find]**.
 
-   * En la lista **[!UICONTROL Sort]** desplegable, seleccione cómo desea ordenar la lista de letreros.
+   * En la lista **[!UICONTROL Sort]** desplegable, seleccione cómo desea ordenar la lista de los letreros.
    * En la lista **[!UICONTROL Show]** desplegable, seleccione el número de pancartas que desea cargar en la página actual que está viendo.
 
 1. Realice uno de los siguientes pasos:
