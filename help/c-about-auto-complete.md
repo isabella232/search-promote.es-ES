@@ -8,7 +8,10 @@ title: Acerca de la finalización automática
 topic: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 translation-type: tm+mt
-source-git-commit: 439100ab96f4b597c55b1c1ae38a5778c208e896
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 1%
 
 ---
 
@@ -31,11 +34,11 @@ t_configuring_auto-complete.xml
 
  -->
 
-Después de configurar la función de autocompletar, puede ver la fuente HTML resultante para su revisión. El código fuente HTML es lo que copia y pega en las páginas del sitio web.
+Después de configurar la función de autocompletar, puede realizar la vista de la fuente HTML resultante para su revisión. El código fuente HTML es lo que copia y pega en las páginas del sitio web.
 
 Consulte [Vista previa del formulario de búsqueda tal y como aparecería en su...](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
 
-Consulte [Configuración de la lista](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)de palabras de finalización automática.
+Consulte [Configuración de la Lista](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)de palabras de finalización automática.
 
 Consulte [Configuración de CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)de finalización automática.
 
@@ -68,7 +71,7 @@ Consulte [Configuración de CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nombre del formulario </p> </td> 
-      <td colname="col2"> <p>Especifica el atributo "name" de la etiqueta "form" del formulario de búsqueda habilitada para autocompletar. Por ejemplo, </p> <p> <span class="filepath"> &lt;form name="SiteSearch" method="get" action="https://sp1004337c.guided.t1.atomz.com" target="_blank"&gt; </span> </p> <p>donde <span class="filepath"> SiteSearch </span> es el atributo de nombre de la etiqueta de formulario. </p> </td> 
+      <td colname="col2"> <p>Especifica el atributo "name" de la etiqueta "form" del formulario de búsqueda habilitada para autocompletar. Por ejemplo, </p> <p> <span class="filepath"> &lt;form name="SiteSearch" method="get" action="https://sp1004337c.guided.t1.atomz.com" destinatario="_blank"&gt; </span> </p> <p>donde <span class="filepath"> SiteSearch </span> es el atributo de nombre de la etiqueta de formulario. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>ID de etiqueta de div </p> </td> 
@@ -80,7 +83,7 @@ Consulte [Configuración de CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8
       </tr> 
       <tr>
       <td colname="col1"> <p>Mostrar sombra </p> </td>
-      <td colname="col2"> <p>Agrega una sombra paralela estética a la lista de sugerencias de autocompletar. </p> </td>
+      <td colname="col2"> <p>Añade una sombra paralela estética a la lista de sugerencias de autocompletar. </p> </td>
       </tr>
       <tr>
       <td colname="col1"> <p>Coincidir solo al principio de la frase </p> </td>
@@ -108,7 +111,7 @@ Consulte [Configuración de CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8
 
       Consulte [Inserción de la configuración del escenario en directo](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Configuración de la lista de palabras de finalización automática {#task_1F8E0F346263443383F8CFD2C7AB35D4}
+## Configuración de la Lista de palabras de finalización automática {#task_1F8E0F346263443383F8CFD2C7AB35D4}
 
 Configure la lista de palabras y frases que Autocompletar muestra a un cliente como sugerencias.
 
@@ -122,7 +125,7 @@ Consulte [Configuración de la finalización](c-about-auto-complete.md#task_F491
 
 Consulte [Configuración de CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)de finalización automática.
 
-**Para configurar la lista de palabras de finalización automática**
+**Para configurar la Lista de palabras de finalización automática**
 
 1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete Word List]**.
 1. En la [!DNL Auto-Complete Word List] página, configure las opciones que desee.
@@ -154,25 +157,20 @@ Consulte [Configuración de CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8
       <td colname="col2"> <p>Define el número máximo de valores de campo permitidos para el nombre de campo seleccionado. Se incluyen los valores principales, que también son los más referenciados. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Agregue estas palabras y frases </p> </td> 
+      <td colname="col1"> <p>Añadir estas palabras y frases </p> </td> 
       <td colname="col2"> <p> La lista de palabras de compleción automática se rellena con las palabras y frases que aparecen en esta área. </p> <p> Haga clic en <span class="uicontrol"> Editar </span> para ver la lista o para agregar palabras y frases a la lista. Cuando termine, haga clic en <span class="uicontrol"> Guardar cambios </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Eliminar estas palabras y frases </p> </td> 
-      <td colname="col2"> <p> Las entradas de esta área no se muestran en la lista de palabras de compleción automática. </p> <p> Haga clic en <span class="uicontrol"> Editar </span> para ver la lista o para agregar palabras y frases a la lista. Cuando termine, haga clic en <span class="uicontrol"> Guardar cambios </span>. </p> <p> En esta lista se permiten expresiones regulares. Para especificar una expresión regular en esta lista, inicie la línea con 
-        <userinput>
-          regexp 
-        </userinput> seguido de un solo espacio, seguido de la expresión regular. Se eliminan todas las líneas de la lista de palabras que coincidan con la expresión regular. </p> <p> <b>Importante</b>: Solo debe utilizar expresiones regulares si ya ha trabajado con ellas en otras aplicaciones. </p> <p>Consulte <a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expresiones regulares </a>. </p> </td> 
+      <td colname="col2"> <p> Las entradas de esta área no se muestran en la lista de palabras de compleción automática. </p> <p> Haga clic en <span class="uicontrol"> Editar </span> para ver la lista o para agregar palabras y frases a la lista. Cuando termine, haga clic en <span class="uicontrol"> Guardar cambios </span>. </p> <p> En esta lista se permiten expresiones regulares. Para especificar una expresión regular en esta lista, inicio la línea con <code>regexp</code> seguida de un solo espacio, seguido de la expresión regular. Se eliminan todas las líneas de la lista de palabras que coincidan con la expresión normal. </p> <p> <b>Importante</b>: Sólo debe utilizar expresiones regulares si ya ha trabajado con ellas en otras aplicaciones. </p> <p>Consulte <a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expresiones regulares </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Omitir caso </p> </td> 
-      <td colname="col2"> <p>Se eliminan las entradas duplicadas en la lista de palabras de autocompletar que solo difieren por letras mayúsculas y minúsculas; todas las entradas de la lista de palabras están obligadas a minúsculas. </p> <p>Si desea que las sugerencias de Autocompletar aparezcan "primera letra en mayúsculas" o "todas mayúsculas", agregue la variable 
-        <userinput>
-          text-transform : capitalizar; 
-        </userinput> o 
-        <userinput>
-          text-transform : mayúscula; 
-        </userinput> Propiedades de texto CSS para el contenido CSS de finalización automática, en estilos "/* para el elemento de resultado */". </p> <p>Consulte <a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local"> Configuración de CSS de finalización automática </a>. </p> </td> 
+      <td colname="col2"> <p>Se eliminan las entradas de duplicado en la lista de palabras de autocompletar que solo difieren en mayúsculas o minúsculas alfabéticas; todas las entradas de lista de palabras se ven obligadas a minúsculas. </p> <p>Si desea que las sugerencias de Completar automáticamente aparezcan "primera letra con mayúscula" o "todo en mayúsculas", agregue las propiedades de texto <code>
+          text-transform : capitalize; 
+        </code> o <code>
+          text-transform : uppercase; 
+        </code> CSS al contenido de CSS de Completar automáticamente, en los estilos "/* para el elemento de resultado */". </p> <p>Consulte <a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local"> Configuración de CSS de finalización automática </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Actualización de reíndice </p> </td> 
@@ -211,11 +209,11 @@ La CSS de finalización automática controla el contenido de [!DNL autocomplete_
 
 [https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html](https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html).
 
-[Configuración de la lista](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)de palabras de finalización automática.
+[Configuración de la Lista](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)de palabras de finalización automática.
 
 [Configuración del autocompletado](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB).
 
-Cuando haya terminado de configurar la CSS de finalización automática, puede obtener una vista previa del formulario de búsqueda para ver si la CSS especificada es aceptable en apariencia y presentación.
+Cuando haya terminado de configurar la CSS de finalización automática, puede realizar una previsualización del formulario de búsqueda para ver si la CSS especificada es aceptable en apariencia y presentación.
 
 Consulte [Vista previa del formulario de búsqueda tal y como aparecería en su...](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
 
@@ -226,7 +224,7 @@ Consulte [Copia del código HTML del formulario de búsqueda en el...](c-about-a
 **Para configurar CSS de finalización automática**
 
 1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete CSS]**.
-1. En el campo de [!DNL Auto-Complete CSS] texto, pegue o escriba la información de la hoja de estilo en cascada que desea asociar con la lista de sugerencias de autocompletar.
+1. En el campo de [!DNL Auto-Complete CSS] texto, pegue o escriba la información de la hoja de estilo en cascada que desea asociar con la lista de sugerencia de autocompletar.
 1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) Realice cualquiera de las siguientes acciones:
 
@@ -244,7 +242,7 @@ Consulte [Copia del código HTML del formulario de búsqueda en el...](c-about-a
 
 ## Vista preliminar del formulario de búsqueda tal como aparecería en el sitio web {#task_437B35EFA5424603A08AF8E79E6B4714}
 
-En función de la configuración de Autocompletar y Autocompletar CSS, puede obtener una vista previa del aspecto del formulario de búsqueda si desea agregar el código HTML a su sitio web.
+En función de la configuración de Autocompletar y Autocompletar CSS, puede realizar una previsualización de cómo aparece el formulario de búsqueda si desea agregar el código HTML a su sitio Web.
 
 <!-- 
 
@@ -268,14 +266,14 @@ Consulte Código [HTML de formulario de búsqueda](c-appendices/c-searchforms.md
 
 Consulte Código [](c-appendices/c-searchforms.md#reference_D762C22E754E462DBEECD88D2C3FA579)de plantilla de formulario de búsqueda avanzada.
 
-**Para obtener una vista previa del formulario de búsqueda tal como aparecería en el sitio web**
+**Previsualización del formulario de búsqueda tal como aparecería en el sitio web**
 
 1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Search Form]**.
 1. (Opcional) Haga clic en **[!UICONTROL HTML code]** para ver el HTML que copió y pegó en las páginas del sitio web.
 
 ## Copia del código HTML del formulario de búsqueda en las páginas del sitio web {#task_A3A01EA800F24C0AA33902387E0362C7}
 
-En función de la configuración de Autocompletar y Autocompletar CSS, puede obtener una vista previa del aspecto del formulario de búsqueda si desea agregar el código HTML a su sitio web.
+En función de la configuración de Autocompletar y Autocompletar CSS, puede realizar una previsualización de cómo aparece el formulario de búsqueda si desea agregar el código HTML a su sitio Web.
 
 <!-- 
 
