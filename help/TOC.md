@@ -1,38 +1,42 @@
 ---
 cloud: experience-cloud
 product: Search&amp;Promote
-archtype: end-user
-user-guide: Search&amp;Promote
+audience: end-user
+user-guide-title: Search&amp;Guía de promociones
+breadcrumb-title: Search&amp;Promote Guide
 translation-type: tm+mt
-source-git-commit: d51f7db6830155a8efde096a0676281a6e1332d7
+source-git-commit: 8a42d1ee5260adbb88e483a38b107bd76b89a452
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 10%
 
 ---
 
 
-# Guía del usuario de Search and Promote {#using}
+# Guía de búsqueda y promoción {#using}
 
 + [Información general sobre la documentación de Search&amp;Promote](sp-home.md)
 + Release notes {#release-notes}
-   + [Notas de la versión de Search&amp;Promote 18.1.1 (13/02/2018)](c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
-   + [Notas de la versión de Search&amp;Promote 17.11.1 (31/10/2017)](c-searchpromote-release-notes/c-rn-10-31-17-version-1711.md)
-   + [Notas de la versión de Search&amp;Promote 15.3.1 (24/03/2015)](c-searchpromote-release-notes/c-rn-03-19-15-version-153.md)
-   + [Notas de la versión de Search&amp;Promote 15.1.1 (15/01/2015)](c-searchpromote-release-notes/c-rn-01-15-15-version-151.md)
+   + [Notas de la versión 18.1.1 de Search&amp;Promote (13/02/2018)](c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
+   + [Notas de la versión 17.11.1 de Search&amp;Promote (31/10/2017)](c-searchpromote-release-notes/c-rn-10-31-17-version-1711.md)
+   + [Notas de la versión 15.3.1 de Search&amp;Promote (24/03/2015)](c-searchpromote-release-notes/c-rn-03-19-15-version-153.md)
+   + [Notas de la versión 15.1.1 de Search&amp;Promote (15/01/2015)](c-searchpromote-release-notes/c-rn-01-15-15-version-151.md)
    + [Notas de la versión de Search&amp;Promote 8.17.0 (30/10/2014)](c-searchpromote-release-notes/c-rn-10-30-14-version-817.md)
-   + [Notas de la versión de Search&amp;Promote 8.16.0 (18/9/2014)](c-searchpromote-release-notes/c-rn-09-18-14-version-816.md)
+   + [Notas de la versión de Search&amp;Promote 8.16.0 (18/09/2014)](c-searchpromote-release-notes/c-rn-09-18-14-version-816.md)
    + [Notas de la versión de Search&amp;Promote 8.15.0 (19/06/2014)](c-searchpromote-release-notes/c-rn-06-19-14-version-815.md)
    + [Notas de la versión de Search&amp;Promote 8.14.0 (22/05/2014)](c-searchpromote-release-notes/c-rn-05-22-14-version-814.md)
    + [Notas de la versión de Search&amp;Promote 8.13.0 (16/04/2014)](c-searchpromote-release-notes/c-rn-04-16-14-version-813.md)
    + [Notas de la versión de Search&amp;Promote 8.12.0 (16/01/2014)](c-searchpromote-release-notes/c-rn-01-16-14-version-812.md)
    + [Notas de la versión de Search&amp;Promote 8.11.0 (29/10/2013)](c-searchpromote-release-notes/c-rn-10-17-13-version-811.md)
-   + [Notas de la versión de Search&amp;Promote 8.10.1 (18/07/2013)](c-searchpromote-release-notes/c-rn-07-18-13-version-810.md)
-   + [Notas de la versión de Search&amp;Promote 8.9.8 (23/05/2013)](c-searchpromote-release-notes/c-rn-05-23-13-version-898.md)
-   + [Notas de la versión de Search&amp;Promote 8.9.6 (21/03/2013)](c-searchpromote-release-notes/c-rn-03-21-13-version-896.md)
-   + [Notas de la versión de Search&amp;Promote 8.9.5 (21/02/2013)](c-searchpromote-release-notes/c-rn-02-21-13-version-895.md)
-   + [Notas de la versión de Search&amp;Promote 8.9.4 (17/01/2013)](c-searchpromote-release-notes/c-rn-01-17-13-version-894.md)
+   + [Notas de la versión 8.10.1 de Search&amp;Promote (18/07/2013)](c-searchpromote-release-notes/c-rn-07-18-13-version-810.md)
+   + [Notas de la versión 8.9.8 (23/05/2013)](c-searchpromote-release-notes/c-rn-05-23-13-version-898.md)
+   + [Notas de la versión 8.9.6 de Search&amp;Promote (21/03/2013)](c-searchpromote-release-notes/c-rn-03-21-13-version-896.md)
+   + [Notas de la versión 8.9.5 de Search&amp;Promote (21/02/2013)](c-searchpromote-release-notes/c-rn-02-21-13-version-895.md)
+   + [Notas de la versión 8.9.4 de Search&amp;Promote (17/01/2013)](c-searchpromote-release-notes/c-rn-01-17-13-version-894.md)
    + [Notas de la versión de Search&amp;Promote 8.9.3 (01/11/2012)](c-searchpromote-release-notes/c-rn-11-01-12-version-893.md)
-   + [Notas de la versión de Search&amp;Promote 8.9.2 (13/09/2012)](c-searchpromote-release-notes/c-rn-09-13-12-version-892.md)
-   + [Notas de la versión de Search&amp;Promote 8.9.1 (16/08/2012)](c-searchpromote-release-notes/c-rn-08-16-12-version-891.md)
-   + [Notas de revisión de Search&amp;Promote 8.9 (19/07/2012)](c-searchpromote-release-notes/c-rn-07-19-12-version-89.md)
+   + [Notas de la versión 8.9.2 de Search&amp;Promote (13/09/2012)](c-searchpromote-release-notes/c-rn-09-13-12-version-892.md)
+   + [Notas de la versión 8.9.1 de Search&amp;Promote (16/08/2012)](c-searchpromote-release-notes/c-rn-08-16-12-version-891.md)
+   + [Notas de la versión 8.9 de Search&amp;Promote (19/07/2012)](c-searchpromote-release-notes/c-rn-07-19-12-version-89.md)
    + [Notas de la versión de Search&amp;Promote 8.8.1](c-searchpromote-release-notes/c-rn-05-31-12-version-881.md)
    + [Notas de la versión de Search&amp;Promote 8.8](c-searchpromote-release-notes/c-rn-04-26-12-version-88.md)
    + [Notas de la versión de Search&amp;Promote 8.7.2](c-searchpromote-release-notes/c-maintenance-release-03-29-12-version-872.md)
@@ -63,7 +67,7 @@ source-git-commit: d51f7db6830155a8efde096a0676281a6e1332d7
    + [Diccionarios](c-about-linguistics-menu/c-about-dictionaries.md)
    + [Palabras e idioma](c-about-linguistics-menu/c-about-words-and-language.md)
    + [Quizás quiso decir](c-about-linguistics-menu/c-about-did-you-mean.md)
-   + [Anulaciones de expansión de consultas](c-about-linguistics-menu/c-about-query-expansion-overrides.md)
+   + [Anulaciones de expansión de consulta](c-about-linguistics-menu/c-about-query-expansion-overrides.md)
    + [Palabras excluidas](c-about-linguistics-menu/c-about-excluded-words.md)
    + [Frases comunes](c-about-linguistics-menu/c-about-common-phrases.md)
 + [Simulador](c-about-simulator.md)
@@ -89,7 +93,7 @@ source-git-commit: d51f7db6830155a8efde096a0676281a6e1332d7
    + [Reescribir reglas](c-about-settings-menu/c-about-rewrite-rules-menu.md)
    + [Adobe Analytics  ](c-about-settings-menu/c-about-adobe-analytics-menu.md)
    + [SEO](c-about-settings-menu/c-about-seo.md)
-   + [Mi perfil](c-about-settings-menu/c-about-my-profile-menu.md)
+   + [Mi Perfil](c-about-settings-menu/c-about-my-profile-menu.md)
    + [Opciones de cuenta](c-about-settings-menu/c-about-account-options-menu.md)
    + [Usuarios](c-about-settings-menu/c-about-users-menu.md)
 + [Uso de cuentas de Search&amp;Promote](c-about-accounts-menu.md)
@@ -99,6 +103,6 @@ source-git-commit: d51f7db6830155a8efde096a0676281a6e1332d7
    + [Búsqueda de proximidad](c-appendices/r-about-proximity-search.md)
    + [Plantillas](c-appendices/c-templates.md)
    + [Parámetros de CGI](c-appendices/c-cgiparameters.md)
-   + [Buscar formularios](c-appendices/c-searchforms.md)
+   + [proximidad de formularios](c-appendices/c-searchforms.md)
    + [Resultados de la búsqueda guiada](c-appendices/c-guidedsearchoutput.md)
    + [Preguntas más frecuentes](c-appendices/c-faq.md)
