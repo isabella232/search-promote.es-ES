@@ -3,17 +3,17 @@ cloud: experience-cloud
 product: Adobe Search&amp;Promote
 audience: end-user
 user-guide-title: Adobe Search&amp;Guía de promoción
-breadcrumb-title: Adobe Search&amp;Promote Guide
+breadcrumb-title: Adobe Search&amp;Guía de promoción
 translation-type: tm+mt
 source-git-commit: e211b8d01a8dea5b4232f3daeb430cb7ffe7ea76
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '254'
 ht-degree: 10%
 
 ---
 
 
-# Guía de Adobe Search and Promote {#using}
+# Adobe Search and Promote Guide {#using}
 
 + [Información general sobre la documentación de Search&amp;Promote](sp-home.md)
 + Release notes {#release-notes}
@@ -103,6 +103,6 @@ ht-degree: 10%
    + [Búsqueda de proximidad](c-appendices/r-about-proximity-search.md)
    + [Plantillas](c-appendices/c-templates.md)
    + [Parámetros de CGI](c-appendices/c-cgiparameters.md)
-   + [proximidad de formularios](c-appendices/c-searchforms.md)
+   + [Buscar formularios](c-appendices/c-searchforms.md)
    + [Resultados de la búsqueda guiada](c-appendices/c-guidedsearchoutput.md)
    + [Preguntas más frecuentes](c-appendices/c-faq.md)
