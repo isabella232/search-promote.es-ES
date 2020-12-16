@@ -8,6 +8,9 @@ topic: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 3%
 
 ---
 
@@ -16,9 +19,9 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 Puede definir los formatos de fecha que se utilizan al analizar e indexar cualquier campo con un tipo de datos de &quot;fecha&quot;.
 
-El formato de la fecha y la hora se especifica con una cadena de formato. La cadena de formato consta de cero o más especificaciones de conversión (una especificación de conversión consiste en un signo de porcentaje y otro carácter) y caracteres ordinarios. Se proporciona una lista predeterminada de cadenas de formato de fecha para cada campo de fecha.
+El formato de la fecha y la hora se especifica con una cadena de formato. La cadena de formato consta de cero o más especificaciones de conversión (una especificación de conversión consiste en un signo de porcentaje y otro carácter) y caracteres ordinarios. Se proporciona una lista predeterminada de las cadenas de formato de fecha para cada campo de fecha.
 
-Usted tiene control absoluto sobre esta lista y puede agregarla o modificarla para satisfacer las necesidades del sitio. La cadena de formato superior tiene prioridad y las cadenas de formato subsiguientes solo se utilizan si el análisis del contenido de una etiqueta de metadatos determinada produce un error.
+Usted tiene control total sobre esta lista y puede agregarla o modificarla para adaptarla a las necesidades del sitio. La cadena de formato superior tiene prioridad y las cadenas de formato subsiguientes solo se utilizan si el análisis del contenido de una etiqueta de metadatos determinada produce un error.
 
 Por ejemplo, supongamos que ha especificado los siguientes formatos de fecha:
 
@@ -30,7 +33,7 @@ Por ejemplo, supongamos que ha especificado los siguientes formatos de fecha:
  </tbody> 
 </table>
 
-El primer formato, &quot;%B %d, %Y %T %Z&quot;, coincide con fechas como la siguiente &quot;PDT del 20 de septiembre de 2014 a las 13:12:00&quot;. Si el contenido de la etiqueta de metadatos no se puede analizar con esta cadena de formato, se prueba el siguiente formato disponible &quot;%b %d, %Y %T %Z&quot;. Este formato coincide con fechas como las siguientes: &quot;Sep 20, 2014, 3:12:00 PDT&quot;. Si el contenido de la etiqueta de metadatos no se puede analizar con esta cadena de formato, la búsqueda/comercialización del sitio desplaza hacia abajo en la lista de cadenas de formato hasta que encuentra una cadena de formato que funcione.
+El primer formato, &quot;%B %d, %Y %T %Z&quot;, coincide con fechas como la siguiente &quot;PDT del 20 de septiembre de 2014 a las 13:12:00&quot;. Si el contenido de la etiqueta de metadatos no se puede analizar con esta cadena de formato, se prueba el siguiente formato disponible &quot;%b %d, %Y %T %Z&quot;. Este formato coincide con fechas como las siguientes: &quot;Sep 20, 2014, 3:12:00 PDT&quot;. Si el contenido de las etiquetas de metadatos no se puede analizar con esta cadena de formato, la búsqueda/comercialización del sitio baja la lista de las cadenas de formato hasta encontrar una cadena de formato que funcione.
 
 En la tabla siguiente se describen las cadenas de formato de fecha disponibles:
 
@@ -151,7 +154,7 @@ En la tabla siguiente se describen las cadenas de formato de fecha disponibles:
 
 **Cadenas de formato predeterminadas**
 
-Las plantillas utilizan las siguientes cadenas de formato predeterminadas. Puede agregarla a esta lista o editarla según sea necesario.
+Las plantillas utilizan las siguientes cadenas de formato predeterminadas. Puede agregar a esta lista o editarla según sea necesario.
 
 <table> 
  <thead> 
