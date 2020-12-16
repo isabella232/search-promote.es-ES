@@ -8,13 +8,16 @@ topic: Release Notes,Site search and merchandising
 uuid: 7bc7bcb6-f47f-4e05-94e5-a22a13a187b7
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 81%
 
 ---
 
 
-# Search&amp;Promote 8.9.3 Release Notes (11/01/2012){#search-promote-release-notes}
+# Notas de la versión de Search&amp;Promote 8.9.3 (01/11/2012){#search-promote-release-notes}
 
-## Search&amp;Promote 8.9.3 Release Notes (11/01/2012) {#concept_85F5B4B4C40C43FEA3AD63E6EA5593CF}
+## Notas de la versión de Search&amp;Promote 8.9.3 (01/11/2012) {#concept_85F5B4B4C40C43FEA3AD63E6EA5593CF}
 
 <table> 
  <thead> 
@@ -52,10 +55,10 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 **Correcciones**
 
-* Business rules worked inconsistently when there was a [!DNL Stage] index.
+* Las reglas comerciales funcionaban de manera inconsistente cuando había un índice [!DNL Stage].
 * Las reglas de clasificación automática ahora se aplican a páginas de aterrizaje pregrabadas.
 
-   Consulte la tabla de opciones en [Adición de una regla](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A)de clasificación.
+   Consulte la tabla de opciones en [Añadir una regla de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A).
 
 * [!DNL promosearch.cgi] no devolvía promociones.
 
@@ -65,7 +68,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
    Consulte [Acerca de los titulares](../c-about-design-menu/c-about-banners.md#concept_5BBE01FEC6134393B43CC917C8CC64DA).
 
-* **[!UICONTROL Did You Mean]** la caché de consultas de búsqueda ahora está deshabilitada.
+* **[!UICONTROL Did You Mean]** el almacenamiento en caché de consultas de búsqueda ahora está deshabilitado.
 
    Consulte [Acerca de ¿quiso decir?](../c-about-linguistics-menu/c-about-did-you-mean.md#concept_7D4F3C29EF184B538B8AE2ECAE0CDC5E).
 
