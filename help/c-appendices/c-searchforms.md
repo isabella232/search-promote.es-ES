@@ -8,6 +8,9 @@ topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
 source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
+workflow-type: tm+mt
+source-wordcount: '2921'
+ht-degree: 0%
 
 ---
 
@@ -84,9 +87,9 @@ El formulario de búsqueda de casillas de verificación se genera con el siguien
 <input type="checkbox" name="sp_k" value="About Adobe">About Adobe<br>
 ```
 
-## Search results {#section_BBDD5B44E2B349BC88D937F44583D350}
+## Resultados de la búsqueda {#section_BBDD5B44E2B349BC88D937F44583D350}
 
-La etiqueta de plantilla de búsqueda `<search-input-collections>` genera el cuadro de lista de la colección HTML en los resultados de búsqueda y selecciona automáticamente la colección especificada en la búsqueda. Si desea generar casillas de verificación en su lugar, utilice la `<search-input>` etiqueta en lugar de la `<input>` etiqueta de la siguiente manera:
+La etiqueta de plantilla de búsqueda `<search-input-collections>` genera el código HTML del cuadro de lista de la colección en los resultados de búsqueda y selecciona automáticamente la colección especificada en la búsqueda. Si desea generar casillas de verificación en su lugar, utilice la etiqueta `<search-input>` en lugar de la etiqueta `<input>` de la siguiente manera:
 
 ```
 <search-input type="checkbox" name="sp_k" value="">All of Adobe<br> 
@@ -96,7 +99,7 @@ La etiqueta de plantilla de búsqueda `<search-input-collections>` genera el cua
 <search-input type="checkbox" name="sp_k" value="About Adobe">About Adobe<br>
 ```
 
-La `<search-input>` etiqueta genera una `<input>` etiqueta e incluye el `checked` atributo si la colección se especificó en la búsqueda.
+La etiqueta `<search-input>` genera una etiqueta `<input>` e incluye el atributo `checked` si la colección se especificó en la búsqueda.
 
 ## Uso de marcos con formularios {#reference_82CDDDA1E37042E4849EBF7EA05407C5}
 
@@ -115,7 +118,7 @@ Si su sitio utiliza marcos, puede especificar un marco de destinatario para los 
 
 Si su sitio no utiliza marcos, lo más probable es que no desee cambiar el nombre de destinatario predeterminado.
 
-Si crea una plantilla de resultados de búsqueda personalizada para su sitio web, puede anular la configuración especificada utilizando el `target` atributo de la `<search-link>` etiqueta .
+Si crea una plantilla de resultados de búsqueda personalizada para su sitio Web, puede anular la configuración especificada mediante el atributo `target` de la etiqueta `<search-link>`.
 
 El proceso de configuración de conjuntos de marcos es el siguiente:
 
@@ -131,34 +134,34 @@ El proceso de configuración de conjuntos de marcos es el siguiente:
   <tr> 
    <td colname="col1"> <p>1 </p> </td> 
    <td colname="col02"> <p>Añada el formulario al marco deseado en la página web. </p> </td> 
-   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Añadiendo el código del formulario de búsqueda en un marco de su ... </a> </p> </td> 
+   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Añadiendo el código del formulario de búsqueda en un marco de su ...  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col02"> <p>Configure el marco de destinatario para la página de resultados de búsqueda. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Configuración del marco de destinatario para la página de resultados de búsqueda </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Configuración del marco de destinatario para la página de resultados de búsqueda  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
    <td colname="col02"> <p>Establezca el destinatario de los vínculos realizados desde la página de resultados de la búsqueda. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Estableciendo el destinatario para los vínculos realizados a partir de los resultados de búsqueda... </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Estableciendo el destinatario para los vínculos realizados a partir de los resultados de búsqueda...  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
    <td colname="col02"> <p>Edite las páginas de marcos de navegación para evitar que se indiquen. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Editando las páginas de marcos de navegación para evitar que se encuentren... </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Editando las páginas de marcos de navegación para evitar que se encuentren...  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
    <td colname="col02"> <p>Pruebe el formulario de búsqueda. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Prueba del formulario de búsqueda </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Prueba del formulario de búsqueda  </a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Añadir el código del formulario de búsqueda en un marco de la página web {#section_BAA8A502BB2243F8B5FF9783CDF2BFFD}
+## Añadir el código del formulario de búsqueda en un marco de la página Web {#section_BAA8A502BB2243F8B5FF9783CDF2BFFD}
 
-1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**.
+1. En el menú del producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**.
 
    El código del formulario de búsqueda HTML tiene un aspecto similar al siguiente:
 
@@ -171,7 +174,7 @@ El proceso de configuración de conjuntos de marcos es el siguiente:
    </form>
    ```
 
-1. En la [!DNL Standard Form Source] página, seleccione y copie el código de formulario de búsqueda HTML que aparece en el campo de texto.
+1. En la página [!DNL Standard Form Source], seleccione y copie el código de formulario de búsqueda HTML que aparece en el campo de texto.
 1. Pegue el código del formulario de búsqueda en el marco que desee en el conjunto de marcos.
 
    En el ejemplo siguiente, el código del formulario de búsqueda se pega en el marco de navegación (el marco vertical estrecho del lado izquierdo de la pantalla).
@@ -213,22 +216,22 @@ El nombre del destinatario puede ser el nombre de un marco especificado en el HT
 
 * `target="_self"` Valor predeterminado. Abra los vínculos en la misma ventana en la que residen los resultados de la búsqueda. En este caso, la ventana de resultados de búsqueda original. Utilice esta opción para anular un destinatario base asignado globalmente.
 
-* `target="_parent"` Abra los vínculos en el conjunto de marcos principal de la página de vínculos. Si el documento no tiene un elemento principal, funciona como `"_self"` de forma predeterminada.
+* `target="_parent"` Abra los vínculos en el conjunto de marcos principal de la página de vínculos. Si el documento no tiene un elemento principal, entonces funciona como `"_self"` de forma predeterminada.
 
-* `target="_top"` Abra los vínculos en la ventana completa. Si el documento ya está en la parte superior, funciona como `"_self"` de forma predeterminada. Utilice esta opción para salir de un anidado de fotogramas profundos arbitrariamente.
+* `target="_top"` Abra los vínculos en la ventana completa. Si el documento ya está en la parte superior, entonces funciona como `"_self"` de forma predeterminada. Utilice esta opción para salir de un anidado de fotogramas profundos arbitrariamente.
 
-Por ejemplo, para establecer el marco de destino de `_blank` destinatario, puede editar la plantilla de la siguiente manera:
+Por ejemplo, para establecer el marco de destino de destinatario `_blank` puede editar la plantilla de la siguiente manera:
 
-1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
+1. En el menú del producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
 
-1. En la tabla de la [!DNL Staged Templates] página, haga clic en el nombre de la plantilla con el marco de destino de destino.
-1. Busque la `<search-link>` etiqueta . Your default `<search-link>` tag should look similar to the following:
+1. En la página [!DNL Staged Templates], en la tabla, haga clic en el nombre de la plantilla con el marco de destino de destino de destino.
+1. Busque la etiqueta `<search-link>`. La etiqueta predeterminada `<search-link>` debe tener un aspecto similar al siguiente:
 
    `<search-link><search-title length=100></search-link>`
 
-1. Añada el destinatario de marco a la `<search-link>` etiqueta . En el ejemplo anterior, introduzca `target="_blank"`. Asegúrese de incluir el subrayado y las comillas alrededor del valor de destinatario.
+1. Añada el destinatario de marco a la etiqueta `<search-link>`. En el ejemplo anterior, escriba `target="_blank"`. Asegúrese de incluir el subrayado y las comillas alrededor del valor de destinatario.
 
-   Ahora la `<search-link>` etiqueta aparece como se indica a continuación:
+   La etiqueta `<search-link>` ahora aparece como se indica a continuación:
 
    `<search-link target="_blank"><search-title length=100></search-link>`
 
@@ -236,10 +239,10 @@ Cuando un visitante del sitio elige un vínculo de resultados de búsqueda, la p
 
 ## Edición de las páginas de marcos de navegación para evitar que se indiquen {#section_C62E5F0EE1294D5EBD97E123E54433FC}
 
-Normalmente, desea excluir los marcos de navegación para que no se indiquen con los resultados de búsqueda. Para lograr esta funcionalidad, puede agregar `noindex` meta tag a esas páginas.
+Normalmente, desea excluir los marcos de navegación para que no se indiquen con los resultados de búsqueda. Para lograr esta funcionalidad, puede agregar `noindex` etiqueta meta a esas páginas.
 
 1. Abra el origen de la página HTML para el marco de navegación.
-1. Añada la siguiente etiqueta meta dentro de la `<head>` sección de su HTML:
+1. Añada la siguiente etiqueta meta dentro de la sección `<head>` del HTML:
 
    `<meta name="robots" content="noindex">`
 
@@ -264,6 +267,7 @@ Normalmente, desea excluir los marcos de navegación para que no se indiquen con
    * La página de resultados de búsqueda aparece en el marco de destinatario especificado.
    * Los vínculos de los resultados de búsqueda se encuentran en el marco de destinatario especificado.
    * Los resultados del marco de navegación no aparecen.
+
    Si tiene problemas con los marcos después de probar el formulario de búsqueda, póngase en contacto con el servicio de asistencia al cliente.
 
 ## Ejemplo de formulario de búsqueda avanzada {#reference_82E1051918744EBA88A01E9E6AE42C4A}
@@ -286,9 +290,9 @@ Con el siguiente formulario de búsqueda avanzada de ejemplo, el resto de este t
 
 Puede realizar la vista de todo el código HTML de formulario de búsqueda avanzada del ejemplo anterior.
 
-Consulte Código [HTML de formulario de búsqueda](#reference_9AAD4A46B68D4D48865508982CB86DB9)avanzada.
+Consulte [Código HTML de formulario de búsqueda avanzada](#reference_9AAD4A46B68D4D48865508982CB86DB9).
 
-Consulte [Configuración de CSS](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)de finalización automática.
+Consulte [Configuración de CSS de finalización automática](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
 
 Consulte [Copia del código HTML del formulario de búsqueda en el...](../c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
 
@@ -304,41 +308,41 @@ Consulte [Copia del código HTML del formulario de búsqueda en el...](../c-abou
  <tbody> 
   <tr> 
    <td colname="col2"> <p>Habilitar las opciones avanzadas de formulario de búsqueda (campo oculto) </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_advanced </span> </p> </td> 
-   <td colname="col3"> <p> <span class="syntax html codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> </p> </td> 
-   <td colname="col4"> <p>Habilite o deshabilite las opciones de búsqueda avanzada. Por ejemplo, puede colocar un formulario de búsqueda estándar en la página de inicio con un vínculo a una segunda página que contenga un formulario avanzado. En este caso, colocaría una copia del formulario estándar dentro de <span class="codeph"> &lt;search-if-not-advanced&gt;...etiquetas de plantilla &lt;/search-if-not-advanced&gt; </span> . </p> <p>Un cliente que realiza una búsqueda desde el formulario estándar ve un formulario de búsqueda estándar cuando se muestran los resultados de la búsqueda. En la pantalla de formulario de búsqueda avanzada, se incluye la etiqueta <span class="codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> con las demás opciones de formulario avanzadas. </p> <p>También se incluye una copia del formulario de búsqueda avanzada dentro del &lt;search-if-advanced&gt;... &lt;/search-if-advanced&gt; etiquetas de plantilla. Un cliente que realiza una búsqueda desde el formulario de búsqueda avanzada ve un formulario de búsqueda avanzada cuando se muestran los resultados de la búsqueda. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_advanced  </span> </p> </td> 
+   <td colname="col3"> <p> <span class="syntax html codeph"> &lt;input type="hidden" name="sp_advanced" value="1"&gt; </span> </p> </td> 
+   <td colname="col4"> <p>Habilite o deshabilite las opciones de búsqueda avanzada. Por ejemplo, puede colocar un formulario de búsqueda estándar en la página de inicio con un vínculo a una segunda página que contenga un formulario avanzado. En este caso, colocaría una copia del formulario estándar dentro de <span class="codeph"> &lt;search-if-not-advanced&gt;...&lt;/search-if-not-advanced&gt; </span> etiquetas de plantilla. </p> <p>Un cliente que realiza una búsqueda desde el formulario estándar ve un formulario de búsqueda estándar cuando se muestran los resultados de la búsqueda. En la pantalla de formulario de búsqueda avanzada, se incluye la etiqueta <span class="codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> con las demás opciones de formulario avanzadas. </p> <p>También se incluye una copia del formulario de búsqueda avanzada dentro del &lt;search-if-advanced&gt;... &lt;/search-if-advanced&gt; etiquetas de plantilla. Un cliente que realiza una búsqueda desde el formulario de búsqueda avanzada ve un formulario de búsqueda avanzada cuando se muestran los resultados de la búsqueda. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Coincidir con cualquier, todo o frase </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_p </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_p  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Allow&nbsp;"any,"&nbsp;"all,"&nbsp;or&nbsp;"phrase"&nbsp;--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="any"&gt;Any&nbsp;word 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="all"&nbsp;checked&gt;All&nbsp;words 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="phrase"&gt;Exact&nbsp;phrase </code> </p> </td> 
-   <td colname="col4"> <p>Permita que el cliente especifique que "cualquier palabra", "todas las palabras" o "la frase exacta" deben estar presentes para que un documento coincida. Cuando se especifica el <span class="codeph"> parámetro sp_p </span> , los clientes no necesitan utilizar "+", "-" o ambos en la consulta de búsqueda. </p> <p> Si se omite el <span class="codeph"> parámetro sp_p </span> , o si se define como "" o "any", los clientes podrán seguir utilizando los especificadores "+" y "-". Si el parámetro <span class="codeph"> sp_p </span> se establece en "all" o "phrase", se omiten los parámetros "+" y "-" especificados. </p> <p>Puede obtener más información sobre el uso de "+" y "-" en una búsqueda. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">Acerca de las búsquedas </a>. </p> </td> 
+   <td colname="col4"> <p>Permita que el cliente especifique que "cualquier palabra", "todas las palabras" o "la frase exacta" deben estar presentes para que un documento coincida. Cuando se especifica el parámetro <span class="codeph"> sp_p </span>, los clientes no necesitan utilizar "+", "-" o ambos en la consulta de búsqueda. </p> <p> Si se omite el parámetro <span class="codeph"> sp_p </span> o si se establece en "" o "any", los clientes podrán seguir utilizando los especificadores "+" y "-". Si el parámetro <span class="codeph"> sp_p </span> está establecido en "all" o "phrase", se omiten los parámetros "+" y "-" especificados. </p> <p>Puede obtener más información sobre el uso de "+" y "-" en una búsqueda. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">Acerca de las búsquedas </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Coincidencia de sonido similar </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_w </span> </p> <p>y </p> <p> <span class="codeph"> sp_w_control </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_w  </span> </p> <p>y </p> <p> <span class="codeph"> sp_w_control  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;enables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
       &lt;input&nbsp;type=hidden&nbsp;name="sp_w_control"&nbsp;value=1&gt; 
       &lt;input&nbsp;type=checkbox&nbsp;name="sp_w"&nbsp;value="alike"&gt;&nbsp;Sound-alike&nbsp;matching </code> </p> </td> 
-   <td colname="col4"> <p>Permite a los clientes habilitar o deshabilitar la coincidencia de sonido similar. La coincidencia de sonidos similares permite que las consultas de búsqueda mal escritas coincidan con las palabras que "suenan igual" en los documentos. </p> <p>Cuando el parámetro <span class="codeph"> sp_w_control </span> se establece en 1 y el parámetro <span class="codeph"> sp_w </span> se establece en "similar", se activa la casilla de verificación generada, lo que permite la coincidencia de sonido similar de forma predeterminada. </p> <p>Si el parámetro <span class="codeph"> sp_w </span> está establecido en "", la casilla de verificación no está seleccionada. </p> <p>Si no habilitó la coincidencia de sonido similar durante la operación de indexación más reciente, no será posible la coincidencia de sonido similar y se omitirá el parámetro <span class="codeph"> sp_w </span> . Para habilitar la coincidencia de sonido similar, en el menú del producto, haga clic en <span class="uicontrol"> Lingüística </span> &gt; <span class="uicontrol"> Palabras y lenguaje </span> &gt; <span class="uicontrol"> Coincidencia de sonido similar </span>. </p> <p>También puede asignar los parámetros <span class="codeph"> sp_w </span> y <span class="codeph"> sp_w_control </span> de la siguiente manera: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;disables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
+   <td colname="col4"> <p>Permite a los clientes habilitar o deshabilitar la coincidencia de sonido similar. La coincidencia de sonidos similares permite que las consultas de búsqueda mal escritas coincidan con las palabras que "suenan igual" en los documentos. </p> <p>Cuando el parámetro <span class="codeph"> sp_w_control </span> se establece en 1 y el parámetro <span class="codeph"> sp_w </span> se establece en "similar", se activa la casilla de verificación generada, habilitando la coincidencia de sonido similar de forma predeterminada. </p> <p>Si el parámetro <span class="codeph"> sp_w </span> está establecido en "", la casilla de verificación no está seleccionada. </p> <p>Si no habilitó la coincidencia de sonido similar durante la operación de indexación más reciente, no será posible la coincidencia de sonido similar y se omitirá el parámetro <span class="codeph"> sp_w </span>. Para habilitar la coincidencia de sonido similar, en el menú del producto, haga clic en <span class="uicontrol"> Lingüística </span> &gt; <span class="uicontrol"> Palabras e idioma </span> &gt; <span class="uicontrol"> Coincidencia de sonido similar </span>. </p> <p>También puede asignar los parámetros <span class="codeph"> sp_w </span> y <span class="codeph"> sp_w_control </span> de la siguiente manera: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;disables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
       &lt;input&nbsp;type=hidden&nbsp;name="sp_w_control"&nbsp;value=0&gt; 
       &lt;input&nbsp;type=checkbox&nbsp;name="sp_w"&nbsp;value="exact"&gt; 
-      No&nbsp;sound-alike&nbsp;matching </code> </p> <p>En este caso, cuando el parámetro <span class="codeph"> sp_w_control </span> se establece en 0 y el parámetro <span class="codeph"> sp_w </span> se establece en "exacto", la coincidencia de sonido se desactiva de forma predeterminada. Si el parámetro <span class="codeph"> sp_w </span> está establecido en "", se habilita la coincidencia de sonido similar. </p> </td> 
+      No&nbsp;sound-alike&nbsp;matching </code> </p> <p>En este caso, cuando el parámetro <span class="codeph"> sp_w_control </span> se establece en 0 y el parámetro <span class="codeph"> sp_w </span> se establece en "exacto", la coincidencia similar al sonido se desactiva de forma predeterminada. Si el parámetro <span class="codeph"> sp_w </span> está establecido en "", se habilita la coincidencia de sonido similar. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Coincidencia de intervalo de fechas </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_d </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_d  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--Specifies&nbsp;type&nbsp;of&nbsp;date&nbsp;range&nbsp;searching&nbsp;to&nbsp;perform.--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="custom"&nbsp;checked&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="specific"&gt; </code> </p> </td> 
-   <td colname="col4"> <p>El parámetro <span class="codeph"> sp_d </span> especifica una coincidencia de intervalo de datos personalizada que se va a realizar o una coincidencia de intervalo de fechas específica que se va a realizar. </p> <p>En el formulario de búsqueda avanzada predeterminado, esta opción se presenta como un grupo de botones de radio con una lista desplegable de intervalos de fechas "personalizados", tal como se genera con un parámetro <span class="codeph"> sp_date_range </span> . También incluye y un grupo de fechas de inicio y finalización "específicas" que se generan con los parámetros <span class="codeph"> sp_inicio_day </span>, <span class="codeph"> sp_inicio_month </span>, <span class="codeph"> sp_inicio_year </span>, <span class="codeph"> sp_end_day </span>, <span class="codeph"> sp_end_month </span><span class="codeph"> </span> y sp_end_year_year. </p> <p>Un intervalo de fechas "personalizado" es un intervalo de fechas con nombre para buscar. Por ejemplo, "En cualquier momento", "Hoy", "En el último año", etc. </p> <p>Un intervalo de fechas "específico" consiste en una fecha de inicio y una fecha de finalización. Por ejemplo, desde "8 de septiembre de 2009 hasta el 18 de octubre de 2011". </p> </td> 
+   <td colname="col4"> <p>El parámetro <span class="codeph"> sp_d </span> especifica una coincidencia de intervalo de datos personalizada para realizar o una coincidencia de intervalo de fechas específica para realizar. </p> <p>En el formulario de búsqueda avanzada predeterminado, esta opción se presenta como un grupo de botones de radio con una lista desplegable de intervalos de fechas "personalizados", tal como se genera con un parámetro <span class="codeph"> sp_date_range </span>. También incluye un grupo de fechas de inicio y finalización "específicas" que se generan con <span class="codeph"> sp_inicio_day </span>, <span class="codeph"> sp_inicio_month </span>, <span class="codeph"> sp_inicio_year </span>, <span class="codeph"> sp_end_day </span>, <span class="codeph"> sp_end_month </span> y <span class="codeph"> sp_end_year </span> parámetros. </p> <p>Un intervalo de fechas "personalizado" es un intervalo de fechas con nombre para buscar. Por ejemplo, "En cualquier momento", "Hoy", "En el último año", etc. </p> <p>Un intervalo de fechas "específico" consiste en una fecha de inicio y una fecha de finalización. Por ejemplo, desde "8 de septiembre de 2009 hasta el 18 de octubre de 2011". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Coincidencia de intervalo de fechas: intervalo de fechas personalizado </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_date_range </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_date_range  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--Selection&nbsp;list&nbsp;for&nbsp;custom&nbsp;date&nbsp;range.--&gt; 
       &lt;select&nbsp;name="sp_date_range"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=-1&nbsp;selected&gt;Anytime&lt;/option&gt; 
@@ -351,7 +355,7 @@ Consulte [Copia del código HTML del formulario de búsqueda en el...](../c-abou
       &lt;option&nbsp;value=365&gt;Within&nbsp;the&nbsp;last&nbsp;year&lt;/option&gt; 
       &lt;option&nbsp;value=730&gt;Within&nbsp;the&nbsp;last&nbsp;two&nbsp;years&lt;/option&gt; 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>El parámetro <span class="codeph"> sp_date_range </span> se utiliza para crear un intervalo de fechas "personalizado". Por ejemplo: "En cualquier momento", "Hoy", "En el último año" y así sucesivamente. </p> <p>Los valores buenos que son iguales o iguales a cero especifican el número de días de búsqueda antes de hoy. Por ejemplo, un valor de 0 especifica "Hoy", un valor de "1" especifica "Hoy y Ayer", un valor de "30" especifica "En los últimos 30 días", etc. Los valores inferiores a cero especifican un rango personalizado de la siguiente manera: </p> <p> 
+   <td colname="col4"> <p>El parámetro <span class="codeph"> sp_date_range </span> se utiliza para crear un intervalo de fechas "personalizado". Por ejemplo: "En cualquier momento", "Hoy", "En el último año" y así sucesivamente. </p> <p>Los valores buenos o iguales a cero especifican el número de días que se buscarán antes de hoy. Por ejemplo, un valor de 0 especifica "Hoy", un valor de "1" especifica "Hoy y Ayer", un valor de "30" especifica "En los últimos 30 días", etc. Los valores inferiores a cero especifican un rango personalizado de la siguiente manera: </p> <p> 
      <ul id="ul_E65DDE33883F441F9730F315E485AD98"> 
       <li id="li_83E9466AB9D7438A8544001F6B007186"> <p>-1 = "En cualquier momento", lo mismo que especificar sin intervalo de fechas. </p> </li> 
       <li id="li_38AB8D97179A47F9B860A96EA09119BB"> <p>-2 = "Esta semana", que busca de domingo a sábado de la semana actual. </p> </li> 
@@ -364,19 +368,19 @@ Consulte [Copia del código HTML del formulario de búsqueda en el...](../c-abou
   </tr> 
   <tr> 
    <td colname="col2"> <p>Coincidencia de intervalo de fechas: Fechas de inicio </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_inicio_day, sp_inicio_month, sp_inicio_year </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_inicio_day, sp_inicio_month, sp_inicio_year  </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
    <td colname="col4"> <p>Este triplete de valores numéricos especifica la fecha de inicio de un intervalo de fechas específico para la búsqueda. Asegúrese de especificar los tres valores porque se omite una fecha especificada parcialmente. </p> <p>Es legal especificar únicamente la fecha de inicio, sólo la fecha de finalización o la fecha de inicio y la fecha de finalización. Si solo se especifica la fecha de inicio, la búsqueda incluye documentos coincidentes con fecha posterior o posterior a la fecha de inicio. Si sólo se especifica la fecha de finalización, la búsqueda incluye documentos coincidentes en la fecha de finalización o antes de ella. Si se especifican la fecha de inicio y la fecha de finalización, la búsqueda incluye documentos coincidentes desde la fecha de inicio hasta la fecha de finalización. </p> <p>Todas las fechas se buscan en relación con el tiempo medio de Greenwich. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Coincidencia de intervalo de fechas: fechas de finalización </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_end_day, sp_end_month, sp_end_year </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_end_day, sp_end_month, sp_end_year  </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
    <td colname="col4"> <p>Este triplete de valores numéricos especifica la fecha de finalización del intervalo de fechas específico que se va a buscar. Asegúrese de especificar los tres valores porque se omite una fecha especificada parcialmente. </p> <p>Es legal especificar únicamente la fecha de inicio, sólo la fecha de finalización, o tanto la fecha de inicio como la de finalización. Si solo se especifica la fecha de inicio, la búsqueda incluye documentos coincidentes con fecha posterior o posterior a la fecha de inicio. Si sólo se especifica la fecha de finalización, la búsqueda incluye documentos coincidentes en la fecha de finalización o antes de ella. Si se especifican el inicio y la fecha de finalización, la búsqueda incluye documentos coincidentes desde la fecha de inicio hasta la fecha de finalización. </p> <p>Todas las fechas se buscan en relación con el tiempo medio de Greenwich. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Dentro del campo de búsqueda </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_x </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_x  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;List&nbsp;box&nbsp;selects&nbsp;the&nbsp;search&nbsp;field&nbsp;--&gt; 
       Within&nbsp;&lt;select&nbsp;name="sp_x"&nbsp;size=1&gt; 
       &lt;option&nbsp;value="any"&nbsp;selected&gt;Anywhere&lt;/option&gt; 
@@ -389,11 +393,11 @@ Consulte [Copia del código HTML del formulario de búsqueda en el...](../c-abou
       &lt;option&nbsp;value="target"&gt;Target&lt;/option&gt; 
       &lt;option&nbsp;value="date"&gt;Date&lt;/option&gt;* 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>El cuadro de lista <span class="codeph"> sp_x </span> permite a los clientes especificar el campo en el que se buscarán las cadenas de consulta. </p> <p>Los clientes pueden elegir entre todos los campos, el título, la descripción del documento, las palabras clave del documento, el cuerpo, el texto alternativo, la dirección URL del documento, la fecha o las palabras clave del destinatario. </p> <p>Cuando se utiliza el parámetro <span class="codeph"> sp_x </span> , los clientes no necesitan especificar "title:", "desc:", "keys:", "body:", "alt:", "url:" y "destinatario:" en las cadenas de consulta de búsqueda. </p> <p>Si se omite el parámetro <span class="codeph"> sp_x </span> , o si se define como "" o "any", los clientes podrán seguir utilizando las cadenas del especificador de campos. Si el parámetro <span class="codeph"> sp_x </span> se establece en un campo específico, se omiten todas las demás cadenas de especificador de campos. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">Acerca de las búsquedas </a>. </p> </td> 
+   <td colname="col4"> <p>El cuadro de lista <span class="codeph"> sp_x </span> permite a los clientes especificar el campo en el que buscar las cadenas de consulta. </p> <p>Los clientes pueden elegir entre todos los campos, el título, la descripción del documento, las palabras clave del documento, el cuerpo, el texto alternativo, la dirección URL del documento, la fecha o las palabras clave del destinatario. </p> <p>Cuando se utiliza el parámetro <span class="codeph"> sp_x </span>, los clientes no necesitan especificar "title:," "desc:", "keys:", "body:", "alt:", "url:" y "destinatario:" en las cadenas de consulta de búsqueda. </p> <p>Si se omite el parámetro <span class="codeph"> sp_x </span>, o si se establece en "" o "any", los clientes podrán seguir utilizando las cadenas del especificador de campos. Si el parámetro <span class="codeph"> sp_x </span> está establecido en un campo específico, se omiten todas las demás cadenas del especificador de campos. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">Acerca de las búsquedas </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Mostrar recuento de resultados </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_c </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_c  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;List&nbsp;box&nbsp;selects&nbsp;number&nbsp;of&nbsp;results&nbsp;to&nbsp;show&nbsp;per&nbsp;page&nbsp;--&gt; 
       Show&nbsp;&lt;select&nbsp;name="sp_c"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=5&gt;5&lt;/option&gt; 
@@ -406,7 +410,7 @@ Consulte [Copia del código HTML del formulario de búsqueda en el...](../c-abou
   </tr> 
   <tr> 
    <td colname="col2"> <p>Mostrar u ocultar resúmenes </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_m </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_m  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Show&nbsp;or&nbsp;hide&nbsp;summaries&nbsp;in&nbsp;search&nbsp;results&nbsp;--&gt; 
       &lt;select&nbsp;name="sp_m"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=1&nbsp;selected&gt;with&lt;/option&gt; 
@@ -418,7 +422,7 @@ Consulte [Copia del código HTML del formulario de búsqueda en el...](../c-abou
   </tr> 
   <tr> 
    <td colname="col2"> <p>Ordenar por resultados </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_s </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_s  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Sort&nbsp;results&nbsp;by&nbsp;relevance&nbsp;or&nbsp;by&nbsp;date&nbsp;--&gt; 
       Sort&nbsp;by&nbsp;&lt;select&nbsp;name="sp_s"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=0&nbsp;selected&gt;relevance&lt;/option&gt; 
@@ -431,13 +435,13 @@ Consulte [Copia del código HTML del formulario de búsqueda en el...](../c-abou
  </tbody> 
 </table>
 
-## Código HTML del formulario de búsqueda avanzada {#reference_9AAD4A46B68D4D48865508982CB86DB9}
+## Código HTML de formulario de búsqueda avanzada {#reference_9AAD4A46B68D4D48865508982CB86DB9}
 
 El código de formulario HTML que se utiliza para generar el formulario de búsqueda avanzada que se muestra en la parte superior del tema de formulario de búsqueda avanzada de muestra.
 
-Consulte [Ejemplo de formulario](#reference_82E1051918744EBA88A01E9E6AE42C4A)de búsqueda avanzada.
+Consulte [Ejemplo de formulario de búsqueda avanzada](#reference_82E1051918744EBA88A01E9E6AE42C4A).
 
-Si utiliza este código, recuerde reemplazar el `sp_a` valor de `sp99999999` por su número de cuenta real.
+Si utiliza este código, recuerde reemplazar el valor `sp_a` de `sp99999999` por su número de cuenta real.
 
 Para encontrar el número de cuenta, en el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Account Settings]**.
 
@@ -635,7 +639,7 @@ Sound-alike matching
 
 Puede agregar el código HTML del formulario de búsqueda avanzada a la plantilla de forma que la opción predeterminada para cualquier parámetro sea la misma que la búsqueda anterior.
 
-En otras palabras, si un cliente hace clic en el botón de radio, puede asegurarse de que el botón de radio está seleccionado de forma predeterminada cuando se muestran los resultados de la búsqueda. **[!UICONTROL Exact phrase]**
+En otras palabras, si un cliente hace clic en el botón de opción **[!UICONTROL Exact phrase]**, puede asegurarse de que el botón de opción esté seleccionado de forma predeterminada cuando se muestren los resultados de la búsqueda.
 
 Esta funcionalidad se logra eliminando todos los especificadores &quot;marcados&quot; o &quot;seleccionados&quot; de las etiquetas HTML estándar y, a continuación, reemplazando las siguientes etiquetas HTML:
 
@@ -653,7 +657,7 @@ con las siguientes etiquetas de plantilla correspondientes:
 * `</search-option>`
 * `</search-select>`
 
-Para ello, utilice el siguiente código como `<form>` etiqueta en la plantilla de búsqueda.
+Para ello, utilice el siguiente código como etiqueta `<form>` en la plantilla de búsqueda.
 
 ```
 <!-- Adobe Target results section.--> 
