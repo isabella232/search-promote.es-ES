@@ -8,11 +8,14 @@ topic: Release Notes,Site search and merchandising
 uuid: a9d550f6-0a23-4c71-b123-c31b997e7384
 translation-type: tm+mt
 source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 35%
 
 ---
 
 
-# Search&amp;Promote 8.9.4 Release Notes (01/17/2013){#search-promote-release-notes}
+# Notas de la versión de Search&amp;Promote 8.9.4 (17/01/2013){#search-promote-release-notes}
 
 <table> 
  <thead> 
@@ -24,11 +27,11 @@ source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Reglas </p> </td> 
-   <td colname="col2"> <p> Se ha añadido la capacidad de crear notas en línea al crear reglas de limpieza de consultas, reglas Pre-Search y reglas Post-Search. El campo de notas permite documentar y explicar las reglas. </p> <p>Consulte <a href="../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C" format="dita" scope="local"> Acerca de las reglas</a>de limpieza de Consultas. </p> <p>See <a href="../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F" format="dita" scope="local"> About Pre-Search Rules</a>. </p> <p>See <a href="../c-about-rules-menu/c-about-post-search-rules.md#concept_AF6ADFCC0ADF4A788003964939917FDE" format="dita" scope="local"> About Post-Search Rules</a>. </p> </td> 
+   <td colname="col2"> <p> Se ha añadido la capacidad de crear notas en línea al crear reglas de limpieza de consultas, reglas Pre-Search y reglas Post-Search. El campo de notas permite documentar y explicar las reglas. </p> <p>Consulte <a href="../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C" format="dita" scope="local"> Acerca de las reglas de limpieza de Consultas</a>. </p> <p>Consulte <a href="../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F" format="dita" scope="local"> Acerca de las reglas de búsqueda previa</a>. </p> <p>Consulte <a href="../c-about-rules-menu/c-about-post-search-rules.md#concept_AF6ADFCC0ADF4A788003964939917FDE" format="dita" scope="local"> Acerca de las reglas de postbúsqueda</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Búsqueda guiada </p> </td> 
-   <td colname="col2"> <p> Etiquetas de búsqueda guiada Añadidas para indicar el tiempo total que tardó una búsqueda. </p> <p> <span class="codeph"> &lt;guided-search-time&gt;</span> : identifica cuánto tardó la búsqueda. El valor de tiempo de búsqueda devuelto se especifica en ms. </p> <p> <span class="codeph"> &lt;guided-fall-through-searches&gt;</span> : devuelve el recuento de búsquedas principales que se utilizan para generar la página de resultados de búsqueda. </p> <p> <span class="codeph"> &lt;guided-if-fall-through-search&gt;</span> : prueba si el recuento de búsquedas principales es bueno a 1. </p> <p>Consulte también Idioma diverso en las etiquetas <a href="../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64" format="dita" scope="local"> de plantilla de</a>presentación. </p> </td> 
+   <td colname="col2"> <p> Etiquetas de búsqueda guiada añadidas para indicar el tiempo total que tardó una búsqueda. </p> <p> <span class="codeph"> &lt;guided-search-time&gt;</span> - Identifica cuánto tiempo tardó la búsqueda. El valor de tiempo de búsqueda devuelto se especifica en ms. </p> <p> <span class="codeph"> &lt;guided-fall-through-searches&gt;</span> - Devuelve el número de búsquedas de núcleos que se utilizan para generar la página de resultados de búsqueda. </p> <p> <span class="codeph"> &lt;guided-if-fall-through-search&gt;</span> - Prueba si el recuento de búsquedas principales es bueno a 1. </p> <p>Consulte también Idioma diverso en <a href="../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64" format="dita" scope="local"> etiquetas de plantilla de presentación</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -39,21 +42,21 @@ source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
    Consulte [Visualización del informe Términos o del informe Términos de búsqueda nulos...](../c-about-reports-menu/c-about-reports-menu.md#task_53B7ED1582DD4B0E8376546A7AFC789A).
 
-* Abra **[!UICONTROL Reports > Null Search Terms Report]**, seleccione un intervalo de tiempo y, a continuación, vista el informe. Haga clic sobre una palabra del informe para abrir la búsqueda y luego haga clic sobre Ver informe otra vez. El recuento de búsqueda de la palabra clave en que ha hecho clic se duplicaba. Ahora esto está corregido. 
+* Abra **[!UICONTROL Reports > Null Search Terms Report]**, seleccione un intervalo de tiempo y luego vista del informe. Haga clic sobre una palabra del informe para abrir la búsqueda y luego haga clic sobre Ver informe otra vez. El recuento de búsqueda de la palabra clave en que ha hecho clic se duplicaba. Ahora esto está corregido. 
 
    Consulte [Visualización del informe Términos o del informe Términos de búsqueda nulos...](../c-about-reports-menu/c-about-reports-menu.md#task_53B7ED1582DD4B0E8376546A7AFC789A).
 
 * Se ha realizado una optimización del rendimiento para cuando se insertan las reglas comerciales en directo.
 
-   See [About Business Rules](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+   Consulte [Acerca de las reglas comerciales](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 * La capacidad de eliminación en [!DNL Breadcrumbs] no siempre funcionaba. 
 
-   Consulte [Acerca de las rutas de exploración](../c-about-design-menu/c-about-breadcrumbs.md#concept_FB8A943C594A4A1593B118141DA61F03).
+   Consulte [Acerca de Rutas de exploración](../c-about-design-menu/c-about-breadcrumbs.md#concept_FB8A943C594A4A1593B118141DA61F03).
 
 * A menos que se utilizara la regeneración, la función de reclasificación no permitía que ninguna regla de clasificación modificada tuviera efecto en los resultados de búsqueda.
 
    Consulte [Acerca de reglas de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397).
 
-   Consulte [Acerca del índice](../c-about-index-menu/c-about-re-rank-index.md#concept_147B0A9FCD51451787DA898E06F7C692)de reclasificación.
+   Consulte [Acerca del Índice de reclasificación](../c-about-index-menu/c-about-re-rank-index.md#concept_147B0A9FCD51451787DA898E06F7C692).
 
