@@ -28,7 +28,7 @@ Puede configurar las páginas Web que contengan metaetiquetas con las caracterí
 
 Si tiene más de una etiqueta meta de tipo &quot;clasificación&quot; definida, puede crear colecciones independientes de reglas para utilizarlas en el cálculo de los distintos campos de clasificación. Puede agregar un grupo de reglas de clasificación, que luego puede asignar a uno de los campos de clasificación definidos. Normalmente, los grupos de reglas contienen una o varias definiciones de reglas, pero también pueden hacer referencia a otros grupos de reglas, de modo que puede crear uno o más grupos de reglas de uso común que se comparten durante el cálculo de las distintas clasificaciones.
 
-Consulte [Añadir un grupo](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8)de reglas de clasificación.
+Consulte [Añadir un grupo de reglas de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8).
 
 Un valor de clasificación positiva promueve los resultados de búsqueda hacia la parte superior; un valor de clasificación negativa baja los resultados de búsqueda hacia la parte inferior de los resultados de búsqueda. El intervalo normal para los valores de clasificación es 1,0, que es la promoción máxima dentro de los resultados de búsqueda, mientras que -1,0 es la degradación máxima. Aunque puede personalizar este rango editando el campo Clasificación en definiciones de metadatos, este tipo de personalización suele ser innecesaria.
 
@@ -62,11 +62,13 @@ Antes de utilizar las reglas de clasificación, debe completar varios pasos de c
       <ol id="ol_28ABB980143948DFA79AC4360AAB7556"> 
       <li id="li_544075CFA0964C6F8FAF7941AAA9ECCC"> En el menú del producto, haga clic en <span class="uicontrol"> Configuración </span> &gt; <span class="uicontrol"> Metadatos </span> &gt; <span class="uicontrol"> Definiciones </span>. </li> 
       <li id="li_F237F13B89E8425080C15D3BD697652C"> En la página Definiciones, haga clic en <span class="uicontrol"> Añadir nuevo campo </span>. </li> 
-      <li id="li_2A839874D71D45FEA661B3D3B8BE2A86"> En la página Añadir campo, en el campo de texto Nombre del <span class="uicontrol"> campo </span> , escriba <code>
+      <li id="li_2A839874D71D45FEA661B3D3B8BE2A86"> En la página Añadir campo, en el campo de texto <span class="uicontrol"> Nombre de campo </span>, escriba 
+      <code>
         rank 
-      </code>; en el campo de texto <span class="uicontrol"> Meta Tag Name </span> , escriba <code>
+      </code>; en el campo de texto <span class="uicontrol"> Meta Tag Name </span>, escriba 
+      <code>
         rank 
-      </code>; en la lista desplegable Tipo <span class="uicontrol"> de datos </span> , seleccione <span class="uicontrol"> Clasificación </span>. Deje el resto de opciones de campo tal cual. <p>Consulte el parámetro de consulta <span class="codeph"> sp_sr </span> en <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> Parámetros CGI de búsqueda back-end </a>. </p> </li> 
+      </code>; en la lista desplegable <span class="uicontrol"> Tipo de datos </span>, seleccione <span class="uicontrol"> Clasificación </span>. Deje el resto de opciones de campo tal cual. <p>Consulte el parámetro de consulta <span class="codeph"> sp_sr </span> en <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> Parámetros CGI de búsqueda back-end </a>. </p> </li> 
       <li id="li_8E91AF4BE51A4A41ABBF9680DDE0B7CE">Haga clic en <span class="uicontrol">Agregar </span>. </li> 
       </ol> </p> </td> 
       </tr> 
@@ -85,14 +87,14 @@ Antes de utilizar las reglas de clasificación, debe completar varios pasos de c
 
 1. Añada una o más reglas de clasificación.
 
-   Consulte [Añadir una regla](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A)de clasificación.
+   Consulte [Añadir una regla de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A).
 
-1. Haga clic **[!UICONTROL regenerate your staged site index]** para realizar un reíndice completo del sitio web (desde **[!UICONTROL Index]** > **[!UICONTROL Full Index]**).
+1. Haga clic en **[!UICONTROL regenerate your staged site index]** para realizar un reíndice completo del sitio Web (desde **[!UICONTROL Index]** > **[!UICONTROL Full Index]**).
 
-   Consulte [Ejecución de un índice completo de un sitio web activo o en un sitio web escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Consulte [Ejecución de un índice completo de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Consulte [Configuración de un índice incremental de un sitio Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)escalonado.
-1. Compruebe los valores de la columna Clasificación en **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]** para comprobar que las reglas de clasificación se han aplicado correctamente.
+   Consulte [Configuración de un índice incremental de un sitio Web escalonado](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
+1. Compruebe los valores de la columna Clasificación en **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]** para verificar que las reglas de clasificación se hayan aplicado correctamente.
 
 ## Acerca de la clasificación de documentos por edad {#topic_770815CF1B2A491F83FF765871B6F1B8}
 
@@ -104,17 +106,17 @@ La clasificación de edad se basa en las dos ecuaciones siguientes:
 
 `RANK = e^(K * T)`
 
-Variables `H` y `T` son entradas para esta función: `H` es el período de semivida deseado y `T` es la edad del documento, expresada en segundos. `K` es la semivida calculada y `RANK` es la decadencia exponencial del valor de edad especificado. El valor resultante es de 0 a 1. Un documento más reciente tiene un valor de clasificación más cercano a 1 en comparación con un documento más antiguo. En teoría, los documentos nunca deben alcanzar el valor de 0, pero los errores de redondeo pueden hacer que el resultado sea 0.
+Las variables `H` y `T` son entradas para esta función: `H` es el período de semivida deseado y `T` es la edad del documento, expresada en segundos. `K` es la semivida calculada y  `RANK` es la decadencia exponencial del valor de edad especificado. El valor resultante es de 0 a 1. Un documento más reciente tiene un valor de clasificación más cercano a 1 en comparación con un documento más antiguo. En teoría, los documentos nunca deben alcanzar el valor de 0, pero los errores de redondeo pueden hacer que el resultado sea 0.
 
-## Requisitos para utilizar la clasificación por edades {#section_D716507D589442C6B7848892BD28F966}
+## Requisitos para utilizar la clasificación de edad {#section_D716507D589442C6B7848892BD28F966}
 
 * Su cuenta ya debe estar configurada correctamente para la clasificación. Si no está configurado, consulte [Configuración de la clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_4CEBC13925B047FC95BDC217B48089C5).
 * El documento HTML debe tener un campo de etiqueta meta HTML que represente su fecha de nacimiento, su inicio como una marca de hora o cualquier otro valor de fecha significativo.
-* La función especial integrada, `search_get_age_rank()`según se especifica en las páginas Añadir o Editar regla de clasificación, se utiliza para calcular la clasificación por edades de un documento. Las siguientes secciones describen en detalle el uso general de la función de clasificación por edades. También se presenta un ejemplo que muestra la función de clasificación por edad.
+* La función especial integrada, `search_get_age_rank()`, según se especifica en las páginas Añadir o Editar regla de clasificación, se utiliza para calcular la clasificación por edades de un documento. Las siguientes secciones describen en detalle el uso general de la función de clasificación por edades. También se presenta un ejemplo que muestra la función de clasificación por edad.
 
 ## Uso de search_get_age_rank () en la página Añadir regla de clasificación o en la página Editar regla de clasificación {#section_34BC5276F2AB4419AD92872A397CA0AF}
 
-Especifique `search_get_age_rank()` lo siguiente:
+Especifique `search_get_age_rank()` como se indica a continuación:
 
 `search_get_age_rank(Birthdate#Half_Life#Default_Rank)`
 
@@ -122,9 +124,9 @@ Especifique `search_get_age_rank()` lo siguiente:
 * Half_Life: la vida media es la cantidad de tiempo que debe pasar antes de que el valor caiga a la mitad de su valor inicial. Este valor se expresa en el número de días y es un número entero o un número de coma flotante.
 * Default_Rank: la clasificación predeterminada se utiliza como red de seguridad en caso de que la fecha de nacimiento no sea válida o la fecha esté en el futuro. No puede utilizar este valor predeterminado si su campo de metadatos asociado también tiene un valor predeterminado válido. El valor aquí es un número de coma flotante o un entero. Consulte a continuación las sugerencias si tiene problemas con qué valor predeterminado se está utilizando.
 
-Consulte [Añadir una regla](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A)de clasificación.
+Consulte [Añadir una regla de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A).
 
-See [Editing a ranking rule](../c-about-rules-menu/c-about-ranking-rules.md#task_5EBF55A43D6545FEA46BAE5E586FA275).
+Consulte [Edición de una regla de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_5EBF55A43D6545FEA46BAE5E586FA275).
 
 **Ejemplo**
 
@@ -132,11 +134,11 @@ En el siguiente ejemplo,
 
 `search_get_age_rank({birthdate}#28#0.20)`
 
-la fecha contenida en el campo del `birthdate` documento se pasa como marca de hora. La vida media es de 28 días. El valor de clasificación predeterminado es 0,20 si la fecha no es válida.
+la fecha contenida en el campo `birthdate` del documento se pasa como marca de hora. La vida media es de 28 días. El valor de clasificación predeterminado es 0,20 si la fecha no es válida.
 
-Consulte la tabla de opciones para [Añadir una regla](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A)de clasificación.
+Consulte la tabla de opciones en [Añadir una regla de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A).
 
-En la sección Valores/Clasificaciones de la página Añadir regla de clasificación o en la página Editar regla de clasificación, solo puede usar `search_get_age_rank` con reglas personalizadas. Por lo tanto, asegúrese de elegir **Personalizado** en la lista desplegable Valores/Clasificaciones. Cuando la regla utiliza la función de clasificación por edad, no se permiten espacios en la parte de valores de la regla. Asegúrese de que no hay espacios en los argumentos de función o entre ellos. Y no hay espacios entre operadores matemáticos o condicionales.
+En la sección Valores/Clasificaciones de la página Añadir regla de clasificación o en la página Editar regla de clasificación, solo puede utilizar `search_get_age_rank` con reglas personalizadas. Por lo tanto, asegúrese de elegir **Personalizado** en la lista desplegable Valores/Clasificaciones. Cuando la regla utiliza la función de clasificación por edad, no se permiten espacios en la parte de valores de la regla. Asegúrese de que no hay espacios en los argumentos de función o entre ellos. Y no hay espacios entre operadores matemáticos o condicionales.
 
 A continuación se muestra un ejemplo de una regla de valores/clasificación, una regla asociada a un campo de texto:
 
@@ -148,11 +150,11 @@ Para una regla asociada a un campo Numérico, específicamente un campo Fecha:
 
 `9999999999 search_get_age_rank({other_field}#365#0.20)`
 
-A medida que se procesa cada documento, el valor en `other_field` se convierte al formulario Unix &quot;epoch&quot;, utilizando las definiciones de formato de fecha del campo. Este valor se utiliza en la `search_get_age_rank()` llamada. Dado que cada valor &quot;epoch&quot; es menor que 99999999999 (por lo menos por ahora), la regla simplemente proporciona el valor devuelto de la función (de 0 a 1) como clasificación.
+A medida que se procesa cada documento, el valor de `other_field` se convierte al formulario Unix &quot;epoch&quot;, utilizando las definiciones de formato de fecha del campo. Este valor se utiliza en la llamada `search_get_age_rank()`. Dado que cada valor &quot;epoch&quot; es menor que 99999999999 (por lo menos por ahora), la regla simplemente proporciona el valor devuelto de la función (de 0 a 1) como clasificación.
 
-En los dos ejemplos anteriores, es típico que la fuente de datos de la regla sea el mismo campo que se utiliza en la `search_get_age_rank()` función, `other_field` en este caso.
+En los dos ejemplos anteriores, es típico que la fuente de datos de la regla sea el mismo campo que se utiliza en la función `search_get_age_rank()`: `other_field` en este caso.
 
-## Ejemplo de integración de la clasificación por edades en las reglas de clasificación {#section_A86D909687CC45E19D4EA7A4A9283F28}
+## Un ejemplo de integración de la clasificación de edad en las reglas de clasificación {#section_A86D909687CC45E19D4EA7A4A9283F28}
 
 A continuación se muestra un ejemplo de cómo se puede integrar la clasificación de edad en las reglas de clasificación. El ejemplo también muestra los resultados sin procesar de la función de clasificación por edad y los resultados de las reglas de clasificación. El ejemplo asume lo siguiente:
 
@@ -161,7 +163,7 @@ A continuación se muestra un ejemplo de cómo se puede integrar la clasificaci�
 
 **Reglas de clasificación**
 
-Consulte [Añadir un nuevo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)de etiqueta meta.
+Consulte [Añadir un nuevo campo de etiqueta meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 
 Ahora agrega una nueva regla de clasificación. La regla se define para utilizar el campo &quot;fecha de nacimiento&quot; del documento. Se agrega una nueva regla de clasificación con las siguientes propiedades establecidas:
 
@@ -171,17 +173,17 @@ Ahora agrega una nueva regla de clasificación. La regla se define para utilizar
 * Valores/Clasificaciones: 9999999999 search_get_age_rank({fecha de nacimiento}#14#0.10)
 * Clasificación predeterminada: -1
 
-La regla hace varias cosas. El peso de la regla se establece en 10. El valor de clasificación es simplemente el resultado de la función de clasificación de edad, un valor entre 0 y 1. No se pueden usar espacios con `search_get_age_rank()`. Además, observe que el campo &quot;fecha de nacimiento&quot; está entre llaves. Por último, al guardar esta regla, las comas de la definición Valores/Clasificaciones se sustituyen por `#` caracteres; este comportamiento es normal.
+La regla hace varias cosas. El peso de la regla se establece en 10. El valor de clasificación es simplemente el resultado de la función de clasificación de edad, un valor entre 0 y 1. No se pueden usar espacios con `search_get_age_rank()`. Además, observe que el campo &quot;fecha de nacimiento&quot; está entre llaves. Por último, al guardar esta regla, las comas en la definición Valores/Clasificaciones se sustituyen por `#` caracteres; este comportamiento es normal.
 
 **Visualización de los resultados**
 
-Utilice la función Vista de datos para ver rápidamente los resultados de la función de clasificación por edad. Añada los campos de metadatos correspondientes. En el ejemplo, `age_val` y `myrank` son los dos campos de metadatos que deben agregarse a la Vista de datos. El `myrank` campo muestra cómo la clasificación de edad afecta a los valores de clasificación. El `age_val` campo muestra la salida sin procesar de la función exponencial-decadencia de ese documento.
+Utilice la función Vista de datos para ver rápidamente los resultados de la función de clasificación por edad. Añada los campos de metadatos correspondientes. En el ejemplo, `age_val` y `myrank` son los dos campos de metadatos que deben agregarse a la Vista de datos. El campo `myrank` muestra cómo la clasificación de edad afecta los valores de clasificación. El campo `age_val` muestra la salida sin procesar de la función exponencial-decadencia de ese documento.
 
 ## Valores predeterminados {#section_CB109EF78F914E92955D512ACFC3310E}
 
 A continuación se indican tres valores predeterminados relacionados con la función `search_get_age_rank()`:
 
-* Valor predeterminado que se puede introducir en la `search_get_age_rank()` función misma.
+* El valor predeterminado que se puede introducir en la función `search_get_age_rank()` misma.
 * El valor de clasificación predeterminado de la regla de clasificación.
 * El valor predeterminado de la definición de metadatos.
 
@@ -191,22 +193,22 @@ Por ejemplo, el valor predeterminado de la definición de metadatos no debería 
 
 ## Añadir una regla de clasificación {#task_A132789FD4E5423DAD090DCDA7311E8A}
 
-Puede agregar [!DNL Ranking Rules] para afectar la ubicación relativa de las páginas Web dentro de los resultados de búsqueda, según el contenido de cada página Web.
+Puede agregar [!DNL Ranking Rules] para afectar la ubicación relativa de las páginas Web dentro de los resultados de búsqueda, en base al contenido de cada página Web.
 
 Consulte [Configuración de la clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_4CEBC13925B047FC95BDC217B48089C5).
 
 **Para agregar una regla de clasificación**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
-1. (Opcional) Si ha creado un grupo de reglas y ha agregado reglas al grupo, en la [!DNL Define Ranking Rules] página, en la lista **[!UICONTROL Select Rule Group]** desplegable, seleccione un grupo de reglas que contenga las reglas que desee editar.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
+1. (Opcional) Si ha creado un grupo de reglas y ha agregado reglas al grupo, en la página [!DNL Define Ranking Rules], en la lista desplegable **[!UICONTROL Select Rule Group]**, seleccione un grupo de reglas que contenga las reglas que desee editar.
 
-   Consulte [Añadir un grupo](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8)de reglas de clasificación.
-1. En la [!DNL Define Ranking Rules] página, haga clic en **[!UICONTROL Add Rule]** para agregar una nueva regla de clasificación o para agregar una referencia a un conjunto de reglas.
-1. En la [!DNL Add Ranking Rule] página, configure las opciones que desee. Los campos marcados con un asterisco (*) son obligatorios.
+   Consulte [Añadir un grupo de reglas de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8).
+1. En la página [!DNL Define Ranking Rules], haga clic en **[!UICONTROL Add Rule]** para agregar una nueva regla de clasificación o para agregar una referencia a un conjunto de reglas.
+1. En la página [!DNL Add Ranking Rule], configure las opciones que desee. Los campos marcados con un asterisco (*) son obligatorios.
 
-   El tipo de fuente de datos seleccionado afecta a las opciones disponibles en la lista [!DNL Data Source Name] desplegable. Por ejemplo, si seleccionó **[!UICONTROL Meta Tag]** como Tipo de fuente de datos, el nombre de la fuente de datos hace referencia al nombre de una etiqueta meta en las páginas del sitio web. Si seleccionó **[!UICONTROL Adobe Analytics Metric (Number)]**, el nombre de la fuente de datos hace referencia a uno de los nombres de métricas de Adobe Analytics que seleccionó en un grupo de informes, tal como se encuentra en la página de búsqueda/comercialización del **[!UICONTROL Edit Adobe Analytics Metrics]** sitio.
+   El tipo de fuente de datos seleccionado afecta a las opciones disponibles en la lista desplegable [!DNL Data Source Name]. Por ejemplo: si seleccionó **[!UICONTROL Meta Tag]** como Tipo de fuente de datos, el nombre de la fuente de datos hace referencia al nombre de una etiqueta meta en las páginas del sitio web. Si seleccionó **[!UICONTROL Adobe Analytics Metric (Number)]**, el nombre de la fuente de datos hace referencia a uno de los nombres de métricas de Adobe Analytics que seleccionó en un grupo de informes, tal como se encuentra en la página **[!UICONTROL Edit Adobe Analytics Metrics]** en la búsqueda o comercialización del sitio.
 
-   Consulte [Edición de las métricas de Adobe Analytics de un grupo](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664)de informes.
+   Consulte [Edición de las métricas de Adobe Analytics de un grupo de informes](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664).
 
    <table> 
     <thead> 
@@ -220,33 +222,34 @@ Consulte [Configuración de la clasificación](../c-about-rules-menu/c-about-ran
       <td colname="col1"> <p>Tipo de fuente de datos </p> </td> 
       <td colname="col2"> <p>Determina las características del origen de datos que se utiliza como entrada para esta regla de clasificación. </p> <p>Los tipos de fuentes de datos que puede seleccionar incluyen lo siguiente: 
       <ul id="ul_B0A97BF0E314495985F44A642C86918D"> 
-      <li id="li_4D8BDE32853540809AE78FF5FF5677A1"> <span class="uicontrol"> Meta Tag </span> <p> Basa esta regla en datos numéricos o de texto que se almacenan en una etiqueta meta con nombre en las páginas del sitio web. </p> </li> 
-      <li id="li_4976C31D67254C7F81D554EC49DDBB40"> <span class="uicontrol"> Métrica de Adobe Analytics (número) </span> <p>Basa esta regla en una métrica numérica de Adobe Analytics asociada con las páginas del sitio. </p> </li> 
+      <li id="li_4D8BDE32853540809AE78FF5FF5677A1"> <span class="uicontrol"> Meta Tag  </span> <p> Basa esta regla en datos numéricos o de texto que se almacenan en una etiqueta meta con nombre en las páginas del sitio web. </p> </li> 
+      <li id="li_4976C31D67254C7F81D554EC49DDBB40"> <span class="uicontrol"> Métrica de Adobe Analytics (número)  </span> <p>Basa esta regla en una métrica numérica de Adobe Analytics asociada con las páginas del sitio. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nombre de la fuente de datos </p> </td> 
-      <td colname="col2"> <p>Si elige <span class="uicontrol"> Meta Tag </span> como tipo de fuente de datos, este es el nombre de una meta etiqueta que se encuentra en las páginas del sitio web. Los nombres del menú desplegable proceden de la lista de los valores de metadatos definidos que se configuraron en Configuración &gt; Metadatos &gt; Definiciones. </p> <p>Consulte <a scope="local" href="../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5" type="task" format="dita"> Añadir un nuevo campo de etiqueta meta </a>. </p> <p>Si elige Métrica de Adobe Analytics (número) como Tipo de fuente de datos, este es el nombre de una métrica de Adobe Analytics. Los nombres del menú desplegable provienen de las métricas de Adobe Analytics disponibles definidas por la lista que se configuraron en Configuración &gt; Adobe Analytics &gt; Métricas &gt; Editar. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Edición de las métricas de Adobe Analytics de un grupo de informes </a>. </p> <p>Si el nombre de la métrica de Adobe Analytics que ha seleccionado no está definido en <span class="uicontrol"> Configuración </span> &gt; <span class="uicontrol"> Metadatos </span> &gt; <span class="uicontrol"> Definiciones </span>, se muestran un campo de texto y un botón Añadir. Introduzca el nombre del campo de metadatos (el nombre del campo de metadatos no puede exceder los 20 caracteres) y, a continuación, haga clic en <span class="uicontrol"> Añadir </span>. </p> <p>Cuando se encuentran páginas con varias claves de Adobe Analytics, como con una página de producto que muestra varios productos, el esquema compuesto especifica cómo tratar los valores de varias métricas de Adobe Analytics asociados con esa página. Seleccione una de las siguientes opciones: </p> <p> 
+      <td colname="col2"> <p>Si elige <span class="uicontrol"> Meta Tag </span> como Tipo de fuente de datos, éste es el nombre de una meta etiqueta que se encuentra en las páginas del sitio Web. Los nombres del menú desplegable proceden de la lista de los valores de metadatos definidos que se configuraron en Configuración &gt; Metadatos &gt; Definiciones. </p> <p>Consulte <a scope="local" href="../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5" type="task" format="dita"> Añadir un nuevo campo de etiqueta meta </a>. </p> <p>Si elige Métrica de Adobe Analytics (número) como Tipo de fuente de datos, este es el nombre de una métrica de Adobe Analytics. Los nombres del menú desplegable provienen de las métricas de Adobe Analytics disponibles definidas por la lista que se configuraron en Configuración &gt; Adobe Analytics &gt; Métricas &gt; Editar. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Edición de las métricas de Adobe Analytics de un grupo de informes </a>. </p> <p>Si el nombre de la métrica de Adobe Analytics que ha seleccionado no está definido en <span class="uicontrol"> Configuración </span> &gt; <span class="uicontrol"> Metadatos </span> &gt; <span class="uicontrol"> Definiciones </span>, se muestra un campo de texto y un botón Añadir. Escriba el nombre del campo de metadatos (el nombre del campo de metadatos no puede exceder los 20 caracteres) y haga clic en <span class="uicontrol"> Añadir </span>. </p> <p>Cuando se encuentran páginas con varias claves de Adobe Analytics, como con una página de producto que muestra varios productos, el esquema compuesto especifica cómo tratar los valores de varias métricas de Adobe Analytics asociados con esa página. Seleccione una de las siguientes opciones: </p> <p> 
       <ul id="ul_D6E51748BB3949048A37C1895F2C0A58"> 
       <li id="li_04F00F382A264C96A519B0D975E25E94"> <span class="uicontrol"> Suma </span> <p>Devuelve la suma de los valores de la métrica. </p> </li> 
       <li id="li_FA44219B663F4CC197BD3A094EB84396"> <span class="uicontrol"> Promedio </span> <p>Devuelve el promedio de los valores (la suma dividida por el número de valores). </p> </li> 
-      <li id="li_F0EAAE1EA1754FFEB30F611E5550097B"> <span class="uicontrol"> Máximo </span> <p>Devuelve el mayor de los valores. </p> </li> 
+      <li id="li_F0EAAE1EA1754FFEB30F611E5550097B"> <span class="uicontrol"> Máximo  </span> <p>Devuelve el mayor de los valores. </p> </li> 
       <li id="li_38E3E3F3D9AF4C57803B84B60223FB9D"> <span class="uicontrol"> Primero </span> <p>Devuelve el valor correspondiente a la primera clave. </p> </li> 
       <li id="li_4AEE470CE6BB4D899E975915EC226624"> <span class="uicontrol"> Última </span> <p>Devuelve el valor correspondiente a la última clave. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Pesos/Condiciones </p> </td> 
-      <td colname="col2"> <p>Contiene un número de peso de regla simple o una lista emparejada de números de peso y condiciones de prueba de reglas. </p> <p>Un número de peso de regla es un valor entre 1 y 10 que indica la importancia de esta regla de clasificación en relación con las demás reglas de clasificación para determinar la clasificación general de un documento. Un peso de regla más alto indica una mayor importancia. Un peso de cero (0) ignora la regla. </p> <p>Elija <span class="uicontrol"> Personalizado </span> en la lista desplegable para personalizar el peso de regla para varias páginas mediante la definición de una lista de pares de peso de regla/condiciones de prueba. Las condiciones de prueba son fragmentos de Perl que se utilizan para probar los valores de la fuente de datos o variables globales que se definen en el script de filtro personalizado (por ejemplo, vistas de precio, marca, temporada o página, como en el ejemplo siguiente). Si una condición de prueba se evalúa como "true", se aplica el valor de peso de regla asociado. Si una condición de prueba se evalúa como "false", se evalúa la siguiente condición de la lista. <code> 0&nbsp;({price}&nbsp;&gt;&nbsp;50.00)&nbsp;&amp;&amp;&nbsp;({brand}=~/Kuhl/)5&nbsp;{season}&nbsp;=~&nbsp;/Fall/10&nbsp;{pageviews}&nbsp;&gt;&nbsp;1000005 </code>En el ejemplo de peso o condición creado a medida anterior, el peso de regla 0 se aplica si la primera condición de prueba se evalúa como "true". Es decir, el precio contiene un valor bueno de 50 y la marca contiene "Kuhl"). Si la primera condición de prueba se evalúa como "false", se evalúa la siguiente condición. Si no se cumple ninguna de las condiciones anteriores, se asigna el peso 5 de la regla. </p> <p>Siempre debe proporcionar un peso de regla sin condiciones al final de la lista. Si no lo hace, la regla obtiene un peso de 0 en el caso de que ninguna de las pruebas de condición se evalúe como "true". </p> </td> 
+      <td colname="col2"> <p>Contiene un número de peso de regla simple o una lista emparejada de números de peso y condiciones de prueba de reglas. </p> <p>Un número de peso de regla es un valor entre 1 y 10 que indica la importancia de esta regla de clasificación en relación con las demás reglas de clasificación para determinar la clasificación general de un documento. Un peso de regla más alto indica una mayor importancia. Un peso de cero (0) ignora la regla. </p> <p>Elija <span class="uicontrol"> Personalizar </span> en la lista desplegable para personalizar el peso de reglas para varias páginas mediante la definición de una lista de pares de pesos de reglas y condiciones de prueba. Las condiciones de prueba son fragmentos de Perl que se utilizan para probar los valores de la fuente de datos o variables globales que se definen en el script de filtro personalizado (por ejemplo, vistas de precio, marca, temporada o página, como en el ejemplo siguiente). Si una condición de prueba se evalúa como "true", se aplica el valor de peso de regla asociado. Si una condición de prueba se evalúa como "false", se evalúa la siguiente condición de la lista. <code> 0&nbsp;({price}&nbsp;&gt;&nbsp;50.00)&nbsp;&amp;&amp;&nbsp;({brand}=~/Kuhl/)5&nbsp;{season}&nbsp;=~&nbsp;/Fall/10&nbsp;{pageviews}&nbsp;&gt;&nbsp;1000005 </code>En el ejemplo de peso o condición creado a medida anterior, el peso de regla 0 se aplica si la primera condición de prueba se evalúa como "true". Es decir, el precio contiene un valor bueno de 50 y la marca contiene "Kuhl"). Si la primera condición de prueba se evalúa como "false", se evalúa la siguiente condición. Si no se cumple ninguna de las condiciones anteriores, se asigna el peso 5 de la regla. </p> <p>Siempre debe proporcionar un peso de regla sin condiciones al final de la lista. Si no lo hace, la regla obtiene un peso de 0 en el caso de que ninguna de las pruebas de condición se evalúe como "true". </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Valores/Clasificaciones </p> </td> 
-      <td colname="col2"> <p>Consiste en una de las funciones de clasificación integradas o en un posible contenido de fuente de datos junto con las clasificaciones deseadas. </p> <p>Si elige <span class="uicontrol"> Métrica de Adobe Analytics (número) </span> como Tipo de fuente de datos, se le mostrará una lista desplegable con las siguientes opciones: 
+      <td colname="col2"> <p>Consiste en una de las funciones de clasificación integradas o en un posible contenido de fuente de datos junto con las clasificaciones deseadas. </p> <p>Si elige <span class="uicontrol"> Métrica de Adobe Analytics (Número) </span> como Tipo de fuente de datos, se le mostrará una lista desplegable con las siguientes opciones: 
       <ul id="ul_104906B6AA8547BAB6979AA37C4FAB90"> 
-      <li id="li_7656A2855A054DB8B64E90FE501517AA"> <span class="uicontrol"> Clasificación automática por pedido (predeterminado) </span> <p>Calcula una clasificación basada en la posición relativa del documento, según su métrica de Adobe Analytics. Por ejemplo, cuanto más se acerque la posición del documento al documento de mayor clasificación, mayor será su clasificación. </p> </li> 
-      <li id="li_1A7D60EA6965434AA6D39B215C158306"> <span class="uicontrol"> Clasificación automática por valor </span> <p>Calcula una clasificación según el valor relativo del documento, según su métrica de Adobe Analytics. Por ejemplo, cuanto más se acerque el valor del documento al valor del documento de mayor clasificación, mayor será su clasificación. </p> </li> 
+      <li id="li_7656A2855A054DB8B64E90FE501517AA"> <span class="uicontrol"> Clasificación automática por pedido (predeterminado)  </span> <p>Calcula una clasificación basada en la posición relativa del documento, según su métrica de Adobe Analytics. Por ejemplo, cuanto más se acerque la posición del documento al documento de mayor clasificación, mayor será su clasificación. </p> </li> 
+      <li id="li_1A7D60EA6965434AA6D39B215C158306"> <span class="uicontrol"> Clasificación automática por valor  </span> <p>Calcula una clasificación según el valor relativo del documento, según su métrica de Adobe Analytics. Por ejemplo, cuanto más se acerque el valor del documento al valor del documento de mayor clasificación, mayor será su clasificación. </p> </li> 
       <li id="li_457DE44D6ADA40619DC77220BF12318E"> <span class="uicontrol"> Personalizado </span> <p>Especifica la configuración personalizada. Por ejemplo: una fuente de datos con el nombre de "marca" puede contener el nombre de la marca de un producto en particular. Puede especificar la importancia relativa de cada marca enumerándola junto con su clasificación. </p> </li> 
-      </ul> </p> <p>Los valores de clasificación devueltos por los cálculos de clasificación automática están en el rango de 0,0 (menor) a 1,0 (mayor). No se ajustan según los rangos definidos para el campo Clasificación en Configuración &gt; Metadatos &gt; Definiciones. </p> <p>En el siguiente ejemplo, si la fuente de datos de marca para un resultado de búsqueda en particular coincide exactamente con "DKNY", la clasificación aplicada para ese resultado es 0,5. De lo contrario, si la marca es "Levis", la clasificación aplicada es 0,1. El contenido de la fuente de datos debe coincidir con el valor establecido. En otras palabras, si el contenido de la fuente de datos es "Levis Corp.", no coincidirá con el valor "Levis". Se ignora el caso, por lo que "DKNY" coincide con "dkny" y "Dkny". <code> DKNY&nbsp;0.5 Levis&nbsp;0.1 Lee&nbsp;0.2 </code> </p> <p>Como opción más avanzada, puede especificar valores como expresiones regulares. Por ejemplo: supongamos que algunas de las páginas del sitio contienen un valor de marca de "Levis" y que otras páginas del sitio contienen un valor de marca de "jeans de Levis". Puede utilizar una expresión normal especificada con la palabra clave <code>
+      </ul> </p> <p>Los valores de clasificación devueltos por los cálculos de clasificación automática están en el rango de 0,0 (menor) a 1,0 (mayor). No se ajustan según los rangos definidos para el campo Clasificación en Configuración &gt; Metadatos &gt; Definiciones. </p> <p>En el siguiente ejemplo, si la fuente de datos de marca para un resultado de búsqueda en particular coincide exactamente con "DKNY", la clasificación aplicada para ese resultado es 0,5. De lo contrario, si la marca es "Levis", la clasificación aplicada es 0,1. El contenido de la fuente de datos debe coincidir con el valor establecido. En otras palabras, si el contenido de la fuente de datos es "Levis Corp.", no coincidirá con el valor "Levis". Se ignora el caso, por lo que "DKNY" coincide con "dkny" y "Dkny". <code> DKNY&nbsp;0.5 Levis&nbsp;0.1 Lee&nbsp;0.2 </code> </p> <p>Como opción más avanzada, puede especificar valores como expresiones regulares. Por ejemplo: supongamos que algunas de las páginas del sitio contienen un valor de marca de "Levis" y que otras páginas del sitio contienen un valor de marca de "jeans de Levis". Puede utilizar una expresión normal especificada con la palabra clave 
+      <code>
         regexp 
       </code>. </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expresiones regulares </a>. </p> <p>En el siguiente ejemplo, a un documento de resultados de búsqueda que contenga contenido de marca "jeans de Levis" se le asigna una clasificación de 0,1. Al igual que con la comparación estándar, se omiten las mayúsculas y minúsculas en las expresiones regulares. <code> DKNY&nbsp;0.5 regexp&nbsp;Levis.*&nbsp;0.1 Lee&nbsp;0.2 </code> </p> </td> 
       </tr> 
@@ -269,24 +272,24 @@ Consulte [Configuración de la clasificación](../c-about-rules-menu/c-about-ran
 
    Las clasificaciones definidas deben estar dentro del mismo rango para cada regla. Los rangos de clasificación también deben coincidir con los rangos definidos para el campo Clasificación en **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
 
-   Consulte [Añadir un nuevo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)de etiqueta meta.
+   Consulte [Añadir un nuevo campo de etiqueta meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 
-   Consulte también [Edición de una regla](../c-about-rules-menu/c-about-ranking-rules.md#task_5EBF55A43D6545FEA46BAE5E586FA275)de clasificación.
+   Consulte también [Edición de una regla de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_5EBF55A43D6545FEA46BAE5E586FA275).
 1. Haga clic **[!UICONTROL Add]**.
-1. Para previsualización de los resultados de la adición de la regla, haga clic en **[!UICONTROL regenerate your staged site index]** para volver a generar el índice del sitio web escalonado.
+1. Para previsualización de los resultados de la adición de la regla, haga clic en **[!UICONTROL regenerate your staged site index]** para volver a generar el índice del sitio Web escalonado.
 
-   Consulte [Ejecución de un índice completo de un sitio web activo o en un sitio web escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Consulte [Ejecución de un índice completo de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Consulte [Ejecución de un índice incremental de un sitio Web activo o en un sitio Web en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+   Consulte [Ejecución de un índice incremental de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -300,29 +303,29 @@ Consulte [Configuración de la clasificación](../c-about-rules-menu/c-about-ran
 
 **Para editar una regla de clasificación**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
-1. (Opcional) Si ha creado un grupo de reglas y ha agregado reglas al grupo, en la **[!UICONTROL Define Ranking Rules]** página, en la **[!UICONTROL Select Rule Group]** lista desplegable, seleccione un grupo de reglas que contenga las reglas que desee editar.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
+1. (Opcional) Si ha creado un grupo de reglas y ha agregado reglas al grupo, en la página **[!UICONTROL Define Ranking Rules]**, en la lista desplegable **[!UICONTROL Select Rule Group]**, seleccione un grupo de reglas que contenga las reglas que desee editar.
 
-   Consulte [Añadir un grupo](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8)de reglas de clasificación.
-1. En la tabla, debajo del encabezado de la **[!UICONTROL Actions]** columna, haga clic en **[!UICONTROL Edit]** para el nombre del origen de datos que desee cambiar.
-1. En la [!DNL Edit Ranking Rule] página, configure las opciones que desee. Los campos marcados con un asterisco (*) son obligatorios.
+   Consulte [Añadir un grupo de reglas de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8).
+1. En la tabla, debajo del encabezado de columna **[!UICONTROL Actions]**, haga clic en **[!UICONTROL Edit]** para el nombre del origen de datos que desee cambiar.
+1. En la página [!DNL Edit Ranking Rule], establezca las opciones que desee. Los campos marcados con un asterisco (*) son obligatorios.
 
-   Consulte la tabla de opciones en [Añadir una regla](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A)de clasificación.
+   Consulte la tabla de opciones en [Añadir una regla de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A).
 1. Haga clic **[!UICONTROL Save Changes]**.
 1. Vuelva a generar el índice del sitio web escalonado para previsualización de los resultados de la edición de la regla.
 
-   Consulte [Ejecución de un índice completo de un sitio web activo o en un sitio web escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Consulte [Ejecución de un índice completo de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Consulte [Ejecución de un índice incremental de un sitio Web activo o en un sitio Web en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+   Consulte [Ejecución de un índice incremental de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -334,30 +337,30 @@ Puede eliminar las reglas de clasificación que ya no necesite utilizar.
 
 Consulte [Configuración de la clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_4CEBC13925B047FC95BDC217B48089C5).
 
-Consulte [Añadir un grupo](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8)de reglas de clasificación.
+Consulte [Añadir un grupo de reglas de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8).
 
 **Para eliminar una regla de clasificación**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
-1. (Opcional) Si ha creado un grupo de reglas y ha agregado reglas al grupo, en la [!DNL Define Ranking Rules] página, en la **[!UICONTROL Select Rule Group]** lista desplegable, seleccione un grupo de reglas que contenga las reglas que desee eliminar.
-1. En la tabla, debajo del encabezado de la **[!UICONTROL Actions]** columna, haga clic en **[!UICONTROL Delete]** para el nombre del origen de datos que desee cambiar.
-1. En la [!DNL Delete Ranking Rule] página, haga clic en **[!UICONTROL Delete]**.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
+1. (Opcional) Si ha creado un grupo de reglas y ha agregado reglas al grupo, en la página [!DNL Define Ranking Rules], en la lista desplegable **[!UICONTROL Select Rule Group]**, seleccione un grupo de reglas que contenga reglas que desee eliminar.
+1. En la tabla, debajo del encabezado de columna **[!UICONTROL Actions]**, haga clic en **[!UICONTROL Delete]** para el nombre del origen de datos que desee cambiar.
+1. En la página [!DNL Delete Ranking Rule], haga clic en **[!UICONTROL Delete]**.
 
-   Volverá a la [!DNL Define Ranking Rules] página.
+   Volverá a la página [!DNL Define Ranking Rules].
 1. Vuelva a compilar el índice del sitio web escalonado para previsualización de los resultados de la eliminación de la regla.
 
-   Consulte [Ejecución de un índice completo de un sitio web activo o en un sitio web escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Consulte [Ejecución de un índice completo de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Consulte [Ejecución de un índice incremental de un sitio Web activo o en un sitio Web en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+   Consulte [Ejecución de un índice incremental de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -369,37 +372,37 @@ Si ha definido más de una etiqueta meta de tipo &quot;clasificación&quot;, pue
 
 Los grupos de reglas generalmente contienen una o más reglas que se han agregado. Sin embargo, los grupos de reglas también pueden hacer referencia a otros grupos de reglas. Por ejemplo, puede crear uno o más grupos de reglas y luego agregar reglas comúnmente utilizadas a cada uno de ellos. Estas reglas se comparten durante el cálculo de las distintas clasificaciones.
 
-Consulte [Edición de un grupo](../c-about-rules-menu/c-about-ranking-rules.md#task_D3EC0437E47144BC9E754FEF99C725E5)de reglas de clasificación.
+Consulte [Edición de un grupo de reglas de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_D3EC0437E47144BC9E754FEF99C725E5).
 
-Consulte [Eliminación de un grupo](../c-about-rules-menu/c-about-ranking-rules.md#task_BE5BE01F377843BEA9846E094A07F2EA)de reglas de clasificación.
+Consulte [Eliminación de un grupo de reglas de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_BE5BE01F377843BEA9846E094A07F2EA).
 
-Consulte [Revisión de los grupos](../c-about-rules-menu/c-about-ranking-rules.md#task_5694459D050C4254A25186038CD66B6E)de reglas de clasificación.
+Consulte [Revisión de los grupos de reglas de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_5694459D050C4254A25186038CD66B6E).
 
 **Para agregar un grupo de reglas de clasificación**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
-1. En la [!DNL Define Ranking Rules] página, a la derecha de la **[!UICONTROL Select Rule Group]** lista desplegable, haga clic en **[!UICONTROL Add]**.
-1. En la [!DNL Add Ranking Rule Group] página, en el **[!UICONTROL Rule Group Name]** campo, escriba un nombre único para el nuevo grupo de reglas.
-1. En la lista **[!UICONTROL Rank Field Name]** desplegable, seleccione el nombre de un campo de metadatos de clasificación que desee asociar al nuevo grupo de reglas. Seleccione **[!UICONTROL None]** si no desea asignar una clasificación.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
+1. En la página [!DNL Define Ranking Rules], a la derecha de la lista desplegable **[!UICONTROL Select Rule Group]**, haga clic en **[!UICONTROL Add]**.
+1. En la página [!DNL Add Ranking Rule Group], en el campo **[!UICONTROL Rule Group Name]**, escriba un nombre único para el nuevo grupo de reglas.
+1. En la lista desplegable **[!UICONTROL Rank Field Name]**, seleccione un nombre de campo de metadatos de clasificación que desee asociar al nuevo grupo de reglas. Seleccione **[!UICONTROL None]** si no desea asignar una clasificación.
 
-   La lista de los nombres de campo de clasificación proviene de las definiciones de metadatos que se agregaron en **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
+   La lista de los nombres de campo de clasificación proviene de definiciones de metadatos que se agregaron en **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
 
-   Consulte la tabla de opciones para [Añadir un nuevo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)de etiqueta meta.
+   Consulte la tabla de opciones en [Añadir un nuevo campo de etiqueta meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 1. Haga clic **[!UICONTROL Add]**.
 1. Vuelva a compilar el índice del sitio web escalonado para previsualización de los resultados de la adición de la regla.
 
-   Consulte [Ejecución de un índice completo de un sitio web activo o en un sitio web escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Consulte [Ejecución de un índice completo de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Consulte [Ejecución de un índice incremental de un sitio Web activo o en un sitio Web en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+   Consulte [Ejecución de un índice incremental de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -409,33 +412,33 @@ Consulte [Revisión de los grupos](../c-about-rules-menu/c-about-ranking-rules.m
 
 Puede editar la configuración de un grupo de reglas de clasificación existente.
 
-Consulte [Añadir un grupo](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8)de reglas de clasificación.
+Consulte [Añadir un grupo de reglas de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8).
 
 **Para editar un grupo de reglas de clasificación**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
-1. En la [!DNL Define Ranking Rules] página, a la derecha de la **[!UICONTROL Select Rule Group]** lista desplegable, haga clic en **[!UICONTROL Edit]**.
-1. En la [!DNL Edit Ranking Rule Group] página, en el **[!UICONTROL Rule Group Name]** campo, escriba un nombre único para el grupo de reglas.
-1. En la lista **[!UICONTROL Rank Field Name]** desplegable, seleccione el nombre del campo de metadatos de clasificación que desee asociar al grupo de reglas. Seleccione **[!UICONTROL None]** si no desea asignar una clasificación.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
+1. En la página [!DNL Define Ranking Rules], a la derecha de la lista desplegable **[!UICONTROL Select Rule Group]**, haga clic en **[!UICONTROL Edit]**.
+1. En la página [!DNL Edit Ranking Rule Group], en el campo **[!UICONTROL Rule Group Name]**, escriba un nombre único para el grupo de reglas.
+1. En la lista desplegable **[!UICONTROL Rank Field Name]**, seleccione un nombre de campo de metadatos de clasificación que desee asociar al grupo de reglas. Seleccione **[!UICONTROL None]** si no desea asignar una clasificación.
 
-   La lista de los nombres de campo de clasificación proviene de las definiciones de metadatos que se agregaron en **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
+   La lista de los nombres de campo de clasificación proviene de definiciones de metadatos que se agregaron en **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
 
-   Consulte la tabla de opciones para [Añadir un nuevo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)de etiqueta meta.
+   Consulte la tabla de opciones en [Añadir un nuevo campo de etiqueta meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 1. Haga clic **[!UICONTROL Save Changes]**.
 1. Vuelva a compilar el índice del sitio web escalonado para previsualización de los resultados de la adición de la regla.
 
-   Consulte [Ejecución de un índice completo de un sitio web activo o en un sitio web escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Consulte [Ejecución de un índice completo de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Consulte [Ejecución de un índice incremental de un sitio Web activo o en un sitio Web en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+   Consulte [Ejecución de un índice incremental de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -449,28 +452,28 @@ No se elimina el contenido de los grupos de reglas contenidos en el grupo de eli
 
 Asegúrese de volver a indexar el sitio web para que el cambio se refleje correctamente en los resultados de búsqueda.
 
-Consulte [Añadir un grupo](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8)de reglas de clasificación.
+Consulte [Añadir un grupo de reglas de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8).
 
 **Para eliminar un grupo de reglas de clasificación**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
-1. En la [!DNL Define Ranking Rules] página, en la **[!UICONTROL Select Rule Group]** lista desplegable, seleccione el grupo que desee eliminar.
-1. A la derecha de la lista **[!UICONTROL Select Rule Group]** desplegable, haga clic en **[!UICONTROL Delete]**.
-1. En la [!DNL Delete Ranking Rule Group] página, haga clic en **[!UICONTROL Delete]**.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
+1. En la página [!DNL Define Ranking Rules], en la lista desplegable **[!UICONTROL Select Rule Group]**, seleccione el grupo que desee eliminar.
+1. A la derecha de la lista desplegable **[!UICONTROL Select Rule Group]**, haga clic en **[!UICONTROL Delete]**.
+1. En la página [!DNL Delete Ranking Rule Group], haga clic en **[!UICONTROL Delete]**.
 1. Vuelva a compilar el índice del sitio web escalonado para previsualización de los resultados de la adición de la regla.
 
-   Consulte [Ejecución de un índice completo de un sitio web activo o en un sitio web escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Consulte [Ejecución de un índice completo de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Consulte [Ejecución de un índice incremental de un sitio Web activo o en un sitio Web en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+   Consulte [Ejecución de un índice incremental de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -480,22 +483,22 @@ Consulte [Añadir un grupo](../c-about-rules-menu/c-about-ranking-rules.md#task_
 
 Puede utilizar Información general de grupos de reglas de clasificación para ver el nombre de cada grupo Campo de clasificación y la fuente de datos y ponderación asociadas.
 
-Consulte [Añadir un grupo](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8)de reglas de clasificación.
+Consulte [Añadir un grupo de reglas de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8).
 
 **Para revisar los grupos de reglas de clasificación**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
-1. En la [!DNL Define Ranking Rules] página, a la derecha de la **[!UICONTROL Select Rule Group]** lista desplegable, haga clic en **[!UICONTROL Overview]**.
-1. En la [!DNL Ranking Rule Groups Overview] página, haga clic en **[!UICONTROL Close]** para volver a la [!DNL Define Ranking Rules] página.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
+1. En la página [!DNL Define Ranking Rules], a la derecha de la lista desplegable **[!UICONTROL Select Rule Group]**, haga clic en **[!UICONTROL Overview]**.
+1. En la página [!DNL Ranking Rule Groups Overview], haga clic en **[!UICONTROL Close]** para volver a la página [!DNL Define Ranking Rules].
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -509,18 +512,18 @@ Consulte [Acerca de reglas de clasificación](../c-about-rules-menu/c-about-rank
 
 **Para probar las reglas de clasificación**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
-1. En la [!DNL Define Ranking Rules] página, en el **[!UICONTROL Test URL]** área, escriba la dirección URL de una página web que se encuentre en el sitio web.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
+1. En la página [!DNL Define Ranking Rules], en el área **[!UICONTROL Test URL]**, escriba la dirección URL de una página Web que se encuentre en el sitio Web.
 1. Haga clic **[!UICONTROL Test]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -530,7 +533,7 @@ Consulte [Acerca de reglas de clasificación](../c-about-rules-menu/c-about-rank
 
 Puede cambiar las contribuciones relativas de sus reglas de clasificación individuales y la contribución de Clasificación a los resultados de búsqueda finales.
 
-Cuando no se define la clasificación, los resultados de la búsqueda son del 100% en el **[!UICONTROL Natural Relevance]** lado de la barra deslizante Reglas y relevancia en la **[!UICONTROL Adjust Ranking Weights]** página. Este balance simplemente significa que los resultados de la búsqueda se ordenan basándose únicamente en los términos de búsqueda.
+Cuando no se define la clasificación, los resultados de la búsqueda son 100% en el lado **[!UICONTROL Natural Relevance]** de la barra deslizante Reglas y relevancia en la página **[!UICONTROL Adjust Ranking Weights]**. Este balance simplemente significa que los resultados de la búsqueda se ordenan basándose únicamente en los términos de búsqueda.
 
 Cuando se define la clasificación, al campo de metadatos de clasificación asociado se le asigna un valor de relevancia, que oscila entre 1 y 10. Un valor de 1 significa que la clasificación calculada representa el 10 % del pedido de resultados de búsqueda y la relevancia natural el 90 % restante.
 
@@ -538,22 +541,22 @@ Si tiene más de una regla definida en un grupo de reglas, el valor de Peso de c
 
 **Para ajustar el peso asociado con las reglas de clasificación**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Adjust Weights]**.
-1. En la [!DNL Adjust Ranking Weights] página, en la **[!UICONTROL Select Rule Group]** lista desplegable, seleccione un grupo cuyos pesos de clasificación desee ajustar.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Adjust Weights]**.
+1. En la página [!DNL Adjust Ranking Weights], en la lista desplegable **[!UICONTROL Select Rule Group]**, seleccione un grupo cuyos pesos de clasificación desee ajustar.
 1. Arrastre los controles deslizantes para cambiar los valores de contribución correspondientes.
 
    El gráfico circular refleja los cambios gráficamente.
 1. Haga clic **[!UICONTROL Save Changes]**.
 1. Vuelva a compilar el índice del sitio web escalonado para previsualización de los resultados de la adición de la regla.
 
-   Consulte [Ejecución de un índice completo de un sitio web activo o en un sitio web escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Consulte [Ejecución de un índice completo de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Consulte [Ejecución de un índice incremental de un sitio Web activo o en un sitio Web en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+   Consulte [Ejecución de un índice incremental de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 1. (Opcional) Realice una de las siguientes acciones:
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
