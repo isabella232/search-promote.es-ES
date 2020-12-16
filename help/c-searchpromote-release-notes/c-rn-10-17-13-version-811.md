@@ -8,11 +8,14 @@ topic: Release Notes,Site search and merchandising
 uuid: 973f9608-a5c7-4571-ae2b-6f1fa05bc862
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 58%
 
 ---
 
 
-# Search&amp;Promote 8.11.0 Release Notes (10/29/2013){#search-promote-release-notes}
+# Notas de la versión de Search&amp;Promote 8.11.0 (29/10/2013){#search-promote-release-notes}
 
 <table> 
  <thead> 
@@ -24,14 +27,14 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
  <tbody> 
   <tr> 
    <td colname="col1"> <p> Descomponedor para danés </p> </td> 
-   <td colname="col2"> <p> A mechanism is now provided to allow <span class="keyword"> Adobe Search&amp;Promote</span> to access the language (Danish) detection, decompounding, stemming and segmentor services provided by Adobe. </p> </td> 
+   <td colname="col2"> <p> Ahora se proporciona un mecanismo para permitir que <span class="keyword"> Search&amp;Promote de Adobe</span> tenga acceso a los servicios de detección, descomposición, derivación y segmentación del idioma (danés) que proporciona Adobe. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Mejoras y correcciones**
 
-* Enhancements made to the existing [!DNL Search&Promote] table matching capabilities. Las mejoras ofrecen más compatibilidad con los requisitos de los clientes asociados con las relaciones cada vez más complejas entre SKU y los datos de producto.
+* Se han realizado mejoras en las capacidades de coincidencia de tablas [!DNL Search&Promote] existentes. Las mejoras ofrecen más compatibilidad con los requisitos de los clientes asociados con las relaciones cada vez más complejas entre SKU y los datos de producto.
 
    >[!NOTE]
    >
@@ -47,25 +50,25 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
    >[!NOTE]
    Esta función no está habilitada de forma predeterminada. Póngase en contacto con el servicio de atención al cliente de Adobe para activar la característica en Search&amp;Promote y poderla utilizar.
 
-* Se ha agregado la opción de casilla de verificación **[!UICONTROL Only allow searches that use HTTPS]** a **[!UICONTROL Settings]** > **[!UICONTROL Searching]** > **[!UICONTROL Restrictions]**.
+* Se añadió la opción de casilla de verificación **[!UICONTROL Only allow searches that use HTTPS]** en **[!UICONTROL Settings]** > **[!UICONTROL Searching]** > **[!UICONTROL Restrictions]**.
 
    Consulte [Acerca de las restricciones](../c-about-settings-menu/c-about-searching-menu.md#concept_B5B527E04EBF4E9AB5956EEF881DDBF1).
 
-* Se ha añadido una opción a **[!UICONTROL Settings]** > **[!UICONTROL Searching]** > **[!UICONTROL Feeds]** > **[!UICONTROL Create Feed]** > **[!UICONTROL Generic Feed]** para conservar los caracteres de tabulación en el panel [!DNL File Submission] del asistente.
+* Se ha añadido una opción en **[!UICONTROL Settings]** > **[!UICONTROL Searching]** > **[!UICONTROL Feeds]** > **[!UICONTROL Create Feed]** > **[!UICONTROL Generic Feed]** para conservar los caracteres de tabulación en el panel [!DNL File Submission] del asistente.
 
    Consulte [Creación de una fuente](../c-about-settings-menu/c-about-searching-menu.md#task_63179C1FC359497483CD6CE13FD1C250).
 
 * Se ha aumentado el tamaño de los datos que se aceptan en cada uno de los campos superiores e inferiores para el nuevo formulario de definición de facetas de 80 a 1000 caracteres.
 
-   Consulte [Acerca de las facetas](../c-about-design-menu/c-about-facets.md#concept_FA912B3B41EE493DB2F492D188457FF5).
+   Consulte [Acerca de Facetas](../c-about-design-menu/c-about-facets.md#concept_FA912B3B41EE493DB2F492D188457FF5).
 
 * Los parámetros de depuración de la búsqueda guiada ahora informan correctamente los números de las reglas comerciales.
 * Las reglas comerciales se aplican ahora en el entorno Live.
 * La búsqueda por proximidad ya funciona al buscar por longitud/latitud para las cuentas configuradas con Idioma = &quot;Danés (Dinamarca)&quot;.
 * Los desencadenantes basados en resultados sin programación asignada ahora se desencadenan.
-* Ahora se notifican resultados coherentes al utilizar la **[!UICONTROL Ignore Apostrophes]** opción en **[!UICONTROL Linguistics]** > **[!UICONTROL Words & Language]**.
+* Ahora se notifican resultados coherentes al utilizar la opción **[!UICONTROL Ignore Apostrophes]** en **[!UICONTROL Linguistics]** > **[!UICONTROL Words & Language]**.
 
-   Consulte [Acerca de palabras e idioma](../c-about-linguistics-menu/c-about-words-and-language.md#concept_CEB4B9576F3C4E2EB87B352EEC738D79).
+   Consulte [Acerca de Palabras e idioma](../c-about-linguistics-menu/c-about-words-and-language.md#concept_CEB4B9576F3C4E2EB87B352EEC738D79).
 
 * La interfaz de usuario de listas de palabras de compleción automática ya funciona con números altos de facetas.
 
