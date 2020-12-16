@@ -9,6 +9,9 @@ topic: Design,Site search and merchandising
 uuid: 3e630a72-a631-4f4f-8aa5-adf2882cdf1c
 translation-type: tm+mt
 source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+workflow-type: tm+mt
+source-wordcount: '789'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +26,9 @@ Las rutas de exploración rastrean el término buscado y las facetas subsiguient
 
 Utilice la configuración de la ruta de exploración para personalizar el control de la ruta de exploración de la capa de presentación de búsqueda. Si la capa de presentación tiene más de un conjunto de resultados de búsqueda, el control de la ruta de exploración actúa en la búsqueda principal de la página.
 
-Puede editar una ruta de exploración para cambiar el comportamiento predeterminado, la anchura máxima del valor y la extensión del valor, y para seleccionar si desea incluir el término de consulta.
+Puede editar una ruta de exploración para cambiar el comportamiento predeterminado, la anchura máxima del valor y la extensión del valor, así como para seleccionar si desea incluir el término de consulta.
 
-## Adding a new breadcrumb {#task_2FFA94F82AE74F10BDDE7367CDCEAE8B}
+## Añadir una nueva ruta de exploración {#task_2FFA94F82AE74F10BDDE7367CDCEAE8B}
 
 Puede agregar una barra de rutas de exploración para que un cliente pueda rastrear dónde se encuentra en el sitio Web.
 
@@ -41,9 +44,9 @@ t_adding_a_new_breadcrumb.xml
 
 **Para agregar una nueva ruta de exploración**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**.
-1. En la [!DNL Breadcrumbs] página, haga clic en **[!UICONTROL Add Breadcrumb]**.
-1. En la [!DNL Add Breadcrumb] página, configure las opciones que desee.
+1. En el menú del producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**.
+1. En la página [!DNL Breadcrumbs], haga clic en **[!UICONTROL Add Breadcrumb]**.
+1. En la página [!DNL Add Breadcrumb], establezca las opciones que desee.
 
    Esta configuración afecta tanto al comportamiento como a la presentación predeterminada de una ruta de exploración. Puede anular algunos de estos ajustes mediante la configuración de la plantilla de presentación.
 
@@ -69,9 +72,9 @@ t_adding_a_new_breadcrumb.xml
       <td colname="col1"> <p>Comportamiento </p> </td> 
       <td colname="col2"> <p>Establece uno de los tres comportamientos de ruta de exploración siguientes: </p> <p> 
       <ul id="ul_7E66ACC1DA494B20BEC3B0B2CCAB103A"> 
-        <li id="li_D81876660A8B48AFB70D3317063FBF6F"> <span class="uicontrol"> Ir </span> <p>Goto elimina todas las rutas de exploración después de la que se hace clic y comienza una nueva búsqueda en ese punto. </p> </li> 
-        <li id="li_63AE06B544B64DCAA8C55031B3DFFFF7"> <span class="uicontrol"> Eliminar </span> <p>Eliminar elimina de la ruta la ruta de exploración en la que el cliente hizo clic y, a continuación, inicia una nueva búsqueda. Este comportamiento es útil cuando desea permitir que el cliente anule los pasos para explorar en profundidad a través de la búsqueda. </p> </li> 
-        <li id="li_EEC810D420FF41498ECE49EBAAB33BE5"> <span class="uicontrol"> Colocar </span> <p>Borrar elimina todas las rutas de exploración. </p> </li> 
+        <li id="li_D81876660A8B48AFB70D3317063FBF6F"> <span class="uicontrol"> Ir  </span> <p>Goto elimina todas las rutas de exploración después de la que se hace clic y inicio una nueva búsqueda en ese punto. </p> </li> 
+        <li id="li_63AE06B544B64DCAA8C55031B3DFFFF7"> <span class="uicontrol"> Eliminar </span> <p>Eliminar elimina de la ruta la ruta de exploración en la que el cliente hizo clic y, a continuación, inicio una nueva búsqueda. Este comportamiento es útil cuando desea permitir que el cliente anule los pasos para explorar en profundidad a través de la búsqueda. </p> </li> 
+        <li id="li_EEC810D420FF41498ECE49EBAAB33BE5"> <span class="uicontrol"> Colocar  </span> <p>Borrar elimina todas las rutas de exploración. </p> </li> 
       </ul> </p> <p> Por ejemplo, supongamos que tiene una ruta de exploración de 1 &gt; 2 &gt; 3 &gt; 4. Cuando un cliente hace clic en "2", tiene los siguientes resultados, según el comportamiento que haya elegido: </p> <p> 
       <ul id="ul_96FCD8E4C3704B45B59BC18A7A1AC52A"> 
         <li id="li_B880037088DF426F880788EAA3072180">Ir a - 1 &gt; 2 </li> 
@@ -88,31 +91,31 @@ t_adding_a_new_breadcrumb.xml
       <td colname="col2"> <p>Especifica las elipses que se utilizarán cuando se trunca una ruta de exploración. </p> <p>De forma predeterminada, un "..." (elipses). </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Incluir término de consulta </p> </td> 
+      <td colname="col1"> <p>Incluir término de Consulta </p> </td> 
       <td colname="col2"> <p>Controla la presencia del término de consulta en una ruta de exploración. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Habilitar migas definidas por el usuario </p> </td> 
-      <td colname="col2"> <p>Marque esta opción para permitirle utilizar los elementos definidos por el usuario en las rutas de exploración mediante los parámetros <span class="codeph"> uX=[nombre]&amp;[nombre]=[valor] </span> en la dirección URL. Puede utilizar reglas de procesamiento para gestionar estos parámetros como desee. </p> <p>Por ejemplo: si esta función está habilitada y tiene la dirección URL, <code> https://search.host.com/?1=category&amp;q1=Clothes&amp;u2= 
-          type&amp;type=Men&amp;x3=kind&amp;q3=Sweater </code> en caso de que tenga facetas <span class="codeph"> categoría <span class="varname"> </span> y </span> tipo <span class="codeph"> , la ruta de exploración será similar a <span class="varname"> </span> </span><span class="codeph"> </span>Ropa &gt; Hombres &gt; Sweater. </p> </td> 
+      <td colname="col2"> <p>Marque esta opción para permitirle utilizar los elementos definidos por el usuario en las rutas de exploración mediante <span class="codeph"> uX=[nombre]&amp;[nombre]=[valor] </span> parámetros en la dirección URL. Puede utilizar reglas de procesamiento para gestionar estos parámetros como desee. </p> <p>Por ejemplo: si esta característica está habilitada y tiene la dirección URL, <code> https://search.host.com/?1=category&amp;q1=Clothes&amp;u2= 
+          type&amp;type=Men&amp;x3=kind&amp;q3=Sweater </code> en caso de que tenga facetas <span class="codeph"> <span class="varname"> categoría </span> </span> y <span class="codeph"> <span class="varname"> tipo </span> </span>, su ruta de exploración será como <span class="codeph"> Ropa &gt; Hombres &gt; Sweater </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nombres de rutas definidos por el usuario </p> </td> 
-      <td colname="col2"> <p>Una lista separada por comas de todos los nombres posibles de los elementos de ruta definidos por el usuario. </p> <p>Esta opción solo está disponible si marca la opción <span class="uicontrol"> Habilitar migas definidas por el usuario </span>. </p> </td> 
+      <td colname="col2"> <p>Una lista separada por comas de todos los nombres posibles de los elementos de ruta definidos por el usuario. </p> <p>Esta opción solo está disponible si marca <span class="uicontrol"> Habilitar rutas de sendero definidas por el usuario </span>. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
 1. Haga clic **[!UICONTROL Add]**.
-1. (Opcional) En la [!DNL Breadcrumbs] página, realice una de las siguientes acciones:
+1. (Opcional) En la página [!DNL Breadcrumbs], realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -134,21 +137,21 @@ t_editing_a_breadcrumb.xml
 
 **Para editar una ruta de exploración**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**.
-1. En la [!DNL Breadcrumbs] página, haga clic **[!UICONTROL Edit]** en el extremo derecho del nombre de una ruta de exploración.
-1. En la [!DNL Edit Breadcrumb] página, configure las opciones que desee.
+1. En el menú del producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**.
+1. En la página [!DNL Breadcrumbs], haga clic en **[!UICONTROL Edit]** a la derecha del nombre de una ruta de exploración.
+1. En la página [!DNL Edit Breadcrumb], establezca las opciones que desee.
 
-   Consulte la tabla de opciones en [Adición de una nueva ruta de exploración](../c-about-design-menu/c-about-breadcrumbs.md#task_2FFA94F82AE74F10BDDE7367CDCEAE8B).
+   Consulte la tabla de opciones en [Añadir una nueva ruta de exploración](../c-about-design-menu/c-about-breadcrumbs.md#task_2FFA94F82AE74F10BDDE7367CDCEAE8B).
 1. Haga clic **[!UICONTROL Save Changes]**.
-1. (Opcional) En la **[!UICONTROL Breadcrumb]** página, realice una de las siguientes acciones:
+1. (Opcional) En la página **[!UICONTROL Breadcrumb]**, realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -166,18 +169,18 @@ t_deleting_a_breadcrumb.xml
 
 **Para eliminar una ruta de exploración**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**.
-1. En la [!DNL Breadcrumbs] página, haga clic **[!UICONTROL Delete]** en el extremo derecho del nombre de una ruta de exploración.
-1. En el cuadro de diálogo [!DNL Confirmation] , haga clic en **[!UICONTROL OK]**.
+1. En el menú del producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**.
+1. En la página [!DNL Breadcrumbs], haga clic en **[!UICONTROL Delete]** a la derecha del nombre de una ruta de exploración.
+1. En el cuadro de diálogo [!DNL Confirmation], haga clic en **[!UICONTROL OK]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
