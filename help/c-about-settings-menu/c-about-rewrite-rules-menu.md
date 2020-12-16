@@ -9,6 +9,9 @@ topic: Settings,Site search and merchandising
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 translation-type: tm+mt
 source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+workflow-type: tm+mt
+source-wordcount: '10216'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
 
 Utilice el menú Reescribir reglas para establecer reglas de rastreo y búsqueda de URL y título.
 
-## Acerca de las reglas URL del almacén de listas de rastreo {#concept_B71CF4C8030A4A74A22C3BFE4DE3B865}
+## Acerca de las reglas de URL del almacén de Listas de rastreo {#concept_B71CF4C8030A4A74A22C3BFE4DE3B865}
 
 Las reglas de URL de rastreo especifican cómo se reescriben las URL que encuentra dentro del contenido web. Puede especificar un número ilimitado de reglas y condiciones, y puede manipular cualquier parte de las direcciones URL encontradas.
 
@@ -31,7 +34,7 @@ Las reglas de rastreo son más útiles para reescribir partes dinámicas de una 
 
 A medida que se rastrea un sitio web, las direcciones URL de contenido incrustado se almacenan en una lista temporal de páginas web adicionales para rastrear. Antes de agregar una dirección URL a esta lista, se le aplican las reglas de reescritura de la tienda. Generalmente, las reglas de reescritura de la tienda se utilizan para eliminar una identificación de sesión de una dirección URL o para aplicar una identificación de sesión específica para el rastreo. Cuando el robot de búsqueda recupera una dirección URL de la lista, se utilizan las reglas de reescritura Recuperar para volver a manipular partes de esa dirección URL. Normalmente, las reglas de recuperación se utilizan para insertar datos que distinguen tiempo en la dirección URL. Es esta dirección URL final la que se utiliza para recuperar la página del sitio web.
 
-Consulte [Acerca de la lista de rastreo Recuperar reglas](../c-about-settings-menu/c-about-rewrite-rules-menu.md#concept_EC8E2E48B99A458D8567B526C9827CBA)URL.
+Consulte [Acerca de la Lista de rastreo Recuperar reglas de URL](../c-about-settings-menu/c-about-rewrite-rules-menu.md#concept_EC8E2E48B99A458D8567B526C9827CBA).
 
 Normalmente, las reglas de URL de la tienda se utilizan exclusivamente. Recuperar reglas de URL solo es necesario si las direcciones URL contienen datos dinámicos, como un ID de sesión, y si los datos dinámicos cambian con el tiempo para seguir siendo válidos. En este caso, se utilizan las reglas de URL de la tienda para obtener el estado más reciente de los datos de las URL encontradas. A continuación, utilice Recuperar reglas de URL para agregar esos datos a cada dirección URL cuando el robot de búsqueda intente recuperar la página.
 
@@ -56,7 +59,7 @@ Una directiva RewriteRule tiene el siguiente formato:
 
 `Pattern` puede ser una expresión regular POSIX, que se aplica a la dirección URL actual. La &quot;dirección URL actual&quot; puede diferir de la dirección URL solicitada original, ya que es posible que las reglas anteriores ya hayan coincidido y modificado la dirección URL.
 
-Consulte Expresiones [regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Consulte [Expresiones regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 No se puede usar el carácter &quot;no&quot; (&#39;!&#39;) para prefijar el patrón. El carácter &quot;no&quot; permite negar un patrón, es decir, que sea verdadero solo si la dirección URL actual NO coincide con este patrón. El carácter &quot;no&quot; se puede utilizar cuando es mejor que coincida con un patrón negativo o como regla predeterminada final.
 
@@ -66,29 +69,29 @@ No se puede usar el carácter &quot;no&quot; (&#39;!&#39;) para prefijar el patr
 
 Puede utilizar paréntesis para crear una referencia inversa en el patrón, al que pueden hacer referencia la sustitución y el modelo de código.
 
-**Sustitución** La URL se sustituye por la cadena de sustitución, que contiene lo siguiente:
+**** SustituciónLa URL se sustituye por la cadena de sustitución, que contiene lo siguiente:
 
 Texto sin formato: Texto que se pasa sin modificar.
 
 Las referencias anteriores proporcionan acceso a las partes agrupadas (entre paréntesis) del Patrón o CondPattern. A continuación se indican los dos tipos de referencias anteriores:
 
-* **Referencias** de reglas de reescritura Estas referencias de coincidencia son referencias anteriores en el patrón de reglas de reescritura correspondiente y tienen la forma $N (0 &lt;= N &lt;= 9). Por ejemplo, `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2.`
+* **RewriteRule** BackReferencesEstas referencias de coincidencia coinciden en el patrón de reglas de reescritura correspondiente y toman el formato $N (0)  &lt;> Por ejemplo, `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2.`
 
-* **RewriteCond Referencias** Estas referencias anteriores de coincidencia en el último CondPattern de RewriteCond coincidente y tienen la forma %N (0 &lt;= N &lt;= 9).
+* **RewriteCond** BackReferencesEstas referencias anteriores de coincidencia coinciden en el último CondPattern de RewriteCond coincidente y tienen el formato %N (0  &lt;>
 
-Variables: Son variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE es una cadena para el nombre de una variable definida. Consulte el `*[E]*` indicador para obtener más información sobre la configuración de variables de entorno.
+Variables: Son variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE es una cadena para el nombre de una variable definida. Consulte el indicador `*[E]*` para obtener más información sobre la configuración de variables de entorno.
 
 Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME_OF_FUNCTION es la siguiente:
 
-* el operador hace que todos los caracteres de la *tecla* estén en minúsculas.
-* toupper escribe todos los caracteres en *clave* en mayúsculas.
-* escape URL-codifica todos los caracteres de la *clave*.
+* tolower escribe todos los caracteres en *key* minúscula.
+* toupper escribe todos los caracteres en *key* mayúscula.
+* escape URL-codifica todos los caracteres de *key*.
 * Los caracteres &#39;a&#39;..&#39;z&#39;, &#39;A&#39;...Z&#39;, &#39;0&#39;...9&#39;, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; y &#39;_&#39; se dejan sin cambios; los espacios se traducen a &#39;+&#39; y todos los demás caracteres se transforman en su equivalente con codificación URL %xx.
 * unescape vuelve a transformar &#39;+&#39; en espacio y todos los caracteres con codificación URL %xx en caracteres únicos.
 
 >[!NOTE]
 >
->Hay una cadena de sustitución especial: `'-'` eso significa &quot;NO hay sustitución&quot;. La `'-'` cadena se utiliza con frecuencia con el indicador C (cadena), lo que permite hacer coincidir una dirección URL con varios patrones antes de que se produzca una sustitución.
+>Hay una cadena de sustitución especial: `'-'` significa &quot;NO sustitución&quot;. La cadena `'-'` se utiliza con frecuencia con el indicador C (cadena), lo que permite hacer coincidir una dirección URL con varios patrones antes de que se produzca una sustitución.
 
 **Indicadores**
 
@@ -124,18 +127,18 @@ Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME
   </tr> 
   <tr> 
    <td colname="col1"> <p> 'env|E=VAR:VAL' </p> </td> 
-   <td colname="col2"> <p>Establece la variable ambiental. </p> <p>Crea una variable ambiental "VAR" establecida en el valor VAL, donde VAL puede contener referencias anteriores de expresiones regulares, $N y %N, que se expanden. Puede utilizar este indicador más de una vez para establecer varias variables. Posteriormente se puede anular la referencia a las variables en un patrón RewriteCond siguiente mediante %{VAR}. </p> <p>Utilice este indicador para eliminar y recordar información de las direcciones URL. </p> </td> 
+   <td colname="col2"> <p>Establece la variable ambiental. </p> <p>Crea una variable de entorno "VAR" establecida en el valor VAL, donde VAL puede contener referencias de expresiones anteriores regulares, $N y %N, que se expanden. Puede utilizar este indicador más de una vez para establecer varias variables. Posteriormente se puede anular la referencia a las variables en un patrón RewriteCond siguiente mediante %{VAR}. </p> <p>Utilice este indicador para eliminar y recordar información de las direcciones URL. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Las reglas de reescritura de almacenamiento y las reglas de reescritura de recuperación comparten valores de variables. Debido a este comportamiento, puede establecer una variable en un valor session-id que distinga el tiempo cuando se encuentre y almacene una URL incrustada. Cuando se recupera la siguiente dirección URL de la lista de almacenamiento temporal, se puede agregar el valor de identificación de sesión más reciente antes de recuperar esa página.
+>Las reglas de reescritura de almacenamiento y las reglas de reescritura de recuperación comparten valores de variables. Debido a este comportamiento, puede establecer una variable en un valor session-id que distinga el tiempo cuando se encuentre y almacene una URL incrustada. Cuando se recupera la siguiente dirección URL de la lista de almacenamiento temporal, se puede agregar el último valor de sessionid antes de recuperar esa página.
 
 **Ejemplo de una regla de reescritura con una función**
 
-Supongamos que tiene un servidor que distingue entre mayúsculas y minúsculas, que maneja las cadenas `"www.mydomain.com"` y `"www.MyDomain.com"` de forma diferente. Para que el servidor funcione correctamente, asegúrese de que el dominio siempre esté presente `"www.mydomain.com"` aunque algunos documentos contengan vínculos que hagan referencia `"www.MyDomain.com."` Para ello, puede utilizar la siguiente regla:
+Supongamos que tiene un servidor que distingue entre mayúsculas y minúsculas, que maneja las cadenas `"www.mydomain.com"` y `"www.MyDomain.com"` de manera diferente. Para que el servidor funcione correctamente, asegúrese de que el dominio sea siempre `"www.mydomain.com"` aunque algunos documentos contengan vínculos que hagan referencia a `"www.MyDomain.com."` Para ello, puede utilizar la siguiente regla:
 
 ```
 RewriteRule  ^https:// 
@@ -143,11 +146,11 @@ RewriteRule  ^https://
 <i>(.*)</i>$  https://${tolower:$1}$2
 ```
 
-Esta regla de reescritura utiliza la función `tolower` para reescribir la parte de dominio de una dirección URL para asegurarse de que siempre esté en minúsculas, como en el siguiente ejemplo:
+Esta regla de reescritura utiliza la función `tolower` para reescribir la porción de dominio de una dirección URL a fin de asegurarse de que siempre esté en minúsculas, como en el ejemplo siguiente:
 
-1. El patrón `(^https://([^/]*)(.*)$)` contiene una referencia `([^/]*)` que coincide con todos los caracteres entre `https://` y el primero `/` en la dirección URL. El patrón también contiene una segunda referencia `(.*)` que coincide con todos los caracteres restantes de la dirección URL.
+1. El patrón `(^https://([^/]*)(.*)$)` contiene una referencia `([^/]*)` que coincide con todos los caracteres entre `https://` y el primer `/` en la dirección URL. El patrón también contiene una segunda referencia `(.*)` que coincide con todos los caracteres restantes de la dirección URL.
 
-1. La sustitución `(https://${tolower:$1}$2)` indica al motor de búsqueda que vuelva a escribir la dirección URL utilizando la `tolower` función en la primera referencia secundaria `(https:// ${tolower:$1}$2)` dejando el resto de la dirección URL intacta `(https://${tolower:$1} $2)`.
+1. La sustitución `(https://${tolower:$1}$2)` indica al motor de búsqueda que vuelva a escribir la dirección URL mediante la función `tolower` en la primera referencia `(https:// ${tolower:$1}$2)`, dejando el resto de la dirección URL intacta `(https://${tolower:$1} $2)`.
 
 Por lo tanto, una dirección URL del formulario `https://www.MyDomain.com/INTRO/index.Html` se reescribe como `https://www.mydomain.com/INTRO/index.Html`.
 
@@ -167,20 +170,20 @@ Texto sin formato: Texto que se pasa sin modificar.
 
 Las referencias anteriores proporcionan acceso a las partes agrupadas (entre paréntesis) del Patrón o CondPattern. A continuación se indican los dos tipos de referencias anteriores:
 
-* **Referencias** de reglas de reescritura Estas referencias de coincidencia son referencias anteriores en el patrón de reglas de reescritura correspondiente y tienen la forma $N (0 &lt;= N &lt;= 9). Por ejemplo, `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2`.
+* **RewriteRule** BackReferencesEstas referencias de coincidencia coinciden en el patrón de reglas de reescritura correspondiente y toman el formato $N (0)  &lt;> Por ejemplo, `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2`.
 
-* **RewriteCond Referencias** Anteriores Estas referencias coincidentes en el último CondPattern de RewriteCond coincidente y tienen la forma %N (0&lt;= N &lt;= 9).
+* **RewriteCond** BackReferencesEstas referencias anteriores de coincidencia coinciden en el último CondPattern de RewriteCond coincidente y tienen el formato %N (0&lt;>
 
 Variables: Son variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el indicador RewriteRule *`[E]`* para obtener más información sobre la configuración de variables.
 
 Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME_OF_FUNCTION es la siguiente:
 
-* el operador hace que todos los caracteres de la *tecla* estén en minúsculas.
-* toupper escribe todos los caracteres en *clave* en mayúsculas.
-* escape URL-codifica todos los caracteres de la clave. Los caracteres &#39;a&#39;..&#39;z&#39;, &#39;A&#39;...Z&#39;, &#39;0&#39;...9&#39;, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; y &#39;_&#39; se dejan sin cambios, los espacios se traducen a &#39;+&#39; y todos los demás caracteres se transforman en su equivalente codificado en `%xx` URL.
-* unescape transforma &#39;+&#39; en espacio y todos los caracteres de codificación de `%xx` URL vuelven a codificarse en caracteres únicos.
+* tolower escribe todos los caracteres en *key* minúscula.
+* toupper escribe todos los caracteres en *key* mayúscula.
+* escape URL-codifica todos los caracteres de la clave. Los caracteres &#39;a&#39;..&#39;z&#39;, &#39;A&#39;...Z&#39;, &#39;0&#39;...9&#39;, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; y &#39;_&#39; se dejan sin cambios, los espacios se traducen a &#39;+&#39; y todos los demás caracteres se transforman en su equivalente con `%xx` codificación URL.
+* unescape transforma &#39;+&#39; en espacio y todos los caracteres de codificación de dirección URL `%xx` vuelven a codificar en caracteres únicos.
 
-**CondPattern** es una expresión regular extendida estándar con algunas adiciones. La cadena de patrón puede tener un `!` carácter (signo de exclamación) como prefijo para especificar un patrón no coincidente. En lugar de cadenas de expresión regulares reales, puede utilizar una de las siguientes variantes especiales:
+**** CondPatternis es una Expresión estándar de Extended Regular con algunas adiciones. La cadena de patrón puede tener como prefijo un carácter `!` (signo de exclamación) para especificar un patrón no coincidente. En lugar de cadenas de expresión regulares reales, puede utilizar una de las siguientes variantes especiales:
 
 >[!NOTE]
 >
@@ -200,7 +203,7 @@ Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME
   </tr> 
   <tr> 
    <td colname="col1"> <p> '&gt;CondPattern' </p> </td> 
-   <td colname="col2"> <p>bueno Lexicamente. </p> <p> Trata el CondPattern como una cadena sin formato y lo compara lexicamente con TestString. True si TestString es bueno lexicamente que CondPattern. </p> </td> 
+   <td colname="col2"> <p>Bueno Lexicamente. </p> <p> Trata el CondPattern como una cadena sin formato y lo compara lexicamente con TestString. True si TestString es bueno lexicamente que CondPattern. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> '=CondPattern' </p> </td> 
@@ -209,7 +212,8 @@ Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME
  </tbody> 
 </table>
 
-**Marcas**(opcional) Encerrar los indicadores entre corchetes `[]`. Varios indicadores están separados por comas.
+**Marcas**
+ (opcional) Encerrar los indicadores entre corchetes  `[]`. Varios indicadores están separados por comas.
 
 <table> 
  <thead> 
@@ -232,7 +236,7 @@ Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME
 
 **Ejemplo**
 
-Algunas páginas Web asignan una variable CGI &quot;sessionid&quot; la primera vez que un visitante llega a un sitio. Esta variable se utiliza para identificar al visitante y, a medida que el visitante navega por el sitio, se pasa la variable. Dado que el robot de búsqueda se parece a un visitante del sitio, se le asigna un número &quot;sessionid&quot;. El robot de búsqueda mantiene este único valor &quot;sessionid&quot;, incluso si una segunda página del sitio intenta asignar un nuevo valor. Para garantizar esto, necesita dos reglas de reescritura.
+Algunas páginas Web asignan una variable CGI &quot;sessionid&quot; la primera vez que un visitante llega a un sitio. Esta variable se utiliza para identificar el visitante y, a medida que el visitante navega por el sitio, se pasa la variable. Dado que el robot de búsqueda se parece a un visitante del sitio, se le asigna un número &quot;sessionid&quot;. El robot de búsqueda mantiene este único valor &quot;sessionid&quot;, incluso si una segunda página del sitio intenta asignar un nuevo valor. Para garantizar esto, necesita dos reglas de reescritura.
 
 La primera regla se utiliza para identificar y almacenar la variable sessionid:
 
@@ -243,13 +247,13 @@ RewriteRule  ^.+sessionid=
 <i>[E=sessionid:$1]</i>
 ```
 
-RewriteRule utiliza un indicador E `([E=sessionid:$1])` para asignar el valor actual del parámetro CGI sessionid a la variable `sessionid`. La `$1` referencia hace referencia a la primera referencia, que se encuentra entre el primer conjunto de paréntesis del patrón de RewriteRule `([^&#]+)`.
+RewriteRule utiliza un indicador E `([E=sessionid:$1])` para asignar el valor actual del parámetro CGI sessionid a la variable `sessionid`. El `$1` hace referencia a la primera referencia, que se encuentra entre el primer conjunto de paréntesis del patrón `([^&#]+)` de RewriteRule.
 
-La expresión regular `^&#]+` coincide con la parte de una dirección URL entre la palabra `sessionid` y el siguiente `**&**or**#**` carácter. Dado que esta regla de reescritura solo se utiliza para crear el valor inicial de la variable sessionid, no se reescribe. Tenga en cuenta que el campo Sustitución de la regla está establecido en `-` para indicar que no se requiere reescritura.
+La expresión regular `^&#]+` coincide con la parte de una dirección URL entre la palabra `sessionid` y el siguiente carácter `**&**or**#**`. Dado que esta regla de reescritura solo se utiliza para crear el valor inicial de la variable sessionid, no se reescribe. Tenga en cuenta que el campo Sustitución de la regla está establecido en `-` para indicar que no se requiere reescritura.
 
 RewriteCond examina la variable `sessionid` ( `%{sessionid}`). Si ni siquiera tiene un solo carácter (!.+), entonces la regla de reescritura coincide.
 
-Con esta regla, la dirección URL se lee `https://www.domain.com/home/?sessionid=1234&function=start` y asigna el valor `1234` a la variable `sessionid`.
+Con esta regla, la dirección URL se lee como `https://www.domain.com/home/?sessionid=1234&function=start` y asigna el valor `1234` a la variable `sessionid`.
 
 La segunda regla se utiliza para reescribir todas las direcciones URL que coincidan con el siguiente patrón RewriteRule:
 
@@ -259,17 +263,17 @@ RewriteRule
 <i>(.*)$</i>  $1sessionid=%{sessionid}$2
 ```
 
-El patrón RewriteRule contiene dos referencias atrás: `(.+)` y `(.*)`. La primera referencia inversa coincide con todos los caracteres anteriores `sessionid`. La segunda referencia inversa coincide con todos los caracteres posteriores a la finalización `&` o `#`.
+El patrón RewriteRule contiene dos referencias atrás: `(.+)` y `(.*)`. La primera referencia anterior coincide con todos los caracteres anteriores a `sessionid`. La segunda referencia anterior coincide con todos los caracteres después de la `&` o `#` de finalización.
 
 El patrón de sustitución vuelve a escribir la dirección URL utilizando la primera referencia, seguida de la cadena &quot;sessionid=&quot;, seguida del valor de la variable de ID de sesión definida por la primera regla `%{sessionid}`, seguida de la segunda referencia. `($1sessionid=%{sessionid} $2)`
 
-Tenga en cuenta que esta RewriteRule no contiene un RewriteCond. Como tal, provoca una reescritura para todas las direcciones URL que coinciden con el *patrón* RewriteRule. Por lo tanto, si el valor de la variable sessionid ( `%{sessionid}`) es `1234`, una dirección URL del formulario `https://www.domain.com/products/?sessionid=5678&function=buy` se reescribe como `https://www.domain.com/products/?sessionid=1234&function=buy`
+Tenga en cuenta que esta RewriteRule no contiene un RewriteCond. Como tal, provoca una reescritura para todas las direcciones URL que coinciden con el patrón *de RewriteRule*. Por lo tanto, si el valor de la variable sessionid ( `%{sessionid}`) es `1234`, se reescribe una dirección URL del formulario `https://www.domain.com/products/?sessionid=5678&function=buy` como `https://www.domain.com/products/?sessionid=1234&function=buy`
 
 ## Reconocimiento {#section_B17088EF38244496BC1DDD4ECF75EB5B}
 
 El software del motor de reescritura fue originalmente desarrollado por el Grupo Apache para su uso en el proyecto del servidor Apache HTTP (https://www.apache.org/).
 
-## Adición de una regla URL de almacén de listas de rastreo {#task_22DD40DF95584B12BE8E6ECFBF579BCD}
+## Añadir una regla de dirección URL del almacén de listas de rastreo {#task_22DD40DF95584B12BE8E6ECFBF579BCD}
 
 Puede agregar reglas de URL del almacén de listas de rastreo para especificar cómo se reescriben las direcciones URL que se encuentran en el contenido web. Puede especificar un número ilimitado de reglas y condiciones, y puede manipular cualquier parte de las direcciones URL encontradas.
 
@@ -281,30 +285,30 @@ t_adding_a_crawl_list_store_url_rule.xml
 
 **Para agregar reglas de URL del almacén de listas de rastreo**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Store URL Rules]**.
-1. En el [!DNL Crawl List Store URL Rules] campo, introduzca las reglas que desee.
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Store URL Rules]**.
+1. En el campo [!DNL Crawl List Store URL Rules], introduzca las reglas que desee.
 
    Se permiten líneas en blanco y líneas de comentarios que comienzan con un carácter &#39;#&#39; (hash).
-1. (Opcional) En la [!DNL Crawl List Store URL Rules] página, en el [!DNL Test Crawl List Store URL Rules] campo, escriba una dirección URL de prueba cuyas reglas de rastreo desee probar y, a continuación, haga clic en **Prueba**.
+1. (Opcional) En la página [!DNL Crawl List Store URL Rules], en el campo [!DNL Test Crawl List Store URL Rules], introduzca una dirección URL de prueba cuyas reglas de rastreo desee probar y, a continuación, haga clic en **Prueba**.
 1. Haga clic en **Guardar cambios**.
-1. (Opcional) Si desea obtener una vista previa de los resultados, vuelva a generar el índice del sitio escalonado.
+1. (Opcional) Vuelva a generar el índice del sitio escalonado si desea realizar una previsualización de los resultados.
 
-   Consulte [Configuración de un índice incremental de un sitio Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)escalonado.
-1. (Opcional) En la [!DNL Crawl List Store URL Rules] página, realice una de las siguientes acciones:
+   Consulte [Configuración de un índice incremental de un sitio Web escalonado](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
+1. (Opcional) En la página [!DNL Crawl List Store URL Rules], realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
       Consulte [Inserción de la configuración del escenario en directo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Acerca de las reglas de recuperación de URL de la lista de rastreo {#concept_EC8E2E48B99A458D8567B526C9827CBA}
+## Acerca de las reglas de recuperación de URL de Lista de rastreo {#concept_EC8E2E48B99A458D8567B526C9827CBA}
 
 Las reglas de URL de rastreo especifican cómo se reescriben las URL que se encuentran en el contenido web. Puede especificar un número ilimitado de reglas y condiciones, y puede manipular cualquier parte de las direcciones URL encontradas.
 
@@ -343,7 +347,7 @@ Una directiva RewriteRule tiene el siguiente formato:
 
 `Pattern` puede ser una expresión regular POSIX, que se aplica a la dirección URL actual. La &quot;dirección URL actual&quot; puede diferir de la dirección URL solicitada original, ya que es posible que las reglas anteriores ya hayan coincidido y modificado la dirección URL.
 
-Consulte Expresiones [regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Consulte [Expresiones regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 No se puede usar el carácter &quot;no&quot; (&#39;!&#39;) para prefijar el patrón. El carácter &quot;no&quot; permite negar un patrón, es decir, que sea verdadero solo si la dirección URL actual NO coincide con este patrón. El carácter &quot;no&quot; se puede utilizar cuando es mejor que coincida con un patrón negativo o como regla predeterminada final.
 
@@ -353,13 +357,13 @@ No se puede usar el carácter &quot;no&quot; (&#39;!&#39;) para prefijar el patr
 
 Puede utilizar paréntesis para crear una referencia inversa en el patrón, al que pueden hacer referencia la sustitución y el modelo de código.
 
-**Sustitución** La URL se sustituye por la cadena de sustitución, que contiene lo siguiente:
+**** SustituciónLa URL se sustituye por la cadena de sustitución, que contiene lo siguiente:
 
 Texto sin formato: Texto que se pasa sin modificar.
 
 Las referencias anteriores proporcionan acceso a las partes agrupadas (entre paréntesis) del Patrón o CondPattern. A continuación se indican los dos tipos de referencias anteriores:
 
-* **Referencias** de reglas de reescritura Estas referencias de coincidencia son referencias anteriores en el patrón de reglas de reescritura correspondiente y tienen la forma $N (0 &lt;= N &lt;= 9). Por ejemplo, `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2.`
+* **RewriteRule** BackReferencesEstas referencias de coincidencia coinciden en el patrón de reglas de reescritura correspondiente y toman el formato $N (0)  &lt;> Por ejemplo, `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2.`
 
 * ** RewriteCond Referencias anteriores** Estas referencias anteriores de coincidencia en el último CondPattern de RewriteCond coincidente y toman la forma %N (0 &lt;= N &lt;= 9).
 
@@ -367,9 +371,9 @@ Variables: Son variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIAB
 
 Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME_OF_FUNCTION es la siguiente:
 
-* el operador hace que todos los caracteres de la *tecla* estén en minúsculas.
-* toupper escribe todos los caracteres en *clave* en mayúsculas.
-* escape URL-codifica todos los caracteres de la *clave*.
+* tolower escribe todos los caracteres en *key* minúscula.
+* toupper escribe todos los caracteres en *key* mayúscula.
+* escape URL-codifica todos los caracteres de *key*.
 * Los caracteres &#39;a&#39;..&#39;z&#39;, &#39;A&#39;...Z&#39;, &#39;0&#39;...9&#39;, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; y &#39;_&#39; se dejan sin cambios; los espacios se traducen a &#39;+&#39; y todos los demás caracteres se transforman en su equivalente con codificación URL %xx.
 * unescape vuelve a transformar &#39;+&#39; en espacio y todos los caracteres con codificación URL %xx en caracteres únicos.
 
@@ -409,14 +413,14 @@ Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME
   </tr> 
   <tr> 
    <td colname="col1"> <p> 'env|E=VAR:VAL' </p> </td> 
-   <td colname="col2"> <p>Establece la variable ambiental. </p> <p>Crea una variable ambiental "VAR" establecida en el valor VAL, donde VAL puede contener referencias anteriores de expresiones regulares, $N y %N, que se expanden. Puede utilizar este indicador más de una vez para establecer varias variables. Posteriormente se puede anular la referencia a las variables en un patrón RewriteCond siguiente mediante %{VAR}. </p> <p>Utilice este indicador para eliminar y recordar información de las direcciones URL. </p> </td> 
+   <td colname="col2"> <p>Establece la variable ambiental. </p> <p>Crea una variable de entorno "VAR" establecida en el valor VAL, donde VAL puede contener referencias de expresiones anteriores regulares, $N y %N, que se expanden. Puede utilizar este indicador más de una vez para establecer varias variables. Posteriormente se puede anular la referencia a las variables en un patrón RewriteCond siguiente mediante %{VAR}. </p> <p>Utilice este indicador para eliminar y recordar información de las direcciones URL. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Las reglas de reescritura de almacenamiento y las reglas de reescritura de recuperación comparten valores de variables. Debido a este comportamiento, puede establecer una variable en un valor session-id que distinga el tiempo cuando se encuentre y almacene una URL incrustada. Cuando se recupera la siguiente dirección URL de la lista de almacenamiento temporal, se puede agregar el valor de identificación de sesión más reciente antes de recuperar esa página.
+>Las reglas de reescritura de almacenamiento y las reglas de reescritura de recuperación comparten valores de variables. Debido a este comportamiento, puede establecer una variable en un valor session-id que distinga el tiempo cuando se encuentre y almacene una URL incrustada. Cuando se recupera la siguiente dirección URL de la lista de almacenamiento temporal, se puede agregar el último valor de sessionid antes de recuperar esa página.
 
 **Ejemplo de una regla de reescritura con una función**
 
@@ -428,10 +432,10 @@ RewriteRule  ^https://
 <i>(.*)</i>$  https://${tolower:$1}$2
 ```
 
-Esta regla de reescritura utiliza la función `tolower` para reescribir la parte de dominio de una dirección URL para asegurarse de que siempre esté en minúsculas, como en el siguiente ejemplo:
+Esta regla de reescritura utiliza la función `tolower` para reescribir la porción de dominio de una dirección URL a fin de asegurarse de que siempre esté en minúsculas, como en el ejemplo siguiente:
 
-1. El patrón `(^https://([^/]*)(.*)$)` contiene una referencia inversa ** `([^/]*)`** que coincide con todos los caracteres entre `https://` y el primero `/` en la dirección URL. El patrón también contiene una segunda referencia `(.*)` que coincide con todos los caracteres restantes de la dirección URL.
-1. La sustitución `(https://${tolower:$1}$2)` indica al motor de búsqueda que vuelva a escribir la dirección URL utilizando la `tolower` función en la primera referencia secundaria `(https:// ${tolower:$1}$2)` dejando el resto de la dirección URL intacta `(https://${tolower:$1} $2)`.
+1. El Patrón `(^https://([^/]*)(.*)$)` contiene una referencia inversa ** `([^/]*)`** que coincide con todos los caracteres entre `https://` y el primer `/` en la dirección URL. El patrón también contiene una segunda referencia `(.*)` que coincide con todos los caracteres restantes de la dirección URL.
+1. La sustitución `(https://${tolower:$1}$2)` indica al motor de búsqueda que vuelva a escribir la dirección URL mediante la función `tolower` en la primera referencia `(https:// ${tolower:$1}$2)`, dejando el resto de la dirección URL intacta `(https://${tolower:$1} $2)`.
 
 Por lo tanto, una dirección URL del formulario `https://www.MyDomain.com/INTRO/index.Html` se reescribe como `https://www.mydomain.com/INTRO/index.Html`.
 
@@ -451,20 +455,20 @@ Texto sin formato: Texto que se pasa sin modificar.
 
 Las referencias anteriores proporcionan acceso a las partes agrupadas (entre paréntesis) del Patrón o CondPattern. A continuación se indican los dos tipos de referencias anteriores:
 
-* **Referencias** de reglas de reescritura Estas referencias de coincidencia son referencias anteriores en el patrón de reglas de reescritura correspondiente y tienen la forma $N (0 &lt;= N &lt;= 9). Por ejemplo, `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2`.
+* **RewriteRule** BackReferencesEstas referencias de coincidencia coinciden en el patrón de reglas de reescritura correspondiente y toman el formato $N (0)  &lt;> Por ejemplo, `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2`.
 
-* **RewriteCond Referencias** Anteriores Estas referencias coincidentes en el último CondPattern de RewriteCond coincidente y tienen la forma %N (0&lt;= N &lt;= 9).
+* **RewriteCond** BackReferencesEstas referencias anteriores de coincidencia coinciden en el último CondPattern de RewriteCond coincidente y tienen el formato %N (0&lt;>
 
 Variables: Son variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el indicador RewriteRule *`[E]`* para obtener más información sobre la configuración de variables.
 
 Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME_OF_FUNCTION es la siguiente:
 
-* el operador hace que todos los caracteres de la *tecla* estén en minúsculas.
-* toupper escribe todos los caracteres en *clave* en mayúsculas.
+* tolower escribe todos los caracteres en *key* minúscula.
+* toupper escribe todos los caracteres en *key* mayúscula.
 * escape URL-codifica todos los caracteres de la clave. Los caracteres &#39;a&#39;..&#39;z&#39;, &#39;A&#39;...Z&#39;, &#39;0&#39;...9&#39;, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; y &#39;_&#39; se dejan sin cambios, los espacios se traducen a &#39;+&#39; y todos los demás caracteres se transforman en su equivalente con codificación URL %xx.
 * unescape transforma &#39;+&#39; de nuevo al espacio y todos los caracteres de codificación de URL %xx vuelven a codificarse en caracteres únicos.
 
-**CondPattern** es una expresión regular extendida estándar con algunas adiciones. La cadena de patrón puede tener el prefijo &#39;!&#39; carácter (signo de exclamación) para especificar un patrón no coincidente. En lugar de cadenas de expresión regulares reales, puede utilizar una de las siguientes variantes especiales:
+**** CondPatternis es una Expresión estándar de Extended Regular con algunas adiciones. La cadena de patrón puede tener el prefijo &#39;!&#39; carácter (signo de exclamación) para especificar un patrón no coincidente. En lugar de cadenas de expresión regulares reales, puede utilizar una de las siguientes variantes especiales:
 
 >[!NOTE]
 >
@@ -484,7 +488,7 @@ Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME
   </tr> 
   <tr> 
    <td colname="col1"> <p> '&gt;CondPattern' </p> </td> 
-   <td colname="col2"> <p>bueno Lexicamente. </p> <p> Trata el CondPattern como una cadena sin formato y lo compara lexicamente con TestString. True si TestString es bueno lexicamente que CondPattern. </p> </td> 
+   <td colname="col2"> <p>Bueno Lexicamente. </p> <p> Trata el CondPattern como una cadena sin formato y lo compara lexicamente con TestString. True si TestString es bueno lexicamente que CondPattern. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> '=CondPattern' </p> </td> 
@@ -493,7 +497,8 @@ Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME
  </tbody> 
 </table>
 
-**Marcas**(opcional) Encerrar los indicadores entre corchetes `[]`. Varios indicadores están separados por comas.
+**Marcas**
+ (opcional) Encerrar los indicadores entre corchetes  `[]`. Varios indicadores están separados por comas.
 
 <table> 
  <thead> 
@@ -516,7 +521,7 @@ Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME
 
 **Ejemplo**
 
-Algunas páginas Web asignan una variable CGI &quot;sessionid&quot; la primera vez que un visitante llega a un sitio. Esta variable se utiliza para identificar al visitante y, a medida que el visitante navega por el sitio, se pasa la variable. Dado que el robot de búsqueda se parece a un visitante del sitio, se le asigna un número &quot;sessionid&quot;. El robot de búsqueda mantiene este único valor &quot;sessionid&quot;, incluso si una segunda página del sitio intenta asignar un nuevo valor. Para garantizar esto, necesita dos reglas de reescritura.
+Algunas páginas Web asignan una variable CGI &quot;sessionid&quot; la primera vez que un visitante llega a un sitio. Esta variable se utiliza para identificar el visitante y, a medida que el visitante navega por el sitio, se pasa la variable. Dado que el robot de búsqueda se parece a un visitante del sitio, se le asigna un número &quot;sessionid&quot;. El robot de búsqueda mantiene este único valor &quot;sessionid&quot;, incluso si una segunda página del sitio intenta asignar un nuevo valor. Para garantizar esto, necesita dos reglas de reescritura.
 
 La primera regla se utiliza para identificar y almacenar la variable sessionid:
 
@@ -527,13 +532,13 @@ RewriteRule  ^.+sessionid=
 <i>[E=sessionid:$1]</i>
 ```
 
-RewriteRule utiliza un indicador E `([E=sessionid:$1])` para asignar el valor actual del parámetro CGI sessionid a la variable `sessionid`. La `$1` referencia hace referencia a la primera referencia, que se encuentra entre el primer conjunto de paréntesis del patrón de RewriteRule `([^&#]+)`.
+RewriteRule utiliza un indicador E `([E=sessionid:$1])` para asignar el valor actual del parámetro CGI sessionid a la variable `sessionid`. El `$1` hace referencia a la primera referencia, que se encuentra entre el primer conjunto de paréntesis del patrón `([^&#]+)` de RewriteRule.
 
-La expresión regular `^&#]+` coincide con la parte de una dirección URL entre la palabra `sessionid` y el siguiente carácter**&amp;**o**#**s. Dado que esta regla de reescritura solo se utiliza para crear el valor inicial de la variable sessionid, no se reescribe. Tenga en cuenta que el campo Sustitución de la regla está establecido en `-` para indicar que no se requiere reescritura.
+La expresión regular `^&#]+` coincide con la parte de una dirección URL entre la palabra `sessionid` y el siguiente*&amp;**o**#**carácter. Dado que esta regla de reescritura solo se utiliza para crear el valor inicial de la variable sessionid, no se reescribe. Tenga en cuenta que el campo Sustitución de la regla está establecido en `-` para indicar que no se requiere reescritura.
 
 RewriteCond examina la variable `sessionid` ( `%{sessionid}`). Si ni siquiera tiene un solo carácter (!.+), entonces la regla de reescritura coincide.
 
-Con esta regla, la dirección URL se lee `https://www.domain.com/home/?sessionid=1234&function=start` y asigna el valor `1234` a la variable `sessionid`.
+Con esta regla, la dirección URL se lee como `https://www.domain.com/home/?sessionid=1234&function=start` y asigna el valor `1234` a la variable `sessionid`.
 
 La segunda regla se utiliza para reescribir todas las direcciones URL que coincidan con el siguiente patrón RewriteRule:
 
@@ -543,19 +548,19 @@ RewriteRule
 <i>(.*)$</i>  $1sessionid=%{sessionid}$2
 ```
 
-El patrón RewriteRule contiene dos referencias atrás: `(.+)` y `(.*)`. La primera referencia inversa coincide con todos los caracteres anteriores `sessionid`. La segunda referencia inversa coincide con todos los caracteres posteriores a la finalización `&` o `#`.
+El patrón RewriteRule contiene dos referencias atrás: `(.+)` y `(.*)`. La primera referencia anterior coincide con todos los caracteres anteriores a `sessionid`. La segunda referencia anterior coincide con todos los caracteres después de la `&` o `#` de finalización.
 
 El patrón de sustitución vuelve a escribir la dirección URL utilizando la primera referencia, seguida de la cadena &quot;sessionid=&quot;, seguida del valor de la variable de ID de sesión definida por la primera regla `%{sessionid}`, seguida de la segunda referencia. `($1sessionid=%{sessionid} $2)`
 
-Tenga en cuenta que esta RewriteRule no contiene un RewriteCond. Como tal, provoca una reescritura para todas las direcciones URL que coinciden con el *patrón* RewriteRule. Por lo tanto, si el valor de la variable sessionid ( `%{sessionid}`) es `1234`, una dirección URL del formulario `https://www.domain.com/products/?sessionid=5678&function=buy` se reescribe como `https://www.domain.com/products/?sessionid=1234&function=buy`
+Tenga en cuenta que esta RewriteRule no contiene un RewriteCond. Como tal, provoca una reescritura para todas las direcciones URL que coinciden con el patrón *de RewriteRule*. Por lo tanto, si el valor de la variable sessionid ( `%{sessionid}`) es `1234`, se reescribe una dirección URL del formulario `https://www.domain.com/products/?sessionid=5678&function=buy` como `https://www.domain.com/products/?sessionid=1234&function=buy`
 
 ## Reconocimiento {#section_EC3A1DAEB5A54C93A265CB119DF91E9F}
 
 El software del motor de reescritura fue originalmente desarrollado por el Grupo Apache para su uso en el proyecto del servidor Apache HTTP (https://www.apache.org/).
 
-## Agregar una lista de rastreo para recuperar reglas de URL {#task_94A28ED7DC404BFF9767DBB5ADEE6B7A}
+## Añadir reglas de recuperación de URL de lista de rastreo {#task_94A28ED7DC404BFF9767DBB5ADEE6B7A}
 
-Puede agregar reglas de URL de recuperación de lista de rastreo para especificar cómo se reescriben las direcciones URL encontradas dentro del contenido web. Recuperar reglas de reescritura solo es necesario si las direcciones URL contienen datos dinámicos, como un ID de sesión, y si los datos dinámicos cambian con el tiempo para seguir siendo válidos.
+Puede agregar reglas de recuperación de URL de lista de rastreo para especificar cómo se reescriben las direcciones URL encontradas dentro del contenido web. Recuperar reglas de reescritura solo es necesario si las direcciones URL contienen datos dinámicos, como un ID de sesión, y si los datos dinámicos cambian con el tiempo para seguir siendo válidos.
 
 <!-- 
 
@@ -563,26 +568,26 @@ t_adding_crawl_list_retrieve_url_rules.xml
 
  -->
 
-**Para agregar una lista de rastreo, recupere las reglas de URL**
+**Para agregar reglas de URL de recuperación de lista de rastreo**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]**.
-1. En el [!DNL Crawl List Retrieve URL Rules] campo, introduzca las reglas que desee.
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]**.
+1. En el campo [!DNL Crawl List Retrieve URL Rules], introduzca las reglas que desee.
 
    Se permiten líneas en blanco y líneas de comentarios que comienzan con un carácter &#39;#&#39; (hash).
-1. (Opcional) En la [!DNL Crawl List Retrieve URL Rules] página, en el [!DNL Test Crawl List Retrieve URL Rules] campo, escriba una dirección URL de prueba cuyas reglas de rastreo desee probar y, a continuación, haga clic en **Prueba**.
+1. (Opcional) En la página [!DNL Crawl List Retrieve URL Rules], en el campo [!DNL Test Crawl List Retrieve URL Rules], introduzca una dirección URL de prueba cuyas reglas de rastreo desee probar y, a continuación, haga clic en **Prueba**.
 1. Haga clic en **Guardar cambios**.
-1. (Opcional) Si desea obtener una vista previa de los resultados, vuelva a generar el índice del sitio escalonado.
+1. (Opcional) Vuelva a generar el índice del sitio escalonado si desea realizar una previsualización de los resultados.
 
-   Consulte [Configuración de un índice incremental de un sitio Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)escalonado.
-1. (Opcional) En la [!DNL Crawl List Retrieve URL Rules] página, realice una de las siguientes acciones:
+   Consulte [Configuración de un índice incremental de un sitio Web escalonado](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
+1. (Opcional) En la página [!DNL Crawl List Retrieve URL Rules], realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -630,15 +635,15 @@ Cada directiva RewriteRule define una regla de reescritura. Las reglas se aplica
 RewriteRule Pattern Substitution [Flags]
 ```
 
-**El patrón** puede ser una expresión regular POSIX, que se aplica al título actual. El &quot;título actual&quot; difiere del título original, ya que las reglas anteriores ya lo han hecho y lo han modificado.
+**** El patrón puede ser una expresión regular POSIX, que se aplica al título actual. El &quot;título actual&quot; difiere del título original, ya que las reglas anteriores ya lo han hecho y lo han modificado.
 
-Consulte Expresiones [regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Consulte [Expresiones regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 Puede usar el carácter &quot;no&quot; (&#39;!&#39;) para prefijar el patrón. El carácter &quot;no&quot; permite negar un patrón, es decir, que sea verdadero sólo si el título actual NO coincide con el patrón. El carácter &quot;no&quot; se puede utilizar cuando es mejor que coincida con un patrón negativo o como regla predeterminada final. Nota: No se pueden usar tanto el carácter &quot;no&quot; como los comodines agrupados en un patrón. Además, no puede utilizar un patrón negado cuando la cadena de sustitución contiene $N.
 
 Puede utilizar paréntesis para crear una referencia secundaria, a la que pueden hacer referencia la sustitución y el patrón de cond.
 
-**Sustitución** El título se sustituye por la cadena de sustitución. La cadena puede contener lo siguiente:
+**** SustituciónEl título se sustituye por la cadena de sustitución. La cadena puede contener lo siguiente:
 
 Texto sin formato: texto que se pasa sin modificar.
 
@@ -651,18 +656,18 @@ Las referencias anteriores proporcionan acceso a las partes agrupadas (entre par
 
    Estas referencias anteriores de coincidencia en el último modelo de cond de RewriteCond coincidente y toman la forma %N (0 &lt;= N &lt;= 9).
 
-Variables Son variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el `[E]` indicador para obtener más información sobre la configuración de variables de entorno.
+Variables Son variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el indicador `[E]` para obtener más información sobre la configuración de variables de entorno.
 
 Funciones Estas son funciones del formulario ${NAME_OF_FUNCTION: key} donde NAME_OF_FUNCTION es:
 
-* el operador hace que todos los caracteres de la *tecla* estén en minúsculas.
-* toupper escribe todos los caracteres en *clave* en mayúsculas.
+* tolower escribe todos los caracteres en *key* minúscula.
+* toupper escribe todos los caracteres en *key* mayúscula.
 
 >[!NOTE]
 >
 >Hay una cadena de sustitución especial: &#39;-&#39; que significa &quot;NO sustitución&quot;. La cadena &#39;-&#39; suele ser útil con el indicador C (cadena), lo que le permite hacer coincidir un título con varios patrones antes de que se produzca una sustitución.
 
-**Indicadores** (opcional)
+**Indicadores**  (opcional)
 
 Los indicadores están entre corchetes `[]`y los indicadores múltiples están separados por comas:
 
@@ -696,7 +701,7 @@ Los indicadores están entre corchetes `[]`y los indicadores múltiples están s
   </tr> 
   <tr> 
    <td colname="col1"> <p> 'env|E=VAR:VAL' </p> </td> 
-   <td colname="col2"> <p>Configure la variable de entorno. </p> <p> Crea una variable ambiental "VAR" establecida en el valor VAL, donde VAL puede contener referencias anteriores de expresiones regulares, $N y %N, que se expande. Puede utilizar este indicador más de una vez para establecer varias variables. Más adelante se puede hacer referencia a las variables en el siguiente patrón RewriteCond mediante %{VAR}. Utilice este indicador para eliminar y recordar información de los títulos. </p> </td> 
+   <td colname="col2"> <p>Configure la variable de entorno. </p> <p> Crea una variable de entorno "VAR" establecida en el valor VAL, donde VAL puede contener referencias de expresiones anteriores regulares, $N y %N, que se expande. Puede utilizar este indicador más de una vez para establecer varias variables. Más adelante se puede hacer referencia a las variables en el siguiente patrón RewriteCond mediante %{VAR}. Utilice este indicador para eliminar y recordar información de los títulos. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -711,7 +716,7 @@ Las directivas de condiciones de reescritura tienen la siguiente forma:
 RewriteCond TestString CondPattern [Flags] 
 ```
 
-**TestString** es una cadena que puede contener las siguientes construcciones:
+**** TestStringes una cadena que puede contener las siguientes construcciones:
 
 Texto sin formato: texto que se pasa sin modificar.
 
@@ -720,17 +725,17 @@ Las referencias anteriores proporcionan acceso a las partes agrupadas (entre par
 * Reescribir referencias de regla Estas referencias de coincidencia son referencias anteriores en el patrón de reglas de reescritura correspondiente y tienen la forma $N (0 &lt;= N &lt;= 9). Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 * Reescribir referencias anteriores de Cond Estas referencias de coincidencia coinciden en el último CondPattern de RewriteCond coincidente y tienen la forma %N (0 &lt;= N &lt;= 9).
 
-Variables Son variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el `[E]` indicador para obtener más información sobre la configuración de variables de entorno.
+Variables Son variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el indicador `[E]` para obtener más información sobre la configuración de variables de entorno.
 
 Funciones Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME_OF_FUNCTION es:
 
-* el operador hace que todos los caracteres de la *tecla* estén en minúsculas.
-* toupper escribe todos los caracteres en *clave* en mayúsculas.
+* tolower escribe todos los caracteres en *key* minúscula.
+* toupper escribe todos los caracteres en *key* mayúscula.
 * escape URL-codifica todos los caracteres de la clave.
 * Los caracteres &#39;a&#39;..&#39;z&#39;, &#39;A&#39;...Z&#39;, &#39;0&#39;...9&#39;, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; y &#39;_&#39; se dejan sin cambios, los espacios se traducen a &#39;+&#39; y todos los demás caracteres se transforman en su equivalente con codificación URL %xx.
 * unescape vuelve a transformar &#39;+&#39; en espacio y todos los caracteres con codificación URL %xx en caracteres únicos.
 
-**CondPattern** es una expresión regular extendida estándar con algunas adiciones. La cadena de patrón puede tener el prefijo &#39;!&#39; carácter (signo de exclamación) para especificar un patrón no coincidente. En lugar de cadenas de expresión regulares reales, puede utilizar una de las siguientes variantes especiales.
+**** CondPatternis es una Expresión estándar de Extended Regular con algunas adiciones. La cadena de patrón puede tener el prefijo &#39;!&#39; carácter (signo de exclamación) para especificar un patrón no coincidente. En lugar de cadenas de expresión regulares reales, puede utilizar una de las siguientes variantes especiales.
 
 >[!NOTE]
 >
@@ -746,20 +751,20 @@ Funciones Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME_
  <tbody> 
   <tr> 
    <td colname="col1"> <p> '&lt;CondPattern' </p> </td> 
-   <td colname="col2"> <p>Es lexicamente menos. </p> <p>Trata el <i>CondPattern</i> como una cadena sin formato y lo compara léxicamente con <i>TestString</i>. True si <i>TestString</i> es lexicamente menor que <i>CondPattern</i>. </p> </td> 
+   <td colname="col2"> <p>Es lexicamente menos. </p> <p>Trata el <i>CondPattern</i> como una cadena sin formato y lo compara lexicamente con <i>TestString</i>. True si <i>TestString</i> es lexicamente menor que <i>CondPattern</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> '&gt;CondPattern' </p> </td> 
-   <td colname="col2"> <p>Es bueno lexicamente. </p> <p>Trata el <i>CondPattern</i> como una cadena sin formato y lo compara léxicamente con <i>TestString</i>. True si <i>TestString</i> es bueno léxicamente que <i>CondPattern</i>. </p> </td> 
+   <td colname="col2"> <p>Es bueno lexicamente. </p> <p>Trata el <i>CondPattern</i> como una cadena sin formato y lo compara lexicamente con <i>TestString</i>. True si <i>TestString</i> es léxicamente bueno que <i>CondPattern</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> '=CondPattern' </p> </td> 
-   <td colname="col2"> <p> Es lexicamente igual. </p> <p>Trata el <i>CondPattern</i> como una cadena sin formato y lo compara léxicamente con <i>TestString</i>. True si <i>TestString</i> es lexicamente igual a <i>CondPattern</i>, es decir, las dos cadenas son exactamente iguales (carácter por carácter). Si <i>CondPattern</i> es sólo "" (dos comillas), se compara <i>TestString</i> con la cadena vacía. </p> </td> 
+   <td colname="col2"> <p> Es lexicamente igual. </p> <p>Trata el <i>CondPattern</i> como una cadena sin formato y lo compara lexicamente con <i>TestString</i>. True si <i>TestString</i> es lexicamente igual a <i>CondPattern</i>, es decir, las dos cadenas son exactamente iguales (carácter por carácter). Si <i>CondPattern</i> es sólo "" (dos comillas), se compara <i>TestString</i> con la cadena vacía. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Indicadores** (opcional)
+**Indicadores**  (opcional)
 
 Los indicadores están entre corchetes `[]`y los indicadores múltiples están separados por comas:
 
@@ -773,7 +778,7 @@ Los indicadores están entre corchetes `[]`y los indicadores múltiples están s
  <tbody> 
   <tr> 
    <td colname="col1"> <p> 'nocase|NC' </p> </td> 
-   <td colname="col2"> <p>No hay caso. </p> <p> Hace que la prueba no sea sensible. Es decir, no hay diferencia entre 'A-Z' y 'a-z' tanto en la <i>cadena</i> de pruebas expandida como en el <i>patrónDeCond.</i> </p> </td> 
+   <td colname="col2"> <p>No hay caso. </p> <p> Hace que la prueba no sea sensible. Es decir, no hay diferencia entre 'A-Z' y 'a-z' tanto en el <i>TestString</i> expandido como en el <i>CondPattern.</i> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> 'ornext|OR' </p> </td> 
@@ -784,7 +789,7 @@ Los indicadores están entre corchetes `[]`y los indicadores múltiples están s
 
 **Ejemplo**
 
-Supongamos que tiene un sitio Web corporativo con un formato de título estándar: &quot;Mi empresa&quot; seguida de un guión y después de una descripción específica de la página (&quot;Mi empresa - Bienvenida&quot; o &quot;Mi empresa - Noticias&quot;, por ejemplo). Desea eliminar &quot;Mi empresa -&quot; del título y convertir todo el título en letras mayúsculas cuando indexe el sitio.
+Supongamos que tiene un sitio Web corporativo con un formato de título estándar: &quot;Mi Compañía&quot; seguida de un guión y después de una descripción específica de la página (&quot;Mi Compañía - Bienvenida&quot; o &quot;Mi Compañía - Noticias&quot;, por ejemplo). Desea eliminar &quot;Mi Compañía -&quot; del título y convertir todo el título en letras en mayúsculas cuando indexe el sitio.
 
 La regla de reescritura siguiente utiliza el cargador de funciones para reescribir solo la parte descriptiva de un título en mayúsculas:
 
@@ -794,15 +799,15 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>}
 ```
 
-El patrón de la regla `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` contiene una referencia `(.*)` que coincide con el contenido del título que sigue a &quot;Mi empresa-&quot;. Recuerde que rodear una parte de un patrón con paréntesis ( ) crea una referencia inversa a la que la sustitución puede hacer referencia. En este ejemplo, la sustitución (${toupper:**$1**}) vuelve a escribir esa referencia (**$1**) usando la función toupper.
+El patrón de la regla `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` contiene una referencia `(.*)` que coincide con el contenido del título que sigue a &quot;Mi Compañía-&quot;. Recuerde que rodear una parte de un patrón con paréntesis ( ) crea una referencia inversa a la que la sustitución puede hacer referencia. En este ejemplo, la sustitución (${toupper:**$1**}) reescribe esa referencia (**$1**) usando la función toupper.
 
-Por lo tanto, el título del formulario &quot;Mi empresa - Bienvenida&quot; se reescribe como &quot;BIENVENIDO&quot;.
+Por lo tanto, el título del formulario &quot;Mi Compañía - Bienvenida&quot; se reescribe como &quot;BIENVENIDO&quot;.
 
 **Reconocimiento**
 
 El software del motor de reescritura fue originalmente desarrollado por el Grupo Apache para su uso en el proyecto del servidor Apache HTTP (https://www.apache.org/).
 
-## Adición de reglas de título de rastreo {#task_272BB4C603BA4C9ABDBEEB398798B101}
+## Añadir reglas de título de rastreo {#task_272BB4C603BA4C9ABDBEEB398798B101}
 
 Puede agregar reglas de título de rastreo para especificar cómo se reescriben los títulos encontrados dentro del contenido web antes de que se almacenen en el índice de búsqueda.
 
@@ -814,24 +819,24 @@ t_adding_crawl_title_rules.xml
 
 **Para agregar reglas de título de rastreo**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl Title Rules]**.
-1. En el [!DNL Crawl Title Rules] campo, introduzca las reglas que desee.
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl Title Rules]**.
+1. En el campo [!DNL Crawl Title Rules], introduzca las reglas que desee.
 
    Se permiten líneas en blanco y líneas de comentarios que comienzan con un carácter &#39;#&#39; (hash).
-1. (Opcional) En la [!DNL Crawl Title Rules] página, en el [!DNL Test Crawl Title Rules] campo, escriba una dirección URL de prueba cuyas reglas de búsqueda desee probar y, a continuación, haga clic en **Prueba**.
+1. (Opcional) En la página [!DNL Crawl Title Rules], en el campo [!DNL Test Crawl Title Rules], introduzca una dirección URL de prueba cuyas reglas de búsqueda desee probar y, a continuación, haga clic en **Prueba**.
 1. Haga clic en **Guardar cambios**.
-1. (Opcional) Si desea obtener una vista previa de los resultados, vuelva a generar el índice del sitio escalonado.
+1. (Opcional) Vuelva a generar el índice del sitio escalonado si desea realizar una previsualización de los resultados.
 
-   Consulte [Configuración de un índice incremental de un sitio Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)escalonado.
-1. (Opcional) En la [!DNL Crawl Title Rules] página, realice una de las siguientes acciones:
+   Consulte [Configuración de un índice incremental de un sitio Web escalonado](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
+1. (Opcional) En la página [!DNL Crawl Title Rules], realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -874,15 +879,15 @@ RewriteRule
 <i>Pattern Substitution [Flags]</i>
 ```
 
-**El patrón** puede ser una expresión regular POSIX, que se aplica a la dirección URL actual. La &quot;dirección URL actual&quot; puede diferir de la dirección URL original, ya que es posible que las reglas anteriores ya la hayan coincidido y modificado.
+**El** patrón puede ser una expresión regular POSIX, que se aplica a la dirección URL actual. La &quot;dirección URL actual&quot; puede diferir de la dirección URL original, ya que es posible que las reglas anteriores ya la hayan coincidido y modificado.
 
-Consulte Expresiones [regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Consulte [Expresiones regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 Puede usar el carácter &quot;no&quot; (&#39;!&#39;) para prefijar el patrón. El carácter &quot;no&quot; permite negar un patrón. En otras palabras, es true sólo si la dirección URL actual NO coincide con el patrón. Puede utilizar el carácter &quot;no&quot; cuando sea mejor que coincida con un patrón negativo o como regla predeterminada final. Tenga en cuenta que no se pueden usar tanto el carácter &quot;no&quot; como los comodines agrupados en un patrón. Además, no puede utilizar un patrón negado cuando la cadena de sustitución contiene $N.
 
 Puede utilizar paréntesis para crear una referencia secundaria, a la que pueden hacer referencia la sustitución y el patrón de cond.
 
-**Sustitución** La URL se sustituye completamente por la cadena de sustitución, que puede contener lo siguiente:
+**** SustituciónLa URL se sustituye completamente por la cadena de sustitución, que puede contener lo siguiente:
 
 Texto sin formato: texto que se pasa sin modificar.
 
@@ -894,9 +899,9 @@ Referencias posteriores de RewriteCond: estas referencias anteriores de coincide
 
 Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME_OF_FUNCTION es:
 
-* el operador hace que todos los caracteres de la *tecla* estén en minúsculas.
-* toupper escribe todos los caracteres en *clave* en mayúsculas.
-* escape URL-codifica todos los caracteres de la *clave*.
+* tolower escribe todos los caracteres en *key* minúscula.
+* toupper escribe todos los caracteres en *key* mayúscula.
+* escape URL-codifica todos los caracteres de *key*.
 * Los caracteres &#39;a&#39;..&#39;z&#39;, &#39;A&#39;...Z&#39;, &#39;0&#39;...9&#39;, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; y &#39;_&#39; se dejan sin cambios; los espacios se traducen a &#39;+&#39;; todos los demás caracteres se transforman en su equivalente con codificación URL %xx.
 * unescape vuelve a transformar &#39;+&#39; en espacio y todos los caracteres con codificación URL %xx en caracteres únicos.
 
@@ -904,7 +909,7 @@ Funciones: Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME
 >
 >Hay una cadena de sustitución especial: &#39;-&#39; que significa &quot;NO sustitución&quot;. La cadena &#39;-&#39; suele ser útil junto con el indicador C (cadena). Permite hacer coincidir una dirección URL con varios patrones antes de que se produzca una sustitución.
 
-**Indicadores** (opcional)
+**Indicadores**  (opcional)
 
 Los indicadores están entre corchetes `[]`y los indicadores múltiples están separados por comas:
 
@@ -943,7 +948,7 @@ Los indicadores están entre corchetes `[]`y los indicadores múltiples están s
  </tbody> 
 </table>
 
-Tenga en cuenta que las reglas de reescritura de almacenamiento y las reglas de recuperación de reescritura comparten valores de variables. Debido a esto, puede establecer una variable en un valor session-id que distinga el tiempo cuando se encuentre y almacene una URL incrustada. Cuando se recupera la siguiente dirección URL de la lista de almacenamiento temporal, se puede agregar el valor de identificación de sesión más reciente antes de recuperar esa página.
+Tenga en cuenta que las reglas de reescritura de almacenamiento y las reglas de recuperación de reescritura comparten valores de variables. Debido a esto, puede establecer una variable en un valor session-id que distinga el tiempo cuando se encuentre y almacene una URL incrustada. Cuando se recupera la siguiente dirección URL de la lista de almacenamiento temporal, se puede agregar el último valor de sessionid antes de recuperar esa página.
 
 **Ejemplo**
 
@@ -959,11 +964,11 @@ Esta regla de reescritura utiliza la función &quot;tolower&quot; para reescribi
 
 1. El patrón `(^https://([^/]*)(.*)$)` contiene una referencia **`([^/]*)`** que coincide con todos los caracteres entre &quot;https://&quot; y el primer &quot;/&quot; en la dirección URL. El patrón también contiene una segunda referencia **(.*)** que coincide con todos los caracteres restantes de la dirección URL.
 
-1. La sustitución `(https://${tolower:$1}$2)` indica al motor de búsqueda que vuelva a escribir la dirección URL utilizando la función **Tolower** en la primera referencia anterior `(https://**${tolower:$1**}$2)` dejando el resto de la dirección URL intacto `(https://${tolower:$1}*$2*)`.
+1. La sustitución `(https://${tolower:$1}$2)` indica al motor de búsqueda que vuelva a escribir la dirección URL mediante la función **tolower** en la primera referencia `(https://**${tolower:$1**}$2)` sin modificar el resto de la dirección URL `(https://${tolower:$1}*$2*)`.
 
 Por lo tanto, una dirección URL del formulario `https://www.MyDomain.com/INTRO/index.Html` se reescribe como `https://www.mydomain.com/INTRO/index.Html`
 
-**Directiva** RewriteCond (opcional)
+**Directiva**  RewriteCond (opcional)
 
 La directiva RewriteCond define una condición de regla. Cuando RewriteCond precede a una RewriteRule, la regla solo se utiliza si su patrón coincide con el título actual y se aplican las condiciones adicionales.
 
@@ -974,7 +979,7 @@ RewriteCond
 <i>TestString CondPattern [Flags]</i>
 ```
 
-*TestString* es una cadena que puede contener las siguientes construcciones:
+** TestStringes una cadena que puede contener las siguientes construcciones:
 
 Texto sin formato: Texto que se pasa sin modificar.
 
@@ -982,7 +987,7 @@ Las referencias anteriores proporcionan acceso a las partes agrupadas (entre par
 
 * ** RewriteRule BackReferences** Estas referencias anteriores coinciden en el patrón RewriteRule correspondiente y toman la forma $N (0 &lt;= N &lt;= 9). Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
-* **RewriteCond Referencias** Estas referencias anteriores de coincidencia en el último CondPattern de RewriteCond coincidente y tienen la forma %N (0 &lt;= N &lt;= 9).
+* **RewriteCond** BackReferencesEstas referencias anteriores de coincidencia coinciden en el último CondPattern de RewriteCond coincidente y tienen el formato %N (0  &lt;>
 
 Variables Son variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el indicador RewriteRule *`[E]`* para obtener más información sobre la configuración de variables.
 
@@ -992,12 +997,12 @@ Variables Son variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABL
 
 Funciones Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME_OF_FUNCTION es:
 
-* el operador hace que todos los caracteres de la *tecla* estén en minúsculas.
-* toupper escribe todos los caracteres en *clave* en mayúsculas.
-* escape URL-codifica todos los caracteres de la *clave*. Los caracteres &#39;a&#39;..&#39;z&#39;, &#39;A&#39;...Z&#39;, &#39;0&#39;...9&#39;, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; y &#39;_&#39; se dejan sin cambios, los espacios se traducen a &#39;+&#39; y todos los demás caracteres se transforman en su equivalente con codificación URL %xx.
+* tolower escribe todos los caracteres en *key* minúscula.
+* toupper escribe todos los caracteres en *key* mayúscula.
+* escape URL-codifica todos los caracteres de *key*. Los caracteres &#39;a&#39;..&#39;z&#39;, &#39;A&#39;...Z&#39;, &#39;0&#39;...9&#39;, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; y &#39;_&#39; se dejan sin cambios, los espacios se traducen a &#39;+&#39; y todos los demás caracteres se transforman en su equivalente con codificación URL %xx.
 * unescape transforma &#39;+&#39; de nuevo al espacio y todos los caracteres de codificación de URL %xx vuelven a codificarse en caracteres únicos.
 
-**CondPattern** es una expresión regular extendida estándar con algunas adiciones. La cadena de patrón puede tener el prefijo &#39;!&#39; carácter (signo de exclamación) para especificar un patrón no coincidente. En lugar de cadenas de expresión regulares reales, puede utilizar una de las siguientes variantes especiales.
+**** CondPatternis es una Expresión estándar de Extended Regular con algunas adiciones. La cadena de patrón puede tener el prefijo &#39;!&#39; carácter (signo de exclamación) para especificar un patrón no coincidente. En lugar de cadenas de expresión regulares reales, puede utilizar una de las siguientes variantes especiales.
 
 Puede anteponer todas estas pruebas utilizando un signo de exclamación (&#39;!&#39;) para negar su significado.
 
@@ -1011,20 +1016,20 @@ Puede anteponer todas estas pruebas utilizando un signo de exclamación (&#39;!&
  <tbody> 
   <tr> 
    <td colname="col1"> <p> '&lt;CondPattern' </p> </td> 
-   <td colname="col2"> <p>Es lexicamente menos. </p> <p> Trata el <i>CondPattern</i> como una cadena sin formato y lo compara léxicamente con <i>TestString</i>. True si <i>TestString</i> es lexicamente menor que <i>CondPattern</i>. </p> </td> 
+   <td colname="col2"> <p>Es lexicamente menos. </p> <p> Trata el <i>CondPattern</i> como una cadena sin formato y lo compara lexicamente con <i>TestString</i>. True si <i>TestString</i> es lexicamente menor que <i>CondPattern</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> '&gt;CondPattern' </p> </td> 
-   <td colname="col2"> <p>Es bueno lexicamente. </p> <p> Trata el <i>CondPattern</i> como una cadena sin formato y lo compara léxicamente con <i>TestString</i>. True si <i>TestString</i> es bueno léxicamente que <i>CondPattern</i>. </p> </td> 
+   <td colname="col2"> <p>Es bueno lexicamente. </p> <p> Trata el <i>CondPattern</i> como una cadena sin formato y lo compara lexicamente con <i>TestString</i>. True si <i>TestString</i> es léxicamente bueno que <i>CondPattern</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> '=CondPattern' </p> </td> 
-   <td colname="col2"> <p>Es lexicamente igual. </p> <p> Trata el <i>CondPattern</i> como una cadena sin formato y lo compara léxicamente con <i>TestString</i>. True si <i>TestString</i> es lexicamente igual a <i>CondPattern</i>. Es decir, las dos cadenas son exactamente iguales (carácter por carácter). Si <i>CondPattern</i> es sólo "" (dos comillas), se compara <i>TestString</i> con la cadena vacía. </p> </td> 
+   <td colname="col2"> <p>Es lexicamente igual. </p> <p> Trata el <i>CondPattern</i> como una cadena sin formato y lo compara lexicamente con <i>TestString</i>. True si <i>TestString</i> es lexicamente igual a <i>CondPattern</i>. Es decir, las dos cadenas son exactamente iguales (carácter por carácter). Si <i>CondPattern</i> es sólo "" (dos comillas), se compara <i>TestString</i> con la cadena vacía. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Indicadores** (opcional)
+**Indicadores**  (opcional)
 
 Los indicadores están entre corchetes `[]`y los indicadores múltiples están separados por comas:
 
@@ -1034,7 +1039,7 @@ Los indicadores están entre corchetes `[]`y los indicadores múltiples están s
 
 **Ejemplo**
 
-Algunas páginas Web asignan una variable CGI &quot;sessionid&quot; la primera vez que un cliente llega a un sitio. Esta variable se utiliza para identificar al cliente y, a medida que el cliente navega por el sitio, se pasa la variable. Dado que el robot de búsqueda se parece a un cliente del sitio, se le asigna un número &quot;sessionid&quot;. El robot de búsqueda mantiene este único valor &quot;sessionid&quot;, incluso si una segunda página del sitio intenta asignar un nuevo valor. Para garantizar esto, necesita la siguiente regla de reescritura:
+Algunas páginas Web asignan una variable CGI &quot;sessionid&quot; la primera vez que un cliente llega a un sitio. Esta variable se utiliza para identificar al cliente y, a medida que el cliente navega por el sitio, se pasa la variable. Debido a que el robot de búsqueda se parece a un cliente del sitio, se le asigna un número &quot;sessionid&quot;. El robot de búsqueda mantiene este único valor &quot;sessionid&quot;, incluso si una segunda página del sitio intenta asignar un nuevo valor. Para garantizar esto, necesita la siguiente regla de reescritura:
 
 ```
 RewriteCond  %{sessionid}  .+ 
@@ -1051,15 +1056,15 @@ El patrón de sustitución vuelve a escribir la dirección URL utilizando la pri
 
 El **RewriteCond** examina la variable sessionid `(%{sessionid})`. Si contiene al menos un carácter (.+), entonces la regla de reescritura coincide.
 
-Por lo tanto, si la consulta de búsqueda es `"https://search.atomz.com/search/?sp_a=sp99999999&sp_q=word&sessionid=5678"`, todas las direcciones URL de los resultados de búsqueda se reescribirán de modo que el valor &quot;sessionid&quot; sea &quot;5678&quot; en lugar del valor &quot;sessionid&quot; que encontró el robot de búsqueda cuando rastreó el sitio y guardó los vínculos.
+Por lo tanto, si la consulta de búsqueda es `"https://search.atomz.com/search/?sp_a=sp99999999&sp_q=word&sessionid=5678"`, todas las direcciones URL de los resultados de búsqueda se reescribirán para que el valor &quot;sessionid&quot; sea &quot;5678&quot; en lugar del valor &quot;sessionid&quot; que encontró el robot de búsqueda cuando rastreó el sitio y guardó los vínculos.
 
 **Reconocimiento**
 
 El software del motor de reescritura fue originalmente desarrollado por el Grupo Apache para su uso en el proyecto del servidor Apache HTTP (https://www.apache.org/).
 
-## Adición de reglas de URL de búsqueda {#task_50C77D1B53804AEEB20896F74265BD6F}
+## Añadir reglas de URL de búsqueda {#task_50C77D1B53804AEEB20896F74265BD6F}
 
-Puede agregar reglas de URL de búsqueda para especificar cómo se muestran las direcciones URL en los resultados de búsqueda del sitio web. Las reglas funcionan con direcciones URL completas. Puede manipular cualquier porción de la dirección URL, incluidos los argumentos de consulta en los que la información de ID de sesión se guarda con frecuencia.
+Puede agregar reglas de URL de búsqueda para especificar cómo se muestran las direcciones URL en los resultados de búsqueda del sitio web. Las reglas funcionan con direcciones URL completas. Puede manipular cualquier parte de la dirección URL, incluidos los argumentos de consulta en los que la información de ID de sesión se suele guardar.
 
 <!-- 
 
@@ -1069,24 +1074,24 @@ t_adding_search_url_rules.xml
 
 **Para agregar reglas de URL de búsqueda**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search URL Rules]**.
-1. En el [!DNL Search URL Rules] campo, introduzca las reglas que desee.
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search URL Rules]**.
+1. En el campo [!DNL Search URL Rules], introduzca las reglas que desee.
 
    Se permiten líneas en blanco y líneas de comentarios que comienzan con un carácter &#39;#&#39; (hash).
-1. (Opcional) En la [!DNL Search URL Rules] página, en el [!DNL Test Search URL Rules] campo, escriba una dirección URL de prueba cuyas reglas de rastreo desee probar y, a continuación, haga clic en **Prueba**.
+1. (Opcional) En la página [!DNL Search URL Rules], en el campo [!DNL Test Search URL Rules], introduzca una dirección URL de prueba cuyas reglas de rastreo desee probar y, a continuación, haga clic en **Prueba**.
 1. Haga clic en **Guardar cambios**.
-1. (Opcional) Si desea obtener una vista previa de los resultados, vuelva a generar el índice del sitio escalonado.
+1. (Opcional) Vuelva a generar el índice del sitio escalonado si desea realizar una previsualización de los resultados.
 
-   Consulte [Configuración de un índice incremental de un sitio Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)escalonado.
-1. (Opcional) En la [!DNL Search URL Rules] página, realice una de las siguientes acciones:
+   Consulte [Configuración de un índice incremental de un sitio Web escalonado](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
+1. (Opcional) En la página [!DNL Search URL Rules], realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -1128,36 +1133,36 @@ Cada directiva RewriteRule define una regla de reescritura. Las reglas se aplica
 RewriteRule Pattern Substitution [Flags]
 ```
 
-**Patrón** Expresión regular POSIX, que se aplica al título actual. El &quot;título actual&quot; puede diferir del título original, ya que es posible que las reglas anteriores ya lo hayan hecho y lo hayan modificado.
+**** Patrónexpresión regular POSIX, que se aplica al título actual. El &quot;título actual&quot; puede diferir del título original, ya que es posible que las reglas anteriores ya lo hayan hecho y lo hayan modificado.
 
-Consulte Expresiones [regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Consulte [Expresiones regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 Puede usar el carácter &quot;no&quot; (&#39;!&#39;) para prefijar el patrón. El carácter &quot;no&quot; permite negar un patrón. Es decir, que sea verdadero sólo si el título actual NO coincide con el patrón. El carácter &quot;no&quot; se puede utilizar cuando es mejor que coincida con un patrón negativo o como regla predeterminada final. Nota: No se pueden usar tanto el carácter &quot;no&quot; como los comodines agrupados en un patrón. Además, no puede utilizar un patrón negado cuando la cadena de sustitución contiene $N.
 
-Puede utilizar paréntesis para crear una referencia secundaria, a la que pueden hacer referencia la sustitución y el patrón de cond.
+Puede utilizar paréntesis para crear una referencia secundaria, a la que pueden hacer referencia la sustitución y el modelo de conexión.
 
-**Sustitución** El título se sustituye completamente por la cadena de sustitución, que puede contener lo siguiente:
+**** SustituciónEl título se sustituye completamente por la cadena de sustitución, que puede contener lo siguiente:
 
 Texto sin formato: texto que se pasa sin modificar.
 
-**Referencias** de fondo Proporciona acceso a las partes agrupadas (entre paréntesis) del Patrón o CondPattern. Los siguientes son dos tipos de referencias secundarias:
+**** ReferenciasProporciona acceso a las partes agrupadas (entre paréntesis) del Patrón o CondPattern. Los siguientes son dos tipos de referencias secundarias:
 
-* **Referencias** de reglas de reescritura Estas referencias de coincidencia son referencias anteriores en el patrón de reglas de reescritura correspondiente y tienen la forma $N (0 &lt;= N &lt;= 9). Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* **RewriteRule** BackReferencesEstas referencias de coincidencia coinciden en el patrón de reglas de reescritura correspondiente y toman el formato $N (0)  &lt;> Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
 * ** RewriteCond Referencias anteriores** Estas referencias anteriores de coincidencia en el último CondPattern de RewriteCond coincidente y toman la forma %N (0 &lt;= N &lt;= 9).
 
-**Variables** Son variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el indicador [E] para obtener más información sobre la configuración de variables de entorno. Las variables también se pueden definir en el formulario de búsqueda que generó los resultados de la búsqueda.
+**** VariablesSon variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el indicador [E] para obtener más información sobre la configuración de variables de entorno. Las variables también se pueden definir en el formulario de búsqueda que generó los resultados de la búsqueda.
 
-**Funciones** Estas son funciones del formulario ${NAME_OF_FUNCTION: key} donde NAME_OF_FUNCTION es:
+**** FuncionesEstas son funciones del formulario ${NAME_OF_FUNCTION: key} donde NAME_OF_FUNCTION es:
 
-* el operador hace que todos los caracteres de la *tecla* estén en minúsculas.
-* toupper escribe todos los caracteres en *clave* en mayúsculas.
+* tolower escribe todos los caracteres en *key* minúscula.
+* toupper escribe todos los caracteres en *key* mayúscula.
 
 Hay una cadena de sustitución especial: &#39;-&#39; que significa &quot;NO sustitución&quot;. La cadena &#39;-&#39; suele ser útil junto con el indicador C (cadena), lo que le permite hacer coincidir un título con varios patrones antes de que se produzca una sustitución.
 
-**Indicadores** (opcional)
+**Indicadores**  (opcional)
 
-Los indicadores están entre corchetes `[]`y los indicadores múltiples están separados por comas:
+Los indicadores están entre corchetes `[]` y los indicadores múltiples están separados por comas:
 
 <table> 
  <thead> 
@@ -1189,7 +1194,7 @@ Los indicadores están entre corchetes `[]`y los indicadores múltiples están s
   </tr> 
   <tr> 
    <td colname="col1"> <p> 'env|E=VAR:VAL' </p> </td> 
-   <td colname="col2"> <p>Configure la variable de entorno. </p> <p> Este indicador crea una variable de entorno "VAR" establecida en el valor VAL, donde VAL puede contener las referencias atrás de expresiones regulares, $N y %N, que se expandirán. Puede utilizar este indicador más de una vez para establecer varias variables. Más adelante se puede hacer referencia a las variables en el siguiente patrón RewriteCond mediante %{VAR}. Utilice este indicador para eliminar y recordar información de los títulos. </p> </td> 
+   <td colname="col2"> <p>Configure la variable de entorno. </p> <p> Este indicador crea una variable de entorno "VAR" establecida en el valor VAL, donde VAL puede contener referencias de expresiones anteriores regulares, $N y %N, que se expandirán. Puede utilizar este indicador más de una vez para establecer varias variables. Más adelante se puede hacer referencia a las variables en el siguiente patrón RewriteCond mediante %{VAR}. Utilice este indicador para eliminar y recordar información de los títulos. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1204,29 +1209,29 @@ Las directivas de condiciones de reescritura tienen la siguiente forma:
 RewriteCond TestString CondPattern [Flags]
 ```
 
-**TestString** es una cadena que puede contener las siguientes construcciones:
+**** TestStringes una cadena que puede contener las siguientes construcciones:
 
 Texto sin formato: texto que se pasa sin modificar.
 
 Las referencias anteriores proporcionan acceso a las partes agrupadas (entre paréntesis) del Patrón o CondPattern. Existen dos tipos de referencias secundarias:
 
-* **Referencias** de reglas de reescritura Estas referencias de coincidencia son referencias anteriores en el patrón de reglas de reescritura correspondiente y tienen la forma $N (0 &lt;= N &lt;= 9). Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* **RewriteRule** BackReferencesEstas referencias de coincidencia coinciden en el patrón de reglas de reescritura correspondiente y toman el formato $N (0)  &lt;> Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
-* **RewriteCond Referencias** Estas referencias anteriores de coincidencia en el último CondPattern de RewriteCond coincidente y tienen la forma %N (0 &lt;= N &lt;= 9).
+* **RewriteCond** BackReferencesEstas referencias anteriores de coincidencia coinciden en el último CondPattern de RewriteCond coincidente y tienen el formato %N (0  &lt;>
 
-**Variables** Son variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el `[E]` indicador para obtener más información sobre la configuración de variables de entorno. Las variables también se pueden definir en el formulario de búsqueda que generó los resultados de la búsqueda.
+**** VariablesSon variables con el formato %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el indicador `[E]` para obtener más información sobre la configuración de variables de entorno. Las variables también se pueden definir en el formulario de búsqueda que generó los resultados de la búsqueda.
 
-**Funciones** Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME_OF_FUNCTION es:
+**** FuncionesSon funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME_OF_FUNCTION es:
 
-* el operador hace que todos los caracteres de la *tecla* estén en minúsculas.
-* toupper escribe todos los caracteres en *clave* en mayúsculas.
-* escape URL-codifica todos los caracteres de la *clave*.
+* tolower escribe todos los caracteres en *key* minúscula.
+* toupper escribe todos los caracteres en *key* mayúscula.
+* escape URL-codifica todos los caracteres de *key*.
 * Los caracteres &#39;a&#39;..&#39;z&#39;, &#39;A&#39;...Z&#39;, &#39;0&#39;...9&#39;, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; y &#39;_&#39; se dejan sin cambios, los espacios se traducen a &#39;+&#39; y todos los demás caracteres se transforman en su equivalente con codificación URL %xx.
 * unescape vuelve a transformar &#39;+&#39; en espacio y todos los caracteres con codificación URL %xx en caracteres únicos.
 
 Hay una cadena de sustitución especial: &#39;-&#39; que significa &quot;NO sustitución&quot;. La cadena &#39;-&#39; suele ser útil junto con el indicador C (cadena), lo que permite hacer coincidir una dirección URL con varios patrones antes de que se produzca una sustitución.
 
-**CondPattern** Expresión regular extendida estándar con algunas adiciones. La cadena de patrón puede tener el prefijo &#39;!&#39; carácter (signo de exclamación) para especificar un patrón no coincidente. En lugar de cadenas de expresión regulares reales, puede utilizar una de las siguientes variantes especiales.
+**** CondPatternExpresión estándar extendida regular con algunas adiciones. La cadena de patrón puede tener el prefijo &#39;!&#39; carácter (signo de exclamación) para especificar un patrón no coincidente. En lugar de cadenas de expresión regulares reales, puede utilizar una de las siguientes variantes especiales.
 
 Todas estas pruebas también pueden ir acompañadas de un signo de exclamación (&#39;!&#39;) para negar su significado.
 
@@ -1240,22 +1245,22 @@ Todas estas pruebas también pueden ir acompañadas de un signo de exclamación 
  <tbody> 
   <tr> 
    <td colname="col1"> <p> '&lt;CondPattern' </p> </td> 
-   <td colname="col2"> <p>Es lexicamente menos. </p> <p> Trata el <i>CondPattern</i> como una cadena sin formato y lo compara léxicamente con <i>TestString</i>. True si <i>TestString</i> es lexicamente menor que <i>CondPattern</i>. </p> </td> 
+   <td colname="col2"> <p>Es lexicamente menos. </p> <p> Trata el <i>CondPattern</i> como una cadena sin formato y lo compara lexicamente con <i>TestString</i>. True si <i>TestString</i> es lexicamente menor que <i>CondPattern</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> '&gt;CondPattern' </p> </td> 
-   <td colname="col2"> <p> Es bueno lexicamente. </p> <p> Trata el <i>CondPattern</i> como una cadena sin formato y lo compara léxicamente con <i>TestString</i>. True si <i>TestString</i> es bueno léxicamente que <i>CondPattern</i>. </p> </td> 
+   <td colname="col2"> <p> Es bueno lexicamente. </p> <p> Trata el <i>CondPattern</i> como una cadena sin formato y lo compara lexicamente con <i>TestString</i>. True si <i>TestString</i> es léxicamente bueno que <i>CondPattern</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> '=CondPattern' </p> </td> 
-   <td colname="col2"> <p>Es lexicamente igual. </p> <p> Trata el <i>CondPattern</i> como una cadena sin formato y lo compara léxicamente con <i>TestString</i>. True si <i>TestString</i> es lexicamente igual a <i>CondPattern</i>. Es decir, las dos cadenas son exactamente iguales (carácter por carácter). Si <i>CondPattern</i> es sólo "" (dos comillas), se compara <i>TestString</i> con la cadena vacía. </p> </td> 
+   <td colname="col2"> <p>Es lexicamente igual. </p> <p> Trata el <i>CondPattern</i> como una cadena sin formato y lo compara lexicamente con <i>TestString</i>. True si <i>TestString</i> es lexicamente igual a <i>CondPattern</i>. Es decir, las dos cadenas son exactamente iguales (carácter por carácter). Si <i>CondPattern</i> es sólo "" (dos comillas), se compara <i>TestString</i> con la cadena vacía. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Indicadores** (opcional)
+**Indicadores**  (opcional)
 
-Los indicadores están entre corchetes`[]`y los indicadores múltiples están separados por comas:
+Los indicadores están entre corchetes`[]` y los indicadores múltiples están separados por comas:
 
 <table> 
  <thead> 
@@ -1267,7 +1272,7 @@ Los indicadores están entre corchetes`[]`y los indicadores múltiples están se
  <tbody> 
   <tr> 
    <td colname="col1"> <p> 'nocase|NC' (sin caso) </p> </td> 
-   <td colname="col2"> <p>Hace que la prueba no sea sensible. Es decir, no hay diferencia entre 'A-Z' y 'a-z' tanto en la <i>cadena</i> de pruebas expandida como en el <i>patrón</i>de cond. </p> </td> 
+   <td colname="col2"> <p>Hace que la prueba no sea sensible. Es decir, no hay diferencia entre 'A-Z' y 'a-z' tanto en el <i>TestString</i> expandido como en el <i>CondPattern</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> 'ornext|OR' (o condición siguiente) </p> </td> 
@@ -1278,7 +1283,7 @@ Los indicadores están entre corchetes`[]`y los indicadores múltiples están se
 
 ## Ejemplo {#section_E7454FFE169E459AABD9D033651939CB}
 
-Supongamos que tiene un sitio Web corporativo con un formato de título estándar: &quot;Mi empresa&quot; seguida de un guión y después de una descripción específica de la página (&quot;Mi empresa - Bienvenida&quot; o &quot;Mi empresa - Noticias&quot;, por ejemplo). Desea eliminar &quot;Mi empresa -&quot; del título y convertir todo el título en letras mayúsculas cuando indexe el sitio.
+Supongamos que tiene un sitio Web corporativo con un formato de título estándar: &quot;Mi Compañía&quot; seguida de un guión y después de una descripción específica de la página (&quot;Mi Compañía - Bienvenida&quot; o &quot;Mi Compañía - Noticias&quot;, por ejemplo). Desea eliminar &quot;Mi Compañía -&quot; del título y convertir todo el título en letras en mayúsculas cuando indexe el sitio.
 
 La regla de reescritura siguiente utiliza el cargador de funciones para reescribir solo la parte descriptiva de un título en mayúsculas:
 
@@ -1288,15 +1293,15 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>} 
 ```
 
-El patrón de la regla `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` contiene una referencia **`(.*)`** que coincide con el contenido del título que sigue a &quot;Mi empresa-&quot;. Recuerde que rodear una parte de un patrón con paréntesis ( ) crea una referencia inversa a la que la sustitución puede hacer referencia. En este ejemplo, la sustitución (${toupper:**$1**}) vuelve a escribir esa referencia (**$1**) usando la función toupper.
+El patrón de la regla `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` contiene una referencia **`(.*)`** que coincide con el contenido del título que sigue a &quot;Mi Compañía-&quot;. Recuerde que rodear una parte de un patrón con paréntesis ( ) crea una referencia inversa a la que la sustitución puede hacer referencia. En este ejemplo, la sustitución (${toupper:**$1**}) reescribe esa referencia (**$1**) usando la función toupper.
 
-Por lo tanto, el título del formulario &quot;Mi empresa - Bienvenida&quot; se reescribe como &quot;BIENVENIDO&quot;.
+Por lo tanto, el título del formulario &quot;Mi Compañía - Bienvenida&quot; se reescribe como &quot;BIENVENIDO&quot;.
 
 **Reconocimiento**
 
 El software del motor de reescritura fue originalmente desarrollado por el Grupo Apache para su uso en el proyecto del servidor Apache HTTP (https://www.apache.org/).
 
-## Adición de reglas de título de búsqueda {#task_155CECB74BE3444384EDBBD04F41515E}
+## Añadir reglas de título de búsqueda {#task_155CECB74BE3444384EDBBD04F41515E}
 
 Puede agregar reglas de título de búsqueda para especificar cómo se muestran los títulos en los resultados de búsqueda del sitio web. Puede manipular cualquier parte del título.
 
@@ -1308,24 +1313,24 @@ t_adding_search_title_rules.xml
 
 **Para agregar reglas de título de búsqueda**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search Title Rules]**.
-1. En el [!DNL Search Title Rules] campo, introduzca las reglas que desee.
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search Title Rules]**.
+1. En el campo [!DNL Search Title Rules], introduzca las reglas que desee.
 
    Se permiten líneas en blanco y líneas de comentarios que comienzan con un carácter &#39;#&#39; (hash).
-1. (Opcional) En la [!DNL Search Title Rules] página, en el [!DNL Test Search Title Rules] campo, escriba un título de prueba y, a continuación, haga clic en **Prueba**.
+1. (Opcional) En la página [!DNL Search Title Rules], en el campo [!DNL Test Search Title Rules], introduzca un título de prueba y, a continuación, haga clic en **Prueba**.
 1. Haga clic en **Guardar cambios**.
-1. (Opcional) Si desea obtener una vista previa de los resultados, vuelva a generar el índice del sitio escalonado.
+1. (Opcional) Vuelva a generar el índice del sitio escalonado si desea realizar una previsualización de los resultados.
 
-   Consulte [Configuración de un índice incremental de un sitio Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)escalonado.
-1. (Opcional) En la [!DNL Search Title Rules] página, realice una de las siguientes acciones:
+   Consulte [Configuración de un índice incremental de un sitio Web escalonado](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
+1. (Opcional) En la página [!DNL Search Title Rules], realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
