@@ -8,13 +8,16 @@ topic: Appendices,Site search and merchandising
 uuid: 4ce454a4-e770-4587-91a0-a25491818ac6
 translation-type: tm+mt
 source-git-commit: 4270ea66ba645ad0f71c9c8b5c2a1fcc6eb02ad2
+workflow-type: tm+mt
+source-wordcount: '8639'
+ht-degree: 0%
 
 ---
 
 
 # Preguntas más frecuentes{#frequently-asked-questions}
 
-## Adobe Flash {#reference_4A25BBDE32214AF5A1A454F38FD51243}
+## Flash de Adobe {#reference_4A25BBDE32214AF5A1A454F38FD51243}
 
 Página de preguntas más frecuentes que explica la compatibilidad con la indexación y búsqueda de archivos SWF en un sitio web.
 
@@ -41,19 +44,19 @@ Un archivo SWF se arrastra e indexa si está contenido en una etiqueta embed u o
 </object> 
 ```
 
-También se reconoce un archivo SWF si se indica la URL del archivo como punto de entrada.
+También se reconoce un archivo SWF si se lista la URL del archivo como punto de entrada.
 
-Consulte [Adición de varios puntos de entrada de URL que desea indizar](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
+Consulte [Añadir varios puntos de entrada de URL que desea indizar](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
 ## ¿Qué tengo que hacer para indexar un archivo SWF? {#section_0A6A52CC70D4495BBE14D91906318F95}
 
 Para rastrear e indexar archivos SWF, seleccione el tipo de contenido **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**).
 
-Siempre que se haga referencia al archivo Flash desde una `<embed>` etiqueta o una `<object>` etiqueta de un documento HTML, el texto se indexará y se rastrearán todas las direcciones URL enumeradas en el archivo.
+Siempre que se haga referencia al archivo Flash desde una etiqueta `<embed>` o `<object>` en un documento HTML, el texto se indexará y se rastrearán todas las direcciones URL enumeradas en el archivo.
 
-Si no se hace referencia al archivo desde una `<embed>` etiqueta o una `<object>` etiqueta, puede enumerar el archivo SWF en una `<a href=...>` etiqueta de un documento HTML o como un punto de entrada URL.
+Si no se hace referencia a su archivo desde una etiqueta `<embed>` o una etiqueta `<object>`, puede lista del archivo SWF en una etiqueta `<a href=...>` en un documento HTML o como punto de entrada URL.
 
-Consulte [Adición de varios puntos de entrada de URL que desea indizar](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
+Consulte [Añadir varios puntos de entrada de URL que desea indizar](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
 ## ¿Cómo se reconocen los archivos SWF? {#section_B36C0536AB544F509601DC6A11A8E656}
 
@@ -61,7 +64,7 @@ Los archivos SWF se identifican con el siguiente tipo MIME:
 
 `application/x-shockwave-flash`
 
-Los archivos SWF también se reconocen con los tipos `application/octet-stream`&quot; o `text/plain` MIME, siempre que la extensión del archivo sea .swf.
+Los archivos SWF también se reconocen con tipos MIME `application/octet-stream`&quot; o `text/plain`, siempre que la extensión del archivo sea .swf.
 
 Un servidor mal configurado puede utilizar un tipo MIME diferente para archivos SWF. Asegúrese de comprobar la configuración del servidor si tiene problemas para rastrear e indexar archivos SWF.
 
@@ -71,11 +74,11 @@ El texto contenido en un archivo SWF se indiza como si fuera `<body>` texto en l
 
 Si un archivo SWF contiene una URL como acción &quot;Cargar película&quot;, el texto del archivo SWF al que se hace referencia se indexará como parte de la página HTML que lo rodea.
 
-Si un archivo SWF contiene una URL como acción &quot;Obtener URL&quot;, la URL se rastrea e indexa más tarde, tal como se rastrea e indiza posteriormente una referencia HTML `<a href=...>` .
+Si un archivo SWF contiene una dirección URL como acción &quot;Obtener URL&quot;, la dirección URL se rastrea e indexa más adelante, tal como se rastrea e indexa posteriormente una referencia HTML `<a href=...>`.
 
 Si un archivo SWF aparece como un punto de entrada URL, el texto del archivo SWF se indexará como una sola página. Resultado de búsqueda que encuentra texto desde un SWF de punto de entrada directamente a la película, no a una página HTML que lo rodea.
 
-Consulte [Adición de varios puntos de entrada de URL que desea indizar](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
+Consulte [Añadir varios puntos de entrada de URL que desea indizar](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
 ## ¿Un archivo SWF cuenta como una página? {#section_0158D6DE70BC40D78E2374787B9F58AB}
 
@@ -85,9 +88,9 @@ Si un archivo SWF aparece como un punto de entrada URL, ese archivo SWF y todas 
 
 ## ¿Cómo puedo evitar la indexación de archivos SWF individuales? {#section_E38AD37989EF410B97AF5125057BFD22}
 
-Para evitar la indexación de un archivo SWF, puede agregar una etiqueta meta ( `<meta name="ROBOTS" content="NOINDEX">`) de robots o una `<noindex>` etiqueta al documento HTML que lo rodea. Es decir, el documento que contiene la `<embed>` etiqueta o `<object>` .
+Para evitar la indexación de un archivo SWF, puede agregar una etiqueta meta de robots ( `<meta name="ROBOTS" content="NOINDEX">`) o una etiqueta `<noindex>` al documento HTML que lo rodea. Es decir, el documento que contiene la etiqueta `<embed>` o `<object>`.
 
-También puede utilizar la etiqueta meta robots ( `<meta name="ROBOTS" content="NOFOLLOW">`) para evitar las siguientes direcciones URL contenidas en el archivo SWF. Si el documento HTML que lo rodea tiene lo siguiente desactivado, no se siguen las URL enumeradas como acciones &quot;Get URL&quot; en el archivo SWF.
+También puede utilizar la etiqueta meta de robots ( `<meta name="ROBOTS" content="NOFOLLOW">`) para evitar las siguientes direcciones URL contenidas en el archivo SWF. Si el documento HTML que lo rodea tiene lo siguiente desactivado, no se siguen las URL enumeradas como acciones &quot;Get URL&quot; en el archivo SWF.
 
 ## ¿Cómo puedo evitar que los archivos SWF se indiquen en mi sitio web? {#section_DF2606A50E9A44859CFA0D44D7C5F2E4}
 
@@ -95,22 +98,22 @@ Para desactivar la indexación SWF, anule la selección del tipo de contenido **
 
 También puede optar por utilizar [!DNL URL Masks] para desactivar la indexación de archivos SWF.
 
-Consulte [Adición de máscaras URL para indexar o no partes de índice de...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
+Consulte [Añadir máscaras URL para indexar o no partes de índice de...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
 
 Para desactivar la indexación SWF, introduzca una de las siguientes máscaras URL:
 
 * `exclude *.swf` (si no utiliza expresiones regulares)
 * `exclude regexp ^.*\.swf$` (si utiliza expresiones regulares)
 
-Consulte Expresiones [regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Consulte [Expresiones regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## ¿Cómo es que no puedo buscar archivos SWF chinos, japoneses o coreanos en mi sitio web? {#section_EE1A3A705AE74148BD195A0CE513A5C4}
 
-La búsqueda/comercialización del sitio obtiene UTF-8 de archivos SWF creados con Adobe Flash. El UTF-8 no contiene indicación de idioma. Si ha seleccionado el tipo de contenido **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el idioma que utiliza el archivo SWF.
+La búsqueda/comercialización del sitio obtiene UTF-8 de archivos SWF creados con Flash de Adobe. El UTF-8 no contiene indicación de idioma. Si seleccionó el tipo de contenido **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el idioma que utiliza el archivo SWF.
 
-Consulte [Adición de definiciones](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)de inyección de campo.
+Consulte [Añadir definiciones de inyección de campo](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
-Los archivos SWF anteriores tampoco especifican un conjunto de caracteres. Si ha seleccionado el tipo de contenido SWF **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar las inyecciones de metadatos para especificar el conjunto de caracteres que se utiliza en el archivo SWF.
+Los archivos SWF anteriores tampoco especifican un conjunto de caracteres. Si ha seleccionado el tipo de contenido SWF **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar Inyecciones de metadatos para especificar el conjunto de caracteres que se utiliza en el archivo SWF.
 
 ## Búsqueda general {#reference_E2C675162789452A9B99C6633B12CBEF}
 
@@ -134,14 +137,14 @@ Las siguientes son preguntas comunes con respecto a las funciones de búsqueda:
 * [¿Cómo puedo usar sinónimos para mejorar los resultados de la búsqueda?...](#section_E6E36E12514F4D7BAB01F8D1AB61D57B)
 * [¿Tengo control sobre el orden de los resultados de búsqueda...](#section_C6361048502745779D9749A842C4C370)
 * [¿Puedo cambiar el idioma de la página de resultados de búsqueda?...](#section_6EE41DA8241247D48BBEB061A50599C5)
-* [¿Puedo tener más de un sitio en mi Adobe?...](#section_AFA8825182094660A71EEC84B8329D6D)
+* [¿Puedo tener más de un sitio en mi Adobe...](#section_AFA8825182094660A71EEC84B8329D6D)
 * [¿Puedo buscar más de un dominio?](#section_BFBB0E9861D942F095B56CF0A8F16596)
 * [¿Puedo subdividir mi sitio en secciones separadas para que...](#section_52153A9DE9F9493B967A70583848B2A4)
 * [Cómo excluyo partes de mi sitio web de ser...](#section_D452EDE153654EF398F4A87780C6D43B)
 * [¿Qué conjuntos de caracteres se admiten?](#section_A62A6F8F15804F968C77F2DEBDE8F8FD)
 * [¿Qué sucede si cambio o actualizo mi sitio web?](#section_489050E0EBC14D0594DBBAA0CCF4F6BA)
 * [¿Se puede indexar automáticamente mi sitio?](#section_9C7D41636238488691ECDFEE4D4E5103)
-* [Utilizo contraseñas en mi sitio web. ¿Puedo seguir utilizando la búsqueda o comercialización del sitio?](#section_4618EB5B66704640B5502D1B5CB4B32E)
+* [Utilizo contraseñas en mi sitio web. ¿Puedo seguir usando la búsqueda/comercialización del sitio?](#section_4618EB5B66704640B5502D1B5CB4B32E)
 * [¿Admite el rastreo y la indexación de https o...](#section_D5BB8B8FBEA4405583E86B4AEC37151B)
 * [¿La búsqueda/comercialización del sitio honra el archivo robots.txt en mi sitio web?](#section_73BBF6FE93C64C109F45CBC2FA394DB2)
 * [Ciertas partes de mi sitio web deben actualizarse con frecuencia para que...](#section_6D2FB1DE1B8A49729F9CCAE2A2770AB3)
@@ -153,9 +156,9 @@ No. Ésta es la ventaja principal de la búsqueda y comercialización del sitio.
 
 ## ¿Qué sucede cuando mi sitio supera el límite de páginas? {#section_ECA5FA01032D4322BABA4E2C7FE498C1}
 
-Seguimos realizando búsquedas para que los visitantes puedan buscar su sitio web sin interrupciones. Para ver si el sitio web supera el límite de páginas, revise el estado del índice completo o el registro activo.
+Seguimos realizando búsquedas para que sus visitantes puedan buscar su sitio web sin interrupciones. Para ver si el sitio web supera el límite de páginas, revise el estado del índice completo o el registro activo.
 
-Consulte [Acerca del índice](../c-about-index-menu/c-about-full-index.md#concept_C69BD21863FD4856B49326F35DB570D3)completo.
+Consulte [Acerca del índice completo](../c-about-index-menu/c-about-full-index.md#concept_C69BD21863FD4856B49326F35DB570D3).
 
 Consulte [Visualización del registro de índice completo de un activo o un ensayo...](../c-about-index-menu/c-about-full-index.md#task_02E5E944C56B4EB19CC1FF321F3221B8).
 
@@ -163,7 +166,7 @@ Consulte [Visualización del registro de índice completo de un activo o un ensa
 
 Los informes semanales se envían al propietario de cada cuenta activa. Puede cambiar la dirección de correo electrónico haciendo clic en **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]**. Si tiene más de una cuenta de búsqueda activa, todas las newsletters se envían a la nueva dirección.
 
-Consulte [Configuración de la información](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6)personal del usuario.
+Consulte [Configuración de la información personal del usuario](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6).
 
 ## ¿Cuán segura es la información de mis clientes en la búsqueda y comercialización del sitio? {#section_5484CB954167412BB7F0480CB0C504B8}
 
@@ -171,37 +174,37 @@ La búsqueda y comercialización del sitio es segura, rápida, estable y fácil 
 
 ## ¿Qué sucede con la privacidad de la información de mis clientes? {#section_8FB493F15E51454BA92A0C83E14C0CC7}
 
-Adobe se ha comprometido a respetar la privacidad de sus clientes y visitantes. Consulte el Centro de [privacidad](https://www.adobe.com/privacy.html)de Adobe.
+Adobe se compromete a respetar la privacidad de sus clientes y visitantes. Consulte el Adobe [Centro de privacidad](https://www.adobe.com/privacy.html).
 
 ## ¿Puedo mostrar mis propias publicidades de titular en las páginas de resultados de búsqueda? {#section_611EB8B32C16418386CB7DC7FB6954B8}
 
-Sí. Usted controla la apariencia y el contenido de los resultados de búsqueda. Dentro de la plantilla de resultados de búsqueda del sitio web, puede crear vínculos a su propia red de intercambio de pancartas, como LinkExchange o SmartClicks. Las visitas realizadas por los visitantes se acreditan correctamente a su cuenta de intercambio de pancartas.
+Sí. Usted controla la apariencia y el contenido de los resultados de búsqueda. Dentro de la plantilla de resultados de búsqueda del sitio web, puede crear vínculos a su propia red de intercambio de pancartas, como LinkExchange o SmartClicks. Las visitas realizadas por sus visitantes se acreditan correctamente a su cuenta de intercambio de banners.
 
 ## ¿Puedo personalizar los resultados de búsqueda de mi sitio? {#section_A64B3A621B794DF78D35ED06D9C43D0B}
 
 Sí. Esta es una característica exclusiva de la búsqueda y comercialización del sitio. Con nuestra avanzada tecnología de plantillas y un poco de conocimientos de HTML, puede controlar exactamente cómo aparecen los resultados de búsqueda.
 
-Consulte [Buscar etiquetas](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4)de plantilla.
+Consulte [Buscar etiquetas de plantilla](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
 
-La transición entre sus propios servidores y los servidores de mercadotecnia y búsqueda del sitio es completamente transparente e invisible para sus clientes. Si no conoce HTML o no tiene tiempo para crear una plantilla personalizada, puede elegir entre una variedad de plantillas atractivas y listas para usar que crea el equipo interno de desarrolladores web profesionales de Adobe.
+La transición entre sus propios servidores y los servidores de mercadotecnia y búsqueda del sitio es completamente transparente e invisible para sus clientes. Si no conoce HTML o no tiene tiempo para crear una plantilla personalizada, puede elegir entre una variedad de plantillas atractivas y listas para usar que crea el equipo interno de desarrolladores web profesionales.
 
 ## ¿Puedo ver qué buscan los clientes en el sitio? {#section_73709E1B0E82478DA7B4D15B6C845F33}
 
-Sí. Mantenemos las estadísticas de búsqueda de las búsquedas realizadas por los visitantes en su sitio web durante los últimos dos meses. Puede revisar estas estadísticas en cualquier momento en Informes en el menú del producto. Los informes de búsqueda proporcionan información vital sobre qué buscan exactamente los visitantes en el sitio web. Puede utilizar esta información para mejorar el diseño o para ajustar el motor de búsqueda y comercialización del sitio a fin de servir mejor a los visitantes.
+Sí. Mantenemos las estadísticas de búsqueda de búsquedas realizadas por visitantes en su sitio web durante los últimos dos meses. Puede revisar estas estadísticas en cualquier momento en Informes en el menú del producto. Los informes de búsqueda proporcionan información vital sobre qué visitantes buscan exactamente en el sitio web. Puede utilizar esta información para mejorar el diseño o para ajustar el motor de búsqueda y comercialización del sitio para servir mejor sus visitantes.
 
 ## ¿Cómo puedo controlar qué tipos de contenido (PDF, texto, Flash, MP3 y Microsoft Office) se indexan y buscan? {#section_0AB8CB4B6BFA4286AA082055FEBFBE1C}
 
-Puede configurar fácilmente las cuentas para habilitar o deshabilitar la indexación y búsqueda de texto que se encuentra en documentos PDF, documentos de texto sin formato, películas Flash, archivos MP3 o documentos de Microsoft Office.
+Puede configurar fácilmente las cuentas para habilitar o deshabilitar la indexación y búsqueda de texto que se encuentra en documentos PDF, documentos de texto sin formato, películas de Flash, archivos MP3 o documentos de Microsoft Office.
 
-Esta configuración se controla en la [!DNL Staged Content Types] página.
+Esta configuración se controla en la página [!DNL Staged Content Types].
 
-Consulte [Acerca de los tipos](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07)de contenido.
+Consulte [Acerca de los tipos de contenido](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07).
 
 ## ¿Se admiten las páginas web generadas dinámicamente mediante contenido basado en ASP, JSP, PHP, CFM o Perl? {#section_E279F004F1C542A2B9773B832E7B013F}
 
 Las páginas web HTML estáticas o generadas dinámicamente se indexan, incluso las páginas creadas a partir de bases de datos, o cualquier otro proceso back-end. Dado que el código HTML que ve un navegador está indexado, puede utilizar la búsqueda/comercialización del sitio en sitios web siempre y cuando estas arquitecturas de back-end resulten en páginas HTML.
 
-El robot de búsqueda rastrea el sitio Web comenzando con la primera página en la dirección del sitio Web especificada en [!DNL Account Settings], y sigue los vínculos de página en página.
+El robot de búsqueda rastrea su sitio Web comenzando con la primera página en la dirección del sitio Web especificada en [!DNL Account Settings] y sigue los vínculos de página en página.
 
 Consulte [Configuración de la cuenta](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
@@ -213,15 +216,15 @@ Después de rastrear e indexar el contenido del sitio web, los clientes del siti
 
 Puede utilizar sinónimos cuando desee que los visitantes encuentren páginas relacionadas con su consulta de búsqueda.
 
-Por ejemplo: supongamos que tiene una página que contiene una lista de precios de los productos en venta en el sitio. Sin embargo, después de examinar los informes de búsqueda proporcionados por la búsqueda o comercialización del sitio, se observa que los clientes buscan la palabra &quot;costo&quot;, &quot;gasto&quot;, &quot;cargo&quot; o &quot;pago&quot; en sus búsquedas. Estas palabras no muestran la página de lista de precios en los resultados de búsqueda. Con la [!DNL Add Synonyms] característica en [!DNL Dictionaries], puede especificar que estas palabras son sinónimos y que el cliente puede encontrar la lista de precios, independientemente del término de búsqueda que utilice.
+Por ejemplo: supongamos que tiene una página que contiene una lista de precios de los productos para la venta en el sitio. Sin embargo, después de examinar los informes de búsqueda proporcionados por la búsqueda o comercialización del sitio, se observa que los clientes buscan la palabra &quot;costo&quot;, &quot;gasto&quot;, &quot;cargo&quot; o &quot;pago&quot; en sus búsquedas. Estas palabras no muestran la página de lista de precios en los resultados de búsqueda. Con la función [!DNL Add Synonyms] de [!DNL Dictionaries], puede especificar que estas palabras son sinónimos y que su cliente puede encontrar la lista de precios, independientemente del término de búsqueda que utilice.
 
 Consulte [Acerca de los diccionarios](../c-about-linguistics-menu/c-about-dictionaries.md#concept_B8028B71EC8144669614C64578EDB034).
 
 ## ¿Tengo control sobre el orden de los resultados de búsqueda? {#section_C6361048502745779D9749A842C4C370}
 
-Sí. Mediante la interfaz de relevancia avanzada, puede controlar qué páginas se devuelven para una consulta de búsqueda específica. Esta función es útil si desea asegurarse de que los clientes ven una página específica cuando buscan determinadas palabras.
+Sí. Mediante la interfaz de relevancia avanzada, puede controlar qué páginas se devuelven para una consulta de búsqueda específica. Esta función es útil si desea asegurarse de que los clientes ven una página específica cuando consulta determinadas palabras.
 
-Consulte [Adición de un nuevo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)de etiqueta meta.
+Consulte [Añadir un nuevo campo de etiqueta meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 
 ## ¿Puedo cambiar el idioma de la página de resultados de búsqueda? {#section_6EE41DA8241247D48BBEB061A50599C5}
 
@@ -229,23 +232,23 @@ Sí. La plantilla de búsqueda y comercialización del sitio es flexible cuando 
 
 La plantilla consiste en una combinación de texto, etiquetas HTML estándar y etiquetas especiales que se definen para mostrar los resultados de la búsqueda. Cuando un cliente realiza una búsqueda, el robot de búsqueda lee la plantilla, envía el texto con etiquetas HTML estándar e inserta los vínculos de resultados basados en las etiquetas de plantilla especiales.
 
-Consulte [Buscar etiquetas](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4)de plantilla.
+Consulte [Buscar etiquetas de plantilla](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
 
 Si desea cambiar el idioma de los resultados, puede editar el texto en inglés que aparece en la plantilla.
 
-Consulte [Edición de una presentación o una plantilla](../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3)de transporte.
+Consulte [Edición de una presentación o una plantilla de transporte](../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3).
 
-## ¿Puedo tener más de un sitio en mi inicio de sesión de cliente de Adobe? {#section_AFA8825182094660A71EEC84B8329D6D}
+## ¿Puedo tener más de un sitio en mi Inicio de sesión de cliente de Adobe? {#section_AFA8825182094660A71EEC84B8329D6D}
 
 Sí. Con un único inicio de sesión de cliente de Adobe, puede administrar un motor de búsqueda diferente para muchos sitios web diferentes. Seleccione y administre cuentas en &quot;Cuentas&quot;.
 
-Consulte [Selección de una cuenta diferente para usar](../c-about-accounts-menu.md#task_03C0FE918E2D44529CDC3B8DB75D1B26).
+Consulte [Selección de una cuenta diferente para utilizar](../c-about-accounts-menu.md#task_03C0FE918E2D44529CDC3B8DB75D1B26).
 
 ## ¿Puedo buscar más de un dominio? {#section_BFBB0E9861D942F095B56CF0A8F16596}
 
-Sí. Puede configurar el acceso a más de un dominio mediante [!DNL URL Entrypoints]. Proporcione puntos de entrada de URL para dominios adicionales que le pertenecen. Recuerde que debe tener permiso para indexar dominios que no sean de su propiedad.
+Sí. Puede configurar el acceso a más de un dominio mediante [!DNL URL Entrypoints]. Proporcione puntos de entrada de URL para dominios adicionales de su propiedad. Recuerde que debe tener permiso para indexar dominios que no sean de su propiedad.
 
-Consulte [Acerca de los puntos de entrada](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)de URL.
+Consulte [Acerca de los puntos de entrada de URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 ## ¿Puedo subdividir mi sitio en secciones separadas para que los clientes puedan buscar cualquiera de estas áreas individualmente o en todo el sitio? {#section_52153A9DE9F9493B967A70583848B2A4}
 
@@ -259,11 +262,11 @@ Por ejemplo: los clientes pueden buscar una colección de direcciones URL relaci
 
 Sí. Especifique las máscaras URL para determinar qué páginas del sitio Web desea incluir o excluir de la indexación. Las máscaras URL determinan si las páginas del sitio Web aparecen en los resultados de búsqueda.
 
-Consulte [Acerca de las máscaras](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164)URL.
+Consulte [Acerca de las máscaras de URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-Consulte [Acerca del script](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B)de máscaras URL.
+Consulte [Acerca del script de máscaras URL](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B).
 
-Para evitar que se busquen partes de páginas web individuales, puede excluir partes de una página de la indexación. Rodee el texto con `<noindex>` etiquetas y `</noindex>` . Este método resulta útil si desea excluir el texto de navegación de las búsquedas.
+Para evitar que se busquen partes de páginas web individuales, puede excluir partes de una página de la indexación. Rodee el texto con las etiquetas `<noindex>` y `</noindex>`. Este método resulta útil si desea excluir el texto de navegación de las búsquedas.
 
 ## ¿Qué conjuntos de caracteres se admiten? {#section_A62A6F8F15804F968C77F2DEBDE8F8FD}
 
@@ -344,13 +347,13 @@ Póngase en contacto con el servicio de asistencia técnica para preguntar sobre
 
 Después de cambiar el contenido del sitio web, puede realizar un índice completo o un índice incremental. La búsqueda/comercialización del sitio descarga e indexa cualquier contenido modificado del sitio web. Una vez finalizada la indexación, los clientes pueden buscar el nuevo contenido. También puede programar una indexación automática del sitio en un momento determinado y en un día específico.
 
-Consulte [Ejecución de un índice completo de un sitio web activo o en un sitio web escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+Consulte [Ejecución de un índice completo de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-Consulte [Ejecución de un índice incremental de un sitio Web activo o en un sitio Web en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Consulte [Ejecución de un índice incremental de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
-Consulte [Configuración de la programación de índice completa para un sitio web](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0)activo.
+Consulte [Configuración de la programación de índice completa para un sitio Web activo](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0).
 
-Consulte [Configuración de la programación incremental de índices para un sitio Web](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33)activo.
+Consulte [Configuración de la programación incremental de índices para un sitio Web activo](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33).
 
 ## ¿Se puede indexar automáticamente mi sitio? {#section_9C7D41636238488691ECDFEE4D4E5103}
 
@@ -358,15 +361,15 @@ Sí. Puede programar un índice automático del sitio cada día.
 
 Además de la indexación automática diaria, puede elegir que las partes del sitio que cambian con frecuencia se indiquen de forma incremental. En los días en que tenga un índice automático programado, puede controlar la hora del día en que se produce el índice. Además, siempre puede iniciar manualmente un índice del sitio cuando lo desee.
 
-Consulte [Configuración de la programación de índice completa para un sitio web](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0)activo.
+Consulte [Configuración de la programación de índice completa para un sitio Web activo](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0).
 
-Consulte [Configuración de la programación incremental de índices para un sitio Web](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33)activo.
+Consulte [Configuración de la programación incremental de índices para un sitio Web activo](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33).
 
 ## Utilizo contraseñas en mi sitio web. ¿Puedo seguir utilizando la búsqueda o comercialización del sitio? {#section_4618EB5B66704640B5502D1B5CB4B32E}
 
 Si utiliza la autenticación básica HTTP para proteger ciertas partes del sitio Web con contraseña, puede especificar los dominios y las contraseñas que la búsqueda o comercialización del sitio puede utilizar para indexar el sitio.
 
-Consulte [Adición de contraseñas para acceder a las áreas del sitio web que lo requieran...](../c-about-settings-menu/c-about-crawling-menu.md#task_DED19D476FF04B48BB6456D5ECB8628A).
+Consulte [Añadir contraseñas para acceder a las áreas del sitio Web que lo requieran...](../c-about-settings-menu/c-about-crawling-menu.md#task_DED19D476FF04B48BB6456D5ECB8628A).
 
 ## ¿Admite el rastreo y la indexación de https o contenido seguro del servidor? {#section_D5BB8B8FBEA4405583E86B4AEC37151B}
 
@@ -392,17 +395,17 @@ Puede obtener más información sobre los robots web y el Protocolo de exclusió
 
 ## Algunas partes de mi sitio web deben actualizarse con frecuencia para que mis clientes obtengan los resultados de búsqueda más precisos. ¿Ayuda la indexación incremental con este problema? {#section_6D2FB1DE1B8A49729F9CCAE2A2770AB3}
 
-Sí. Este escenario es lo que generó la característica de indexación incremental para facilitar la búsqueda y comercialización del sitio. El beneficio principal de la indexación incremental es que permite a las empresas indexar con frecuencia partes cambiantes dinámicamente de su sitio web. Esta funcionalidad garantiza que se muestren los resultados de la búsqueda con una precisión de &quot;hasta el minuto&quot;.
+Sí. Este escenario es lo que generó la característica de indexación incremental para facilitar la búsqueda y comercialización del sitio. El beneficio principal de la indexación incremental es que permite que las compañías indexen con frecuencia partes cambiantes dinámicamente de su sitio web. Esta funcionalidad garantiza que se muestren los resultados de la búsqueda con una precisión de &quot;hasta el minuto&quot;.
 
-Consulte [Ejecución de un índice incremental de un sitio Web activo o en un sitio Web en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Consulte [Ejecución de un índice incremental de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
-Consulte [Configuración de la programación incremental de índices para un sitio Web](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33)activo.
+Consulte [Configuración de la programación incremental de índices para un sitio Web activo](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33).
 
 ## ¿Las páginas Web generadas dinámicamente son compatibles con una base de datos back-end, como catálogos de productos o sistemas de administración de inventario? {#section_26896C556483457E879785E751583B16}
 
 Se indexan las páginas web HTML estáticas o generadas dinámicamente, incluidas las páginas creadas a partir de bases de datos, o cualquier otro proceso back-end. Dado que el código HTML, tal como lo ve un navegador, está indexado, puede utilizar la búsqueda/comercialización del sitio en sitios web siempre y cuando la información de la base de datos back-end resulte en páginas HTML.
 
-El robot de búsqueda rastrea el sitio Web comenzando con la primera página en la dirección del sitio Web especificada en [!DNL Account Settings], y sigue los vínculos de página en página.
+El robot de búsqueda rastrea su sitio Web comenzando con la primera página en la dirección del sitio Web especificada en [!DNL Account Settings] y sigue los vínculos de página en página.
 
 Consulte [Configuración de la cuenta](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
@@ -412,19 +415,19 @@ Después de rastrear e indexar el contenido del sitio web, los clientes del siti
 
 Puede habilitar fácilmente la búsqueda de contenido completo o una búsqueda basada en temas más restringida restringida a la información del título, la metadescripción, las etiquetas de documento de metapalabras clave o las tres. Con las definiciones de metadatos, también puede crear campos de visualización personalizados, como una imagen de producto, en los resultados de búsqueda reales.
 
-Consulte [Adición de un nuevo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)de etiqueta meta.
+Consulte [Añadir un nuevo campo de etiqueta meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 
 ## ¿Puedo utilizar secuencias de comandos o programas para iniciar un índice incremental de mi sitio? {#section_0B6BB039557A42AA876D35D748E17DD0}
 
 Sí. Puede utilizar secuencias de comandos o programas para iniciar un índice incremental del sitio web, así como para hacer ping en los servidores para indexar el sitio cada vez que se cambie o actualice el contenido.
 
-Consulte [Acerca del índice](../c-about-index-menu/c-about-scripted-index.md#concept_34F58D551BC04BFB8ADC294B9DA9199D)con secuencias de comandos.
+Consulte [Acerca del índice de secuencias de comandos](../c-about-index-menu/c-about-scripted-index.md#concept_34F58D551BC04BFB8ADC294B9DA9199D).
 
 ## Implementaciones de funciones {#reference_2D0C4A80B8D64051BA9694D562DCE663}
 
-Una página de preguntas más frecuentes que describe varias implementaciones de funciones en [!DNL Search&Promote].
+Una página de preguntas más frecuentes que analiza diversas implementaciones de funciones en [!DNL Search&Promote].
 
-Las siguientes son preguntas habituales sobre la implementación de funciones en [!DNL Search&Promote] un sitio web:
+Las siguientes son preguntas comunes acerca de las implementaciones de funciones en [!DNL Search&Promote] en un sitio Web:
 
 * [¿Por qué no se ejecutan mis reglas comerciales?](#section_7FEB60383D8A4B11A60DFF9067274699)
 * [¿Por qué tengo problemas al programar la indexación, errores al iniciar la indexación y problemas al iniciar la indexación por etapas?](#section_E05758193DF5436784B0145839989F75)
@@ -435,21 +438,21 @@ Las siguientes son preguntas habituales sobre la implementación de funciones en
 Configure las reglas comerciales cuando aparezcan los letreros o para decidir qué resultados aparecerán y en qué orden. También puede configurar la posición de un elemento en la faceta y qué plantilla se utiliza para una búsqueda determinada.
 Reordene las reglas comerciales para cambiar el orden en que se ejecutan en las plantillas de presentación. Las reglas comerciales se ejecutan en el orden en que se definieron; es decir, cuanto mayor sea el número de orden de una regla, más tarde se ejecutará en el proceso, superando las reglas anteriores. Las reglas se reordenan introduciendo un nuevo número en la columna Orden de la tabla de la página Reglas comerciales.
 
-See [About Business Rules](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+Consulte [Acerca de las reglas comerciales](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 ## ¿Por qué tengo problemas al programar la indexación, errores al iniciar la indexación y problemas al iniciar la indexación por etapas? {#section_E05758193DF5436784B0145839989F75}
 
-Cuando se genera un índice, ya sea completo o incremental, la información de estado del rastreo de índice se muestra en tiempo real. Por ejemplo, puede ver la hora de inicio, el tiempo transcurrido y cualquier error que se haya producido durante el proceso de indexación. También se muestra información sobre el estado del último índice. Utilice esta información para solucionar cualquier error de indexación que encuentre.
+Cuando se genera un índice, ya sea completo o incremental, la información de estado del rastreo de índice se muestra en tiempo real. Por ejemplo, puede vista el tiempo de inicio, el tiempo transcurrido y los errores que se hayan producido durante el proceso de indexación. También se muestra información sobre el estado del último índice. Utilice esta información para solucionar cualquier error de indexación que encuentre.
 
-Para programar un índice, consulte [Configuración de la programación de índice completa para un sitio web](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0) activo y [Configuración de la programación de índice incremental para un sitio web](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33)activo.
+Para programar un índice, consulte [Configuración de la programación completa del índice para un sitio Web activo](../c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0) y [Configuración de la programación incremental del índice para un sitio Web activo](../c-about-index-menu/c-about-incremental-index.md#task_2A46BA189ECC4317A9D5C6E99A336F33).
 
-Para iniciar un índice escalonado, consulte [Ejecución de un índice completo de un sitio Web activo o escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D) o [Ejecutando un índice incremental de un sitio web activo o en un sitio web en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Para iniciar un índice escalonado, consulte [Ejecución de un índice completo de un sitio Web activo o escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D) o [Ejecutando un índice incremental de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
 ## Mi límite de tamaño de índice supera mi límite permitido. ¿Por qué sucede esto y cómo lo arreglo? {#section_12E7DA979C4C4B1D8A3A6415FC3DDA70}
 
-Un sitio Web puede crecer y con el tiempo Search&amp;Promote &quot;descubre&quot; más documentos y páginas Web que se agregaron. Finalmente, su cuenta puede superar el límite de tamaño de indexación. En estos casos, puede considerar el uso de **[!UICONTROL URL Mask]**. Esta función oculta documentos y páginas web del rastreo de índices que no desea o que no necesita indexar, reduciendo así el tamaño del índice. Otra opción puede ser ponerse en contacto con el servicio de asistencia técnica para que el límite de tamaño de indexación sea mayor en la cuenta.
+Un sitio Web puede tener tendencia a crecer y con el tiempo el Search&amp;Promote &quot;descubre&quot; más documentos y páginas Web que se agregaron. Finalmente, su cuenta puede superar el límite de tamaño de indexación. En estos casos, puede considerar el uso de **[!UICONTROL URL Mask]**. Esta función oculta documentos y páginas web del rastreo de índices que no desea o que no necesita indexar, reduciendo así el tamaño del índice. Otra opción puede ser ponerse en contacto con el servicio de asistencia técnica para que el límite de tamaño de indexación sea mayor en la cuenta.
 
-Consulte [Acerca de las máscaras](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164)URL.
+Consulte [Acerca de las máscaras de URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
 Si no está seguro de qué hacer, póngase en contacto con el servicio de asistencia técnica. Es posible que haya muchas otras variables que afecten al tamaño del índice y que, si se ajustan, también afecten a la facturación de la cuenta.
 
@@ -472,78 +475,78 @@ Las siguientes son preguntas comunes sobre idiomas y conjuntos de caracteres:
 
 ## ¿Qué controla la codificación del conjunto de caracteres de la consulta de búsqueda? {#section_DF2E8570AFC2480FA199FD26C941A22F}
 
-La sección &quot;Formularios Web&quot; de la cuenta de búsqueda contiene formularios de búsqueda de ejemplo que se utilizan para agregar funcionalidad de búsqueda al sitio Web. Si consulta este código de formularios de búsqueda, encontrará una línea similar a la siguiente:
+La sección &quot;Formularios web&quot; de la cuenta de búsqueda contiene formularios de búsqueda de ejemplo que se utilizan para agregar funcionalidad de búsqueda al sitio Web. Si consulta este código de formularios de búsqueda, encontrará una línea similar a la siguiente:
 
 `<input type=hidden name="sp_f" value="iso-8859-1">`
 
-Esta línea de código le dice al motor de búsqueda que la consulta entrante está codificada en iso-8859-1, una codificación común para los idiomas europeos occidentales. Para cambiar esta configuración, vaya al menú de productos y haga clic en **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]**. En la [!DNL Personal Information] página, en la **[!UICONTROL Character Encoding]** lista desplegable, seleccione una nueva codificación.
+Esta línea de código le dice al motor de búsqueda que la consulta entrante está codificada en iso-8859-1, una codificación común para los idiomas europeos occidentales. Para cambiar esta configuración, vaya al menú del producto y haga clic en **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]**. En la página [!DNL Personal Information], en la lista desplegable **[!UICONTROL Character Encoding]**, seleccione una nueva codificación.
 
-Consulte [Configuración de la información](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6)personal del usuario.
+Consulte [Configuración de la información personal del usuario](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6).
 
-También puede cambiar manualmente el valor de codificación de las páginas Web editando la línea del `sp_f` formulario de búsqueda. Recuerde que el `sp_f` valor del formulario de búsqueda debe coincidir con la codificación del conjunto de caracteres de la página en la que aparece.
+También puede cambiar manualmente el valor de codificación de las páginas Web editando la línea `sp_f` del formulario de búsqueda. Recuerde que el valor `sp_f` del formulario de búsqueda debe coincidir con la codificación del conjunto de caracteres de la página en la que aparece.
 
 ## ¿Solo se buscan las páginas cuya codificación coincide con la codificación de la consulta de búsqueda? {#section_9E544F3DB7DE41618DC1BC8224B32C5A}
 
-De forma predeterminada, no. Siempre y cuando las páginas del sitio Web identifiquen correctamente su codificación de conjunto de caracteres, se realizan las conversiones necesarias entre la codificación de la consulta de búsqueda y la de las páginas, incluso cuando las páginas utilizan varias codificaciones.
+De forma predeterminada, no. Siempre que las páginas del sitio Web identifiquen correctamente la codificación de su conjunto de caracteres, se realizan las conversiones necesarias entre la codificación de la consulta de búsqueda y la de las páginas, incluso cuando las páginas utilizan varias codificaciones.
 
 ## ¿Qué codificación se utiliza para la página de resultados de búsqueda? {#section_DA68670F35D54EAABF7DBB010F4409BF}
 
 La codificación del conjunto de caracteres de la cuenta determina la codificación predeterminada para la plantilla de resultados.
 
-Consulte [Configuración de la información](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6)personal del usuario.
+Consulte [Configuración de la información personal del usuario](../c-about-settings-menu/c-about-my-profile-menu.md#task_A11A3BE2527B4204B896E04303B04AA6).
 
 Puede obtener más información sobre la especificación de un conjunto de caracteres en una plantilla HTML.
 
-Consulte [Buscar etiquetas](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4)de plantilla.
+Consulte [Buscar etiquetas de plantilla](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
 
 ## ¿Puedo utilizar la búsqueda/comercialización del sitio en páginas codificadas Unicode, UTF-8? {#section_130997CB08934A13A5261D85CF88040C}
 
 Sí. Sin embargo, los conjuntos de caracteres Unicode, como UTF-8, no proporcionan suficiente información para determinar el idioma en que se escriben las páginas. Para buscar correctamente estas páginas, es necesario especificar el idioma. Para determinar el idioma del documento, la información se procesa en el siguiente orden:
 
 * Encabezado HTTP en lenguaje de contenido enviado para el documento por su servidor.
-* Elementos META (por ejemplo, `META HTTP-EQUIV="Content-Language" Content="ja_JP"`) en la `<HEAD>` sección del documento.
+* Elementos META (por ejemplo, `META HTTP-EQUIV="Content-Language" Content="ja_JP"`) en la sección `<HEAD>` del documento.
 
-* Atributo LANG de la `<HTML>` etiqueta (por ejemplo, `<HTML LANG="ja_JP">`).
+* El atributo LANG de la etiqueta `<HTML>` (por ejemplo, `<HTML LANG="ja_JP">`).
 
-Si el servidor no está configurado para entregar el encabezado HTTP Content-Language y los documentos no contienen el elemento META de idioma ni el atributo de idioma de la `<HTML>` etiqueta, puede utilizar inyecciones de metadatos para especificar el idioma adecuado.
+Si su servidor no está configurado para entregar el encabezado HTTP Content-Language y sus documentos no contienen el elemento META de idioma ni el atributo de idioma para la etiqueta `<HTML>`, puede utilizar inyecciones de metadatos para especificar el idioma adecuado.
 
-Consulte [Adición de definiciones](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)de inyección de campo.
+Consulte [Añadir definiciones de inyección de campo](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## ¿Cómo es que no puedo buscar archivos PDF chinos, japoneses o coreanos en mi sitio web? {#section_539AFF482F814D28B5929F683D2F2175}
 
-La búsqueda/comercialización del sitio obtiene UTF-8 de los archivos PDF de Adobe sin indicación de idioma. Si ha seleccionado **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el idioma que se utiliza en el archivo PDF.
+La búsqueda/comercialización del sitio obtiene UTF-8 de los archivos de Adobe PDF sin indicación de idioma. Si seleccionó **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el idioma que se utiliza en el archivo PDF.
 
-Consulte [Adición de definiciones](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)de inyección de campo.
+Consulte [Añadir definiciones de inyección de campo](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## ¿Cómo es que no puedo buscar archivos SWF chinos, japoneses o coreanos en mi sitio web? {#section_9C0849528AFF4C10AA97A2C912992638}
 
-La búsqueda/comercialización del sitio obtiene UTF-8 de los archivos de película de Adobe Flash que se crearon con Adobe Flash sin indicación de idioma. Si ha seleccionado el tipo de contenido **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el idioma que se utiliza en el archivo SWF.
+La búsqueda/comercialización del sitio obtiene UTF-8 de los archivos de películas de Adobe Flash que se crearon con Flash de Adobe sin indicación de idioma. Si seleccionó el tipo de contenido **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el idioma que se utiliza en el archivo SWF.
 
-Para Flash versión 4 o versiones anteriores de archivos SWF, no se especifica el conjunto de caracteres de los caracteres del archivo. Si ha seleccionado el tipo de contenido **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el conjunto de caracteres que se utiliza en el archivo SWF.
+Para Flash versión 4 o versiones anteriores de archivos SWF, no se especifica el conjunto de caracteres de los caracteres del archivo. Si seleccionó el tipo de contenido **[!UICONTROL Adobe Flash Movies]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el conjunto de caracteres que se utiliza en el archivo SWF.
 
-Consulte [Adición de definiciones](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)de inyección de campo.
+Consulte [Añadir definiciones de inyección de campo](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## ¿Cómo es que no puedo buscar los archivos de Microsoft Office en chino, japonés o coreano en mi sitio web? {#section_6764BA6863AF492EBA9BE5CCC12CDD1F}
 
-La búsqueda y comercialización de sitios obtiene UTF-8 de archivos de Microsoft Office (Microsoft Word, Microsoft Excel y Microsoft PowerPoint) sin indicación de idioma. Si ha seleccionado el tipo de contenido **[!UICONTROL Microsoft Office Files]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el idioma utilizado en los archivos de Microsoft Office.
+La búsqueda y comercialización de sitios obtiene UTF-8 de archivos de Microsoft Office (Microsoft Word, Microsoft Excel y Microsoft PowerPoint) sin indicación de idioma. Si seleccionó el tipo de contenido **[!UICONTROL Microsoft Office Files]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el idioma utilizado en los archivos de Microsoft Office.
 
-Consulte [Adición de definiciones](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)de inyección de campo.
+Consulte [Añadir definiciones de inyección de campo](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## ¿Cómo es que no puedo buscar archivos MP3 chinos, japoneses o coreanos en mi sitio web? {#section_DB6D60CF46F94125BF4E54AF3036DBFC}
 
 Si selecciona el tipo de contenido **[!UICONTROL Text in MP3 Music Files]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el conjunto de caracteres que se utiliza para codificar los archivos MP3.
 
-Consulte [Adición de definiciones](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)de inyección de campo.
+Consulte [Añadir definiciones de inyección de campo](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## ¿Necesito hacer algo especial para obtener los archivos .txt en mi sitio web para indexar correctamente? {#section_A8BA6DDD3A6048319D3530BCFD6DA1A5}
 
-Si ha seleccionado el tipo de contenido **[!UICONTROL Text Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el conjunto de caracteres utilizado para codificar los archivos .txt.
+Si seleccionó el tipo de contenido **[!UICONTROL Text Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el conjunto de caracteres utilizado para codificar los archivos .txt.
 
-Consulte [Adición de definiciones](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)de inyección de campo.
+Consulte [Añadir definiciones de inyección de campo](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## ¿Cómo es que las fuentes chinas, japonesas o coreanas aparecen en los resultados de búsqueda de Netscape 4.7 y versiones anteriores? {#section_DF42567063304F918D406AC76529DFB7}
 
-Si su cuenta utiliza la plantilla predeterminada, una de las plantillas listas para usar o una plantilla basada en cualquiera de esas plantillas, puede contener etiquetas de fuente que especifiquen Arial o Helvetica como caras de fuente. Por ejemplo, `<font face="arial, helvetica" size="+1">`. Netscape 4.7 y versiones anteriores no muestra caracteres chinos, japoneses o coreanos cuando se utiliza la cara de fuente Arial o Helvetica. Quite el `face` atributo o reemplace la cara de fuente por una que sea más apropiada para chino, japonés o coreano.
+Si su cuenta utiliza la plantilla predeterminada, una de las plantillas listas para usar o una plantilla basada en cualquiera de esas plantillas, puede contener etiquetas de fuente que especifiquen Arial o Helvetica como caras de fuente. Por ejemplo, `<font face="arial, helvetica" size="+1">`. Netscape 4.7 y versiones anteriores no muestra caracteres chinos, japoneses o coreanos cuando se utiliza la cara de fuente Arial o Helvetica. Quite el atributo `face` o reemplace la cara de fuente por una que sea más apropiada para chino, japonés o coreano.
 
 ## Recuento de páginas bajo {#reference_4344E3E3CB2948939860F8C078BD7773}
 
@@ -565,7 +568,7 @@ Las siguientes son preguntas comunes sobre el recuento bajo de páginas de index
 
 ## ¿Ha examinado su registro de índice? {#section_D6626536DC3D40DDA4A1224F1CB276BF}
 
-El registro de índice contiene información detallada que el robot de búsqueda/comercialización del sitio recopila a medida que indexa el sitio web. El registro incluye una lista de los vínculos rastreados y los errores encontrados. Examinar el registro de índice es el mejor lugar para empezar a determinar por qué no se indexan todas las páginas del sitio web.
+El registro de índice contiene información detallada que el robot de búsqueda/comercialización del sitio recopila a medida que indexa el sitio web. El registro incluye una lista de vínculos rastreados y errores encontrados. Examinar el registro de índice es el mejor lugar para el inicio para determinar por qué no se indexan todas las páginas del sitio web.
 
 Consulte [Visualización del registro de índice completo de un activo o un ensayo...](../c-about-index-menu/c-about-full-index.md#task_02E5E944C56B4EB19CC1FF321F3221B8).
 
@@ -575,7 +578,7 @@ Consulte [Visualización del registro de índice incremental de un activo o un e
 
 Al escribir direcciones URL extensas en formularios HTML, puede introducir uno o más errores tipográficos. Recuerde que las direcciones URL no deben contener espacios. Además, tenga en cuenta que algunos servidores Web administran las direcciones URL de manera que distinguen entre mayúsculas y minúsculas.
 
-En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. En la [!DNL Staged URL Entrypoints] página, compruebe lo siguiente:
+En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. En la página [!DNL Staged URL Entrypoints], verifique lo siguiente:
 
 * No hay errores tipográficos en las direcciones URL.
 * Todos los caracteres de las direcciones URL utilizan la carcasa correcta.
@@ -583,37 +586,37 @@ En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL 
 
 Para probar los puntos de entrada de la URL, copie y pegue una URL en un navegador web para ver si aparece el sitio web. Si no aparece, vuelva a comprobar que no ha cometido ningún error en la ruta de URL.
 
-Consulte [Acerca de los puntos de entrada](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)de URL.
+Consulte [Acerca de los puntos de entrada de URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 ## ¿La página Web de puntos de entrada tiene vínculos a otras páginas del sitio Web? {#section_1C2D6ED54E7249268B555D9DC33352B3}
 
 El robot de búsqueda/comercialización del sitio rastrea su sitio web como lo hace su cliente; siguiendo los vínculos de página en página. Los vínculos deben estar presentes en la página Web de puntos de entrada para que el robot de búsqueda pueda encontrar e indexar otras páginas del sitio.
 
-Consulte [Adición de varios puntos de entrada de URL que desea indizar](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
+Consulte [Añadir varios puntos de entrada de URL que desea indizar](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
 ## ¿Los vínculos a otras páginas del sitio Web están incrustados en JavaScript? {#section_EE34A67D60A844EBB0921C03544FF63E}
 
 Puede utilizar técnicas de navegación sofisticadas en el sitio web, como acciones de resumen y menús, que utilizan JavaScript para establecer vínculos con otras páginas. Sin embargo, el robot de búsqueda y comercialización del sitio no puede seguir los vínculos incrustados en JavaScript.
 
-Una solución que puede utilizar para superar este problema es colocar vínculos ocultos a otras páginas en el HTML que contiene el código JavaScript. Aunque los clientes de su sitio web no ven estos vínculos, el robot de búsqueda los encuentra y los rastrea. Puede colocar etiquetas ocultas en la parte inferior de la página justo antes de la `</body>` etiqueta. Pueden tener el siguiente aspecto:
+Una solución que puede utilizar para superar este problema es colocar vínculos ocultos a otras páginas en el HTML que contiene el código JavaScript. Aunque los clientes de su sitio web no ven estos vínculos, el robot de búsqueda los encuentra y los rastrea. Puede colocar etiquetas ocultas en la parte inferior de la página justo antes de la etiqueta `</body>`. Pueden tener el siguiente aspecto:
 
 ```
 <a href="/mydir/mypag1.html"></a> 
 <a href="/mydir/mypag2.html"></a>
 ```
 
-Otra solución es enumerar las direcciones URL de las páginas adicionales del sitio web como puntos de entrada para rastrear e indexar. Comience las direcciones URL con `https://` , como se muestra en la siguiente sección:
+Otra solución es la lista de las direcciones URL de las páginas adicionales del sitio web como puntos de entrada para rastrear e indexar. Comience las direcciones URL con `https://` como se muestra en la siguiente sección:
 
 ```
 https://www.mydomain.com/mydir/mypag1.html 
 https://www.mydomain.com/mydir/mypag2.html
 ```
 
-Consulte [Adición de varios puntos de entrada de URL que desea indizar](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
+Consulte [Añadir varios puntos de entrada de URL que desea indizar](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
 ## ¿Las etiquetas HTML de la página web están en una secuencia no válida? {#section_F31A2F5D2C284AC084158A5BD763DC5D}
 
-La especificación HTML requiere que las etiquetas `<html>`, `<head>`, y `<body>` sigan una secuencia específica en un documento HTML. Las etiquetas de todas las páginas web deben tener la siguiente secuencia:
+La especificación HTML requiere que las etiquetas `<html>`, `<head>` y `<body>` sigan una secuencia específica en un documento HTML. Las etiquetas de todas las páginas web deben tener la siguiente secuencia:
 
 ```
 <html> 
@@ -641,13 +644,13 @@ Si las etiquetas HTML no están en el orden correcto, el robot de búsqueda/come
 </body>
 ```
 
-En ese caso, coloque las etiquetas `<html>`, `<head>`y `<body>` en la secuencia adecuada de la página web.
+En ese caso, coloque las etiquetas `<html>`, `<head>` y `<body>` en la secuencia adecuada de la página Web.
 
 ## ¿Tiene etiquetas de comentarios HTML mal formadas en la página web? {#section_D1C39D79341845CB9C38579AABDF3A24}
 
 Asegúrese de revisar y corregir cuidadosamente los comentarios HTML no válidos en las páginas web.
 
-La especificación HTML requiere que un comentario HTML comience con los caracteres `<!--` y termine con los caracteres `-->`. Es fácil pasar por alto los comentarios con formato incorrecto que provocan que el robot de búsqueda/comercialización del sitio analice incorrectamente las etiquetas de la página web. Un comentario mal formado puede hacer que el robot de búsqueda/comercialización del sitio pierda otras etiquetas importantes que deben analizarse. Tenga en cuenta los comentarios justo antes de la `<body>` etiqueta en su página web.
+La especificación HTML requiere que un comentario HTML comience con los caracteres `<!--` y termine con los caracteres `-->`. Es fácil pasar por alto los comentarios con formato incorrecto que provocan que el robot de búsqueda/comercialización del sitio analice incorrectamente las etiquetas de la página web. Un comentario mal formado puede hacer que el robot de búsqueda/comercialización del sitio pierda otras etiquetas importantes que deben analizarse. Tenga en cuenta los comentarios justo antes de la etiqueta `<body>` de la página web.
 
 A continuación se muestra un ejemplo de comentario correctamente formado:
 
@@ -672,7 +675,7 @@ El sitio web también puede tener páginas en otro dominio, como por ejemplo:
 
 De forma predeterminada, el robot de búsqueda/comercialización del sitio no sigue los vínculos de un dominio que no sea el principal. Sin embargo, al establecer puntos de entrada adicionales para la cuenta de búsqueda, puede indexar fácilmente varios dominios.
 
-En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Agregue la dirección URL del &quot;punto de entrada al sitio web principal&quot; del sitio. A continuación, agregue puntos de entrada de URL adicionales a cualquier otro dominio que contenga páginas del sitio. Por ejemplo, puede configurar el punto de entrada de la dirección URL principal en:
+En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Añada la dirección URL del &quot;punto de entrada al sitio web principal&quot; del sitio. A continuación, agregue puntos de entrada de URL adicionales a cualquier otro dominio que contenga páginas del sitio. Por ejemplo, puede configurar el punto de entrada de la dirección URL principal en:
 
 `https://www.mydomain.com/`
 
@@ -696,7 +699,7 @@ o
 
 De forma predeterminada, el robot de búsqueda/comercialización del sitio no sigue los vínculos de un dominio que no sea el principal. Sin embargo, al establecer puntos de entrada adicionales para la cuenta de búsqueda, puede indexar fácilmente varios dominios.
 
-En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Agregue el &quot;punto de entrada de la dirección URL del sitio web principal&quot; al nombre de dominio virtual del sitio. A continuación, agregue puntos de entrada adicionales al dominio en el que se encuentre el sitio web.
+En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Añada el &quot;punto de entrada de URL del sitio web principal&quot; al nombre de dominio virtual del sitio. A continuación, agregue puntos de entrada adicionales al dominio en el que se encuentre el sitio web.
 
 Por ejemplo, podría establecer el punto de entrada de la dirección URL principal en lo siguiente:
 
@@ -708,17 +711,17 @@ Y agregue el siguiente punto de entrada de URL de sitio web adicional:
 
 ## ¿Utiliza la página web una etiqueta de actualización de metadatos? {#section_5A2F544C237C49B8B1A7FE0C45371C0D}
 
-Muchos sitios web tienen una página principal que incluye una etiqueta meta refresh entre las `<head>...</head>` etiquetas de forma similar a la siguiente:
+Muchos sitios Web tienen una página principal que incluye una etiqueta meta refresh entre las etiquetas `<head>...</head>` similar a la siguiente:
 
 `<meta http-equiv="Refresh" content="0;URL=https://www.adomain.com/apath/afile.html">`
 
 En determinadas circunstancias, el robot de búsqueda/comercialización del sitio no puede seguir la URL de actualización meta para indexar el contenido del sitio web. Este problema es fácil de solucionar estableciendo puntos de entrada adicionales.
 
-En el menú de producto, haga clic en **[!UICONTROL Settings]** > Rastreo > **[!UICONTROL URL Entrypoints]**. Agregue otro punto de entrada a la dirección URL de la etiqueta meta refresh.
+En el menú del producto, haga clic en **[!UICONTROL Settings]** > Rastreo > **[!UICONTROL URL Entrypoints]**. Añada otro punto de entrada a la dirección URL de la etiqueta meta refresh.
 
 ## ¿Su página Web utiliza una etiqueta meta robots? {#section_36275A33DDFE4620BABA948F8A63DBD2}
 
-A veces las páginas web utilizan etiquetas meta robots para controlar robots web que periódicamente intentan rastrear un sitio web. Las etiquetas Meta robots aparecen entre las `<head>...</head>` etiquetas de una página web y tienen un aspecto similar a la siguiente etiqueta:
+A veces las páginas web utilizan etiquetas meta robots para controlar robots web que periódicamente intentan rastrear un sitio web. Las etiquetas Meta-robots aparecen entre las etiquetas `<head>...</head>` de una página Web y tienen un aspecto similar a la siguiente etiqueta:
 
 `<meta name="robots" content="noindex, nofollow">`
 
@@ -819,7 +822,7 @@ Introduzca las siguientes máscaras URL:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Si utiliza expresiones regulares </p> </td> 
+   <td colname="col1"> <p>Si está utilizando expresiones regulares </p> </td> 
    <td colname="col2"> 
     <ul id="ul_012A45C3EC04460EA09C0ECFB49A8FA9"> 
      <li id="li_0C239F0A536D465F85A98EBF7B6ADF27">excluir regexp ^.*\.doc$ </li> 
@@ -830,9 +833,9 @@ Introduzca las siguientes máscaras URL:
  </tbody> 
 </table>
 
-Consulte [Adición de máscaras URL para indexar o no partes de índice de...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
+Consulte [Añadir máscaras URL para indexar o no partes de índice de...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
 
-Consulte Expresiones [regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Consulte [Expresiones regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## MP3 {#reference_7614250EE81C4EEFA43E57A6A74E83D7}
 
@@ -857,13 +860,13 @@ Los archivos MP3 se rastrean e indexan de una de las dos maneras siguientes. La 
 
 Una segunda forma es introducir la URL del archivo MP3 como punto de entrada de URL.
 
-Consulte [Acerca de los puntos de entrada](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)de URL.
+Consulte [Acerca de los puntos de entrada de URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 ## ¿Qué tengo que hacer para rastrear e indexar los archivos MP3 en mi sitio? {#section_3CD794446E3545379C14E9F222118665}
 
-Para activar el rastreo y la indexación de MP3 para su cuenta, en el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**. En la [!DNL Staged Content Types] página, seleccione **[!UICONTROL Text in MP3 Music Files]**.
+Para activar el rastreo y la indexación de MP3 para su cuenta, en el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**. En la página [!DNL Staged Content Types], seleccione **[!UICONTROL Text in MP3 Music Files]**.
 
-Consulte [Acerca de los tipos](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07)de contenido.
+Consulte [Acerca de los tipos de contenido](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07).
 
 ## ¿Cómo se reconoce un archivo MP3? {#section_230E7336965A424F96C5CCF1D3C2D103}
 
@@ -876,7 +879,7 @@ Los archivos MP3, opcionalmente, almacenan una pequeña cantidad de información
 * El título de la canción se trata como el título de una página HTML.
 * El comentario se trata como una descripción definida para una página HTML.
 * El género se trata como una palabra clave definida para una página HTML.
-* El nombre del artista, el nombre del álbum y el año de publicación se tratan como el cuerpo de un documento HTML.
+* El nombre del artista, el nombre del álbum y el año de lanzamiento se tratan como el cuerpo de un documento HTML.
 
 ## ¿Un archivo MP3 cuenta como una página? {#section_9910BEB6617D4D2090558CDF6C65D16B}
 
@@ -884,17 +887,17 @@ Sí, cada archivo MP3 rastreado e indexado en su sitio web se cuenta como una p�
 
 ## ¿Cómo puedo evitar la indexación de archivos MP3 individuales? {#section_C989DC1D3D3841B38F683A462195DC05}
 
-Rodee las etiquetas delimitadoras que se vinculan a los archivos MP3 con `<nofollow>` y `</nofollow>` etiquetas. El robot de búsqueda no sigue los vínculos entre esas etiquetas.
+Rodee las etiquetas delimitadoras que se vinculan a los archivos MP3 con etiquetas `<nofollow>` y `</nofollow>`. El robot de búsqueda no sigue los vínculos entre esas etiquetas.
 
 Otro método es añadir las direcciones URL de los archivos MP3 como máscaras de exclusión.
 
-Consulte [Acerca de las máscaras](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164)URL.
+Consulte [Acerca de las máscaras de URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-Consulte [Acerca del script](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B)de máscaras URL.
+Consulte [Acerca del script de máscaras URL](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B).
 
 ## ¿Cómo evito que se indiquen los archivos MP3? {#section_305D2B28D1124776B6DC0C62A17827C6}
 
-La forma más sencilla de controlar la indexación de MP3 para su cuenta es anular la selección **[!UICONTROL Text in MP3 Music Files]** en la [!DNL Staged Content Types] página.
+La manera más fácil de controlar la indexación de MP3 para su cuenta es anular la selección de **[!UICONTROL Text in MP3 Music Files]** en la página [!DNL Staged Content Types].
 
 Consulte [Selección de tipos de contenido para rastrear e indexar](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
 
@@ -910,7 +913,7 @@ También puede utilizar la función Máscaras URL para desactivar la indexación
  <tbody> 
   <tr> 
    <td colname="col1"> <p>No utiliza expresiones regulares </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> exclude *.mp3 </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> exclude *.mp3  </span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Utiliza expresiones regulares </p> </td> 
@@ -919,7 +922,7 @@ También puede utilizar la función Máscaras URL para desactivar la indexación
  </tbody> 
 </table>
 
-Consulte Expresiones [regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Consulte [Expresiones regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## ¿Por qué no puedo buscar los archivos MP3 chinos, japoneses o coreanos en mi sitio? {#section_06A48DA3F9E742CC93CC8B5CCD7382FA}
 
@@ -962,7 +965,7 @@ Cada archivo PDF se cuenta como un solo documento, incluidos los archivos PDF qu
 
 ## ¿Pueden los resultados de la búsqueda mostrar un icono PDF? {#section_829CE82CC3544502A13D27C4DB820189}
 
-Sí. Utilice la `<search-if-link-extension>` etiqueta de la plantilla para incluir un icono de PDF u otros gráficos o texto en los resultados de la búsqueda:
+Sí. Utilice la etiqueta `<search-if-link-extension>` de la plantilla para incluir un icono de PDF u otros gráficos o texto en los resultados de la búsqueda:
 
 ```
 <search-results> 
@@ -980,34 +983,34 @@ Los iconos de PDF ayudan a los clientes a saber que un resultado de búsqueda se
 
 Sí. Con la etiqueta de plantilla de vínculos inteligentes ( `<search-smart-link>...</search-smart-link>`), los clientes pueden hacer clic para abrir la primera página PDF que contenga el resultado de la búsqueda.
 
-Para utilizar vínculos inteligentes, reemplace las `<search-link>...</search-link>` etiquetas de la sección de resultados de búsqueda de la plantilla por `<search-smart-link>...</search-smart-link>` etiquetas. Cuando un cliente hace clic en un vínculo que generan las etiquetas de vínculos inteligentes, se dirige a la primera página PDF relevante para la consulta de búsqueda.
+Para utilizar vínculos inteligentes, reemplace las etiquetas `<search-link>...</search-link>` de la sección de resultados de búsqueda de la plantilla por etiquetas `<search-smart-link>...</search-smart-link>`. Cuando un cliente hace clic en un vínculo generado por las etiquetas de vínculos inteligentes, se dirige a la primera página PDF relevante para su consulta de búsqueda.
 
 >[!NOTE]
 >
->Para utilizar esta función, el cliente debe utilizar una versión reciente de Adobe Acrobat o Adobe Acrobat Reader, que debe incluir el complemento de resaltado y el complemento Controlador de ventana externa (EWH). Además, su explorador Web debe utilizar el complemento Adobe Acrobat para Netscape Navigator (puede utilizar cualquier explorador que acepte este complemento de Netscape Navigator) o el control Acrobat ActiveX para Internet Explorer 4.0 y posterior.
+>Para utilizar esta función, el cliente debe utilizar una versión reciente del Adobe Acrobat o del Reader de Adobe Acrobat, que debe incluir el complemento de resaltado y el complemento del controlador de ventanas externas (EWH). Además, su explorador Web debe utilizar el complemento Adobe Acrobat para Netscape Navigator (puede utilizar cualquier explorador que acepte este complemento de Netscape Navigator) o el control Acrobat ActiveX para Internet Explorer 4.0 y posterior.
 
-Consulte [Buscar etiquetas](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4)de plantilla.
+Consulte [Buscar etiquetas de plantilla](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
 
 ## ¿Cómo puedo evitar que los archivos PDF se indiquen en mi sitio web? {#section_96671419A822486AAC654D8DAD819940}
 
 Si no desea que el robot de búsqueda rastree e indexe archivos PDF, anule la selección del tipo de contenido **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**).
 
-También puede optar por utilizar [!DNL URL Masks] para deshabilitar la indexación de PDF.
+También puede elegir utilizar [!DNL URL Masks] para deshabilitar la indexación de PDF.
 
-Consulte [Adición de máscaras URL para indexar o no partes de índice de...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
+Consulte [Añadir máscaras URL para indexar o no partes de índice de...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
 
 Para desactivar la indexación de PDF, introduzca una de las siguientes máscaras URL:
 
 * `exclude *.pdf` (si no utiliza expresiones regulares)
 * `exclude regexp ^.*\.pdf$` (si utiliza expresiones regulares)
 
-Consulte Expresiones [regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Consulte [Expresiones regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## ¿Cómo es que no puedo buscar archivos PDF chinos, japoneses o coreanos en mi sitio web? {#section_D41CA8EFCA0242EA8CF5F8F1924E4CD8}
 
-La búsqueda/comercialización de sitios obtiene UTF-8 de archivos PDF sin indicación de idioma. Si ha seleccionado el tipo de contenido **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el idioma que se utiliza en el archivo PDF.
+La búsqueda/comercialización de sitios obtiene UTF-8 de archivos PDF sin indicación de idioma. Si seleccionó el tipo de contenido **[!UICONTROL PDF Documents]** ( **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**), debe utilizar inyecciones de metadatos para especificar el idioma que se utiliza en el archivo PDF.
 
-Consulte [Adición de definiciones](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE)de inyección de campo.
+Consulte [Añadir definiciones de inyección de campo](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
 ## Demasiadas páginas {#reference_48A748BC1ED14844ACAC2735C8388E8A}
 
@@ -1016,7 +1019,7 @@ Una página de preguntas más frecuentes que explica algunas de las razones por 
 Si está seguro de que su sitio web está por debajo del límite de páginas, pero el indizador le indica que se ha alcanzado el límite, debe revisar estas preguntas comunes y las respuestas para encontrar posibles soluciones.
 
 * [¿Ha examinado los distintos registros de índice?](#section_C929BF9FDA6B4C9A9078C45AFE80EFE8)
-* [¿Se están indexando los programas CGI en el sitio web?](#section_86ED8A641B3841EC80153B4F107548FD)
+* [¿Los programas CGI se indexan en su sitio web?](#section_86ED8A641B3841EC80153B4F107548FD)
 * [¿Su servidor tiene habilitada la exploración de directorios?](#section_073C88EEE74F4CA0AD2C7145D4810B22)
 * [¿Hay foros o grupos de noticias en el sitio web?](#section_8DCB94F0850A41B9B2EA885F779E2F84)
 * [¿Hay archivos PDF o de Microsoft Office en el sitio web?...](#section_455FC5438DF74E68AB9A31D359EAD4D9)
@@ -1025,7 +1028,7 @@ Si está seguro de que su sitio web está por debajo del límite de páginas, pe
 
 ## ¿Ha examinado los distintos registros de índice? {#section_C929BF9FDA6B4C9A9078C45AFE80EFE8}
 
-El registro de índice contiene información detallada recopilada por el robot de búsqueda/comercialización del sitio al indizar el sitio web. El registro incluye una lista de todos los vínculos rastreados y los errores encontrados. Examinar el registro de índice es el mejor lugar para comenzar cuando intenta determinar qué páginas se indexan.
+El registro de índice contiene información detallada recopilada por el robot de búsqueda/comercialización del sitio al indizar el sitio web. El registro incluye una lista de todos los vínculos rastreados y los errores encontrados. Examinar el registro de índice es el mejor lugar para el inicio cuando intenta determinar qué páginas se indexan.
 
 Consulte [Visualización del registro de índice completo de un activo o un ensayo...](../c-about-index-menu/c-about-full-index.md#task_02E5E944C56B4EB19CC1FF321F3221B8).
 
@@ -1035,67 +1038,67 @@ Consulte [Visualización del registro de índice incremental con secuencias de c
 
 Consulte [Visualización del registro de índice regenerado de un activo o un ensayo...](../c-about-index-menu/c-about-regenerate-index.md#task_61CE8F9E7BF84BA89A8D482B2106BB15).
 
-Consulte [Visualización del registro de índice reclasificado de un sitio Web](../c-about-index-menu/c-about-re-rank-index.md#task_3C76107DFAC1495FACD3ABB0A688208D)activo o en etapas.
+Consulte [Visualización del registro de índice reclasificado de un sitio Web activo o en etapas](../c-about-index-menu/c-about-re-rank-index.md#task_3C76107DFAC1495FACD3ABB0A688208D).
 
-## ¿Se están indexando los programas CGI en el sitio web? {#section_86ED8A641B3841EC80153B4F107548FD}
+## ¿Los programas CGI se indexan en su sitio web? {#section_86ED8A641B3841EC80153B4F107548FD}
 
 Los programas CGI utilizan parámetros de URL que en ocasiones hacen que el indizador rastree varias URL &quot;falsas&quot;. Si la búsqueda o comercialización del sitio está leyendo los programas CGI y las direcciones URL siguientes con parámetros CGI en ellos, es probable que haya varios múltiplos de páginas rastreadas e indizadas que no sean útiles para el índice de búsqueda. Los parámetros CGI típicos aparecen en direcciones URL con `?` o `&` caracteres.
 
-Puede ocultar que los programas CGI se indiquen mediante la función Máscaras URL. Puede enmascarar un prefijo URL o utilizar expresiones regulares para enmascarar las secuencias de comandos CGI.
+Puede ocultar la indización de los programas CGI mediante la función Máscaras URL. Puede enmascarar un prefijo de URL o usar expresiones regulares para enmascarar las secuencias de comandos de CGI.
 
-Consulte [Acerca de las máscaras](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164)URL.
+Consulte [Acerca de las máscaras de URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-Consulte [Acerca del script](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B)de máscaras URL.
+Consulte [Acerca del script de máscaras URL](../c-about-settings-menu/c-about-filtering-menu.md#concept_384F32EA18F84853A7BA99A04009330B).
 
-Consulte Expresiones [regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
+Consulte [Expresiones regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
 ## ¿Su servidor tiene habilitada la exploración de directorios? {#section_073C88EEE74F4CA0AD2C7145D4810B22}
 
-Cuando un servidor web tiene habilitada la exploración de directorios y no hay ningún archivo index.html presente en un directorio determinado, una visita a ese directorio puede mostrar la lista de archivos de ese directorio. Generalmente, hay vínculos en la parte superior de la página que permiten ordenar la lista de diferentes maneras haciendo clic en **[!UICONTROL Name]**, **[!UICONTROL Last modified]**, **[!UICONTROL Size]**, etc. Generalmente, aparecen en el registro de índice de búsqueda/comercialización del sitio como direcciones URL con caracteres como, por ejemplo, `?M=A` al final. El indizador de mercadotecnia/búsqueda del sitio los sigue como vínculos y esto puede llevar a indexar varias direcciones URL &quot;falsas&quot;.
+Cuando un servidor web tiene habilitada la exploración de directorios y no hay ningún archivo index.html presente en un directorio determinado, una visita a ese directorio puede mostrar la lista de archivos de ese directorio. Generalmente, hay vínculos en la parte superior de la página que le permiten ordenar la lista de diferentes maneras sólo haciendo clic en **[!UICONTROL Name]**, **[!UICONTROL Last modified]**, **[!UICONTROL Size]**, etc. Generalmente, aparecen en el registro de índice de comercialización/búsqueda del sitio como direcciones URL con caracteres como `?M=A` al final. El indizador de mercadotecnia/búsqueda del sitio los sigue como vínculos y esto puede llevar a indexar varias direcciones URL &quot;falsas&quot;.
 
 Normalmente, un sitio web bien diseñado tiene archivos de índice ubicados en cada directorio o tiene la exploración de directorios deshabilitada para aquellos directorios que no tienen archivos de índice. Afortunadamente, existe una manera fácil de enmascarar estas direcciones URL &quot;falsas&quot; si no puede cambiar las páginas o deshabilitar las listas de directorios en el servidor.
 
-Para realizar esta tarea, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]**. Agregue una máscara para enmascarar cualquier dirección URL que contenga el carácter `?`. Puede realizar esta tarea introduciendo la siguiente máscara de expresión regular:
+Para llevar a cabo esta tarea, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]**. Añada una máscara para enmascarar cualquier dirección URL que contenga el carácter `?`. Puede realizar esta tarea introduciendo la siguiente máscara de expresión normal:
 
 `exclude regexp ^.*\?.*$`
 
 Después de crear la máscara, asegúrese de volver a indexar el sitio web.
 
-Consulte [Ejecución de un índice completo de un sitio web activo o en un sitio web escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+Consulte [Ejecución de un índice completo de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-Consulte [Ejecución de un índice incremental de un sitio Web activo o en un sitio Web en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Consulte [Ejecución de un índice incremental de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
 ## ¿Hay foros o grupos de noticias en el sitio web? {#section_8DCB94F0850A41B9B2EA885F779E2F84}
 
 Si se rastrean foros o grupos de noticias en el sitio web, es posible que siga las direcciones URL de diferentes opciones de visualización u opciones de ordenación. Este comportamiento significa que la misma página se indiza varias veces.
 
-Generalmente, los foros o grupos de noticias vienen con sus propios motores de búsqueda. En ese caso, puede usar [!DNL URL Masks] para enmascarar los foros desde la búsqueda o comercialización del sitio.
+Generalmente, los foros o grupos de noticias vienen con sus propios motores de búsqueda. En ese caso, puede utilizar [!DNL URL Masks] para enmascarar los foros desde la búsqueda o comercialización del sitio.
 
-En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]**. En la [!DNL Staged URL Masks] página, enmascara los foros introduciendo sus direcciones URL como máscaras de URL de exclusión.
+En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]**. En la página [!DNL Staged URL Masks], enmascara los foros introduciendo sus direcciones URL como máscaras de URL de exclusión.
 
-Consulte [Adición de máscaras URL para indexar o no partes de índice de...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
+Consulte [Añadir máscaras URL para indexar o no partes de índice de...](../c-about-settings-menu/c-about-crawling-menu.md#task_E1AFC17C746048B8843013D979E082C1).
 
 Después de crear las máscaras, asegúrese de volver a indexar el sitio web.
 
-Consulte [Ejecución de un índice completo de un sitio web activo o en un sitio web escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+Consulte [Ejecución de un índice completo de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-Consulte [Ejecución de un índice incremental de un sitio Web activo o en un sitio Web en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Consulte [Ejecución de un índice incremental de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
 ## ¿Hay archivos PDF o de Microsoft Office en el sitio web? {#section_455FC5438DF74E68AB9A31D359EAD4D9}
 
-Si tiene archivos PDF o [!DNL Microsoft Office] archivos en el sitio web, puede que observe que el tamaño de índice de sólo unos pocos archivos cuenta muchas páginas. El motivo por el que se indexan más páginas que documentos es que cada página de un archivo PDF o de Microsoft Office se cuenta como una página independiente.
+Si tiene archivos PDF o [!DNL Microsoft Office] archivos en el sitio Web, puede observar que el tamaño de índice de sólo unos pocos archivos cuenta muchas páginas. La razón por la que se indexan más páginas que documentos es porque cada página de un archivo PDF o de Microsoft Office se cuenta como una página independiente.
 
-En el menú de producto, haga clic en **[!UICONTROL Index]** > **[!UICONTROL Full Index]** > **[!UICONTROL Live Index]**. En la [!DNL Full Index] página, seleccione **[!UICONTROL Count All Pages]** y, a continuación, haga clic en **[!UICONTROL Full Index Now]** para ver el recuento total de páginas. Si no desea indizar archivos PDF o archivos de Microsoft Office, puede desactivar este tipo de contenido en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**.
+En el menú del producto, haga clic en **[!UICONTROL Index]** > **[!UICONTROL Full Index]** > **[!UICONTROL Live Index]**. En la página [!DNL Full Index], seleccione **[!UICONTROL Count All Pages]** y, a continuación, haga clic en **[!UICONTROL Full Index Now]** para ver el recuento total de páginas. Si no desea indizar archivos PDF o archivos de Microsoft Office, puede deshabilitar este tipo de contenido en **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**.
 
-Consulte [Ejecución de un índice completo de un sitio web activo o en un sitio web escalonado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+Consulte [Ejecución de un índice completo de un sitio Web activo o en etapas...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-Consulte [Acerca de los tipos](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07)de contenido.
+Consulte [Acerca de los tipos de contenido](../c-about-settings-menu/c-about-crawling-menu.md#concept_6FEA1355C0374500B4C53090C34A8A07).
 
 ## ¿Tiene varios puntos de entrada de URL? {#section_8C54AFD7DF56472A9364D516482B534C}
 
 El robot de búsqueda y comercialización del sitio comienza a rastrear en los puntos de entrada de URL especificados y sigue todos los vínculos encontrados a todo el contenido de ese dominio en particular. Si ha especificado muchos puntos de entrada de URL, es posible que se rastree un número significativo de páginas.
 
-Utilice la `nofollow` etiqueta del protocolo de exclusión de robots en los encabezados de los documentos de puntos de entrada de los dominios adicionales de la siguiente manera:
+Utilice la etiqueta `nofollow` del protocolo de exclusión de robots en los encabezados de los documentos de puntos de entrada en los dominios adicionales de la siguiente manera:
 
 ```
 <html> 
@@ -1112,7 +1115,7 @@ Puede obtener más información sobre los robots web y el Protocolo de exclusió
 
 Si no tiene acceso al origen de las páginas en dominios adicionales, puede eliminar los puntos de entrada de varias direcciones URL. Esto le ayuda a limitar la actividad de indexación solo a los dominios cuyo contenido desee que puedan buscar los clientes.
 
-Consulte [Acerca de los puntos de entrada](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)de URL.
+Consulte [Acerca de los puntos de entrada de URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 ## ¿Ha excedido los bytes internos o los límites de tiempo de la búsqueda o comercialización del sitio? {#section_AE1BE61A58864FFE81F0BCEED2EBB15D}
 
