@@ -8,17 +8,20 @@ topic: Linguistics,Site search and merchandising
 uuid: c5973541-3d6b-4fc9-bad4-66d4d3559fe8
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '776'
+ht-degree: 2%
 
 ---
 
 
-# About Did You Mean{#about-did-you-mean}
+# Acerca de quiso decir{#about-did-you-mean}
 
 Puede configurar Quiso decir para que los clientes reciban sugerencias de términos de búsqueda válidos cuando hayan intentado realizar búsquedas con errores. Las sugerencias se forman buscando la ortografía y escribiendo las correcciones a los términos de búsqueda que resultan en una búsqueda válida.
 
-## Configurar ¿Quiso decir? {#task_B539D6A0043547EFB1CA19B67E762371}
+## Configurar ¿Quiso decir {#task_B539D6A0043547EFB1CA19B67E762371}
 
-Puede personalizar la forma en que [!DNL site search/merchandising] realiza las sugerencias de búsqueda cuando la consulta de un cliente devuelve resultados de búsqueda mínimos o nulos.
+Puede personalizar la forma en que [!DNL site search/merchandising] realiza sugerencias de búsqueda cuando la consulta de un cliente devuelve resultados de búsqueda mínimos o nulos.
 
 <!-- 
 
@@ -28,8 +31,8 @@ t_configuring_did_you_mean.xml
 
 **Para configurar ¿Quiso decir?**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Linguistics]** > **[!UICONTROL Did You Mean]**.
-1. En la [!DNL Did You Mean] página, en el campo de texto **Quitar estas palabras de las sugerencias** , introduzca palabras separadas por espacios o líneas para filtrar las sugerencias no deseadas.
+1. En el menú del producto, haga clic en **[!UICONTROL Linguistics]** > **[!UICONTROL Did You Mean]**.
+1. En la página [!DNL Did You Mean], en el campo de texto **Eliminar estas palabras de sugerencias**, introduzca palabras separadas por espacios o líneas para filtrar las sugerencias no deseadas.
 
    Son palabras del índice de búsqueda que no se muestran como términos de búsqueda alternativos recomendados. Puede excluir cualquier palabra que coincida con un patrón mediante el uso de expresiones regulares. De lo contrario, solo se elimina la palabra exacta.
 
@@ -51,7 +54,7 @@ t_configuring_did_you_mean.xml
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Algoritmo de sugerencia </p> </td> 
-      <td colname="col2"> <p>Ajusta el alcance del software para encontrar sugerencias. Si un usuario comete un error de una sola letra, todos los algoritmos tienen las mismas sugerencias. El motivo es que solo se necesita una edición para llegar a una sugerencia que funcione y todos los algoritmos encuentran palabras que están cerca del original. Pero cuando los términos de búsqueda originales no son similares a los términos existentes en el índice, los algoritmos de <b>sugerencias profundas</b> y <b></b> negativas siguen buscando sugerencias posibles. Este escenario es útil si un cliente prueba con un nombre adecuado que sea difícil de escribir y que suene los nombres. Sin embargo, si solo desea que aparezcan sugerencias similares, puede elegir el algoritmo <b>rápido</b> . </p> </td> 
+      <td colname="col2"> <p>Ajusta el alcance del software para encontrar sugerencias. Si un usuario comete un error de una sola letra, todos los algoritmos tienen las mismas sugerencias. La razón es que solo se necesita una edición para llegar a una sugerencia que funcione y todos los algoritmos encuentran palabras que están cerca del original. Pero cuando los términos de búsqueda originales no son similares a los términos existentes en el índice, los <b>Deep</b> y <b>Bad Spellers</b> Algoritmos de sugerencia continúan buscando posibles sugerencias. Este escenario es útil si un cliente prueba con un nombre adecuado que sea difícil de escribir y que suene los nombres. Sin embargo, si solo desea que aparezcan sugerencias similares, puede elegir el algoritmo <b>Quick</b>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Recuento predeterminado de sugerencias para mostrar </p> </td> 
@@ -71,15 +74,15 @@ t_configuring_did_you_mean.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p>Hacer sugerencias debido a los bajos resultados </p> </td> 
-      <td colname="col2"> <p>Si un cliente busca un término que arroje menos de diez resultados, el motor de búsqueda comprueba si tiene una sugerencia que pueda arrojar más de 100 resultados. Si es así, puede utilizar las etiquetas siguientes para indicar al usuario que, aunque tenga resultados, es posible que haya deseado buscar otra cosa: </p> <p> <code>&nbsp;&lt;guided-if-suggestion-low-results&gt; &nbsp;&nbsp;You&nbsp;have&nbsp;a&nbsp;low&nbsp;result&nbsp;count&nbsp;for&nbsp;&lt;Search&nbsp;for&nbsp;guided-param&nbsp;gsname="q"&gt;.&nbsp;&nbsp;Did&nbsp;you&nbsp;mean:&nbsp;&lt;guided-suggestion&gt;&lt;guided-suggestion-link&gt;&lt;guided-suggestion&nbsp;/&gt;&lt;/guided-suggestion-link&gt;&lt;guided-if-not-last&gt;,&nbsp;&lt;/guided-if-not-last&gt;&lt;/guided-suggestions&gt;&nbsp;&lt;/guided-if-suggestion-low-results&gt;</code> </p> <p> En el escenario anterior, el número de sugerencias está controlado por el valor especificado en el recuento <span class="uicontrol"> predeterminado de sugerencias para mostrar</span>. Los umbrales alto y bajo se pueden configurar mediante las opciones siguientes. </p> </td> 
+      <td colname="col2"> <p>Si un cliente busca un término que arroje menos de diez resultados, el motor de búsqueda comprueba si tiene una sugerencia que pueda arrojar más de 100 resultados. Si es así, puede utilizar las etiquetas siguientes para indicar al usuario que, aunque tenga resultados, es posible que haya deseado buscar otra cosa: </p> <p> <code>&nbsp;&lt;guided-if-suggestion-low-results&gt; &nbsp;&nbsp;You&nbsp;have&nbsp;a&nbsp;low&nbsp;result&nbsp;count&nbsp;for&nbsp;&lt;Search&nbsp;for&nbsp;guided-param&nbsp;gsname="q"&gt;.&nbsp;&nbsp;Did&nbsp;you&nbsp;mean:&nbsp;&lt;guided-suggestion&gt;&lt;guided-suggestion-link&gt;&lt;guided-suggestion&nbsp;/&gt;&lt;/guided-suggestion-link&gt;&lt;guided-if-not-last&gt;,&nbsp;&lt;/guided-if-not-last&gt;&lt;/guided-suggestions&gt;&nbsp;&lt;/guided-if-suggestion-low-results&gt;</code> </p> <p> En el escenario anterior, el número de sugerencias está controlado por el valor especificado en <span class="uicontrol"> Recuento predeterminado de sugerencias para mostrar</span>. Los umbrales alto y bajo se pueden configurar mediante las opciones siguientes. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Haga sugerencias cuando los resultados iniciales sean menores que </p> </td> 
-      <td colname="col2"> <p>Controla el número de resultados cuando el sistema comienza a ofrecer sugerencias. </p> <p>Esta opción solo aparece cuando marca la opción <span class="uicontrol"> Hacer sugerencias debido a los bajos resultados</span>. </p> <p>El valor predeterminado es 10. </p> </td> 
+      <td colname="col2"> <p>Controla el número de resultados cuando el sistema inicio las sugerencias de oferta. </p> <p>Esta opción solo aparece cuando marca <span class="uicontrol"> Hacer sugerencias debido a los bajos resultados</span>. </p> <p>El valor predeterminado es 10. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Una sugerencia debe generar al menos estos muchos resultados </p> </td> 
-      <td colname="col2"> <p>Filtra las sugerencias que se realizan debido a los bajos resultados en la búsqueda principal según el recuento de resultados. </p> <p>Esta opción solo aparece cuando marca la opción <span class="uicontrol"> Hacer sugerencias debido a los bajos resultados</span>. </p> <p>El valor predeterminado es 100. </p> </td> 
+      <td colname="col2"> <p>Sugerencias de filtros que se realizan debido a los bajos resultados en la búsqueda principal según el recuento de resultados. </p> <p>Esta opción solo aparece cuando marca <span class="uicontrol"> Hacer sugerencias debido a los bajos resultados</span>. </p> <p>El valor predeterminado es 100. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -87,13 +90,13 @@ t_configuring_did_you_mean.xml
 1. Haga clic en **Guardar cambios**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
