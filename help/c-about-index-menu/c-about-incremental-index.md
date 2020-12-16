@@ -36,8 +36,8 @@ Puede configurar qué páginas de sitio Web desea incluir en el índice incremen
 
 **Para configurar un índice incremental de un sitio Web escalonado**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Configuration]**.
-1. En la **[!UICONTROL Incremental Index Configuration]** página, utilice los distintos campos para especificar qué páginas desea indexar.
+1. En el menú del producto, haga clic en **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Configuration]**.
+1. En la página **[!UICONTROL Incremental Index Configuration]**, utilice los distintos campos para especificar qué páginas desea indexar.
 
    <table> 
     <thead> 
@@ -57,25 +57,29 @@ Puede configurar qué páginas de sitio Web desea incluir en el índice incremen
           <li id="li_32C2B21DE75C4459908384CC44822F7D"> 
           <code>
             noindex 
-          </code> <p>Si no desea indexar el texto de la página que coincide con una dirección URL especificada, pero desea seguir los vínculos de la página, agregue <code>
+          </code> <p>Si no desea indexar el texto de la página que coincide con una dirección URL especificada, pero desea seguir los vínculos de la página, agregue 
+            <code>
               noindex 
-            </code> después de la dirección URL como en el ejemplo siguiente: </p> <p> 
+            </code> después de la dirección URL, como en el ejemplo siguiente: </p> <p> 
             <code>
               https://www.mydomain.com/products/new.html noindex 
-            </code> </p> <p>Asegúrese de separar <code>
+            </code> </p> <p>Asegúrese de separar 
+            <code>
               noindex 
-            </code> de la dirección URL con un espacio; una coma no es un separador válido. </p> </li> 
+            </code> desde la dirección URL con un espacio; una coma no es un separador válido. </p> </li> 
           <li id="li_33AB62B669084BF7B976F4308715E435"> 
           <code>
             nofollow 
-          </code> <p>Si desea indexar el texto en la página que coincide con la dirección URL especificada, pero no desea seguir los vínculos de la página, agregue <code>
+          </code> <p>Si desea indexar el texto de la página que coincide con la dirección URL especificada, pero no desea seguir los vínculos de la página, agregue 
+            <code>
               nofollow 
-            </code> después de la dirección URL como en el ejemplo siguiente: </p> <p> 
+            </code> después de la dirección URL, como en el ejemplo siguiente: </p> <p> 
             <code>
               https://www.mydomain.com/products/new.html nofollow 
-            </code> </p> <p> Asegúrese de separar <code>
+            </code> </p> <p> Asegúrese de separar 
+            <code>
               nofollow 
-            </code> de la dirección URL con un espacio; una coma no es un separador válido. </p> </li> 
+            </code> desde la dirección URL con un espacio; una coma no es un separador válido. </p> </li> 
         </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -86,11 +90,13 @@ Puede configurar qué páginas de sitio Web desea incluir en el índice incremen
       </code> </p> <p>También puede utilizar expresiones regulares como en el ejemplo siguiente: </p> <p> 
       <code>
         regexp ^https://www\.mydomain\.com/products/household/.*\.html$ 
-      </code> </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expresiones</a>regulares. </p> <p>También puede utilizar las palabras clave <code>
+      </code> </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expresiones regulares</a>. </p> <p>También puede utilizar las palabras clave 
+      <code>
         nofollow 
-      </code> y <code>
+      </code> y 
+      <code>
         noindex 
-      </code> tal como se describe en <span class="uicontrol"> Añadir o actualizar direcciones URL </span> arriba. </p> </td> 
+      </code> tal como se describe en <span class="uicontrol"> Añadir o actualizar direcciones URL </span> más arriba. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Incluir y excluir máscaras URL </p> </td> 
@@ -100,15 +106,19 @@ Puede configurar qué páginas de sitio Web desea incluir en el índice incremen
       </code> </p> <p> 
       <code>
         exclude https://www.mydomain.com/products/ 
-      </code> </p> <p>indexa las páginas <code>
+      </code> </p> <p>indexa las páginas 
+      <code>
         lightbulbs1.html 
-      </code> y <code>
+      </code> y 
+      <code>
         lightbulbs2.html 
-      </code>. Sin embargo, no índice ninguna otra página que aparezca en el directorio products. </p> <p>Una máscara URL que aparece primero siempre tiene prioridad sobre una que aparece más adelante en la lista. Además, si el robot de búsqueda encuentra un documento que coincide tanto con una máscara de inclusión como con una máscara de exclusión, la máscara que se muestra primero tiene prioridad. </p> <p>También puede utilizar las palabras clave <code>
+      </code>. Sin embargo, no índice ninguna otra página que aparezca en el directorio products. </p> <p>Una máscara URL que aparece primero siempre tiene prioridad sobre una que aparece más adelante en la lista. Además, si el robot de búsqueda encuentra un documento que coincide tanto con una máscara de inclusión como con una máscara de exclusión, la máscara que se muestra primero tiene prioridad. </p> <p>También puede utilizar las palabras clave 
+      <code>
         nofollow 
-      </code> y <code>
+      </code> y 
+      <code>
         noindex 
-      </code> tal como se describe en <span class="uicontrol"> Añadir o actualizar direcciones URL </span> arriba. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Acerca de las máscaras</a>URL. </p> </td> 
+      </code> tal como se describe en <span class="uicontrol"> Añadir o actualizar direcciones URL </span> más arriba. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Acerca de las máscaras URL</a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Incluir y excluir máscaras de fecha </p> </td> 
@@ -141,7 +151,8 @@ Puede configurar qué páginas de sitio Web desea incluir en el índice incremen
       <li id="li_172692DEDA8744B3AA492701D24C2D80"> 
       <code>
         exclude-days NNN 
-      </code> <p>Deshabilite la indexación de todos los documentos que coincidan con la máscara URL especificada y que tengan NNNN días o más de antigüedad. </p> <p>Opcionalmente, puede seguir la máscara de dirección URL por palabra clave <code>
+      </code> <p>Deshabilite la indexación de todos los documentos que coincidan con la máscara URL especificada y que tengan NNNN días o más de antigüedad. </p> <p>Opcionalmente, puede seguir la máscara de dirección URL por palabra clave 
+        <code>
           server-date 
         </code>. </p> <p>El siguiente ejemplo de máscara excluye del índice todos los archivos PDF que tengan 90 días o más de antigüedad: </p> <p> 
         <code>
@@ -150,13 +161,14 @@ Puede configurar qué páginas de sitio Web desea incluir en el índice incremen
       <li id="li_26078517744D4AECBE1351008926CBAE"> 
       <code>
         exclude-date YYYY-MM-DD 
-      </code> <p>Deshabilite la indexación de todos los documentos que coincidan con la máscara de dirección URL especificada y que sean anteriores o anteriores a la fecha AAAA-MM-DD. </p> <p>Opcionalmente, puede seguir la máscara de dirección URL por palabra clave <code>
+      </code> <p>Deshabilite la indexación de todos los documentos que coincidan con la máscara de dirección URL especificada y que sean anteriores o anteriores a la fecha AAAA-MM-DD. </p> <p>Opcionalmente, puede seguir la máscara de dirección URL por palabra clave 
+        <code>
           server-date 
         </code>. </p> <p>En el siguiente ejemplo de máscara se excluyen todos los documentos de la carpeta /archive/ con fecha del 23 de abril de 2004 o anterior: </p> <p> 
         <code>
           exclude-date 2004-04-23 https://www.mydomain.com/archive/ 
         </code> </p> </li> 
-      </ul> </p> <p>Consulte <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_F4F1F58A646F4A86B8650EC46FDCEF66" type="concept" format="dita" scope="local"> Acerca de las máscaras</a>de fecha. </p> </td> 
+      </ul> </p> <p>Consulte <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_F4F1F58A646F4A86B8650EC46FDCEF66" type="concept" format="dita" scope="local"> Acerca de las máscaras de fecha</a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Eliminar direcciones URL </p> </td> 
@@ -170,7 +182,7 @@ Puede configurar qué páginas de sitio Web desea incluir en el índice incremen
       </code> </p> <p>También puede utilizar expresiones regulares como en el ejemplo siguiente: </p> <p> 
       <code>
         regexp ^https://www\.mydomain\.com/products/199[567]/.*$ 
-      </code> </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expresiones</a>regulares. </p> </td> 
+      </code> </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expresiones regulares</a>. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -178,19 +190,19 @@ Puede configurar qué páginas de sitio Web desea incluir en el índice incremen
 1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
       Consulte [Inserción de la configuración del escenario en directo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Configuración de la programación incremental de índices para un sitio web activo {#task_2A46BA189ECC4317A9D5C6E99A336F33}
+## Configuración de la programación incremental de índices para un sitio Web activo {#task_2A46BA189ECC4317A9D5C6E99A336F33}
 
 Puede seleccionar la frecuencia del índice incremental y el tiempo base que se utiliza para rastrear y actualizar el índice incremental.
 
@@ -204,12 +216,12 @@ La programación de índice solo se aplica al índice activo; no se pueden progr
 
 **Definición de la programación de índice incremental para un sitio web activo**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Live Schedule]**.
-1. En la lista desplegable En la **[!UICONTROL Incremental Index Schedule]** **[!UICONTROL Incrementally Index]** página, seleccione la frecuencia de indexación en horas o minutos.
-1. En la lista **[!UICONTROL Base Time]** desplegable, seleccione la hora de inicio en la que desea volver a generar un nuevo índice incremental.
+1. En el menú del producto, haga clic en **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Live Schedule]**.
+1. En la página **[!UICONTROL Incremental Index Schedule]**, en la lista desplegable **[!UICONTROL Incrementally Index]**, seleccione la frecuencia de indexación en horas o minutos.
+1. En la lista desplegable **[!UICONTROL Base Time]**, seleccione la hora de inicio en la que desea volver a generar un nuevo índice incremental.
 1. Haga clic **[!UICONTROL Save Changes]**.
 
-## Ejecución de un índice incremental de un sitio Web activo o en un sitio Web en etapas {#task_9BFB6157F3884B2FAECB7E0E9CA318CB}
+## Ejecución de un índice incremental de un sitio Web activo o escalonado {#task_9BFB6157F3884B2FAECB7E0E9CA318CB}
 
 Puede utilizar el Índice incremental para indexar &quot;partes&quot; del sitio Web activo o en etapas, como una colección de páginas que se cambian con frecuencia.
 
@@ -224,7 +236,7 @@ Puede utilizar el Índice incremental para indexar &quot;partes&quot; del sitio 
 1. Haga clic **[!UICONTROL Incremental Index Now]**.
 1. (Opcional) Si se producen errores de indexación, haga clic en **[!UICONTROL View Errors]** para vista del registro asociado.
 
-## Visualización del registro de índice incremental de un sitio Web activo o en etapas {#task_E668E1F1240C476DAA1CA783DC728232}
+## Visualización del registro de índice incremental de un sitio Web activo o escalonado {#task_E668E1F1240C476DAA1CA783DC728232}
 
 Cuando se completa un índice incremental activo o un índice incremental escalonado, puede realizar la vista del registro asociado para solucionar cualquier error que se produzca.
 
@@ -241,7 +253,7 @@ No puede exportar registros ni guardarlos. El registro permanece disponible para
 
 1. En la página de registro, en la parte superior o inferior, realice una de las siguientes acciones:
 
-   * Utilice las opciones de navegación **[!UICONTROL First]****[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** o **[!UICONTROL Go to line]** para desplazarse por el registro.
+   * Utilice las opciones de navegación **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** o **[!UICONTROL Go to line]** para moverse por el registro.
 
-   * Utilice las opciones de visualización **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** o **[!UICONTROL Show]** para perfeccionar lo que ve.
+   * Utilice las opciones de visualización **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** o **[!UICONTROL Show]** para refinar lo que ve.
 
