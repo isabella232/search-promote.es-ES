@@ -15,11 +15,11 @@ ht-degree: 1%
 ---
 
 
-# Regular Expressions{#regular-expressions}
+# Expresiones regulares{#regular-expressions}
 
 Un repaso sobre la sintaxis y las reglas de construcción de expresiones regulares.
 
-Consulte también [Configuración de un índice incremental de un sitio Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)escalonado.
+Consulte también [Configuración de un índice incremental de un sitio Web escalonado](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
 **Sintaxis de las expresiones ordinarias**
 
@@ -108,17 +108,17 @@ Consulte también [Configuración de un índice incremental de un sitio Web](../
 * Un carácter normal (no uno de los caracteres especiales que se describen a continuación) es una expresión regular de un carácter que se ajusta a sí misma.
 * Una barra invertida (\) seguida de cualquier carácter especial es una expresión regular de un carácter que coincide con el carácter especial en sí. Los caracteres especiales incluyen lo siguiente:
 
-   * `.` (punto), `*` (asterisco), `?` (signo de interrogación), `+` (signo más), `[` (corchete izquierdo), `|` (barra vertical) y `\` (barra invertida) son siempre caracteres especiales, excepto cuando aparecen entre corchetes.
+   * `.` (punto),  `*` (asterisco),  `?` (signo de interrogación),  `+` (signo más),  `[` (corchete izquierdo),  `|` (barra vertical) y  `\` (barra invertida) son siempre caracteres especiales, excepto cuando aparecen entre corchetes.
    * `^` (circunflejo o acento circunflejo) es especial al principio de una expresión regular, o cuando inmediatamente sigue a la izquierda de un par de corchetes.
    * `$` (signo de dólar) es especial al final de una expresión regular.
    * `.` (punto) es una expresión regular de un carácter que coincide con cualquier carácter, incluidos los caracteres de conjunto de códigos complementarios, a excepción de la nueva línea.
-   * Una cadena de caracteres no vacía entre corchetes `[ ]` (corchetes izquierdo y derecho) es una expresión regular de un carácter que coincide con un carácter, incluidos los caracteres de conjunto de códigos complementarios, en esa cadena.
+   * Una cadena de caracteres no vacía entre corchetes `[ ]` (corchetes izquierdo y derecho) es una expresión regular de un carácter que coincide con un carácter, incluidos los caracteres adicionales del conjunto de códigos, en esa cadena.
 
-      Sin embargo, si el primer carácter de la cadena es un carácter `^` (circunflejo), la expresión regular de un carácter coincide con cualquier carácter, incluidos los caracteres de conjunto de códigos complementarios, excepto los caracteres de nueva línea y los caracteres restantes de la cadena.
+      Sin embargo, si el primer carácter de la cadena es `^` (circunflejo), la expresión regular de un carácter coincide con cualquier carácter, incluidos los caracteres de conjunto de códigos complementarios, con excepción de la nueva línea y los caracteres restantes de la cadena.
 
-      El `^` tiene este significado especial solo si se produce primero en la cadena. Puede utilizar `-` (signo menos) para indicar un rango de caracteres consecutivos, incluidos los caracteres de conjunto de códigos complementarios. Por ejemplo, [0-9] equivale a [0123456789].
+      El `^` tiene este significado especial solo si se produce primero en la cadena. Puede utilizar `-` (signo menos) para indicar un rango de caracteres consecutivos, incluidos los caracteres de conjunto de códigos complementarios. Por ejemplo, [0-9] es equivalente a [0123456789].
 
-      Los caracteres que especifican el rango deben pertenecer al mismo conjunto de códigos. Cuando los caracteres proceden de distintos conjuntos de códigos, se hace coincidir uno de los caracteres que especifican el rango. El `-` pierde este significado especial si se produce primero (después de un `^`primer, si es que se produce alguno) o último en la cadena. La `]` (corchete derecho) no termina tal cadena cuando es el primer carácter dentro de ella, después de una inicial `^`, si existe. Por ejemplo, `[]a-f]` coincide con una `]` (corchete derecho) o con una de las letras ASCII de a a a f inclusive. Los cuatro caracteres enumerados como caracteres especiales arriba se representan dentro de una cadena de caracteres.
+      Los caracteres que especifican el rango deben pertenecer al mismo conjunto de códigos. Cuando los caracteres proceden de distintos conjuntos de códigos, se hace coincidir uno de los caracteres que especifican el rango. El `-` pierde este significado especial si se produce primero (después de un `^` inicial, si existe) o último en la cadena. El `]` (corchete derecho) no termina tal cadena cuando es el primer carácter dentro de ella, después de un `^` inicial, si existe. Por ejemplo, `[]a-f]` coincide con una `]` (corchete derecho) o con una de las letras ASCII de a a a f inclusive. Los cuatro caracteres enumerados como caracteres especiales arriba se representan dentro de una cadena de caracteres.
 
 **Reglas para construir expresiones regulares a partir de expresiones regulares de un carácter**
 
@@ -127,11 +127,11 @@ Puede utilizar las siguientes reglas para construir expresiones regulares a part
 * Una expresión regular de un carácter es una expresión regular que coincide con cualquier coincidencia de la expresión normal de un carácter.
 * Una expresión regular de un carácter seguida de un `*` (asterisco) es una expresión regular que coincide con cero o más incidencias de la expresión regular de un carácter, que puede ser un carácter de conjunto de códigos complementario. Si hay alguna opción, se elige la cadena más larga a la izquierda que permite una coincidencia.
 * Una expresión regular de un carácter seguida de un `?` (signo de interrogación) es una expresión regular que coincide con cero o con una aparición de la expresión regular de un carácter, que puede ser un carácter de conjunto de códigos complementario. Si hay alguna opción, se elige la cadena más larga a la izquierda que permite una coincidencia.
-* Una expresión regular de un carácter seguida de un `+` (signo más) es una expresión normal que coincide con una o más incidencias de la expresión regular de un carácter, que puede ser un carácter de conjunto de códigos complementario. Si hay alguna opción, se elige la cadena más larga a la izquierda que permite una coincidencia.
-* Una expresión regular de un carácter seguida de `{m}`, `{m,}`o `{m,n}` es una expresión regular que coincide con un rango de ocurrencias de la expresión regular de un carácter. Los valores de m y n deben ser enteros no negativos inferiores a 256; `{m}` coincide exactamente con m ocurrencias; `{m,}` coincide al menos con m incidencias; `{m,n}` coincide con cualquier número de incidencias entre m y n inclusive. Cada vez que existe una opción, la expresión regular coincide con tantas incidencias como sea posible.
+* Una expresión regular de un carácter seguida de un `+` (signo más) es una expresión regular que coincide con una o varias apariciones de la expresión regular de un carácter, que puede ser un carácter de conjunto de códigos complementario. Si hay alguna opción, se elige la cadena más larga a la izquierda que permite una coincidencia.
+* Una expresión regular de un carácter seguida de `{m}`, `{m,}` o `{m,n}` es una expresión regular que coincide con un rango de ocurrencias de la expresión regular de un carácter. Los valores de m y n deben ser enteros no negativos inferiores a 256; `{m}` coincide exactamente con m ocurrencias; `{m,}` coincide al menos con m ocurrencias; `{m,n}` coincide con cualquier número de ocurrencias entre m y n inclusive. Cada vez que existe una opción, la expresión regular coincide con tantas incidencias como sea posible.
 * La concatenación de expresiones regulares es una expresión regular que coincide con la concatenación de las cadenas coincidentes con cada componente de la expresión regular.
 * Una expresión regular entre las secuencias de caracteres ( y ) es una expresión normal que coincide con cualquier coincidencia de la expresión normal sin adornar.
-* Una expresión normal seguida de una `|` (barra vertical) seguida de una expresión regular es una expresión regular que coincide con la primera expresión regular (antes del tubo vertical) o con la segunda expresión regular (después del tubo vertical).
+* Una expresión regular seguida de una `|` (barra vertical) seguida de una expresión regular es una expresión regular que coincide con la primera expresión regular (antes del tubo vertical) o con la segunda expresión regular (después del tubo vertical).
 
 También puede restringir una expresión normal para que coincida únicamente con un segmento inicial o final de una línea, o ambos.
 
@@ -139,7 +139,7 @@ También puede restringir una expresión normal para que coincida únicamente co
 * Un `$` (signo de dólar) al final de toda una expresión regular restringe esa expresión regular para que coincida con un segmento final de una línea.
 * La construcción ^regular expresión$ restringe la expresión normal para que coincida con toda la línea.
 
-Hay algunos nombres de clase de caracteres predefinidos que puede utilizar en lugar de complejas expresiones regulares entre corchetes. Por ejemplo, un dígito puede representarse con la expresión regular de un carácter [0-9] o con la expresión regular de un carácter de la clase de caracteres [[:digit:]].
+Hay algunos nombres de clase de caracteres predefinidos que puede utilizar en lugar de complejas expresiones regulares entre corchetes. Por ejemplo, un dígito puede representarse mediante la expresión regular de un carácter [0-9] o mediante la expresión regular de un carácter de clase de caracteres [[:digit:]].
 
 Las clases de caracteres predefinidas y sus significados son los siguientes:
 
