@@ -26,7 +26,7 @@ Añada los menús que se asignan a la configuración de la búsqueda. Cada eleme
 
 En la plantilla de presentación, puede hacer referencia a los menús definidos. A continuación, puede colocarlos en cualquier componente HTML que desee, como un control de selección. Esta combinación permite a los usuarios personalizar sus resultados de búsqueda. Se admiten tres tipos de menú: ordenación, recuento y navegación.
 
-## Adding a new menu {#task_EE171532D3AE477FAFE8C2F4077A6D73}
+## Añadir un nuevo menú {#task_EE171532D3AE477FAFE8C2F4077A6D73}
 
 Puede agregar menús que se asignen a la configuración dentro de los resultados de búsqueda.
 
@@ -42,9 +42,9 @@ t_adding_a_new_menu.xml
 
 **Para agregar un nuevo menú**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]**.
-1. En la [!DNL Menus] página, haga clic en **[!UICONTROL Add New Menu]**.
-1. En la [!DNL Add Menu] página, configure las opciones que desee.
+1. En el menú del producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]**.
+1. En la página [!DNL Menus], haga clic en **[!UICONTROL Add New Menu]**.
+1. En la página [!DNL Add Menu], establezca las opciones que desee.
 
    Esta configuración afecta tanto al comportamiento como a la presentación predeterminada de una ruta de exploración. Puede anular algunos de estos ajustes mediante la configuración de la plantilla de presentación.
 
@@ -70,7 +70,7 @@ t_adding_a_new_menu.xml
       <td colname="col1"> <p>Tipo de menú </p> </td> 
       <td colname="col2"> <p>Establece uno de los tres tipos de menú siguientes: </p> <p> 
       <ul id="ul_7E66ACC1DA494B20BEC3B0B2CCAB103A"> 
-      <li id="li_D81876660A8B48AFB70D3317063FBF6F"> <span class="uicontrol"> Ordenar </span> <p>Organiza la búsqueda según cualquiera de los tipos de metadatos definidos. </p> <p>Por ejemplo, puede definir un menú de ordenación con los siguientes tipos de metadatos: tres temas pertinentes; un campo de metadatos personalizado, como un código de disponibilidad; y precio. Los tres elementos pueden recibir las etiquetas "Ordenar por relevancia", "Ordenar por disponibilidad" y "Ordenar por precio", respectivamente. Al incluir esto en la plantilla de presentación, el cliente puede utilizar este control para ordenar los resultados de búsqueda. </p> </li> 
+      <li id="li_D81876660A8B48AFB70D3317063FBF6F"> <span class="uicontrol"> Ordenar  </span> <p>Organiza la búsqueda según cualquiera de los tipos de metadatos definidos. </p> <p>Por ejemplo, puede definir un menú de ordenación con los siguientes tipos de metadatos: tres temas pertinentes; un campo de metadatos personalizado, como un código de disponibilidad; y precio. Los tres elementos pueden recibir las etiquetas "Ordenar por relevancia", "Ordenar por disponibilidad" y "Ordenar por precio", respectivamente. Al incluir esto en la plantilla de presentación, el cliente puede utilizar este control para ordenar los resultados de búsqueda. </p> </li> 
       <li id="li_63AE06B544B64DCAA8C55031B3DFFFF7"> <span class="uicontrol"> Recuento </span> <p>Define el número de resultados de búsqueda que se mostrarán. Este tipo de menú se asigna al parámetro cgi <span class="varname"> sp_c </span>. </p> <p>Consulte <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" format="dita" scope="local"> Parámetros CGI de búsqueda back-end </a>. </p> </li> 
       <li id="li_EEC810D420FF41498ECE49EBAAB33BE5"> <span class="uicontrol"> Navegación </span> <p>Especifica un conjunto de direcciones URL estáticas asociadas a elementos de menú. Normalmente, se utiliza un menú de navegación para crear una barra de navegación de nivel superior en la página de resultados de búsqueda. </p> <p>Por ejemplo, puede crear un menú que incluya a mujeres, hombres, niños y niñas, donde los elementos de menú sean como los siguientes: 
       <code>
@@ -114,15 +114,15 @@ t_adding_a_new_menu.xml
     </table>
 
 1. Haga clic **[!UICONTROL Add]**.
-1. (Opcional) En la [!DNL Menus] página, realice una de las siguientes acciones:
+1. (Opcional) En la página [!DNL Menus], realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -144,21 +144,21 @@ t_editing_a_menu.xml
 
 **Para editar un menú**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]**.
-1. En la [!DNL Menus] página, haga clic en **[!UICONTROL Edit]** en el extremo derecho del nombre de un menú.
-1. En la [!DNL Edit Menu] página, configure las opciones que desee.
+1. En el menú del producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]**.
+1. En la página [!DNL Menus], haga clic en **[!UICONTROL Edit]** a la derecha del nombre de un menú.
+1. En la página [!DNL Edit Menu], establezca las opciones que desee.
 
    Consulte la tabla de opciones en [Añadir un nuevo menú](../c-about-design-menu/c-about-menus.md#task_EE171532D3AE477FAFE8C2F4077A6D73).
 1. Haga clic **[!UICONTROL Save Changes]**.
-1. (Opcional) En la [!DNL Menus] página, realice una de las siguientes acciones:
+1. (Opcional) En la página [!DNL Menus], realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -176,18 +176,18 @@ t_deleting_a_menu.xml
 
 **Para eliminar un menú**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]**
-1. En la [!DNL Menus] página, haga clic en **[!UICONTROL Delete]** en el extremo derecho del nombre de un menú.
-1. En el cuadro de diálogo [!DNL Confirmation] , haga clic en **[!UICONTROL OK]**.
+1. En el menú del producto, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]**
+1. En la página [!DNL Menus], haga clic en **[!UICONTROL Delete]** a la derecha del nombre de un menú.
+1. En el cuadro de diálogo [!DNL Confirmation], haga clic en **[!UICONTROL OK]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
