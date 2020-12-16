@@ -8,6 +8,9 @@ topic: Home,Site search and merchandising
 uuid: 5d4dbf5e-954d-46ae-a822-18a58af60de6
 translation-type: tm+mt
 source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
+workflow-type: tm+mt
+source-wordcount: '470'
+ht-degree: 1%
 
 ---
 
@@ -30,11 +33,11 @@ En la tabla siguiente se describen los widgets de informes disponibles en Inicio
  <tbody> 
   <tr> 
    <td colname="col1"> <p><span class="uicontrol">Alertas</span> </p> </td> 
-   <td colname="col2"> <p> Muestra las tres últimas alertas que se enviaron a su cuenta. </p> <p>Muestra las tres últimas alertas que se enviaron a su cuenta. </p> <p>Puede hacer clic en una alerta para obtener más detalles. Esta utilidad puede ahorrarle tiempo al tener que revisar las alertas omitidas en el informe <span class="uicontrol"> Alertas</span> en el menú del producto <span class="uicontrol"> Informes</span> . </p> </td> 
+   <td colname="col2"> <p> Muestra las tres últimas alertas que se enviaron a su cuenta. </p> <p>Muestra las tres últimas alertas que se enviaron a su cuenta. </p> <p>Puede hacer clic en una alerta para obtener más detalles. Esta utilidad puede ahorrarle tiempo al tener que revisar las alertas omitidas en el informe <span class="uicontrol"> Alertas</span> del menú del producto <span class="uicontrol"> Informes</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="uicontrol">Rendimiento de rastreo (bytes descargados)</span> </p> </td> 
-   <td colname="col2"> <p>Gráfica los bytes descargados durante los últimos tres días cuando se rastreó el sitio. </p> <p>El gráfico proporciona un perfil del rastreo. Si la forma del gráfico cambia repentinamente de un día a otro, significa que algo en el sitio ha cambiado. O bien, puede significar que la configuración del rastreador ha cambiado o que hay un problema con el propio rastreo. </p> <p>Consulte <a href="c-about-settings-menu/c-about-crawling-menu.md#concept_59307680C6724E93952ADE5044983AF6" format="dita" scope="local"> Acerca del menú</a>Rastreo. </p> </td> 
+   <td colname="col2"> <p>Gráfica los bytes descargados durante los últimos tres días cuando se rastreó el sitio. </p> <p>El gráfico proporciona un perfil del rastreo. Si la forma del gráfico cambia repentinamente de un día a otro, significa que algo en el sitio ha cambiado. O bien, puede significar que la configuración del rastreador ha cambiado o que hay un problema con el propio rastreo. </p> <p>Consulte <a href="c-about-settings-menu/c-about-crawling-menu.md#concept_59307680C6724E93952ADE5044983AF6" format="dita" scope="local"> Acerca del menú Rastreo</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="uicontrol">Información de índice</span> </p> </td> 
