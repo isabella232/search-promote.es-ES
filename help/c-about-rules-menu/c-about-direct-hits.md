@@ -8,6 +8,9 @@ topic: Rules,Site search and merchandising
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 1%
 
 ---
 
@@ -48,18 +51,18 @@ Se permiten líneas en blanco y líneas de comentarios que comienzan con un car�
 
 **Para configurar visitas directas**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Direct Hits]**.
-1. En el [!DNL Direct Hits] campo, introduzca la dirección URL del sitio web y uno o varios términos de búsqueda delimitados por comas.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Direct Hits]**.
+1. En el campo [!DNL Direct Hits], introduzca la dirección URL del sitio web y uno o varios términos de búsqueda delimitados por comas.
 1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -79,17 +82,17 @@ Si prueba un término que no está cubierto por una regla de visita directa, se 
 
 **Para probar las visitas directas**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Direct Hits]**.
-1. En el [!DNL Test Direct Hits] campo, introduzca un término de búsqueda y haga clic en **[!UICONTROL Test]**.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Direct Hits]**.
+1. En el campo [!DNL Test Direct Hits], introduzca un término de búsqueda y haga clic en **[!UICONTROL Test]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
