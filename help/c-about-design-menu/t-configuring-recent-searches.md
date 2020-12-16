@@ -9,6 +9,9 @@ topic: Design,Site search and merchandising
 uuid: 8ab1b35c-f953-4c26-921f-524af1fea4ef
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 2%
 
 ---
 
@@ -21,12 +24,12 @@ La página Búsquedas recientes se utiliza para configurar el comportamiento de 
 
 Consulte el tema de referencia de la etiqueta de plantilla de presentación para obtener más información sobre las distintas etiquetas que puede utilizar para mostrar las búsquedas recientes en la plantilla de presentación.
 
-Consulte Etiquetas [de plantilla de presentación](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64).
+Consulte [Etiquetas de plantillas de presentación](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64).
 
 **Para configurar búsquedas recientes**
 
-1. En el menú del programa, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Recent Searches]**.
-1. En la [!DNL Recent Searches] página, configure las opciones que desee.
+1. En el menú programa, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Recent Searches]**.
+1. En la página [!DNL Recent Searches], establezca las opciones que desee.
 
    <!-- 
    
@@ -59,13 +62,13 @@ Consulte Etiquetas [de plantilla de presentación](../c-appendices/c-templates.m
 
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
