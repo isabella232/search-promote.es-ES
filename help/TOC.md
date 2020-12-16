@@ -10,15 +10,15 @@ translation-type: tm+mt
 source-git-commit: 4f1daa8f4737e0e1f2693aa96ab067e552f51a0f
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
 
-# Adobe Search and Promote Guide {#using}
+# Guía de Adobe Search and Promote {#using}
 
 + [Información general sobre la documentación de Search&amp;Promote](sp-home.md)
-+ Release notes {#release-notes}
++ Notas de la versión {#release-notes}
    + [Notas de la versión 18.1.1 de Search&amp;Promote (13/02/2018)](c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
    + [Notas de la versión 17.11.1 de Search&amp;Promote (31/10/2017)](c-searchpromote-release-notes/c-rn-10-31-17-version-1711.md)
    + [Notas de la versión 15.3.1 de Search&amp;Promote (24/03/2015)](c-searchpromote-release-notes/c-rn-03-19-15-version-153.md)
@@ -78,7 +78,7 @@ ht-degree: 10%
    + [Uso de los informes de búsqueda](c-about-reports-menu/c-about-reports-menu.md)
    + [Vistas de datos](c-about-reports-menu/c-about-data-views.md)
    + [Alertas](c-about-reports-menu/c-about-alerts.md)
-+ Indexación de contenido {#index}
++ Indexando contenido {#index}
    + [Índice completo](c-about-index-menu/c-about-full-index.md)
    + [Índice incremental](c-about-index-menu/c-about-incremental-index.md)
    + [Índice de secuencias de comandos](c-about-index-menu/c-about-scripted-index.md)
@@ -87,7 +87,7 @@ ht-degree: 10%
    + [Control remoto para indización](c-about-index-menu/c-about-remote-control-for-indexing.md)
    + [Reversión para índices](c-about-index-menu/c-about-rollback-for-indexes.md)
    + [Actualización vertical](c-about-index-menu/c-about-vertical-updates.md)
-+ Configuring settings {#settings}
++ Configuración {#settings}
    + [Rastreo](c-about-settings-menu/c-about-crawling-menu.md)
    + [Buscando](c-about-settings-menu/c-about-searching-menu.md)
    + [Metadatos](c-about-settings-menu/c-about-metadata-menu.md)
