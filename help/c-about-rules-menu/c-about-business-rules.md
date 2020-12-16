@@ -8,6 +8,9 @@ topic: Rules,Site search and merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
 source-git-commit: fc1f0b15a15a9d0308494fc23c5b4258442c8aab
+workflow-type: tm+mt
+source-wordcount: '3127'
+ht-degree: 1%
 
 ---
 
@@ -53,7 +56,7 @@ Las reglas comerciales pueden tener uno de los tres estados siguientes: Aprobado
  </tbody> 
 </table>
 
-Usted aprueba las reglas comerciales y las inserta en directo para que se ejecuten en su entorno activo. Actualmente, solo puede insertar *todas* las reglas en directo. Sin embargo, puede cambiar el estado de una regla para tener control sobre qué reglas se ejecutan y no se ejecutan en el entorno activo.
+Usted aprueba las reglas comerciales y las inserta en directo para que se ejecuten en su entorno activo. Actualmente, sólo puede insertar *todas* las reglas en vivo. Sin embargo, puede cambiar el estado de una regla para tener control sobre qué reglas se ejecutan y no se ejecutan en el entorno activo.
 
 De forma predeterminada, las reglas se ejecutan cada vez que se cumplen los activadores asociados. Sin embargo, si lo desea, puede programar una regla para que se ejecute en un intervalo de fecha y hora específico.
 
@@ -61,7 +64,7 @@ Además, de forma predeterminada, las reglas se ejecutan cada vez que se cumplen
 
 ## Añadir una nueva regla comercial {#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7}
 
-Puede usar [!DNL Visual Rule Builder] o [!DNL Advanced Rule Builder] agregar reglas comerciales que adapten la experiencia de búsqueda de su cliente.
+Puede utilizar [!DNL Visual Rule Builder] o [!DNL Advanced Rule Builder] para agregar reglas comerciales que adapten la experiencia de búsqueda de su cliente.
 
 **Para agregar una nueva regla comercial**
 
@@ -69,20 +72,20 @@ En los pasos siguientes se asume que está utilizando el Generador de reglas vis
 
 1. Realice uno de los siguientes pasos:
 
-   * En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**. En la [!DNL Business Rules] página, haga clic en **[!UICONTROL Add New Rule]**.
+   * En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**. En la página [!DNL Business Rules], haga clic en **[!UICONTROL Add New Rule]**.
 
-   * En el menú del producto, haga clic en **[!UICONTROL Simulator]**. En la **[!UICONTROL Simulator for Today]** página, haga clic **[!UICONTROL Add New Rule]** a la derecha del menú **[!UICONTROL Options]** desplegable.
+   * En el menú del producto, haga clic en **[!UICONTROL Simulator]**. En la página **[!UICONTROL Simulator for Today]**, haga clic en **[!UICONTROL Add New Rule]** a la derecha del menú desplegable **[!UICONTROL Options]**.
 
-      Si la **[!UICONTROL Add New Rule]** opción no está visible en la página, en el menú **[!UICONTROL Options]** desplegable, haga clic en **[!UICONTROL Simulate Staged]**.
+      Si la opción **[!UICONTROL Add New Rule]** no está visible en la página, en el menú desplegable **[!UICONTROL Options]**, haga clic en **[!UICONTROL Simulate Staged]**.
 
       ![](assets/Simulator.png)
 
-1. En el campo de **[!UICONTROL Name]** texto, escriba el nuevo nombre de la regla comercial.
+1. En el campo de texto **[!UICONTROL Name]**, escriba el nuevo nombre de la regla comercial.
 
-   No haga clic **[!UICONTROL Save Rule]** aún.
-1. (Opcional) Si administra un gran número de reglas comerciales, puede etiquetar las reglas comerciales con etiquetas específicas. En el **[!UICONTROL Tags]** campo, introduzca una o varias etiquetas de etiquetas, Use una coma, Tab o Intro como delimitador.
+   Aún no haga clic en **[!UICONTROL Save Rule]**.
+1. (Opcional) Si administra un gran número de reglas comerciales, puede etiquetar las reglas comerciales con etiquetas específicas. En el campo **[!UICONTROL Tags]**, introduzca una o varias etiquetas, Use una coma, una ficha o Intro como delimitador.
 
-   En la [!DNL Business Rules] página, utilice la **[!UICONTROL Filter by tag]** característica para filtrar las reglas que coinciden con una etiqueta determinada. 1. En la [!DNL Business Rule Builder] página, configure los activadores y las acciones que desee utilizar.
+   En la página [!DNL Business Rules], utilice la función **[!UICONTROL Filter by tag]** para filtrar las reglas que coincidan con una etiqueta determinada. 1. En la página [!DNL Business Rule Builder], configure los activadores y las acciones que desee utilizar.
 
    **Opciones de activación**
 
@@ -92,11 +95,11 @@ En los pasos siguientes se asume que está utilizando el Generador de reglas vis
 
       `if a AND b AND c then ...`
 
-   * Una respuesta en la que cualquiera de los activadores debe ser verdadero como en el siguiente ejemplo:
+   * Una respuesta en la que cualquiera de los activadores debe ser verdadero como en el ejemplo siguiente:
 
       `if a OR b OR c then ...`
 
-   * Una respuesta en la que se especifica una combinación personalizada de activadores. Es decir, combina activadores individuales o &quot;condiciones&quot; con `AND` operadores y `OR` operadores.
+   * Una respuesta en la que se especifica una combinación personalizada de activadores. Es decir, combina activadores individuales o &quot;condiciones&quot; con operadores `AND` y `OR` operadores.
 
       También puede modificar la prioridad de evaluación agregando combinaciones de paréntesis de apertura y de cierre como en el ejemplo siguiente:
 
@@ -104,7 +107,7 @@ En los pasos siguientes se asume que está utilizando el Generador de reglas vis
 
       >[!NOTE]
       >
-      >Si combina `AND` operadores con `OR` operadores en un conjunto de reglas comerciales personalizadas, asegúrese de especificar los paréntesis correctamente para asegurarse de que los activadores se evalúan en el orden correcto.
+      >Si combina operadores `AND` con operadores `OR` en un conjunto de reglas comerciales personalizadas, asegúrese de especificar los paréntesis de forma adecuada para garantizar que los activadores se evalúen en el orden correcto.
 
       Esta característica particular de poder personalizar una combinación de activadores no está habilitada de forma predeterminada. Póngase en contacto con la asistencia técnica para activar esta función para su uso.
    <table> 
@@ -120,7 +123,7 @@ En los pasos siguientes se asume que está utilizando el Generador de reglas vis
       <td colname="col2"> <p>El activador es verdadero cuando el término de búsqueda coincide con la palabra clave que distingue entre mayúsculas y minúsculas dada. El activador es verdadero tanto para la palabra clave como para todos sus sinónimos, tal como se define en el diccionario lingüístico. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Coincidencias de Consulta </p> </td> 
+      <td colname="col1"> <p> Coincidencias de consulta </p> </td> 
       <td colname="col2"> <p> El activador es true cuando coinciden todos los parámetros de búsqueda. </p> </td> 
       </tr> 
       <tr> 
@@ -188,7 +191,7 @@ En los pasos siguientes se asume que está utilizando el Generador de reglas vis
       </tr> 
       <tr> 
       <td colname="col1"> <p>Añadir comandos de pancarta </p> </td> 
-      <td colname="col2"> <p>Solo se aplica a plantillas de Adobe Dynamic Media Classic. </p> <p>Permite cambiar los parámetros predeterminados que se utilizan en la plantilla de pancarta. </p> <p>Consulte la tabla de opciones para <a scope="local" href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita"> Añadir un letrero con Adobe Dynamic Media Classic </a>. </p> <p>Consulte también <a href="../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9" type="task" format="dita" scope="local"> Edición de letreros con Adobe Dynamic Media Classic </a>. </p> </td> 
+      <td colname="col2"> <p>Solo se aplica a las plantillas de Adobe Dynamic Media Classic. </p> <p>Permite cambiar los parámetros predeterminados que se utilizan en la plantilla de pancarta. </p> <p>Consulte la tabla de opciones en <a scope="local" href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita"> Añadir un letrero con Adobe Dynamic Media Classic </a>. </p> <p>Consulte también <a href="../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9" type="task" format="dita" scope="local"> Edición de letreros con Adobe Dynamic Media Classic </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Eliminar pancarta </p> </td> 
@@ -227,46 +230,46 @@ En los pasos siguientes se asume que está utilizando el Generador de reglas vis
 
    Según el panel del generador de reglas que esté activo (desplegado), también puede hacer lo siguiente para definir activadores y acciones.
 
-   * Cuando se despliega el **[!UICONTROL Triggers]** panel: en el área de la plantilla de presentación de la página Generador de reglas comerciales, haga clic con el botón secundario en cualquier resultado de búsqueda o faceta de búsqueda y, a continuación, haga clic en **[!UICONTROL Add "result present" trigger]**.
+   * Cuando se despliega el panel **[!UICONTROL Triggers]**: en el área de la plantilla de presentación de la página Generador de reglas comerciales, haga clic con el botón secundario en cualquier resultado de búsqueda o faceta de búsqueda y, a continuación, haga clic en **[!UICONTROL Add "result present" trigger]**.
 
       En el panel Desencadenadores, haga clic en la &quot;X&quot; a la izquierda de un activador para quitarla de la lista de activadores.
 
-   * Cuando se despliega el **[!UICONTROL Actions]** panel: en el área de la plantilla de presentación de la página Generador de reglas comerciales, haga clic con el botón derecho en un resultado de búsqueda. Haga clic **[!UICONTROL Add Result]**, **[!UICONTROL Remove Result]**, **[!UICONTROL Push to bottom]** o **[!UICONTROL Push to #`<n>`]** (donde `<n>` es un número).
+   * Cuando se despliega el panel **[!UICONTROL Actions]**: en el área de la plantilla de presentación de la página Generador de reglas comerciales, haga clic con el botón derecho en un resultado de búsqueda. Haga clic en **[!UICONTROL Add Result]**, **[!UICONTROL Remove Result]**, **[!UICONTROL Push to bottom]** o **[!UICONTROL Push to #`<n>`]** (donde `<n>` es un número).
 
 
-1. (Opcional) En cualquier panel Generador de reglas comerciales ( [!DNL Triggers], [!DNL Actions]o [!DNL Schedule]), realice una de las siguientes acciones:
+1. (Opcional) En cualquier panel del Generador de reglas comerciales ( [!DNL Triggers], [!DNL Actions] o [!DNL Schedule]), realice una de las siguientes acciones:
 
-   * En el área de la plantilla de presentación del área de la página Generador de reglas comerciales, haga clic con el botón secundario en un letrero y, a continuación, haga clic en **[!UICONTROL Select different banner]**. En la **[!UICONTROL Pick Banner]** página, haga clic **[!UICONTROL Pick this banner]** debajo de la miniatura de la pancarta para agregarla a la plantilla de presentación. Solo los letreros que coincidan con el tamaño y el área del letrero original en la plantilla de presentación están disponibles para que pueda seleccionarlos.
+   * En el área de la plantilla de presentación del área de la página Generador de reglas comerciales, haga clic con el botón secundario en un letrero y, a continuación, haga clic en **[!UICONTROL Select different banner]**. En la página **[!UICONTROL Pick Banner]**, haga clic en **[!UICONTROL Pick this banner]** debajo de la miniatura de la pancarta para agregarla a la plantilla de presentación. Solo los letreros que coincidan con el tamaño y el área del letrero original en la plantilla de presentación están disponibles para que pueda seleccionarlos.
 
-      La acción Agregar letrero se agrega al [!DNL Actions] panel.
+      La acción de agregar letrero se agrega al panel [!DNL Actions].
 
-   * En el área de plantilla de presentación de la [!DNL Business Rule Builder] página, haga clic con el botón secundario en un letrero de plantilla de Adobe Dynamic Media Classic cuyos parámetros desee cambiar y, a continuación, haga clic en **[!UICONTROL Add banner commands]**. En el cuadro [!DNL Change Parameters] de diálogo, establezca las opciones de parámetro que desee.
+   * En el área de la plantilla de presentación de la página [!DNL Business Rule Builder], haga clic con el botón secundario en un letrero de plantilla de Adobe Dynamic Media Classic cuyos parámetros desee cambiar y, a continuación, haga clic en **[!UICONTROL Add banner commands]**. En el cuadro de diálogo [!DNL Change Parameters], establezca las opciones de parámetro que desee.
 
-      Consulte la tabla de opciones para [Añadir un letrero con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
+      Consulte la tabla de opciones en [Añadir un letrero con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
       Haga clic **[!UICONTROL Save]**.
 
-      Los cambios en los parámetros se agregan al [!DNL Actions] panel.
+      Los cambios en los parámetros se agregan al panel [!DNL Actions].
 
       Consulte también [Edición de letreros con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
    * En el área de la plantilla de presentación de la página Generador de reglas comerciales, haga clic con el botón secundario en un letrero que desee eliminar de la página y, a continuación, haga clic en **[!UICONTROL Remove banner]**. La acción de quitar pancarta se agrega al panel Acciones.
 
-1. (Opcional) En el **[!UICONTROL Schedule]** panel, realice una de las acciones siguientes:
+1. (Opcional) En el panel **[!UICONTROL Schedule]**, realice una de las siguientes acciones:
 
    * Haga clic en **[!UICONTROL Run Indefinitely]** para que la regla se ejecute cada vez que se alcancen los activadores asociados. Esta opción es la predeterminada.
-   * Haga clic en **[!UICONTROL Fixed Schedule]** y, a continuación, especifique la fecha y hora de inicio, así como la fecha y hora de finalización para que la regla se ejecute siempre que se cumpla el activador asociado.
+   * Haga clic en **[!UICONTROL Fixed Schedule]** y, a continuación, especifique la fecha y hora de inicio y la fecha y hora de finalización para que la regla se ejecute siempre que se cumpla el activador asociado.
 
 1. Haga clic **[!UICONTROL Save Rule]**.
-1. (Opcional) En la [!DNL Business Rules] página, realice una de las siguientes acciones:
+1. (Opcional) En la página [!DNL Business Rules], realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -278,54 +281,54 @@ Puede utilizar el Generador de reglas visuales o el Generador de reglas avanzado
 
 **Para editar una nueva regla comercial**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**.
-1. En la [!DNL Business Rules] página, realice una de las acciones siguientes:
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**.
+1. En la página [!DNL Business Rules], realice una de las siguientes acciones:
 
-   * En la [!DNL Name] columna, haga clic en el nombre de una regla comercial que desee cambiar.
+   * En la columna [!DNL Name], haga clic en el nombre de una regla comercial que desee cambiar.
 
       La regla comercial se abre en la interfaz predeterminada especificada en **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL My Preferences]**.
 
    * En la lista desplegable, junto al nombre de una regla comercial que desee editar, haga clic en **[!UICONTROL Edit in advanced mode]** o **[!UICONTROL Edit in visual mode]**.
 
-1. En el campo de [!DNL Name] texto, escriba el nuevo nombre de la regla comercial.
+1. En el campo de texto [!DNL Name], escriba el nuevo nombre de la regla comercial.
 
-   No haga clic **[!UICONTROL Save Rule]** aún. 1. En la [!DNL Business Rule Builder] página, configure los activadores y las acciones que desee utilizar.
+   Aún no haga clic en **[!UICONTROL Save Rule]**. 1. En la página [!DNL Business Rule Builder], configure los activadores y las acciones que desee utilizar.
 
-   Consulte la tabla de opciones en [Añadir una nueva regla](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)comercial.
-1. (Opcional) En cualquier **[!UICONTROL Business Rule Builder]** panel ( [!DNL Triggers], [!DNL Actions]o [!DNL Schedule], realice una de las siguientes acciones:
+   Consulte la tabla de opciones en [Añadir una nueva regla comercial](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
+1. (Opcional) En cualquier panel **[!UICONTROL Business Rule Builder]** ( [!DNL Triggers], [!DNL Actions] o [!DNL Schedule], realice una de las siguientes acciones:
 
-   * En el área de la plantilla de presentación de la [!DNL Business Rule Builder] página, haga clic con el botón secundario en un letrero y, a continuación, haga clic en **[!UICONTROL Select different banner]**. En la [!DNL Pick Banner page], haga clic **[!UICONTROL Pick this banner]** debajo de la miniatura de la pancarta para agregarla a la plantilla de presentación. Solo los letreros que coincidan con el tamaño y el área del letrero original en la plantilla de presentación están disponibles para que pueda seleccionarlos.
+   * En el área de la plantilla de presentación de la página [!DNL Business Rule Builder], haga clic con el botón secundario en un letrero y, a continuación, haga clic en **[!UICONTROL Select different banner]**. En [!DNL Pick Banner page], haga clic en **[!UICONTROL Pick this banner]** debajo de la miniatura del letrero para agregarla a la plantilla de presentación. Solo los letreros que coincidan con el tamaño y el área del letrero original en la plantilla de presentación están disponibles para que pueda seleccionarlos.
 
-      La acción Agregar letrero se agrega al [!DNL Actions] panel.
+      La acción de agregar letrero se agrega al panel [!DNL Actions].
 
-   * En el área de plantilla de presentación de la [!DNL Business Rule Builder] página, haga clic con el botón secundario en un letrero de plantilla de Adobe Dynamic Media Classic cuyos parámetros desee cambiar y, a continuación, haga clic en **[!UICONTROL Add banner commands]**. En el cuadro [!DNL Change Parameters] de diálogo, establezca las opciones de parámetro que desee.
+   * En el área de la plantilla de presentación de la página [!DNL Business Rule Builder], haga clic con el botón secundario en un letrero de plantilla de Adobe Dynamic Media Classic cuyos parámetros desee cambiar y, a continuación, haga clic en **[!UICONTROL Add banner commands]**. En el cuadro de diálogo [!DNL Change Parameters], establezca las opciones de parámetro que desee.
 
-      Consulte la tabla de opciones para [Añadir un letrero con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
+      Consulte la tabla de opciones en [Añadir un letrero con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
       Haga clic **[!UICONTROL Save]**.
 
-      Los cambios en los parámetros se agregan al [!DNL Actions] panel.
+      Los cambios en los parámetros se agregan al panel [!DNL Actions].
 
       Consulte también [Edición de letreros con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
-   * En el área de la plantilla de presentación de la [!DNL Business Rule Builder] página, haga clic con el botón secundario en un letrero que desee eliminar de la página y, a continuación, haga clic en **[!UICONTROL Remove banner]**. La acción de quitar pancarta se agrega al [!DNL Actions] panel.
+   * En el área de la plantilla de presentación de la página [!DNL Business Rule Builder], haga clic con el botón secundario en un letrero que desee eliminar de la página y, a continuación, haga clic en **[!UICONTROL Remove banner]**. La acción de quitar letrero se agrega al panel [!DNL Actions].
 
-1. (Opcional) En el [!DNL Schedule] panel, realice una de las acciones siguientes:
+1. (Opcional) En el panel [!DNL Schedule], realice una de las siguientes acciones:
 
    * Haga clic en **[!UICONTROL Run Indefinitely]** para que la regla se ejecute cada vez que se alcancen los activadores asociados. Esta opción es la predeterminada.
-   * Haga clic en **[!UICONTROL Fixed Schedule]** y, a continuación, especifique la fecha y hora de inicio, así como la fecha y hora de finalización para que la regla se ejecute siempre que se cumpla el activador asociado.
+   * Haga clic en **[!UICONTROL Fixed Schedule]** y, a continuación, especifique la fecha y hora de inicio y la fecha y hora de finalización para que la regla se ejecute siempre que se cumpla el activador asociado.
 
 1. Haga clic **[!UICONTROL Save Rule]**.
 
-   La [!DNL Business Rule Builder] página se cierra y vuelve a la **[!UICONTROL Business Rule]** página. Las reglas aparecen en la tabla. Haga clic en el encabezado de la **[!UICONTROL Modified]** columna para ordenar las reglas por fecha de edición. 1. (Opcional) Realice una de las siguientes acciones:
+   La página [!DNL Business Rule Builder] se cierra y regresa a la página **[!UICONTROL Business Rule]**. Las reglas aparecen en la tabla. Haga clic en el encabezado de columna **[!UICONTROL Modified]** para ordenar las reglas por fecha de edición. 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -337,11 +340,11 @@ Puede copiar una regla comercial existente para utilizarla como base para una nu
 
 **Para copiar una regla comercial**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**.
-1. En la **[!UICONTROL Business Rules]** página, en la lista desplegable al lado del nombre de una regla comercial que desee copiar, haga clic en **[!UICONTROL Copy rule]**.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**.
+1. En la página **[!UICONTROL Business Rules]**, en la lista desplegable al lado del nombre de una regla comercial que desee copiar, haga clic en **[!UICONTROL Copy rule]**.
 1. Edite la regla comercial copiada como de costumbre.
 
-   See [Editing a business rule](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
+   Consulte [Edición de una regla comercial](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
 
 ## Aprobación de reglas comerciales {#task_BD569D18BF664272B8692294C162E2C1}
 
@@ -349,20 +352,20 @@ Puede activar reglas comerciales que tengan un estado de WIP (Trabajo en curso) 
 
 **Para aprobar reglas comerciales**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]**.
-1. En la [!DNL Business Rules] página, mediante el encabezado de la columna de estado en la [!DNL Status] columna de la tabla de reglas comerciales, ordene las reglas que tengan un estado de **[!UICONTROL WIP]** o **[!UICONTROL suspended]**.
+1. En el menú del producto, haga clic en **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]**.
+1. En la página [!DNL Business Rules], utilizando el encabezado de la columna de estado de la columna [!DNL Status] de la tabla de reglas comerciales, ordene las reglas que tengan un estado de **[!UICONTROL WIP]** o **[!UICONTROL suspended]**.
 
-   Utilice el encabezado de la columna de la casilla de verificación que hay en la parte izquierda de la tabla para comprobar todas las reglas que se muestran actualmente en la página o sólo las que tienen un estado de **[!UICONTROL WIP]** o **[!UICONTROL suspended]**. 1. En la barra de menús situada cerca de la parte superior de la página, haga clic en **[!UICONTROL Approve]**.
-1. En el cuadro de diálogo **[!UICONTROL Confirm Action]** , haga clic en **[!UICONTROL OK]**.
+   Utilice el encabezado de la columna de casilla de verificación en la parte izquierda de la tabla para comprobar todas las reglas que se muestran actualmente en la página o para comprobar solo las que tienen un estado de **[!UICONTROL WIP]** o **[!UICONTROL suspended]**. 1. En la barra de menús situada cerca de la parte superior de la página, haga clic en **[!UICONTROL Approve]**.
+1. En el cuadro de diálogo **[!UICONTROL Confirm Action]**, haga clic en **[!UICONTROL OK]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -376,19 +379,19 @@ Cuando se suspende una regla, se indica en la interfaz de usuario que la ha vuel
 
 **Para suspender reglas comerciales**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]**.
-1. En la [!DNL Business Rules] página, utilizando el estado en la columna Estado de la tabla de reglas comerciales, en la columna de la izquierda de la tabla, compruebe las reglas que tienen un estado de **[!UICONTROL WIP]** o **[!UICONTROL approved]**.
+1. En el menú del producto, haga clic en **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]**.
+1. En la página [!DNL Business Rules], utilizando el estado en la columna Estado de la tabla de reglas comerciales, en la columna de la izquierda de la tabla, compruebe las reglas que tienen un estado de **[!UICONTROL WIP]** o **[!UICONTROL approved]**.
 1. En la barra de menús situada cerca de la parte superior de la página, haga clic en **[!UICONTROL Suspend]**.
-1. En el cuadro de diálogo **[!UICONTROL Confirm Action]** , haga clic en **[!UICONTROL OK]**.
+1. En el cuadro de diálogo **[!UICONTROL Confirm Action]**, haga clic en **[!UICONTROL OK]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -400,37 +403,37 @@ Puede reanudar las reglas comerciales para reactivar una regla suspendida. Despu
 
 **Para reanudar las reglas comerciales**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]**.
-1. En la [!DNL Business Rules] página, utilizando el estado en la columna Estado de la tabla de reglas comerciales, en la columna de la izquierda de la tabla, compruebe las reglas que tienen un estado de **[!UICONTROL suspended]**.
+1. En el menú del producto, haga clic en **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]**.
+1. En la página [!DNL Business Rules], utilizando el estado en la columna Estado de la tabla de reglas comerciales, en la columna de la izquierda de la tabla, compruebe las reglas que tienen un estado de **[!UICONTROL suspended]**.
 1. En la barra de menús situada cerca de la parte superior de la página, haga clic en **[!UICONTROL Resume]**.
-1. En el cuadro de diálogo [!DNL Confirm Action] , haga clic en **[!UICONTROL OK]**.
+1. En el cuadro de diálogo [!DNL Confirm Action], haga clic en **[!UICONTROL OK]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
       Consulte [Inserción de la configuración del escenario en directo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Cambio del orden de ejecución de las reglas comerciales {#task_FE3B1C17307F49B49050C2EC5A063991}
+## Cambiar el orden en que se ejecutan las reglas comerciales {#task_FE3B1C17307F49B49050C2EC5A063991}
 
 Puede reordenar las reglas comerciales para cambiar el orden en que se ejecutan en las plantillas de presentación.
 
-Las reglas comerciales se ejecutan en el orden en que se definieron; cuanto mayor sea el número de orden de una regla, más tarde se ejecutará en el proceso, superando las reglas anteriores. Las reglas se reordenan introduciendo un nuevo número en la columna Orden de la tabla de la [!DNL Business Rules] página. También puede utilizar la función de arrastrar y soltar en las reglas para cambiar el orden de ejecución.
+Las reglas comerciales se ejecutan en el orden en que se definieron; cuanto mayor sea el número de orden de una regla, más tarde se ejecutará en el proceso, superando las reglas anteriores. Las reglas se reordenan introduciendo un nuevo número en la columna Orden de la tabla de la página [!DNL Business Rules]. También puede utilizar la función de arrastrar y soltar en las reglas para cambiar el orden de ejecución.
 
 **Para cambiar el orden en que se ejecutan las reglas comerciales**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]**.
-1. En la tabla de la [!DNL Business Rules] página, realice una de las siguientes acciones:
+1. En el menú del producto, haga clic en **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]**.
+1. En la página [!DNL Business Rules], en la tabla, realice una de las siguientes acciones:
 
-   * Haga clic en el encabezado de la **[!UICONTROL Order]** columna para ordenar las reglas en orden ascendente o descendente.
-   * En la **[!UICONTROL Order]** columna, en el campo de texto a la izquierda del nombre de una regla comercial, escriba el número de pedido que desea que se ejecute la regla.
+   * Haga clic en el encabezado de columna **[!UICONTROL Order]** para ordenar las reglas en orden ascendente o descendente.
+   * En la columna **[!UICONTROL Order]**, en el campo de texto a la izquierda del nombre de una regla comercial, escriba el número de pedido que desea que se ejecute la regla.
    * Arrastre y suelte una fila de tabla en la posición en la que desee que se ejecute la regla. Todos los números de pedido se actualizan para reflejar el nuevo orden en que se ejecutan las reglas.
 
 1. Haga clic **[!UICONTROL Save Changes]**.
@@ -438,41 +441,41 @@ Las reglas comerciales se ejecutan en el orden en que se definieron; cuanto mayo
    Las reglas comerciales ahora se ejecutarán en el orden especificado. La excepción es si se ha especificado una regla comercial de redirección. Si la regla comercial de redireccionamiento se activa o se activa, el procesamiento de reglas comerciales se detiene para permitir la redirección.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
       Consulte [Inserción de la configuración del escenario en directo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Eliminación de reglas comerciales {#task_AE37B42412044541BCC6D46CF8793DFF}
+## Eliminando reglas comerciales {#task_AE37B42412044541BCC6D46CF8793DFF}
 
 Puede eliminar reglas comerciales cuyo estado sea WIP, suspendido o aprobado mediante el menú desplegable Acciones masivas.
 
 **Para eliminar reglas comerciales**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**.
-1. En la [!DNL Business Rules] página, realice una de las acciones siguientes:
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**.
+1. En la página [!DNL Business Rules], realice una de las siguientes acciones:
 
    * Utilice el encabezado de columna de casilla de verificación para comprobar todas las reglas que se muestran actualmente en la página.
    * Marque sólo las reglas comerciales que desee eliminar en función del estado de la columna Estado de la tabla.
 
-1. En la lista [!DNL Bulk Actions] desplegable, haga clic en **[!UICONTROL Delete]**.
-1. En el cuadro de diálogo [!DNL Confirm Action] , haga clic en **[!UICONTROL OK]**.
+1. En la lista desplegable [!DNL Bulk Actions], haga clic en **[!UICONTROL Delete]**.
+1. En el cuadro de diálogo [!DNL Confirm Action], haga clic en **[!UICONTROL OK]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
