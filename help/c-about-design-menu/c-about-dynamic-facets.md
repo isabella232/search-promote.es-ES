@@ -1,6 +1,6 @@
 ---
-description: Utilice Facetas dinámicas para crear automáticamente nuevas selecciones de rango en el momento de la búsqueda. Si lo desea, puede asociar cada campo de faceta dinámica con hasta un nombre de tabla en la cuenta de Adobe Search&amp;Promote. Las relaciones de tabla se aplican en tiempo de búsqueda para cualquier campo de faceta dinámica que participe en la búsqueda.
-seo-description: Utilice Facetas dinámicas para crear automáticamente nuevas selecciones de rango en el momento de la búsqueda. Si lo desea, puede asociar cada campo de faceta dinámica con hasta un nombre de tabla en la cuenta de Adobe Search&amp;Promote. Las relaciones de tabla se aplican en tiempo de búsqueda para cualquier campo de faceta dinámica que participe en la búsqueda.
+description: Utilice Facetas dinámicas para crear automáticamente nuevas selecciones de rango en el momento de la búsqueda. Opcionalmente, puede asociar cada campo de faceta dinámica con hasta un nombre de tabla en la cuenta de Search&Promote de Adobe. Las relaciones de tabla se aplican en tiempo de búsqueda para cualquier campo de faceta dinámica que participe en la búsqueda.
+seo-description: Utilice Facetas dinámicas para crear automáticamente nuevas selecciones de rango en el momento de la búsqueda. Opcionalmente, puede asociar cada campo de faceta dinámica con hasta un nombre de tabla en la cuenta de Search&Promote de Adobe. Las relaciones de tabla se aplican en tiempo de búsqueda para cualquier campo de faceta dinámica que participe en la búsqueda.
 seo-title: Acerca de las facetas dinámicas
 solution: Target
 subtopic: Navigation
@@ -9,13 +9,16 @@ topic: Design,Site search and merchandising
 uuid: 1ea91c22-dcc2-4173-aa50-ce618ad0a99c
 translation-type: tm+mt
 source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 0%
 
 ---
 
 
 # Acerca de las facetas dinámicas{#about-dynamic-facets}
 
-Utilice Facetas dinámicas para crear automáticamente nuevas selecciones de rango en el momento de la búsqueda. Si lo desea, puede asociar cada campo de faceta dinámica con hasta un nombre de tabla en su cuenta de Adobe Search&amp;Promote. Las relaciones de tabla se aplican en tiempo de búsqueda para cualquier campo de faceta dinámica que participe en la búsqueda.
+Utilice Facetas dinámicas para crear automáticamente nuevas selecciones de rango en el momento de la búsqueda. Si lo desea, puede asociar cada campo de faceta dinámica con hasta un nombre de tabla en la cuenta de Search&amp;Promote de Adobe. Las relaciones de tabla se aplican en tiempo de búsqueda para cualquier campo de faceta dinámica que participe en la búsqueda.
 
 ## Uso de facetas dinámicas {#concept_E65A70C9C2E04804BF24FBE1B3CAD899}
 
@@ -25,7 +28,7 @@ Utilice Facetas dinámicas para crear automáticamente nuevas selecciones de ran
 
 Sin el uso de facetas dinámicas, tenía que combinar los atributos relacionados en &quot;ranuras&quot; y sólo mostrar las ranuras homogéneas para una búsqueda determinada. Es decir, sólo podían contener valores de un atributo lógico, como &quot;tamaño de zapato&quot; o &quot;tamaño de anillo&quot;. Este método proporcionó un rendimiento adecuado en tiempo de búsqueda con un gran conjunto de atributos únicos.
 
-Sin embargo, cuando se utiliza Facetas dinámicas, no se limita el número de facetas que la búsqueda principal puede rastrear de manera eficiente. Puede definir cientos de facetas dinámicas, desde las cuales la búsqueda principal puede devolver las &quot;facetas más `N` dinámicas&quot; para una búsqueda determinada, donde `N` es generalmente un valor más modesto de 10-20 o menos. Este método elimina la necesidad de asignar atributos, ya que ahora puede crear una faceta dinámica única para los atributos en el sitio web.
+Sin embargo, cuando se utiliza Facetas dinámicas, no se limita el número de facetas que la búsqueda principal puede rastrear de manera eficiente. Puede definir cientos de facetas dinámicas, desde las cuales la búsqueda principal puede devolver las &quot;facetas dinámicas principales `N`&quot; para una búsqueda determinada, donde `N` es generalmente un valor más modesto de 10 a 20 o menos. Este método elimina la necesidad de asignar atributos, ya que ahora puede crear una faceta dinámica única para los atributos en el sitio web.
 
 ## ¿Qué facetas deberías hacer dinámicas? {#section_254EE034BCAD4250A5D09FBF6158C4A5}
 
@@ -35,11 +38,11 @@ Si su cuenta tiene un gran número de facetas de este tipo, mejora el rendimient
 
 ## Relación entre facetas y campos de etiquetas meta {#section_2869E5FCDA8B431A87BC6E5573F2B0A0}
 
-Las facetas se crean sobre los campos de etiquetas meta. Un campo de etiqueta meta es una función de capa de búsqueda básica de bajo nivel de [!DNL Adobe Search&Promote]. Por otro lado, las facetas forman parte de GS (Búsqueda guiada): la capa de presentación de alto nivel de Adobe Search&amp;Promote. Sin embargo, las facetas tienen campos de etiquetas meta propios, los campos de etiquetas meta no saben nada acerca de las facetas. Al configurar facetas dinámicas, primero se agregan facetas y luego se agregan campos de etiquetas meta con la opción Faceta dinámica seleccionada para establecer que la faceta identificada sea dinámica.
+Las facetas se crean sobre los campos de etiquetas meta. Un campo de etiqueta meta es una función de capa de búsqueda básica de bajo nivel de [!DNL Adobe Search&Promote]. Por otro lado, las facetas son parte de GS (Búsqueda guiada): la capa de presentación de alto nivel de Search&amp;Promote de Adobe. Sin embargo, las facetas tienen campos de etiquetas meta propios, los campos de etiquetas meta no saben nada acerca de las facetas. Al configurar facetas dinámicas, primero se agregan facetas y luego se agregan campos de etiquetas meta con la opción Faceta dinámica seleccionada para establecer que la faceta identificada sea dinámica.
 
 >[!NOTE]
 >
->No hay ningún ajuste de &quot;faceta dinámica&quot; en **[!UICONTROL Design > Navigation > Facets]**. Lo que hace que una faceta sea &quot;dinámica&quot; es que su &quot;campo de etiqueta meta&quot; subyacente es dinámico como se define en **[!UICONTROL Settings > Metadata > Definitions]**.
+>No hay ninguna configuración de &quot;faceta dinámica&quot; en **[!UICONTROL Design > Navigation > Facets]**. Lo que hace que una faceta sea &quot;dinámica&quot; es que su &quot;campo de etiqueta meta&quot; subyacente es dinámico, tal como se define en **[!UICONTROL Settings > Metadata > Definitions]**.
 
 ## Ejemplos de facetas dinámicas en acción {#section_BC699A05E2E742EF94D41679163ACE84}
 
@@ -69,7 +72,7 @@ t_configuring_dynamic_facets.xml
 
 >[!NOTE]
 >
->Esta función no está habilitada de forma predeterminada en Adobe Search&amp;Promote. Póngase en contacto con la asistencia técnica para activar la función para su uso.
+>Esta función no está habilitada de forma predeterminada en el Search&amp;Promote de Adobe. Póngase en contacto con la asistencia técnica para activar la función para su uso.
 
 Antes de que los efectos de las facetas dinámicas sean visibles para los clientes, debe volver a generar el índice del sitio.
 
@@ -86,37 +89,39 @@ Consulte también
    Consulte [Añadir una nueva faceta](../c-about-design-menu/c-about-facets.md#task_FC07BFFA62CA4B718D6CBF4F2855C89B).
 1. Una vez agregadas las facetas, asegúrese de que ha agregado las facetas a nuevos campos de etiquetas meta definidos por el usuario.
 
-   Consulte [Añadir un nuevo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)de etiqueta meta.
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions.]**
-1. En la [!DNL Definitions] página, en la [!DNL User-defined fields] tabla, en la [!DNL Actions] columna, haga clic en el icono de lápiz (Editar) en la fila del nombre del campo de etiqueta meta asociado a la faceta que desea convertir en dinámica.
-1. En la [!DNL Edit Field] página, marque **[!UICONTROL Dynamic Facet]**.
+   Consulte [Añadir un nuevo campo de etiqueta meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions.]**
+1. En la página [!DNL Definitions], en la tabla [!DNL User-defined fields], en la columna [!DNL Actions], haga clic en el icono de lápiz (Editar) en la fila del nombre del campo de etiqueta meta asociado con la faceta que desee hacer dinámica.
+1. En la página [!DNL Edit Field], marque **[!UICONTROL Dynamic Facet]**.
 
-   Consulte la tabla de opciones para [Añadir un nuevo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)de etiqueta meta.
+   Consulte la tabla de opciones en [Añadir un nuevo campo de etiqueta meta](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 1. Haga clic **[!UICONTROL Save Changes]**.
-1. Haga clic en **volver a generar el índice** del sitio escalonado en el cuadro azul para volver a generar rápidamente el índice del sitio Web escalonado.
+1. Haga clic en **regenerar el índice del sitio escalonado** en el cuadro azul para volver a generar rápidamente el índice del sitio Web escalonado.
 
-   Consulte también [Regeneración del índice de un sitio web](../c-about-index-menu/c-about-regenerate-index.md#task_B28DE40C0E9A475ABCBCBC4FF993AACD)activo o de etapas.
+   Consulte también [Regeneración del índice de un sitio Web activo o en etapas](../c-about-index-menu/c-about-regenerate-index.md#task_B28DE40C0E9A475ABCBCBC4FF993AACD).
 1. Determinar el número de facetas dinámicas que se seleccionarán para una búsqueda determinada. Puede realizar esta tarea realizando una de las acciones siguientes:
 
-   * Cree una regla de limpieza de consultas con las condiciones que desee, que realice la acción `set`, `backend parameter`, `sp_sfvl_df_count` para valorar `X`, donde `X` es el número deseado de facetas dinámicas que se van a solicitar en el momento de la búsqueda y, a continuación, haga clic en **[!UICONTROL Add]**.
+   * Cree una regla de limpieza de consultas con las condiciones que desee, que realice la acción `set`, `backend parameter`, `sp_sfvl_df_count` para valorar `X`, donde `X` es el número deseado de facetas dinámicas que se van a solicitar en el momento de la búsqueda y luego haga clic en **[!UICONTROL Add]**.
+
    ![](assets/querycleaningrule_dynamicfacets.png)
 
-   Consulte [Añadir una regla](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54)de limpieza de consultas.
+   Consulte [Añadir una regla de limpieza de consultas](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54).
 
-   Consulte también Parámetros [CGI de búsqueda](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)back-end, fila 40 en la tabla para obtener más información sobre `sp_sfvl_df_count`.
+   Consulte también [Parámetros CGI de búsqueda back-end](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8), fila 40 en la tabla para obtener una explicación más detallada de `sp_sfvl_df_count`.
 
    * Añada una búsqueda y establezca el parámetro &quot;custom&quot; `sp_sfvl_df_count` en el valor deseado y haga clic en **[!UICONTROL Add]**.
+
    ![](assets/gs_addsearch_dynamic_facets.png)
 
-   Consulte [Añadir una nueva definición](../c-about-settings-menu/c-about-searching-menu.md#task_98D3A168AB5D4F30A1ADB6E0D48AB648)de búsqueda.
+   Consulte [Añadir una nueva definición de búsqueda](../c-about-settings-menu/c-about-searching-menu.md#task_98D3A168AB5D4F30A1ADB6E0D48AB648).
 
-   Consulte también Parámetros [CGI de búsqueda](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)back-end, fila 40 en la tabla para obtener más información sobre `sp_sfvl_df_count`.
+   Consulte también [Parámetros CGI de búsqueda back-end](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8), fila 40 en la tabla para obtener una explicación más detallada de `sp_sfvl_df_count`.
 
 1. Edite la plantilla de transporte adecuada para generar las facetas dinámicas que devuelve la búsqueda principal.
 
-   Consulte [Edición de una presentación o una plantilla](../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3)de transporte.
+   Consulte [Edición de una presentación o una plantilla de transporte](../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3).
 
-   Por ejemplo, supongamos que se nombra la plantilla de transporte `guided.tpl`. En ese caso, en el menú del producto, haga clic en **[!UICONTROL Design > Templates]**. En la [!DNL Templates] página, ubique `guided.tpl` en la tabla. y luego haga clic en **[!UICONTROL Edit]** en el extremo derecho del nombre. En la página Edición, agregue el siguiente bloque de código al final de `</facets>`: Salida JSON:
+   Por ejemplo, supongamos que la plantilla de transporte tiene el nombre `guided.tpl`. En ese caso, en el menú del producto, haga clic en **[!UICONTROL Design > Templates]**. En la página [!DNL Templates], ubique `guided.tpl` en la tabla. y luego haga clic **[!UICONTROL Edit]** en el extremo derecho del nombre. En la página Edición, agregue el siguiente bloque de código al final de `</facets>`: Salida JSON:
 
    ```
    ... 
@@ -133,9 +138,9 @@ Consulte también
 
 1. Edite las plantillas de presentación o plantillas adecuadas para generar las facetas dinámicas.
 
-   Consulte [Edición de una presentación o una plantilla](../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3)de transporte.
+   Consulte [Edición de una presentación o una plantilla de transporte](../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3).
 
-   Por ejemplo, supongamos que tiene una plantilla con el nombre `sim.tmpl` que se utiliza para generar contenido en el simulador. Para editar esa plantilla, en el menú del producto, haga clic en **[!UICONTROL Design > Templates]**. En la [!DNL Templates] página, ubique `sim.tmpl` en la tabla. y luego haga clic en **[!UICONTROL Edit]** en el extremo derecho del nombre. En la página Edición, agregue lo siguiente dentro del área de visualización de facetas de la plantilla:
+   Por ejemplo, supongamos que tiene una plantilla denominada `sim.tmpl` que se utiliza para generar contenido en el simulador. Para editar esa plantilla, en el menú del producto, haga clic en **[!UICONTROL Design > Templates]**. En la página [!DNL Templates], ubique `sim.tmpl` en la tabla. y luego haga clic **[!UICONTROL Edit]** en el extremo derecho del nombre. En la página Edición, agregue lo siguiente dentro del área de visualización de facetas de la plantilla:
 
    ```
    <h6>DF RAIL</h6> 
@@ -167,9 +172,9 @@ Consulte también
 
    También puede realizar una modificación similar a otras plantillas de presentación, según sea necesario, como `json.tmpl`.
 
-   Asegúrese de especificar `__dynamic_facets` para la `gsname` etiqueta en la `guided-facet-rail` etiqueta . Esta etiqueta es un carril de facetas predefinido reservado para generar cualquier faceta dinámica que se devuelva para una búsqueda determinada.
+   Asegúrese de especificar `__dynamic_facets` para la `gsname` en la etiqueta `guided-facet-rail`. Esta etiqueta es un carril de facetas predefinido reservado para generar cualquier faceta dinámica que se devuelva para una búsqueda determinada.
 
-   También puede editar de forma opcional este carril de faceta especial mediante **[!UICONTROL Rules > Business Rules]** y utilizando el **[!UICONTROL Advanced Rule Builder]** como se muestra a continuación.
+   También puede editar este carril de faceta especial mediante **[!UICONTROL Rules > Business Rules]** y utilizando el **[!UICONTROL Advanced Rule Builder]** como se muestra a continuación.
 
    ![](assets/dynamicfacetrail_businessrule.png)
 
