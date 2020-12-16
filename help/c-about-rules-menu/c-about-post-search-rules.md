@@ -8,11 +8,14 @@ topic: Rules,Site search and merchandising
 uuid: 312d1e4a-f5b6-4629-8645-17e6f6c09fc4
 translation-type: tm+mt
 source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+workflow-type: tm+mt
+source-wordcount: '2121'
+ht-degree: 0%
 
 ---
 
 
-# Acerca de las reglas de búsqueda posterior{#about-post-search-rules}
+# Acerca de las reglas de postbúsqueda{#about-post-search-rules}
 
 Puede utilizar las reglas de postbúsqueda para examinar los resultados de una búsqueda y determinar cómo afecta la búsqueda al contenido mostrado.
 
@@ -24,11 +27,11 @@ Cada regla de búsqueda posterior consta de dos elementos principales: las accio
 
 Puede restringir el conjunto de resultados de búsqueda para un máximo de tres rondas de búsqueda. Después de esto, se utiliza lo que esté disponible actualmente. Este límite evita bucles infinitos y garantiza que el cliente reciba una respuesta eficaz. Cuantas más veces rehaga una búsqueda, más tardará en devolver los resultados de búsqueda. Si ninguna de las reglas coincidentes altera una de las búsquedas de la plantilla de presentación utilizada actualmente o cambia la plantilla, el conjunto de resultados de búsqueda se considera finalizado y se cierra después de la búsqueda.
 
-El procesamiento posterior a la búsqueda se basa en los módulos de procesamiento anteriores Limpieza de consultas y procesamiento previo a la búsqueda. Por lo tanto, todas las variables personalizadas configuradas en esos módulos están disponibles para su uso en las reglas de procesamiento posteriores a la búsqueda. Del mismo modo, el procesamiento de búsqueda previa ha creado instancias de todas las plantillas en las que cada búsqueda con nombre asociada a la plantilla de presentación tiene su propia copia local de los parámetros CGI. A su vez, puede personalizar cada búsqueda individualmente.
+El procesamiento posterior a la búsqueda se basa en los módulos de procesamiento anteriores de limpieza de Consulta y procesamiento previo a la búsqueda. Por lo tanto, todas las variables personalizadas configuradas en esos módulos están disponibles para su uso en las reglas de procesamiento posteriores a la búsqueda. Del mismo modo, el procesamiento de búsqueda previa ha creado instancias de todas las plantillas en las que cada búsqueda con nombre asociada a la plantilla de presentación tiene su propia copia local de los parámetros CGI. A su vez, puede personalizar cada búsqueda individualmente.
 
-Consulte [Acerca de las reglas](../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C)de limpieza de consultas.
+Consulte [Acerca de las reglas de limpieza de Consultas](../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C).
 
-See [About Pre-Search Rules](../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F).
+Consulte [Acerca de las reglas de búsqueda previa](../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F).
 
 ## Acerca de las condiciones de las reglas de postbúsqueda {#section_C43EB77CC0AC43B8B9D38569264BF1B5}
 
@@ -44,7 +47,7 @@ Al realizar operaciones en el parámetro de búsqueda de una plantilla, existen 
 
 ## Redirecciones {#section_E5669A2F13C240F2968E31C75591CD6A}
 
-Las visitas y redirecciones directas dentro de la limpieza de consultas le permiten redireccionar a una dirección URL en función de los términos de búsqueda entrantes. Las redirecciones dentro de las reglas de búsqueda posterior amplían esta idea, excepto que le permite comprobar cuántos resultados ha devuelto la búsqueda antes de decidir si desea que se produzca una redirección. Con las reglas de postbúsqueda, puede redirigir a una dirección URL, donde puede sustituir variables personalizadas o parámetros de consulta. O bien, puede redirigir a un campo dentro del primer resultado. Cuando se redirige al campo de un resultado, se define el campo en la plantilla Transporte y debe contener una URL válida y explícita; de lo contrario, se omitirá la redirección.
+Las visitas directas y las redirecciones dentro de la limpieza de Consultas permiten redireccionar a una dirección URL en función de los términos de búsqueda entrantes. Las redirecciones dentro de las reglas de búsqueda posterior amplían esta idea, excepto que le permite comprobar cuántos resultados ha devuelto la búsqueda antes de decidir si desea que se produzca una redirección. Con las reglas de postbúsqueda, puede redirigir a una dirección URL, donde puede sustituir variables personalizadas o parámetros de consulta. O bien, puede redirigir a un campo dentro del primer resultado. Cuando se redirige al campo de un resultado, se define el campo en la plantilla Transporte y debe contener una URL válida y explícita; de lo contrario, se omitirá la redirección.
 
 Al utilizar el mecanismo de redirección dentro de las reglas de postbúsqueda, puede detectar cuándo una búsqueda devuelve un único resultado. En lugar de devolver un resultado de este tipo, puede redireccionar a la página web asociada al resultado.
 
@@ -52,11 +55,11 @@ Consulte el ejemplo de redirección que se muestra a continuación para ver un e
 
 ## Última regla {#section_FC1E0050C9324278B171038E98F6C335}
 
-Cuando se cumplen las condiciones de una regla que tiene la opción **[!UICONTROL Last Rule]** establecida, el módulo de procesamiento posterior a la búsqueda no realiza ninguna regla adicional después de la acción de la regla coincidente. Esta situación resulta útil cuando se han establecido acciones que hacen que una regla posterior coincida pero se desea que se detenga el procesamiento. Y, para que esa regla posterior pueda coincidir después de la siguiente ronda de búsqueda.
+Cuando se cumplen las condiciones de una regla que tiene la opción **[!UICONTROL Last Rule]** establecida, el módulo de procesamiento de búsqueda posterior no realiza ninguna regla adicional después de la acción de la regla coincidente. Esta situación resulta útil cuando se han establecido acciones que hacen que una regla posterior coincida pero se desea que se detenga el procesamiento. Y, para que esa regla posterior pueda coincidir después de la siguiente ronda de búsqueda.
 
 ## Ejemplos {#section_DDB98383690941F9B44AD00FBA55BB56}
 
-En el siguiente ejemplo, suponga que tiene dos plantillas de presentación. Se utiliza una plantilla para mostrar muchos resultados de búsqueda y la otra plantilla para mostrar un único resultado y una búsqueda adicional de accesorios relacionados con la búsqueda principal. Desea detectar cuándo tiene un único resultado y cambiar a la otra plantilla de presentación. Para realizar esta tarea, puede utilizar las siguientes reglas:
+En el siguiente ejemplo, suponga que tiene dos plantillas de presentación. Se utiliza una plantilla para mostrar muchos resultados de búsqueda y la otra plantilla para mostrar un único resultado y una búsqueda adicional de accesorios relacionados con la búsqueda principal. Desea detectar cuándo tiene un único resultado y cambiar a la otra plantilla de presentación. Para llevar a cabo esta tarea, puede utilizar las siguientes reglas:
 
 ```
 On condition: 
@@ -85,19 +88,19 @@ Perform the following actions:
 * Cualquier conjunto de reglas que desencadene una nueva ronda de búsqueda siempre debe tener una cláusula condicional para comprobar que no es la última transferencia a través del módulo. Si ya ha realizado el número máximo de búsquedas, no podrá rehacer ninguna búsqueda.
 * Si está en el último paso a través del módulo y los resultados siguen siendo deficientes, puede cambiar a una plantilla &quot;sin resultados&quot;.
 * Debe basar el cambio de una plantilla de presentación en el resultado de una búsqueda que potencialmente tenga otros parámetros. Si desea seleccionar una plantilla basada únicamente en la consulta entrante, una regla de búsqueda previa es más eficaz.
-* La extracción de datos de la consulta se realiza en el módulo Limpieza de consultas. Puede hacer referencia a las variables personalizadas en el procesamiento posterior a la búsqueda.
+* La extracción de datos de la consulta se realiza en el módulo Limpieza de Consultas. Puede hacer referencia a las variables personalizadas en el procesamiento posterior a la búsqueda.
 * Cuando realice redirecciones, compruebe siempre que el cliente no haya seleccionado ninguna faceta. La razón es que es inconveniente cuando un cliente explora una faceta y se le quita de repente de los resultados de búsqueda. Es posible que el cliente desee anular la selección de la faceta cuando vea que el resultado único no es el deseo que estaba buscando.
 
-## Adición de una nueva regla de búsqueda posterior {#task_52F6F9AAD65B45B5ACA1FF245DFFADD9}
+## Añadir una nueva regla de búsqueda posterior {#task_52F6F9AAD65B45B5ACA1FF245DFFADD9}
 
 Puede utilizar [!DNL Post-Search Rules] para seleccionar qué plantilla de presentación se utiliza para mostrar los resultados de búsqueda en función de la consulta entrante.
 
 **Para agregar una nueva regla de búsqueda posterior**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Post-Search Rules]**.
-1. En la [!DNL Post-Search Rules] página, haga clic en **[!UICONTROL Add New Rule]**.
-1. En el [!DNL Name] campo, escriba el nombre de la nueva regla de limpieza de consultas.
-1. En la [!DNL Add Post-Search Rule] página, utilice las listas desplegables y los campos de texto para crear la consulta.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Post-Search Rules]**.
+1. En la página [!DNL Post-Search Rules], haga clic en **[!UICONTROL Add New Rule]**.
+1. En el campo [!DNL Name], escriba el nombre de la nueva regla de limpieza de consultas.
+1. En la página [!DNL Add Post-Search Rule], utilice las listas desplegables y los campos de texto para crear la consulta.
 
    <table> 
     <thead> 
@@ -113,16 +116,16 @@ Puede utilizar [!DNL Post-Search Rules] para seleccionar qué plantilla de prese
       </tr> 
       <tr> 
       <td colname="col1"> <p>Variable personalizada </p> </td> 
-      <td colname="col2"> <p>Variable definida por el usuario. Puede agregar, eliminar o establecer un número ilimitado de variables personalizadas. </p> <p>Puede hacer referencia a cualquier variable personalizada que haya definido en Limpieza de consultas y en los módulos Reglas de búsqueda previa, dentro de Reglas de búsqueda posterior. </p> </td> 
+      <td colname="col2"> <p>Variable definida por el usuario. Puede agregar, eliminar o establecer un número ilimitado de variables personalizadas. </p> <p>Puede hacer referencia a cualquier variable personalizada que haya definido en Limpieza de Consultas y en los módulos Reglas de búsqueda previa, dentro de Reglas de búsqueda posterior. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Variable de sistema </p> </td> 
       <td colname="col2"> <p>Variables de sólo lectura establecidas por el sistema interno que puede comprobar. Se admiten las siguientes variables de sistema: </p> <p> 
         <ul id="ul_BC17F1637F27424CA4E8F530C28A3245"> 
-          <li id="li_C7DF96EFD7AA4A449D00F7EACCAA0EB1"> <span class="uicontrol"> hostname </span> <p>Nombre del host del servidor. </p> </li> 
-          <li id="li_F85AB1D2B9374A859657D12B8ED6674B"> <span class="uicontrol"> uri </span> <p>Identificador uniforme de recursos solicitado sin la cadena de consulta. </p> </li> 
-          <li id="li_440149C9EC6E4805B77BBC97BE41542A"> <span class="uicontrol"> args </span> <p>La cadena de consulta completa. </p> </li> 
-          <li id="li_F583FC4B0E404858BB3522B33A6F7A0A"> <span class="uicontrol"> entorno </span> <p>"Fase" o "activo" dependiendo de si la consulta entrante se envió a su entorno de ensayo o a su entorno de lanzamiento. </p> </li> 
+          <li id="li_C7DF96EFD7AA4A449D00F7EACCAA0EB1"> <span class="uicontrol"> hostname  </span> <p>Nombre del host del servidor. </p> </li> 
+          <li id="li_F85AB1D2B9374A859657D12B8ED6674B"> <span class="uicontrol"> uri  </span> <p>Identificador uniforme de recurso solicitado sin la cadena de consulta. </p> </li> 
+          <li id="li_440149C9EC6E4805B77BBC97BE41542A"> <span class="uicontrol"> args  </span> <p>Toda la cadena de consulta. </p> </li> 
+          <li id="li_F583FC4B0E404858BB3522B33A6F7A0A"> <span class="uicontrol"> entorno </span> <p>"Escenario" o "activo" en función de si la consulta entrante se ha enviado a su entorno de ensayo o a su entorno activo. </p> </li> 
           <li id="li_15902AA49B144D42A5E95D7E8B0FB1E1"> <span class="uicontrol"> referrer </span> <p>Localizador uniforme de recursos del que provenía el cliente. </p> </li> 
         </ul> </p> </td> 
       </tr> 
@@ -164,13 +167,13 @@ Puede utilizar [!DNL Post-Search Rules] para seleccionar qué plantilla de prese
 1. Haga clic **[!UICONTROL Add]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -178,25 +181,25 @@ Puede utilizar [!DNL Post-Search Rules] para seleccionar qué plantilla de prese
 
 ## Edición de una regla de búsqueda posterior {#task_ECB00334C0A74C87AF857DB3EB372119}
 
-Puede editar las reglas de búsqueda posterior existentes que haya agregado a la [!DNL Post-Search Rules] página.
+Puede editar las reglas de búsqueda posterior existentes que haya agregado a la página [!DNL Post-Search Rules].
 
 **Para editar una regla de búsqueda posterior**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Pre-Search Rules]**.
-1. En la [!DNL Post-Search Rules] página, debajo de la **[!UICONTROL Actions]** columna de la tabla, haga clic en **[!UICONTROL Edit]** para la regla asociada que desee editar.
-1. En la [!DNL Edit Post-Search Rule] página, utilice las listas desplegables y los campos de texto para crear la consulta.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Pre-Search Rules]**.
+1. En la página [!DNL Post-Search Rules], en la columna **[!UICONTROL Actions]** de la tabla, haga clic en **[!UICONTROL Edit]** para la regla asociada que desee editar.
+1. En la página [!DNL Edit Post-Search Rule], utilice las listas desplegables y los campos de texto para crear la consulta.
 
-   Consulte la tabla de opciones en [Adición de una nueva regla](../c-about-rules-menu/c-about-post-search-rules.md#task_52F6F9AAD65B45B5ACA1FF245DFFADD9)de búsqueda posterior.
+   Consulte la tabla de opciones en [Añadir una nueva regla de búsqueda posterior](../c-about-rules-menu/c-about-post-search-rules.md#task_52F6F9AAD65B45B5ACA1FF245DFFADD9).
 1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -210,48 +213,48 @@ Al eliminar una regla, el orden en que se ejecutan las reglas restantes se ajust
 
 **Para eliminar una regla de búsqueda posterior**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Post-Search Rules]**.
-1. En la [!DNL Post-Search Rules] página, debajo de la **[!UICONTROL Actions]** columna de la tabla, haga clic en **[!UICONTROL Delete]** para la regla asociada que desee eliminar.
-1. En el cuadro de diálogo [!DNL Confirmation] , haga clic en **[!UICONTROL OK]**.
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Post-Search Rules]**.
+1. En la página [!DNL Post-Search Rules], en la columna **[!UICONTROL Actions]** de la tabla, haga clic en **[!UICONTROL Delete]** para la regla asociada que desee eliminar.
+1. En el cuadro de diálogo [!DNL Confirmation], haga clic en **[!UICONTROL OK]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
       Consulte [Inserción de la configuración del escenario en directo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Cambio del orden en que se ejecutan las reglas de búsqueda posterior {#task_40542FCD32234BBF881A81BF5477F78F}
+## Cambiar el orden en que se ejecutan las reglas de búsqueda posterior {#task_40542FCD32234BBF881A81BF5477F78F}
 
 Puede reordenar las reglas posteriores a la búsqueda para cambiar el orden en que se ejecutan en las plantillas de presentación.
 
-Las reglas de postbúsqueda se ejecutan en el orden en que se definieron. Cuanto mayor sea el número de orden de una regla, más tarde se ejecutará en el proceso, superando las reglas anteriores. Las reglas se reordenan introduciendo un nuevo número en la columna Orden de la tabla de la [!DNL Post-Search Rules] página. También puede utilizar la función de arrastrar y soltar en las reglas para cambiar el orden de ejecución.
+Las reglas de postbúsqueda se ejecutan en el orden en que se definieron. Cuanto mayor sea el número de orden de una regla, más tarde se ejecutará en el proceso, superando las reglas anteriores. Las reglas se reordenan introduciendo un nuevo número en la columna Orden de la tabla de la página [!DNL Post-Search Rules]. También puede utilizar la función de arrastrar y soltar en las reglas para cambiar el orden de ejecución.
 
 **Cambiar el orden en que se ejecutan las reglas de búsqueda posterior**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Post-Search Rules]**.
-1. En la [!DNL Post-Search Rules] página, realice una de las acciones siguientes:
+1. En el menú del producto, haga clic en **[!UICONTROL Rules]** > **[!UICONTROL Post-Search Rules]**.
+1. En la página [!DNL Post-Search Rules], realice una de las siguientes acciones:
 
-   * Haga clic en el encabezado de la **[!UICONTROL Order]** columna para ordenar las reglas en orden ascendente o descendente.
-   * En la [!DNL Order] columna, en el campo de texto a la izquierda del nombre de una regla de búsqueda previa, escriba el número de orden que desea que se ejecute la regla.
+   * Haga clic en el encabezado de columna **[!UICONTROL Order]** para ordenar las reglas en orden ascendente o descendente.
+   * En la columna [!DNL Order], en el campo de texto a la izquierda del nombre de una regla de búsqueda previa, escriba el número de pedido que desea que se ejecute la regla.
    * Arrastre y suelte una fila de tabla en la posición en la que desee que se ejecute la regla. Todos los números de pedido se actualizan para reflejar el nuevo orden en que se ejecutan las reglas.
 
 1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
-      Consulte [Uso de la opción](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historial.
+      Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
