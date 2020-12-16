@@ -9,6 +9,9 @@ topic: Settings,Site search and merchandising
 uuid: 0f830033-de9e-4197-8d76-906c818662eb
 translation-type: tm+mt
 source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+workflow-type: tm+mt
+source-wordcount: '1684'
+ht-degree: 2%
 
 ---
 
@@ -19,12 +22,12 @@ Utilice el menú Opciones de cuenta para actualizar la configuración de la cuen
 
 ## Configuración de la cuenta {#task_80A38D0C8E4F453395BD67B81E4B45D9}
 
-Administre la configuración de la cuenta, como el nombre y la dirección del sitio web, la zona horaria y mucho más. O bien, consulte su número de cuenta.
+Administre la configuración de la cuenta, como el nombre y la dirección del sitio web, la zona horaria y mucho más. O bien, vista su número de cuenta.
 
 **Para configurar la cuenta**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Account Settings]**.
-1. En la [!DNL Account Settings] página, configure las opciones que desee.
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Account Settings]**.
+1. En la página [!DNL Account Settings], establezca las opciones que desee.
 
    <table> 
     <thead> 
@@ -40,7 +43,7 @@ Administre la configuración de la cuenta, como el nombre y la dirección del si
       </tr> 
       <tr> 
       <td colname="col1"> <p>Dirección del sitio Web </p> </td> 
-      <td colname="col2"> <p>Requerido. </p> <p>Dirección URL del sitio web. La dirección especificada aquí se utiliza como punto de entrada principal del sitio web. </p> <p>Consulte también <a href="../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45" type="task" format="dita" scope="local"> Adición de varios puntos de entrada de URL que desea indizar </a>. </p> </td> 
+      <td colname="col2"> <p>Requerido. </p> <p>Dirección URL del sitio web. La dirección especificada aquí se utiliza como punto de entrada principal del sitio web. </p> <p>Consulte también <a href="../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45" type="task" format="dita" scope="local"> Añadir varios puntos de entrada de URL que desee indizar </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Huso horario (para informes y programación) </p> </td> 
@@ -52,7 +55,7 @@ Administre la configuración de la cuenta, como el nombre y la dirección del si
       </tr> 
       <tr> 
       <td colname="col1"> <p>Validar referencias de plantilla a objetos GS al guardar </p> </td> 
-      <td colname="col2"> <p> Comprueba la existencia de objetos de búsqueda guiada, como menús, facetas, rutas de exploración, vars personalizadas y plantillas, a los que se hace referencia en las etiquetas <span class="codeph"> &lt;guided-*&gt; </span> . </p> </td> 
+      <td colname="col2"> <p> Comprueba la existencia de objetos de búsqueda guiada, como menús, facetas, rutas de exploración, vars personalizadas y plantillas, a los que se hace referencia en las etiquetas <span class="codeph"> &lt;guided-*&gt; </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Aplicar estricta comprobación de sintaxis de plantilla </p> </td> 
@@ -69,7 +72,7 @@ Administre la configuración de la cuenta, como el nombre y la dirección del si
 
 ## Configuración de la integración con Adobe CQ5 {#task_EA2FC2C24960498DAE01A1AB769D2F14}
 
-Puede configurar la integración de la búsqueda o comercialización del sitio con Adobe CQ5.
+Puede configurar la integración de la búsqueda y comercialización del sitio con Adobe CQ5.
 
 **Para configurar la integración con Adobe CQ5**
 
@@ -78,9 +81,9 @@ Puede configurar la integración de la búsqueda o comercialización del sitio c
    * Inicie sesión en la cuenta de búsqueda/comercialización del sitio.
    * En la ruta URL, copie el ID de miembro y el ID de cuenta.
 
-      Por ejemplo, si la ruta de URL de la cuenta fuera `https://searchandpromote.mycompany.com/px/home/?sp_id=00123a4b-sp1234a5b6`, el ID de miembro sería `00123a4b` y el ID de cuenta sería `sp1234a5b6`.
+      Por ejemplo: si la ruta de URL de su cuenta fuera `https://searchandpromote.mycompany.com/px/home/?sp_id=00123a4b-sp1234a5b6`, el ID de miembro sería `00123a4b` y el ID de cuenta sería `sp1234a5b6`.
 
-1. En Adobe CQ5, utilice la ficha Cloud Services para crear la configuración de comercialización/búsqueda del sitio.
+1. En Adobe CQ 5, utilice la ficha Cloud Services para crear la configuración de comercialización/búsqueda del sitio.
 
    Utilice el ID de miembro y el ID de cuenta copiados para las configuraciones correspondientes.
 
@@ -90,8 +93,8 @@ Administre las preferencias de comercialización, como el creador de reglas pred
 
 **Para configurar las preferencias de comercialización**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Merchandising Preferences]**.
-1. En la [!DNL Merchandising Preferences] página, configure las opciones que desee.
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Merchandising Preferences]**.
+1. En la página [!DNL Merchandising Preferences], establezca las opciones que desee.
 
    <table> 
     <thead> 
@@ -110,7 +113,7 @@ Administre las preferencias de comercialización, como el creador de reglas pred
       <td colname="col2"> <p>Número de resultados en un grupo para la consola de comercialización. El máximo es de 50.000. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Campo 'Merchandising Document ID' (MDI) </p> </td> 
+      <td colname="col1"> <p> Campo 'ID de Documento de comercialización' (MDI) </p> </td> 
       <td colname="col2"> <p> El campo que especifique debe "unificar" los resultados de búsqueda que desea manipular mediante acciones y desencadenadores basados en resultados de "resultado único". </p> <p>El uso del campo de URL predefinido funciona en algunos casos, pero no se recomienda. Un campo meta definido por el usuario con un ID único para cada página (como SKU o product_id, por ejemplo) sería mucho más eficaz que el uso del campo URL. Si se especifica 'ninguno', se desactivan los activadores y acciones basados en resultados de 'un solo resultado' en el administrador de reglas. Cambiar esta opción solo se aplica a las reglas que se guardan a partir de ahora; las reglas existentes siguen utilizando el MDI con el que se guardaron originalmente. </p> </td> 
       </tr> 
       <tr> 
@@ -132,16 +135,16 @@ Administre las preferencias de comercialización, como el creador de reglas pred
 
 ## Configuración del acceso a su cuenta de Adobe Dynamic Media Classic {#task_CEFF88C2033D41D0B2FE86C435EDAC6D}
 
-Vincule la cuenta de búsqueda y comercialización del sitio a Adobe Dynamic Media Classic para que pueda agregar fácilmente publicidades de titular al sitio web mediante recursos digitales cargados de Adobe Scene7.
+Vincule la cuenta de búsqueda y comercialización del sitio a Adobe Dynamic Media Classic para que pueda agregar fácilmente publicidades de titular al sitio web mediante los recursos digitales cargados de Adobe Scene7.
 
 Consulte [Acerca de los titulares](../c-about-design-menu/c-about-banners.md#concept_5BBE01FEC6134393B43CC917C8CC64DA).
 
-Consulte [Adición de letreros con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
+Consulte [Añadir un letrero con Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
 **Para configurar el acceso a su cuenta de Adobe Dynamic Media Classic**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Scene7 Configuration]**.
-1. En la [!DNL Scene7 Configuration] página, configure las opciones que desee.
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Scene7 Configuration]**.
+1. En la página [!DNL Scene7 Configuration], establezca las opciones que desee.
 
    <table> 
     <thead> 
@@ -156,8 +159,8 @@ Consulte [Adición de letreros con Adobe Dynamic Media Classic](../c-about-desig
       <td colname="col2"> <p>Requerido. Identifica la región del mundo en la que su cuenta de Dynamic Media Classic accede a los distintos servidores de Dynamic Media Classic. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Empresa predeterminada </p> </td> 
-      <td colname="col2"> <p>Identifica el nombre de la empresa asociada a su cuenta de Dynamic Media Classic. </p> </td> 
+      <td colname="col1"> <p>Compañía predeterminada </p> </td> 
+      <td colname="col2"> <p>Identifica el nombre de la compañía asociada a su cuenta de Dynamic Media Classic. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Correo electrónico </p> </td> 
@@ -169,7 +172,7 @@ Consulte [Adición de letreros con Adobe Dynamic Media Classic](../c-about-desig
       </tr> 
       <tr> 
       <td colname="col1"> <p>Habilitado </p> </td> 
-      <td colname="col2"> <p>Habilita todos los controles de Dynamic Media Classic en la búsqueda y comercialización del sitio. </p> </td> 
+      <td colname="col2"> <p>Habilita todos los controles de Dynamic Media Classic dentro de la búsqueda y comercialización del sitio. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Prueba </p> </td> 
@@ -181,14 +184,14 @@ Consulte [Adición de letreros con Adobe Dynamic Media Classic](../c-about-desig
 1. (Opcional) Haga clic en **[!UICONTROL Test]** para comprobar que el nombre de región, la dirección de correo electrónico y la contraseña de Dynamic Media Classic son correctos.
 1. Haga clic **[!UICONTROL Save Changes]**.
 
-## Configuración del redirector de Adobe Analytics {#task_2C9DE333FD7246E4A460FC0F55204160}
+## Configuración de Adobe Analytics Redirector {#task_2C9DE333FD7246E4A460FC0F55204160}
 
-Si utiliza [!DNL Adobe Analytics] para rastrear a los visitantes del sitio, puede utilizarlo [!DNL Adobe Analytics Redirector] en la búsqueda o comercialización del sitio para rastrear todas las redirecciones HTTP con [!DNL Adobe Analytics].
+Si utiliza [!DNL Adobe Analytics] para rastrear visitantes del sitio, puede utilizar [!DNL Adobe Analytics Redirector] en la búsqueda/comercialización del sitio para rastrear todas las redirecciones HTTP con [!DNL Adobe Analytics].
 
 **Para configurar el redirector de Adobe Analytics**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Adobe Analytics Redirector]**.
-1. En la [!DNL Adobe Analytics Redirector] página, configure las opciones que desee.
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Adobe Analytics Redirector]**.
+1. En la página [!DNL Adobe Analytics Redirector], establezca las opciones que desee.
 
    <table> 
     <thead> 
@@ -199,26 +202,26 @@ Si utiliza [!DNL Adobe Analytics] para rastrear a los visitantes del sitio, pued
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>Activación de la función de redirector de Adobe Analytics </p> </td> 
+      <td colname="col1"> <p>Activar la función Redirector de Adobe Analytics </p> </td> 
       <td colname="col2"> <p>Activa el seguimiento de redirecciones HTTP con Adobe Analytics. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Servidor de seguimiento </p> </td> 
       <td colname="col2"> <p> Identifica el nombre del servidor de seguimiento de Adobe Analytics. </p> <p>Para averiguar el nombre del servidor de seguimiento, </p> <p> 
       <ol id="ol_D17B77E81F8D40D0948415CD60839BE3"> 
-      <li id="li_BE58DBA104D44F0DB6C64AD3F12CEA97"> In Adobe Analytics, click <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Admin Console </span> &gt; <span class="uicontrol"> Code Manager </span>. </li> 
-      <li id="li_67A93D17C3A14874928C6DC4FF2D4784"> En el cuadro <span class="wintitle"> de grupo </span> Opciones, seleccione un grupo de informes en la lista desplegable correspondiente. </li> 
+      <li id="li_BE58DBA104D44F0DB6C64AD3F12CEA97"> En Adobe Analytics, haga clic en <span class="uicontrol"> Administrador </span> &gt; <span class="uicontrol"> Admin Console </span> &gt; <span class="uicontrol"> Administrador de códigos </span>. </li> 
+      <li id="li_67A93D17C3A14874928C6DC4FF2D4784"> En el cuadro de grupo <span class="wintitle"> Opciones </span>, seleccione un grupo de informes en la lista desplegable correspondiente. </li> 
       <li id="li_5AAB004AC58441DBB0F813BDE30EFFD4"> Haga clic en <span class="uicontrol">Generar código </span>. </li> 
-      <li id="li_E80368993F4D4DD69E37509FF4348B36"> En la página Administrador <span class="wintitle"> de códigos </span> , haga clic en la ficha Archivo Core Javascript <span class="uicontrol"> </span>. </li> 
-      <li id="li_991BDCDDA41A445F85CEEAAE9A46A304"> En la sección <span class="wintitle"> Configuración </span>, busque la línea del siguiente modo: <p> <code> s.trackingServer="yourcompany.122.2o7.net" </code> </p> <p>El nombre del servidor de seguimiento, en este caso, es <span class="codeph"> "yourcompany.122.2o7.net" </span> </p> </li> 
+      <li id="li_E80368993F4D4DD69E37509FF4348B36"> En la página <span class="wintitle"> Administrador de códigos </span>, haga clic en la ficha <span class="uicontrol"> Archivo Core Javascript </span>. </li> 
+      <li id="li_991BDCDDA41A445F85CEEAAE9A46A304"> En <span class="wintitle"> Sección de configuración </span>, busque la línea del siguiente modo: <p> <code> s.trackingServer="yourcompany.122.2o7.net" </code> </p> <p>El nombre del servidor de seguimiento, en este caso, es <span class="codeph"> "yourcompany.122.2o7.net" </span> </p> </li> 
       </ol> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>ID del grupo de informes </p> </td> 
       <td colname="col2"> <p> Identifica la ID del grupo de informes. </p> <p>Para averiguar la ID del grupo de informes, </p> <p> 
       <ol id="ol_4FD7B2459358486DBDB130426131D16A"> 
-      <li id="li_9AF624CEB128453C808892EEE385D5D1"> In Adobe Analytics, click <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Admin Console </span> &gt; <span class="uicontrol"> Report Suites </span>. </li> 
-      <li id="li_AAC47EAA04144A67BDCB5C7B8D8098E9"> Consulte <span class="wintitle"> la columna ID del grupo de informes </span> en la tabla para encontrar el ID. </li> 
+      <li id="li_9AF624CEB128453C808892EEE385D5D1"> En Adobe Analytics, haga clic en <span class="uicontrol"> Administración </span> &gt; <span class="uicontrol"> Admin Console </span> &gt; <span class="uicontrol"> Grupos de informes </span>. </li> 
+      <li id="li_AAC47EAA04144A67BDCB5C7B8D8098E9"> Consulte la columna <span class="wintitle"> ID del grupo de informes </span> en la tabla para encontrar el ID. </li> 
       </ol> </p> </td> 
       </tr> 
       <tr> 
@@ -227,20 +230,20 @@ Si utiliza [!DNL Adobe Analytics] para rastrear a los visitantes del sitio, pued
       </tr> 
       <tr> 
       <td colname="col1"> <p>Definir las mayúsculas y minúsculas de todos los valores personalizados como </p> </td> 
-      <td colname="col2"> <p>Permite estandarizar la carcasa que se utiliza para cualquier valor de parámetro personalizado que haya especificado anteriormente. Adobe Analytics distingue entre mayúsculas y minúsculas, por lo que existe un motivo para unificar las mayúsculas y minúsculas de los valores. </p> </td> 
+      <td colname="col2"> <p>Permite estandarizar la carcasa que se utiliza para cualquier valor de parámetro personalizado que haya especificado anteriormente. Adobe Analytics distingue entre mayúsculas y minúsculas, por lo que existe una razón para unificar las mayúsculas y minúsculas de los valores. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
 1. Haga clic **[!UICONTROL Save Changes]**.
-1. (Opcional) Si desea obtener una vista previa de los resultados, vuelva a generar el índice del sitio escalonado.
+1. (Opcional) Vuelva a generar el índice del sitio escalonado si desea realizar una previsualización de los resultados.
 
-   Consulte [Configuración de un índice incremental de un sitio Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)escalonado.
-1. (Opcional) En la [!DNL Adobe Analytics Redirector] página, realice una de las siguientes acciones:
+   Consulte [Configuración de un índice incremental de un sitio Web escalonado](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
+1. (Opcional) En la página [!DNL Adobe Analytics Redirector], realice una de las siguientes acciones:
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -252,8 +255,8 @@ Administre los archivos raíz en la carpeta raíz del sitio web.
 
 **Para configurar archivos raíz**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Root Files]**.
-1. En la [!DNL Root Files] página, busque los archivos raíz que desea cargar.
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Root Files]**.
+1. En la página [!DNL Root Files], busque los archivos raíz que desee cargar.
 
    <table> 
     <thead> 
@@ -276,21 +279,21 @@ Administre los archivos raíz en la carpeta raíz del sitio web.
       <td colname="col2"> <p>El archivo XML con una lista de todas las páginas disponibles en el sitio web. </p> </td> 
     </tr> 
     <tr> 
-      <td colname="col1"> <p>cross-domain.xml </p> </td> 
-      <td colname="col2"> <p>Permite o no permitir que Flash Player acceda a los archivos de distintos dominios. </p> </td> 
+      <td colname="col1"> <p>crossdomain.xml </p> </td> 
+      <td colname="col2"> <p>Permite o no permitir que Flash Player acceda a los archivos en todos los dominios. </p> </td> 
     </tr> 
     </tbody> 
     </table>
 
 1. Haga clic **[!UICONTROL Save Changes]**.
-1. (Opcional) Si desea obtener una vista previa de los resultados, vuelva a generar el índice del sitio escalonado.
+1. (Opcional) Vuelva a generar el índice del sitio escalonado si desea realizar una previsualización de los resultados.
 
-   Consulte [Configuración de un índice incremental de un sitio Web](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0)escalonado.
-1. (Opcional) En la [!DNL Root Files] página, realice una de las siguientes acciones:
+   Consulte [Configuración de un índice incremental de un sitio Web escalonado](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
+1. (Opcional) En la página [!DNL Root Files], realice una de las siguientes acciones:
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)de lanzamiento.
+      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -298,11 +301,11 @@ Administre los archivos raíz en la carpeta raíz del sitio web.
 
 ## Transferencia de la propiedad de la cuenta a otro usuario de la cuenta {#task_47E3C66CC6374274830DA10171E0CF17}
 
-Como propietario de la cuenta, si tiene intención de cancelar su inicio de sesión, primero debe transferir la propiedad a otro usuario de la cuenta activo. Puede usar [!DNL Transfer Ownership] para realizar esta tarea.
+Como propietario de la cuenta, si tiene intención de cancelar su inicio de sesión, primero debe transferir la propiedad a otro usuario de la cuenta activo. Puede utilizar [!DNL Transfer Ownership] para llevar a cabo esta tarea.
 
 Puede transferir la propiedad a cualquier usuario de cuenta de comercialización o búsqueda del sitio existente.
 
-Una vez finalizada la transferencia de la propiedad, el nuevo propietario de la cuenta recibe una notificación por correo electrónico y el antiguo propietario queda exento de las restricciones y responsabilidades de ese puesto.
+Una vez finalizada la transferencia de la propiedad, el nuevo propietario de la cuenta recibe una notificación por correo electrónico y se le exime de las restricciones y responsabilidades de ese cargo.
 
 Sólo puede haber un propietario por cuenta. Si transfiere la propiedad a otro usuario, ya no tendrá privilegios de propiedad.
 
@@ -314,11 +317,11 @@ Consulte [Eliminación de una cuenta](../c-about-settings-menu/c-about-account-o
 
 **Para transferir la propiedad de la cuenta a otra cuenta**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Transfer Ownership]**.
-1. En la [!DNL Transfer Ownership] página, haga clic en el usuario que desee que sea propietario de su cuenta.
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Transfer Ownership]**.
+1. En la página [!DNL Transfer Ownership], haga clic en el usuario al que desee tomar posesión de su cuenta.
 1. Haga clic **[!UICONTROL Transfer]**.
 
-## Eliminación de una cuenta {#task_975178D5B9444BF8B52D72B897A49C32}
+## Eliminando una cuenta {#task_975178D5B9444BF8B52D72B897A49C32}
 
 Puede eliminar una cuenta por completo de la búsqueda o comercialización del sitio. Al hacerlo, usted y cualquier otro usuario de su cuenta ya no tendrán acceso a ella.
 
@@ -326,7 +329,7 @@ Al eliminar la cuenta, ya no se puede usar para indexar o buscar en el sitio act
 
 Para permitir que otros usuarios sigan usando esta cuenta, puede transferir la propiedad a otro usuario y, a continuación, eliminarse a sí mismo como usuario de la cuenta.
 
-Consulte [Transferencia de la propiedad de la cuenta a otro usuario](../c-about-settings-menu/c-about-account-options-menu.md#task_47E3C66CC6374274830DA10171E0CF17)de la cuenta.
+Consulte [Transferencia de la propiedad de la cuenta a otro usuario de la cuenta](../c-about-settings-menu/c-about-account-options-menu.md#task_47E3C66CC6374274830DA10171E0CF17).
 
 Si tiene otras cuentas, después de eliminar la cuenta actual, se le dirigirá a la primera cuenta que aparece en la lista de inicio de sesión.
 
@@ -336,11 +339,11 @@ Consulte [Cancelación del inicio de sesión](../c-about-settings-menu/c-about-m
 
 **Para eliminar una cuenta**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Remove Account]**.
-1. (Opcional) En el [!DNL Reason for Removal] campo, introduzca un motivo para la eliminación de la cuenta.
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Remove Account]**.
+1. (Opcional) En el campo [!DNL Reason for Removal], introduzca un motivo para la eliminación de la cuenta.
 1. Haga clic **[!UICONTROL Remove Account]**.
 
-## Eliminarse de una cuenta {#task_C56F5AB87B664BAAAC2FD2F15003E73F}
+## Eliminándose de una cuenta {#task_C56F5AB87B664BAAAC2FD2F15003E73F}
 
 Puede eliminarse a sí mismo de una cuenta de búsqueda o comercialización del sitio.
 
@@ -352,9 +355,9 @@ Consulte [Cancelación del inicio de sesión](../c-about-settings-menu/c-about-m
 
 Consulte [Eliminación de una cuenta](../c-about-settings-menu/c-about-account-options-menu.md#task_975178D5B9444BF8B52D72B897A49C32).
 
-Consulte [Transferencia de la propiedad de la cuenta a otro usuario](../c-about-settings-menu/c-about-account-options-menu.md#task_47E3C66CC6374274830DA10171E0CF17)de la cuenta.
+Consulte [Transferencia de la propiedad de la cuenta a otro usuario de la cuenta](../c-about-settings-menu/c-about-account-options-menu.md#task_47E3C66CC6374274830DA10171E0CF17).
 
 **Para eliminarse de una cuenta**
 
-1. En el menú de producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Remove Yourself]**.
+1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Remove Yourself]**.
 1. Haga clic **[!UICONTROL Remove Yourself]**.
