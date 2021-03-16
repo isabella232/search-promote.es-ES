@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Notas de revisión de Search&Promote 8.9.3 (01/11/2012)
+description: Search&amp;Notas de la versión de Promote 8.9.3.
 solution: Target
-title: Notas de revisión de Search&Promote 8.9.3 (01/11/2012)
-topic: Release Notes,Site search and merchandising
+title: Search&amp;Promote 8.9.3 Notas de la versión (01/11/2012)
+topic: Notas de la versión, búsqueda de sitios y comercialización
 uuid: 7bc7bcb6-f47f-4e05-94e5-a22a13a187b7
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 81%
+source-wordcount: '289'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +35,7 @@ ht-degree: 81%
    <td colname="col2"> <p> Se agregó asistencia técnica para ordenamiento alternado de facetas anidadas. </p> <p>Consulte <a href="../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB" format="dita" scope="local">Acerca de Barra de faceta</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Campo Notas en reglas de clasificación </p> </td> 
+   <td colname="col1"> <p>Campo Notas en las reglas de clasificación </p> </td> 
    <td colname="col2"> <p> 
      <!--3063772--> Se agregó un campo multilínea <span class="wintitle">Notas</span> al cuadro de diálogo <span class="wintitle">Agregar métrica de clasificación</span> y el cuadro de diálogo <span class="wintitle">Editar métrica de clasificación</span> para reglas de clasificación y definiciones de grupos de reglas. </p> <p>Las notas de reglas de clasificación se muestran en la página <span class="wintitle">Definir reglas de clasificación</span>. Las notas de grupos de reglas aparecen al editar la definición. </p> <p>Consulte <a href="../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397" format="dita" scope="local">Acerca de reglas de clasificación</a>. </p> </td> 
   </tr> 
@@ -58,7 +56,7 @@ ht-degree: 81%
 * Las reglas comerciales funcionaban de manera inconsistente cuando había un índice [!DNL Stage].
 * Las reglas de clasificación automática ahora se aplican a páginas de aterrizaje pregrabadas.
 
-   Consulte la tabla de opciones en [Añadir una regla de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A).
+   Consulte la tabla de opciones en [Adición de una regla de clasificación](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A).
 
 * [!DNL promosearch.cgi] no devolvía promociones.
 
