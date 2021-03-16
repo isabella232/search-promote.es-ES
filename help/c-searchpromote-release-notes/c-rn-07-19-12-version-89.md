@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Search&amp;Promote 8.9 Notas de la versión (19/07/2012)
+description: Search&amp;Notas de la versión de Promote 8.9.
 solution: Target
-title: Search&amp;Promote 8.9 Notas de la versión (19/07/2012)
-topic: Release Notes,Site search and merchandising
+title: Search&amp;Notas de la versión de Promote 8.9 (19/07/2012)
+topic: Notas de la versión, búsqueda de sitios y comercialización
 uuid: 3853c75d-19ed-4e36-9e81-dcbffe5f5b0c
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 67%
+source-wordcount: '287'
+ht-degree: 65%
 
 ---
 
@@ -29,13 +27,13 @@ ht-degree: 67%
 **Correcciones y mejoras**
 
 * Se ha añadido asistencia para cambiar la opción ordenar mediante una regla comercial.
-* En la etiqueta del sistema de ayuda `<search-description>` se muestra el cuerpo cuando la etiqueta meta de la descripción tiene contenido vacío.
+* En la etiqueta del sistema de ayuda `<search-description>` se muestra el cuerpo cuando la metaetiqueta de la descripción está vacía.
 * Se ha añadido la capacidad de hacer un seguimiento de visitas de tablas aplicables para los resultados que se añadieron mediante acciones basadas en resultados.
 * Se ha añadido asistencia para enviar parámetros de consulta a través de anuncios
 * Al arrastrar, se puede omitir en algunos casos una operación final mirror_account.
-* Las direcciones URL de Adobe Analytics no incluyen argumentos CGI y el código de Search&amp;Promote que realiza las búsquedas de Adobe Analytics necesarias para eliminar de forma similar los argumentos CGI de las claves URL.
+* Las direcciones URL de Adobe Analytics no incluyen argumentos CGI y el código de Search&amp;Promote que realiza búsquedas de Adobe Analytics necesitaba eliminar de forma similar argumentos CGI de claves URL.
 * Las reglas de reescritura desaparecieron de forma intermitente de la interfaz de usuario tras insertarlas para que se mantuvieran activas.
-* Las cuentas de Search&amp;Promote con la configuración Quiso decir que se configuraron para hacer sugerencias debido a los resultados bajos pueden tener resultados intermitentes.
+* Las cuentas de Search&amp;Promote con la configuración ¿Quiso decir? que se configuraron para realizar sugerencias debido a resultados bajos pueden tener resultados intermitentes.
 * La salida de la prueba de la regla de reescritura no tenía saltos de línea.
 * Las página de reglas de búsqueda URL y la página de reglas almacenadas de listas arrastradas URL apuntaban hacia la página de historial equivocada.
 * Al hacer clic en Editar en algunos banners no se mostró la página Editar.
