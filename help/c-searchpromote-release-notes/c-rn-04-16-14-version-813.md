@@ -1,23 +1,21 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Notas de revisión de Search&Promote 8.13.0 (16/04/2014)
+description: Search&amp;Notas de la versión de Promote 8.13.0.
 solution: Target
-title: Notas de revisión de Search&Promote 8.13.0 (16/04/2014)
-topic: Release Notes,Site search and merchandising
+title: Search&amp;Promote 8.13.0 Notas de la versión (16/04/2014)
+topic: Notas de la versión, búsqueda de sitios y comercialización
 uuid: b3524992-ff00-4a7c-a404-078242456734
 translation-type: tm+mt
-source-git-commit: 9d5ac055d665b39d09b28063179d74a389d7f830
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 57%
+source-wordcount: '330'
+ht-degree: 56%
 
 ---
 
 
 # Notas de la versión de Search&amp;Promote 8.13.0 (16/04/2014){#search-promote-release-notes}
 
-| Nuevas funciones y mejoras | Descripción |
+| Nueva función y mejora | Descripción |
 |----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Facetas dinámicas con compatibilidad para coincidencias de tablas completas | Algunos clientes tenían muchos atributos de &quot;nivel SKU&quot; que querían seleccionar y mostrar mediante Facetas dinámicas. Si es su caso, ahora tiene la opción de relacionar cada campo de faceta dinámica con al menos un nombre de tabla en una configuración de cuenta estática. Esas relaciones de tablas pueden aplicarse posteriormente, en el momento de las búsquedas, para cualquier campo de faceta dinámica involucrado en la búsqueda. Consulte [Acerca de los hechos dinámicos](../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899). |
 
@@ -31,8 +29,8 @@ ht-degree: 57%
 
    Consulte [Acerca de las reglas comerciales](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
-* Un error de JavaScript impedía agregar o editar una definición en **Configuración** > **SPIN** > **ConectorÍndice**.
-* Después de guardar una regla comercial, parecía que cuando se seleccionaba la hora durante la creación de la regla comercial, se establecía de forma predeterminada en la zona horaria GMT. Parecía que solo después de guardarla se activaba la zona horaria de la cuenta.
+* Un error de Javascript impedía añadir o editar una definición en **Settings** > **SPIN** > **IndexConnector**.
+* Después de guardar una regla de negocio, parecía que cuando la hora se seleccionaba durante la creación de la regla de negocio, la zona horaria GMT era por defecto. Parecía que solo después de guardarla se activaba la zona horaria de la cuenta.
 
    Consulte [Acerca de las reglas comerciales](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
@@ -45,9 +43,9 @@ ht-degree: 57%
 
    Consulte [Acerca de las reglas comerciales](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
-* Si se definía un gran número de campos de facetas dinámicas, los usuarios experimentaban tiempos de respuesta de búsqueda de núcleo lentos.
+* Si se definieron un gran número de campos de facetas dinámicas, los usuarios experimentaron tiempos de respuesta de búsqueda de núcleo lentos.
 * Ocurrían errores de índice de intervalo falso.
-* El acceso a Dynamic Media Classic en centros de datos no norteamericanos estaba dañado.
+* Se ha interrumpido el acceso a Dynamic Media Classic en centros de datos no norteamericanos.
 * La función de validación SPIN XPath devolvía un falso positivo.
 
 * Después de habilitar/deshabilitar SPIN, se redirigía al usuario a la página de inicio de sesión de centro del miembro.
