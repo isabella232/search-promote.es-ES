@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Notas de revisión de Search&Promote 8.9.5 (21/02/2013)
+description: Search&amp;Notas de la versión de Promote 8.9.5.
 solution: Target
-title: Notas de revisión de Search&Promote 8.9.5 (21/02/2013)
-topic: Release Notes,Site search and merchandising
+title: Search&amp;Promote 8.9.5 Notas de la versión (21/02/2013)
+topic: Notas de la versión, búsqueda de sitios y comercialización
 uuid: 1cd8a540-f85f-4e87-8e0c-dbdcd230a6c4
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 32%
+source-wordcount: '90'
+ht-degree: 28%
 
 ---
 
@@ -23,13 +21,13 @@ ht-degree: 32%
 
    Consulte [Acerca de Barra de faceta](../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB).
 
-* Los parámetros CGI de búsqueda back-end `sp_d_#` y `sp_date_range_#` no funcionaban para los campos de metadatos definidos por el usuario.
+* Los parámetros CGI de búsqueda back-end `sp_d_#` y `sp_date_range_#` no funcionaban en los campos de metadatos definidos por el usuario.
 
-   Consulte las filas 6 y 8 de la tabla en [Parámetros CGI de búsqueda back-end](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8).
+   Consulte las filas de la tabla 6 y 8 en [Parámetros CGI de búsqueda back-end](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8).
 
 * Un problema de eliminación de duplicación hacía que el recuento de resultados de búsqueda no coincidiera con el recuento especificado.
 
-   Consulte [Añadir una nueva definición de búsqueda](../c-about-settings-menu/c-about-searching-menu.md#task_98D3A168AB5D4F30A1ADB6E0D48AB648).
+   Consulte [Adición de una nueva definición de búsqueda](../c-about-settings-menu/c-about-searching-menu.md#task_98D3A168AB5D4F30A1ADB6E0D48AB648).
 
-   Consulte también [Añadir un nuevo archivo de plantilla de transporte o presentación](../c-about-design-menu/c-about-templates.md#task_73199757B6E748CAA604902FF913F012) y [etiquetas de plantilla de presentación](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)
+   Consulte también [Añadir una nueva presentación o un archivo de plantilla de transporte](../c-about-design-menu/c-about-templates.md#task_73199757B6E748CAA604902FF913F012) y [Etiquetas de plantilla de presentación](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)
 
