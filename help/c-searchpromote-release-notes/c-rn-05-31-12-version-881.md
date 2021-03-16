@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Notas de revisión de Search&Promote 8.8.1 (31/05/2012)
+description: Search&amp;Notas de la versión de Promote 8.8.1.
 solution: Target
-title: Notas de revisión de Search&Promote 8.8.1 (31/05/2012)
-topic: Release Notes,Site search and merchandising
+title: Search&amp;Promote 8.8.1 Notas de la versión (31/05/2012)
+topic: Notas de la versión, búsqueda de sitios y comercialización
 uuid: d2d3b02a-57a6-4dcd-9808-b0bf890ba4d3
 translation-type: tm+mt
-source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 58%
+source-wordcount: '122'
+ht-degree: 54%
 
 ---
 
@@ -21,10 +19,10 @@ ht-degree: 58%
 
 * En Paginación faltaba el vínculo &quot;Siguiente&quot; cuando había más de 1000 resultados y los totales estaban separados por una coma.
 * En Paginación se mostraba GSPAGENAVPLACEHOLDER en los resultados de la búsqueda en vez de la paginación real.
-* Se eliminó el pie de página de [!DNL Visual Rule Builder].
-* [!DNL Breadcrumbs] ahora utilice el nombre para mostrar de las ranuras de faceta en lugar del nombre de la faceta de ranura abstracta.
+* Se ha eliminado el pie de página del [!DNL Visual Rule Builder].
+* [!DNL Breadcrumbs] ahora, utilice el nombre para mostrar de las ranuras de aspecto en lugar del nombre de aspecto de la ranura abstracta.
 * Adobe Scene7: ahora se puede editar un parámetro por segunda vez.
 * El nombre para mostrar de las ranuras de aspecto no se mostraba correctamente cuando el aspecto era un aspecto fijo (o de selección múltiple) y estaba seleccionado.
-* `<search-description>` en su lugar, la etiqueta mostraba el cuerpo cuando la metatag de la descripción tenía contenido vacío.
+* `<search-description>` mostraba el cuerpo cuando la metaetiqueta de la descripción no tenía contenido.
 * Expuesto **[!UICONTROL Guided Search Requests]** en **[!UICONTROL Reports > Search Requests]**.
 
