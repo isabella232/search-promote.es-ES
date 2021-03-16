@@ -1,21 +1,19 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Notas de revisión de Search&Promote 8.10.1 (18/07/2013)
+description: Search&amp;Notas de la versión de Promote 8.10.1.
 solution: Target
-title: Notas de revisión de Search&Promote 8.10.1 (18/07/2013)
-topic: Release Notes,Site search and merchandising
+title: Search&amp;Promote 8.10.1 Notas de la versión (18/07/2013)
+topic: Notas de la versión, búsqueda de sitios y comercialización
 uuid: 161d678a-6393-4adb-a47a-e28e108acc31
 translation-type: tm+mt
-source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 7%
+source-wordcount: '184'
+ht-degree: 6%
 
 ---
 
 
-# Notas de la versión de Search&amp;Promote 8.10.1 (18/07/2013){#search-promote-release-notes}
+# Notas de la versión 8.10.1 de Search&amp;Promote (18/07/2013){#search-promote-release-notes}
 
 <table> 
  <thead> 
@@ -27,30 +25,30 @@ ht-degree: 7%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Facetas dinámicas </p> </td> 
-   <td colname="col2"> <p> La faceta dinámica es una nueva mejora que permite que la búsqueda principal devuelva el conjunto de N-campos de facetas dinámicas más relevantes para una búsqueda determinada entre un grupo de campos de facetas dinámicas. </p> <p> Si está interesado en esta nueva mejora, póngase en contacto con el consultor. Ellos realizarán una evaluación para ver si usted puede aprovechar sus beneficios. </p> </td> 
+   <td colname="col2"> <p> Las facetas dinámicas son una nueva mejora que permite que la búsqueda principal devuelva el conjunto de N-campos de facetas dinámicas más relevantes para una búsqueda determinada entre un grupo de campos de facetas dinámicas. </p> <p> Si le interesa esta nueva mejora, póngase en contacto con el consultor. Realizarán una evaluación para ver si puede aprovechar sus beneficios. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Descomponedor alemán </p> </td> 
-   <td colname="col2"> <p> Ahora hay disponible un descomponedor para admitir el alemán. </p> </td> 
+   <td colname="col2"> <p> Ahora hay disponible un descomponedor compatible con el alemán. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Correcciones y mejoras**
 
-* **[!DNL Business Rules]** - Añadió la capacidad de asignar más de una programación a una regla comercial.
+* **[!DNL Business Rules]** - Se ha agregado la capacidad de asignar más de una programación a una regla comercial.
 
    Consulte [Acerca de las reglas comerciales](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
-* **Búsqueda**  guiada: se corrigió un problema en el cual la devolución al analizador XML estaba deshabilitada.
-* **Archivar, comprimir y descomprimir archivos** : Añadió la capacidad de descargar y extraer información de los siguientes tipos de archivo, archivos comprimidos y archivos sin comprimir: .zip/tar/tar.gz/tar.bz2/gzip/bzip2
-* **Indexación**  de control remoto: capacidad de regeneración Añadida para acciones de indexación de control remoto.
+* **Búsqueda guiada** : se ha corregido un problema por el que recurrir al analizador de XML estaba desactivado.
+* **Archivos, archivos comprimidos y archivos sin comprimir** : se ha añadido la capacidad de descargar y extraer información de los siguientes tipos de archivos, archivos comprimidos y archivos sin comprimir: .zip/tar/tar.gz/tar.bz2/gzip/bzip2
+* **Indexación de control remoto** : se ha añadido la capacidad de regeneración a las acciones de indexación de control remoto.
 
-   Consulte [Acerca del control remoto para indización](../c-about-index-menu/c-about-remote-control-for-indexing.md#concept_C79B322190E84106A434E5C6D4A4118F).
+   Consulte [Acerca del control remoto para la indexación](../c-about-index-menu/c-about-remote-control-for-indexing.md#concept_C79B322190E84106A434E5C6D4A4118F).
 
    Consulte también [Acerca de Regenerar índice](../c-about-index-menu/c-about-regenerate-index.md#concept_6CBE6B8D18EF47D293091CBA542245FA).
 
-* **Barra**  de faceta: compatibilidad Añadida para varios carriles de faceta.
+* **Barra de faceta** : se ha agregado compatibilidad con varios carriles de faceta.
 
    Consulte [Acerca de Barra de faceta](../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB).
 
