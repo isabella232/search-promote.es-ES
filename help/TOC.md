@@ -4,12 +4,12 @@ product: adobe search and promote
 solution: Search & Promote
 type: Documentación
 audience: end-user
-user-guide-title: Guía de Adobe Search&amp;Promote
-breadcrumb-title: Guía de Adobe Search&amp;Promote
+user-guide-title: Search&amp de Adobe;amp;Guía de promociones
+breadcrumb-title: Search&amp de Adobe;amp;Guía de promociones
 translation-type: tm+mt
-source-git-commit: 4beba3603171a481c89d9b785072f73d6062fe01
+source-git-commit: aa10a950262e5d1828da3d2e417dd5a5b752029b
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '259'
 ht-degree: 9%
 
 ---
@@ -17,29 +17,29 @@ ht-degree: 9%
 
 # Guía de Adobe Search and Promote {#using}
 
-+ [Lorem Ipsum](sp-eol.md)
++ [Anuncio de fin de servicio de Search&amp;Promote](sp-eol.md)
 + [Información general sobre la documentación de Search&amp;Promote](sp-home.md)
 + Notas de la versión {#release-notes}
-   + [Notas de la versión de Search&amp;Promote 18.1.1 (13/02/2018)](c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
-   + [Notas de la versión de Search&amp;Promote 17.11.1 (31/10/2017)](c-searchpromote-release-notes/c-rn-10-31-17-version-1711.md)
-   + [Notas de la versión de Search&amp;Promote 15.3.1 (24/03/2015)](c-searchpromote-release-notes/c-rn-03-19-15-version-153.md)
-   + [Notas de la versión de Search&amp;Promote 15.1.1 (15/01/2015)](c-searchpromote-release-notes/c-rn-01-15-15-version-151.md)
-   + [Notas de la versión Search&amp;Promote 8.17.0 (30/10/2014)](c-searchpromote-release-notes/c-rn-10-30-14-version-817.md)
-   + [Notas de la versión Search&amp;Promote 8.16.0 (18/09/2014)](c-searchpromote-release-notes/c-rn-09-18-14-version-816.md)
-   + [Notas de la versión Search&amp;Promote 8.15.0 (19/06/2014)](c-searchpromote-release-notes/c-rn-06-19-14-version-815.md)
-   + [Notas de la versión Search&amp;Promote 8.14.0 (22/05/2014)](c-searchpromote-release-notes/c-rn-05-22-14-version-814.md)
-   + [Notas de la versión Search&amp;Promote 8.13.0 (16/04/2014)](c-searchpromote-release-notes/c-rn-04-16-14-version-813.md)
-   + [Notas de la versión de Search&amp;Promote 8.12.0 (16/01/2014)](c-searchpromote-release-notes/c-rn-01-16-14-version-812.md)
-   + [Notas de la versión de Search&amp;Promote 8.11.0 (29/10/2013)](c-searchpromote-release-notes/c-rn-10-17-13-version-811.md)
-   + [Notas de la versión Search&amp;Promote 8.10.1 (18/07/2013)](c-searchpromote-release-notes/c-rn-07-18-13-version-810.md)
-   + [Notas de la versión de Search&amp;Promote 8.9.8 (23/05/2013)](c-searchpromote-release-notes/c-rn-05-23-13-version-898.md)
-   + [Notas de la versión de Search&amp;Promote 8.9.6 (21/03/2013)](c-searchpromote-release-notes/c-rn-03-21-13-version-896.md)
-   + [Notas de la versión de Search&amp;Promote 8.9.5 (21/02/2013)](c-searchpromote-release-notes/c-rn-02-21-13-version-895.md)
-   + [Notas de la versión de Search&amp;Promote 8.9.4 (17/01/2013)](c-searchpromote-release-notes/c-rn-01-17-13-version-894.md)
-   + [Notas de la versión de Search&amp;Promote 8.9.3 (01/11/2012)](c-searchpromote-release-notes/c-rn-11-01-12-version-893.md)
-   + [Notas de la versión de Search&amp;Promote 8.9.2 (13/09/2012)](c-searchpromote-release-notes/c-rn-09-13-12-version-892.md)
-   + [Notas de la versión de Search&amp;Promote 8.9.1 (16/08/2012)](c-searchpromote-release-notes/c-rn-08-16-12-version-891.md)
-   + [Notas de la versión de Search&amp;Promote 8.9 (19/07/2012)](c-searchpromote-release-notes/c-rn-07-19-12-version-89.md)
+   + [Notas de la versión 18.1.1 de Search&amp;Promote (13/02/2018)](c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
+   + [Notas de la versión 17.11.1 de Search&amp;Promote (31/10/2017)](c-searchpromote-release-notes/c-rn-10-31-17-version-1711.md)
+   + [Notas de la versión 15.3.1 de Search&amp;Promote (24/03/2015)](c-searchpromote-release-notes/c-rn-03-19-15-version-153.md)
+   + [Notas de la versión 15.1.1 de Search&amp;Promote (15/01/2015)](c-searchpromote-release-notes/c-rn-01-15-15-version-151.md)
+   + [Notas de la versión 8.17.0 de Search&amp;Promote (30/10/2014)](c-searchpromote-release-notes/c-rn-10-30-14-version-817.md)
+   + [Notas de la versión 8.16.0 de Search&amp;Promote (18/09/2014)](c-searchpromote-release-notes/c-rn-09-18-14-version-816.md)
+   + [Notas de la versión 8.15.0 de Search&amp;Promote (19/06/2014)](c-searchpromote-release-notes/c-rn-06-19-14-version-815.md)
+   + [Notas de la versión 8.14.0 de Search&amp;Promote (22/05/2014)](c-searchpromote-release-notes/c-rn-05-22-14-version-814.md)
+   + [Notas de la versión 8.13.0 de Search&amp;Promote (16/04/2014)](c-searchpromote-release-notes/c-rn-04-16-14-version-813.md)
+   + [Notas de la versión 8.12.0 de Search&amp;Promote (16/01/2014)](c-searchpromote-release-notes/c-rn-01-16-14-version-812.md)
+   + [Notas de la versión 8.11.0 de Search&amp;Promote (29/10/2013)](c-searchpromote-release-notes/c-rn-10-17-13-version-811.md)
+   + [Notas de la versión 8.10.1 de Search&amp;Promote (18/07/2013)](c-searchpromote-release-notes/c-rn-07-18-13-version-810.md)
+   + [Notas de la versión 8.9.8 de Search&amp;Promote (23/05/2013)](c-searchpromote-release-notes/c-rn-05-23-13-version-898.md)
+   + [Notas de la versión 8.9.6 de Search&amp;Promote (21/03/2013)](c-searchpromote-release-notes/c-rn-03-21-13-version-896.md)
+   + [Notas de la versión 8.9.5 de Search&amp;Promote (21/02/2013)](c-searchpromote-release-notes/c-rn-02-21-13-version-895.md)
+   + [Notas de la versión 8.9.4 de Search&amp;Promote (17/01/2013)](c-searchpromote-release-notes/c-rn-01-17-13-version-894.md)
+   + [Notas de la versión 8.9.3 de Search&amp;Promote (01/11/2012)](c-searchpromote-release-notes/c-rn-11-01-12-version-893.md)
+   + [Notas de la versión 8.9.2 de Search&amp;Promote (13/09/2012)](c-searchpromote-release-notes/c-rn-09-13-12-version-892.md)
+   + [Notas de la versión 8.9.1 de Search&amp;Promote (16/08/2012)](c-searchpromote-release-notes/c-rn-08-16-12-version-891.md)
+   + [Notas de la versión 8.9 de Search&amp;Promote (19/07/2012)](c-searchpromote-release-notes/c-rn-07-19-12-version-89.md)
    + [Notas de la versión de Search&amp;Promote 8.8.1](c-searchpromote-release-notes/c-rn-05-31-12-version-881.md)
    + [Notas de la versión de Search&amp;Promote 8.8](c-searchpromote-release-notes/c-rn-04-26-12-version-88.md)
    + [Notas de la versión de Search&amp;Promote 8.7.2](c-searchpromote-release-notes/c-maintenance-release-03-29-12-version-872.md)
