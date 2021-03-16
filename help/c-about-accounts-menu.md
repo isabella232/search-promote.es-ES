@@ -1,15 +1,13 @@
 ---
-description: Utilice Cuentas en el menú del producto para seleccionar una cuenta a la que desee acceder y utilizar.
-seo-description: Utilice Cuentas en el menú del producto para seleccionar una cuenta a la que desee acceder y utilizar.
-seo-title: Acerca del menú Cuentas
+description: Utilice las cuentas del menú del producto para seleccionar una cuenta a la que desee acceder y utilizar.
 solution: Target
 title: Acerca del menú Cuentas
-topic: Settings,Site search and merchandising
+topic: Configuración,Búsqueda de sitios y comercialización
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '172'
 ht-degree: 2%
 
 ---
@@ -17,11 +15,11 @@ ht-degree: 2%
 
 # Acerca del menú Cuentas{#about-the-accounts-menu}
 
-Utilice Cuentas en el menú del producto para seleccionar una cuenta a la que desee acceder y utilizar.
+Utilice las cuentas del menú del producto para seleccionar una cuenta a la que desee acceder y utilizar.
 
-## Seleccionar una cuenta diferente para usar {#task_03C0FE918E2D44529CDC3B8DB75D1B26}
+## Selección de una cuenta diferente para usar {#task_03C0FE918E2D44529CDC3B8DB75D1B26}
 
-Utilice la página [!DNL Select Account] para seleccionar la cuenta que desee utilizar y administrar.
+Utilice la página [!DNL Select Account] para seleccionar la cuenta que desea utilizar y administrar.
 
 <!-- 
 
@@ -29,7 +27,7 @@ t_selecting_a_different_account_to_use.xml
 
  -->
 
-Después de seleccionar una cuenta, aparece la Página de inicio de comercialización/búsqueda del sitio de la cuenta y puede comenzar a trabajar con ella. El nombre de cuenta seleccionado aparece en la esquina superior derecha de la página.
+Después de seleccionar una cuenta, aparecerá la página de inicio de búsqueda/comercialización del sitio de la cuenta y podrá comenzar a trabajar con ella. El nombre de cuenta seleccionado aparece en la esquina superior derecha de la página.
 
 **Seleccionar una cuenta diferente para usar**
 
@@ -38,8 +36,8 @@ Después de seleccionar una cuenta, aparece la Página de inicio de comercializa
    * En el menú del producto, haga clic en **[!UICONTROL Accounts]**.
    * En la esquina superior derecha de la página, haga clic en **[!UICONTROL Select Account]**.
 
-1. En la página [!DNL Select Account], realice una de las siguientes acciones:
+1. En la página [!DNL Select Account], realice una de las acciones siguientes:
 
-   * En la tabla, en el encabezado de la columna [!DNL Name], haga clic en el nombre de una cuenta que desee utilizar y administrar con inicio.
-   * En la tabla, en el encabezado de la columna [!DNL Number], haga clic en un número de cuenta que desee utilizar y administrar con inicio.
+   * En la tabla, en el encabezado de columna [!DNL Name] , haga clic en el nombre de la cuenta que desee utilizar y administrar.
+   * En la tabla, en el encabezado de columna [!DNL Number] , haga clic en el número de cuenta que desee utilizar y administrar.
 
