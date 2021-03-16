@@ -5,10 +5,10 @@ solution: Target
 topic: Búsqueda de sitios y comercialización
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 1914d67d2634cb13368ab72d54da7da5988de13f
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 22%
+source-wordcount: '139'
+ht-degree: 23%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 22%
 
 ## Noticias y anuncios {#topic_02625547D07F411DBAC9593FCBD4741B}
 
-* **Atención:** [Anuncio de fin de servicio de Search&amp;Promote de Adobe](/help/sp-eol.md).
+<!-- * **Attention:** [Adobe Search&amp;Promote End-of-Service Announcement](/help/sp-eol.md). -->
 
 * Notas de la versión de Adobe Marketing Cloud : contiene nuevas funciones, correcciones y problemas conocidos en todas las soluciones de Marketing Cloud. Los lanzamientos de las funciones tienen lugar en primavera y otoño, si bien las versiones de mantenimiento se lanzan mensualmente.
 
