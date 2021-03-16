@@ -1,15 +1,13 @@
 ---
-description: Puede definir los formatos de fecha que se utilizan al analizar e indexar cualquier campo con un tipo de datos de "fecha".
-seo-description: Puede definir los formatos de fecha que se utilizan al analizar e indexar cualquier campo con un tipo de datos de "fecha".
-seo-title: Formatos de fecha
+description: Puede definir los formatos de fecha que se utilizan cuando analiza e indexa cualquier campo con un tipo de datos "fecha".
 solution: Target
 title: Formatos de fecha
-topic: Appendices,Site search and merchandising
+topic: Apéndices, búsqueda de sitios y comercialización
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '749'
 ht-degree: 3%
 
 ---
@@ -17,11 +15,11 @@ ht-degree: 3%
 
 # Formatos de fecha{#date-formats}
 
-Puede definir los formatos de fecha que se utilizan al analizar e indexar cualquier campo con un tipo de datos de &quot;fecha&quot;.
+Puede definir los formatos de fecha que se utilizan cuando analiza e indexa cualquier campo con un tipo de datos &quot;fecha&quot;.
 
-El formato de la fecha y la hora se especifica con una cadena de formato. La cadena de formato consta de cero o más especificaciones de conversión (una especificación de conversión consiste en un signo de porcentaje y otro carácter) y caracteres ordinarios. Se proporciona una lista predeterminada de las cadenas de formato de fecha para cada campo de fecha.
+El formato de la fecha y la hora se especifica con una cadena de formato. La cadena de formato consta de cero o más especificaciones de conversión (una especificación de conversión consiste en un signo de porcentaje y otro carácter) y caracteres normales. Se proporciona una lista predeterminada de cadenas de formato de fecha para cada campo de fecha.
 
-Usted tiene control total sobre esta lista y puede agregarla o modificarla para adaptarla a las necesidades del sitio. La cadena de formato superior tiene prioridad y las cadenas de formato subsiguientes solo se utilizan si el análisis del contenido de una etiqueta de metadatos determinada produce un error.
+Usted tiene control total sobre esta lista y puede agregarla o modificarla para adaptarla a las necesidades de su sitio. La cadena de formato superior tiene prioridad y las cadenas de formato subsiguientes solo se utilizan si el análisis del contenido de una etiqueta de metadatos determinada produce un error.
 
 Por ejemplo, supongamos que ha especificado los siguientes formatos de fecha:
 
@@ -33,7 +31,7 @@ Por ejemplo, supongamos que ha especificado los siguientes formatos de fecha:
  </tbody> 
 </table>
 
-El primer formato, &quot;%B %d, %Y %T %Z&quot;, coincide con fechas como la siguiente &quot;PDT del 20 de septiembre de 2014 a las 13:12:00&quot;. Si el contenido de la etiqueta de metadatos no se puede analizar con esta cadena de formato, se prueba el siguiente formato disponible &quot;%b %d, %Y %T %Z&quot;. Este formato coincide con fechas como las siguientes: &quot;Sep 20, 2014, 3:12:00 PDT&quot;. Si el contenido de las etiquetas de metadatos no se puede analizar con esta cadena de formato, la búsqueda/comercialización del sitio baja la lista de las cadenas de formato hasta encontrar una cadena de formato que funcione.
+El primer formato, &quot;%B %d, %Y %T %Z&quot;, coincide con fechas como la siguiente &quot;PDT del 20 de septiembre de 2014 a las 13:12:00&quot;. Si el contenido de la etiqueta de metadatos no se puede analizar con esta cadena de formato, se intenta el siguiente formato disponible &quot;%b %d, %Y %T %Z&quot;. Este formato coincide con fechas como las siguientes: &quot;Sep 20, 2014 3:12:00 PDT&quot;. Si el contenido de la etiqueta de metadatos no se puede analizar con esta cadena de formato, la búsqueda/comercialización del sitio baja en la lista de cadenas de formato hasta que encuentra una cadena de formato que funcione.
 
 En la tabla siguiente se describen las cadenas de formato de fecha disponibles:
 
@@ -47,19 +45,19 @@ En la tabla siguiente se describen las cadenas de formato de fecha disponibles:
  <tbody> 
   <tr> 
    <td colname="col1"> <p>%Una </p> </td> 
-   <td colname="col2"> <p>Coincide con la representación nacional del nombre completo del día de la semana, por ejemplo, "lunes". La representación nacional se determina a partir de la opción "Idioma" de la opción "Palabras e idiomas" </p> </td> 
+   <td colname="col2"> <p>Coincide con la representación nacional del nombre completo del día laborable, por ejemplo, "Lunes". La representación nacional se determina a partir del ajuste "Idioma" de la opción "Palabras e idiomas" </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%a </p> </td> 
-   <td colname="col2"> <p> coincide con la representación nacional del nombre abreviado del día de la semana, donde la abreviatura es de los tres primeros caracteres, por ejemplo "Lun." La representación nacional se determina a partir de la opción "Idioma" de la opción "Palabras e idiomas" </p> </td> 
+   <td colname="col2"> <p> coincide con la representación nacional del nombre abreviado del día de la semana, donde la abreviatura es de los tres primeros caracteres, por ejemplo "Lun." La representación nacional se determina a partir del ajuste "Idioma" de la opción "Palabras e idiomas" </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%B </p> </td> 
-   <td colname="col2"> <p> coincide con la representación nacional del nombre completo del mes, p. ej. "Junio". La representación nacional se determina a partir de la opción "Idioma" de la opción "Palabras e idiomas" </p> </td> 
+   <td colname="col2"> <p> coincide con la representación nacional del nombre completo del mes, por ejemplo "Junio". La representación nacional se determina a partir del ajuste "Idioma" de la opción "Palabras e idiomas" </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%b </p> </td> 
-   <td colname="col2"> <p> coincide con la representación nacional del nombre abreviado del mes, donde la abreviatura es de los tres primeros caracteres, por ejemplo "Jun." La representación nacional se determina a partir de la opción "Idioma" de la opción "Palabras e idiomas" </p> </td> 
+   <td colname="col2"> <p> coincide con la representación nacional del nombre abreviado del mes, donde la abreviatura es de los tres primeros caracteres, por ejemplo "Jun." La representación nacional se determina a partir del ajuste "Idioma" de la opción "Palabras e idiomas" </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%D </p> </td> 
@@ -107,7 +105,7 @@ En la tabla siguiente se describen las cadenas de formato de fecha disponibles:
   </tr> 
   <tr> 
    <td colname="col1"> <p>%p </p> </td> 
-   <td colname="col2"> <p> coincide con la representación nacional de "ante meridiem" o "post meridiem", según proceda, por ejemplo "PM". La representación nacional se determina a partir de la opción "Idioma" de la opción "Palabras e idiomas" </p> </td> 
+   <td colname="col2"> <p> coincide con la representación nacional de "ante meridiem" o "post meridiem", según proceda, por ejemplo "PM". La representación nacional se determina a partir del ajuste "Idioma" de la opción "Palabras e idiomas" </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%R </p> </td> 
@@ -135,7 +133,7 @@ En la tabla siguiente se describen las cadenas de formato de fecha disponibles:
   </tr> 
   <tr> 
    <td colname="col1"> <p>%Y </p> </td> 
-   <td colname="col2"> <p> coincide el año con el siglo como número decimal, por ejemplo "2001" </p> </td> 
+   <td colname="col2"> <p> coincide el año con un siglo como número decimal, por ejemplo "2001" </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%y </p> </td> 
@@ -143,7 +141,7 @@ En la tabla siguiente se describen las cadenas de formato de fecha disponibles:
   </tr> 
   <tr> 
    <td colname="col1"> <p>%Z </p> </td> 
-   <td colname="col2"> <p> coincide con el nombre del huso horario </p> </td> 
+   <td colname="col2"> <p> coincide con el nombre de zona horaria </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%% </p> </td> 
@@ -154,7 +152,7 @@ En la tabla siguiente se describen las cadenas de formato de fecha disponibles:
 
 **Cadenas de formato predeterminadas**
 
-Las plantillas utilizan las siguientes cadenas de formato predeterminadas. Puede agregar a esta lista o editarla según sea necesario.
+Las plantillas utilizan las siguientes cadenas de formato predeterminadas. Puede agregarla a esta lista o editarla según sea necesario.
 
 <table> 
  <thead> 
@@ -166,11 +164,11 @@ Las plantillas utilizan las siguientes cadenas de formato predeterminadas. Puede
  <tbody> 
   <tr> 
    <td colname="col1"> <p>%B %d, %Y %T %Z </p> </td> 
-   <td colname="col2"> <p> 5 de septiembre de 1999, 13:12:00 PDT </p> </td> 
+   <td colname="col2"> <p> 5 de septiembre de 1999 13:12:00 PDT </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%b %d, %Y %T %Z </p> </td> 
-   <td colname="col2"> <p> 5 de septiembre de 1999, 13:12:00 PDT </p> </td> 
+   <td colname="col2"> <p> Sep 5, 1999 13:12:00 PDT </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%A %B %d, %Y %T %Z </p> </td> 
@@ -178,11 +176,11 @@ Las plantillas utilizan las siguientes cadenas de formato predeterminadas. Puede
   </tr> 
   <tr> 
    <td colname="col1"> <p>%A %b %d, %Y %T %Z </p> </td> 
-   <td colname="col2"> <p> Domingo 5 de septiembre de 1999, 13:12:00 PDT </p> </td> 
+   <td colname="col2"> <p> Domingo 5 de septiembre de 1999 13:12:00 PDT </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%a %B %d, %Y %T %Z </p> </td> 
-   <td colname="col2"> <p> Sun, 5 de septiembre de 1999, 13:12:00 PDT </p> </td> 
+   <td colname="col2"> <p> Sun 5 de septiembre de 1999 13:12:00 PDT </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>%a %b %d, %Y %T %Z </p> </td> 
@@ -190,7 +188,7 @@ Las plantillas utilizan las siguientes cadenas de formato predeterminadas. Puede
   </tr> 
   <tr> 
    <td colname="col1"> <p>%d %b %Y %T %Z </p> </td> 
-   <td colname="col2"> <p> 5 de septiembre de 1999, 13:12:00 PDT </p> </td> 
+   <td colname="col2"> <p> 5 de septiembre de 1999 13:12:00 PDT </p> </td> 
   </tr> 
  </tbody> 
 </table>
