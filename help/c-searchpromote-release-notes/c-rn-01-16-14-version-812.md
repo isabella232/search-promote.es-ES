@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Notas de revisión de Search&Promote 8.12.0 (16/01/2014)
+description: Search&amp;Notas de la versión de Promote 8.12.0.
 solution: Target
-title: Notas de revisión de Search&Promote 8.12.0 (16/01/2014)
-topic: Release Notes,Site search and merchandising
+title: Search&amp;Promote 8.12.0 Notas de la versión (16/01/2014)
+topic: Notas de la versión, búsqueda de sitios y comercialización
 uuid: 4db10eb4-11bf-4483-a7f2-87981d9c7a50
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 74%
+source-wordcount: '257'
+ht-degree: 72%
 
 ---
 
@@ -35,7 +33,7 @@ ht-degree: 74%
      <!--3683368-->Ahora puede exportar datos a CSV desde los siguientes informes: 
      <ul id="ul_93B619DBB3444F64BD6D7F9E969AB1E1"> 
       <li id="li_96DDE1A196834845A0FA319903C5934B"> <p>Informe Términos </p> </li> 
-      <li id="li_4F1A19DE98C84F8CAD963EEA2B38ED7A"> <p>Informe Términos de búsqueda nulos </p> </li> 
+      <li id="li_4F1A19DE98C84F8CAD963EEA2B38ED7A"> <p>Informe de términos de búsqueda nulos </p> </li> 
       <li id="li_A7716C62C4D44CD69D411C3FEE246D96"> <p>Informe de solicitud de búsqueda </p> </li> 
      </ul> </p> <p>Consulte <a href="../c-about-reports-menu/c-about-reports-menu.md#concept_5F901459C7AB461BAB30B305957EB00C" format="dita" scope="local"> Acerca del menú Informes</a>. </p> </td> 
   </tr> 
@@ -58,7 +56,7 @@ ht-degree: 74%
 * El orden del cuadro Tamaño no se actualizaba.
 * Se ha añadido la opción para añadir una definición de regla &quot;personalizada&quot; en la página Limpieza de consultas.
 
-   Consulte [Acerca de las reglas de limpieza de Consultas](../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C).
+   Consulte [Acerca de las reglas de limpieza de consultas](../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C).
 
 * El informe Términos repetía entradas si no había datos suficientes.
 
@@ -67,5 +65,5 @@ ht-degree: 74%
 * La aplicación de una sola regla comercial funcionaba en el modo Provisional, pero producía errores en el modo Activo.
 * Las ediciones de autocompletar para las listas de inclusión o exclusión no se guardaban en el historial y, por lo tanto, no se podían revertir.
 
-   Consulte [Acerca de Autocompletar](../c-about-auto-complete.md#concept_093A9CD754864BA79B456FE4BEB64578).
+   Consulte [Acerca de la finalización automática](../c-about-auto-complete.md#concept_093A9CD754864BA79B456FE4BEB64578).
 
