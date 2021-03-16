@@ -1,29 +1,27 @@
 ---
-description: Vistas de datos muestra los resultados de la búsqueda con los campos meta. Cada columna es un campo meta y cada fila es el resultado de una consulta de búsqueda. Personalice las Vistas de datos eligiendo y reorganizando columnas. Las Vistas de datos también pueden tener títulos y descripciones personalizados.
-seo-description: Vistas de datos muestra los resultados de la búsqueda con los campos meta. Cada columna es un campo meta y cada fila es el resultado de una consulta de búsqueda. Personalice las Vistas de datos eligiendo y reorganizando columnas. Las Vistas de datos también pueden tener títulos y descripciones personalizados.
-seo-title: Acerca de las Vistas de datos
+description: Vistas de datos muestra los resultados de la búsqueda con los meta campos. Cada columna es un meta campo y cada fila es el resultado de una consulta de búsqueda. Personalice las vistas de datos eligiendo y reorganizando columnas. Las vistas de datos también pueden tener títulos y descripciones personalizados.
 solution: Target
-title: Acerca de las Vistas de datos
-topic: Reports,Site search and merchandising
+title: Acerca de las vistas de datos
+topic: Informes, búsqueda de sitios y comercialización
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
 translation-type: tm+mt
-source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1023'
 ht-degree: 1%
 
 ---
 
 
-# Acerca de las Vistas de datos{#about-data-views}
+# Acerca de las vistas de datos{#about-data-views}
 
-Vistas de datos muestra los resultados de la búsqueda con los campos meta. Cada columna es un campo meta y cada fila es el resultado de una consulta de búsqueda. Personalice las Vistas de datos eligiendo y reorganizando columnas. Las Vistas de datos también pueden tener títulos y descripciones personalizados.
+Vistas de datos muestra los resultados de la búsqueda con los meta campos. Cada columna es un meta campo y cada fila es el resultado de una consulta de búsqueda. Personalice las vistas de datos eligiendo y reorganizando columnas. Las vistas de datos también pueden tener títulos y descripciones personalizados.
 
 ## Uso de Vistas de datos {#concept_DCA897D074464BC1861AA47B40CC86C3}
 
 Cada cuenta tiene la conveniencia de crear varias vistas de datos. Utilice la página Vistas de datos para crear y editar estas vistas de datos.
 
-Después de agregar una vista de datos, debe editarla para configurar y personalizar la vista.
+Después de agregar una vista de datos, debe editarla para configurarla y personalizarla.
 
 Consulte [Edición de una vista de datos](../c-about-reports-menu/c-about-data-views.md#task_258A367896C24DD498C755925EA8F516).
 
@@ -31,15 +29,15 @@ Puede copiar una vista de datos existente para utilizarla como base para crear u
 
 Consulte [Copia de una vista de datos](../c-about-reports-menu/c-about-data-views.md#task_78D4C2799BC84677843ED4CA1CD205AF).
 
-## Añadir una vista de datos {#task_A20FEB2E1CA1444D816D2F5F4B6E5B2D}
+## Adición de una vista de datos {#task_A20FEB2E1CA1444D816D2F5F4B6E5B2D}
 
 Puede agregar una vista de datos a la página [!DNL Data Views] para mostrar los valores de cada meta campo con una consulta de búsqueda.
 
-Después de agregar una vista de datos, debe editarla para configurar y personalizar la vista.
+Después de agregar una vista de datos, debe editarla para configurarla y personalizarla.
 
 Consulte [Edición de una vista de datos](../c-about-reports-menu/c-about-data-views.md#task_258A367896C24DD498C755925EA8F516).
 
-**Para agregar una vista de datos**
+**Adición de una vista de datos**
 
 1. En el menú del producto, haga clic en **[!UICONTROL Reports]** > **[!UICONTROL Data Views]**.
 1. En la página [!DNL Data Views], haga clic en **[!UICONTROL Add New Data View]**.
@@ -48,21 +46,21 @@ Consulte [Edición de una vista de datos](../c-about-reports-menu/c-about-data-v
 
 ## Edición de una vista de datos {#task_258A367896C24DD498C755925EA8F516}
 
-Cuando agrega una vista de datos a la página [!DNL Data Views], utilice Editar para cambiar el nombre y la descripción de la vista de datos o para mover, mostrar u ocultar la visualización de cada meta campo.
+Al agregar una vista de datos a la página [!DNL Data Views], utilice Editar para cambiar el nombre y la descripción de la vista de datos o para mover, mostrar u ocultar la visualización de cada meta campo.
 
 También puede bloquear o desbloquear una vista de datos seleccionada.
 
-Consulte [Añadir una vista de datos](../c-about-reports-menu/c-about-data-views.md#task_A20FEB2E1CA1444D816D2F5F4B6E5B2D).
+Consulte [Adición de una vista de datos](../c-about-reports-menu/c-about-data-views.md#task_A20FEB2E1CA1444D816D2F5F4B6E5B2D).
 
-**Para editar una vista de datos**
+**Edición de una vista de datos**
 
 1. En el menú del producto, haga clic en **[!UICONTROL Reports]** > **[!UICONTROL Data Views]**.
-1. En la página [!DNL Data Views], en la columna [!DNL Actions] de la tabla, haga clic en **[!UICONTROL Edit]** en la fila con la vista de datos que desee cambiar.
+1. En la página [!DNL Data Views], en la columna [!DNL Actions] de la tabla, haga clic **[!UICONTROL Edit]** en la fila con la vista de datos que desea cambiar.
 1. En la página [!DNL Data Views Editor], configure las opciones que desee.
 
-   El Editor de Vista de datos tiene todos los controles para ocultar, mostrar y mover columnas de campo en la página Vista de datos.
+   El Editor de vista de datos tiene todos los controles para ocultar, mostrar y mover columnas de campo en la página Vista de datos.
 
-   Cuando se vista una vista de datos, la tabla resultante también muestra los siguientes campos de columna adicionales que no son editables: Clasificación, Relevancia y Puntuación (general). Estos tres campos especiales representan las puntuaciones de relevancia, las puntuaciones de clasificación y las puntuaciones generales de cada resultado.
+   Al ver una vista de datos, la tabla resultante también muestra los siguientes campos de columna adicionales que no son editables: Clasificación, relevancia y puntuación (general). Estos tres campos especiales representan las puntuaciones de relevancia, las puntuaciones de clasificación y las puntuaciones generales de cada resultado.
 
    <table> 
     <thead> 
@@ -74,7 +72,7 @@ Consulte [Añadir una vista de datos](../c-about-reports-menu/c-about-data-views
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Título </p> </td> 
-      <td colname="col2"> <p>Nombre de la vista de datos. El nombre se muestra en la parte superior derecha cuando se vista la vista de datos. </p> <p>Consulte <a href="../c-about-reports-menu/c-about-data-views.md#task_FD0D2CE53DF84CBD9220AD7CA920011F" type="task" format="dita" scope="local"> Visualización de una vista de datos</a>. </p> </td> 
+      <td colname="col2"> <p>Nombre de la vista de datos. El nombre se muestra en la parte superior derecha cuando se ve la vista de datos. </p> <p>Consulte <a href="../c-about-reports-menu/c-about-data-views.md#task_FD0D2CE53DF84CBD9220AD7CA920011F" type="task" format="dita" scope="local"> Visualización de una vista de datos</a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Descripción </p> </td> 
@@ -82,11 +80,11 @@ Consulte [Añadir una vista de datos](../c-about-reports-menu/c-about-data-views
       </tr> 
       <tr> 
       <td colname="col1"> <p>Parámetros de búsqueda </p> </td> 
-      <td colname="col2"> <p>Permite especificar parámetros de búsqueda predeterminados. Cuando se muestra la vista de datos por primera vez, estos parámetros CGI se anexan automáticamente. </p> <p>No cambie ni elimine <span class="codeph"> sp_cs</span> ni <span class="codeph"> sp_f</span>. Estos parámetros son esenciales para la Vista de datos independientemente del conjunto de caracteres preferido de la cuenta. </p> <p>Consulte <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> Parámetros CGI de búsqueda back-end</a>. </p> </td> 
+      <td colname="col2"> <p>Permite especificar parámetros de búsqueda predeterminados. Cuando la vista de datos se muestra por primera vez, estos parámetros CGI se anexan automáticamente. </p> <p>No cambie ni elimine <span class="codeph"> sp_cs</span> o <span class="codeph"> sp_f</span>. Estos parámetros son esenciales para la vista de datos independientemente del conjunto de caracteres preferido de la cuenta. </p> <p>Consulte <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> Parámetros CGI de búsqueda back-end</a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Estado de bloqueo </p> </td> 
-      <td colname="col2"> <p>Permite bloquear o desbloquear la vista de datos. </p> <p>Las vistas de datos bloqueadas solo se pueden vista con una contraseña y un nombre de usuario. El usuario debe ser un miembro actual de la cuenta. </p> <p>Se accede a una vista de datos desbloqueada sin contraseña ni cuenta de usuario. </p> </td> 
+      <td colname="col2"> <p>Permite bloquear o desbloquear la vista de datos. </p> <p>Puede ver una vista de datos bloqueados únicamente con una contraseña y un nombre de usuario. El usuario debe ser un miembro actual de la cuenta. </p> <p>Se accede a una vista de datos desbloqueada sin contraseña ni cuenta de usuario. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Pedido </p> </td> 
@@ -98,7 +96,7 @@ Consulte [Añadir una vista de datos](../c-about-reports-menu/c-about-data-views
       </tr> 
       <tr> 
       <td colname="col1"> <p>Mostrar URL como imagen </p> </td> 
-      <td colname="col2"> <p>Muestre miniaturas e imágenes en esta columna si el resultado de búsqueda de esta columna devuelve una dirección URL. </p> <p>La dirección URL se elimina del nombre o protocolo del esquema antes de convertirse en un valor del atributo <span class="codeph"> src</span> de una etiqueta de imagen. </p> <p>Si el resultado de búsqueda que se devuelve no tiene el aspecto de una dirección URL a una imagen, se muestra una. </p> </td> 
+      <td colname="col2"> <p>Mostrar miniaturas e imágenes en esta columna si el resultado de la búsqueda de esta columna devuelve una dirección URL. </p> <p>La URL se elimina de su protocolo o nombre de esquema antes de convertirse en un valor del atributo <span class="codeph"> src</span> de una etiqueta de imagen. </p> <p>Si el resultado de búsqueda que se devuelve no parece una dirección URL a una imagen, se muestra un . </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Longitud del campo </p> </td> 
@@ -110,13 +108,13 @@ Consulte [Añadir una vista de datos](../c-about-reports-menu/c-about-data-views
 1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) Realice cualquiera de las siguientes acciones:
 
-   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
       Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
+      Consulte [Visualización de la configuración de lanzamiento](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -133,18 +131,18 @@ Consulte [Edición de una vista de datos](../c-about-reports-menu/c-about-data-v
 **Para copiar una vista de datos**
 
 1. En el menú del producto, haga clic en **[!UICONTROL Reports]** > **[!UICONTROL Data Views]**.
-1. En la página [!DNL Data Views], en la columna [!DNL Actions] de la tabla, haga clic en **[!UICONTROL Copy]** en la fila con la vista de datos que desee copiar.
+1. En la página [!DNL Data Views], en la columna [!DNL Actions] de la tabla, haga clic en **[!UICONTROL Copy]** en la fila con la vista de datos que desea copiar.
 1. En la página [!DNL Copy Data View], en el campo de texto [!DNL New Title], introduzca el nuevo nombre que desea asignar a la vista de datos.
 1. Haga clic **[!UICONTROL Copy]**.
 1. (Opcional) Realice cualquiera de las siguientes acciones:
 
-   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
       Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
+      Consulte [Visualización de la configuración de lanzamiento](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -152,22 +150,22 @@ Consulte [Edición de una vista de datos](../c-about-reports-menu/c-about-data-v
 
 ## Eliminación de una vista de datos {#task_61C32F8F00A549A5A3E7EDDA6F537098}
 
-Puede eliminar una vista de datos en la página [!DNL Data Views] que ya no necesite ni use.
+Puede eliminar una vista de datos en la página [!DNL Data Views] que ya no necesite ni utilice.
 
-**Para eliminar una vista de datos**
+**Eliminación de una vista de datos**
 
 1. En el menú del producto, haga clic en **[!UICONTROL Reports]** > **[!UICONTROL Data Views]**.
-1. En la página [!DNL Data Views], en la columna [!DNL Actions] de la tabla, haga clic en **[!UICONTROL Delete]** en la fila con la vista de datos que desee eliminar.
+1. En la página [!DNL Data Views], en la columna [!DNL Actions] de la tabla, haga clic en **[!UICONTROL Delete]** en la fila con la vista de datos que desea eliminar.
 1. En la página [!DNL Delete Data View], haga clic en **Eliminar**.
 1. (Opcional) Realice cualquiera de las siguientes acciones:
 
-   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
       Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
+      Consulte [Visualización de la configuración de lanzamiento](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
@@ -177,14 +175,14 @@ Puede eliminar una vista de datos en la página [!DNL Data Views] que ya no nece
 
 Puede utilizar [!DNL View] en la página [!DNL Data Views] para mostrar una vista de datos seleccionada.
 
-La vista de datos seleccionada se abre en una ventana separada del explorador.
+La vista de datos que seleccione se abre en una ventana independiente del explorador.
 
-**Vista de una vista de datos**
+**Para ver una vista de datos**
 
 1. En el menú del producto, haga clic en **[!UICONTROL Reports]** > **[!UICONTROL Data Views]**.
 1. Realice una de las siguientes acciones:
 
    * En la página [!DNL Data Views], en la columna [!DNL Title] de la tabla, haga clic en el nombre de una vista de datos que desee abrir.
 
-   * En la página [!DNL Data Views], en la columna [!DNL Actions] de la tabla, haga clic en **[!UICONTROL View]** en la fila con la vista de datos que desee abrir.
+   * En la página [!DNL Data Views], en la columna [!DNL Actions] de la tabla, haga clic **[!UICONTROL View]** en la fila con la vista de datos que desea abrir.
 
