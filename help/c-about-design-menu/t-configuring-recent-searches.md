@@ -1,16 +1,14 @@
 ---
-description: Búsquedas recientes es un sistema basado en cookies que le permite utilizar una plantilla de presentación para mostrar el historial de búsqueda reciente de su cliente.
-seo-description: Búsquedas recientes es un sistema basado en cookies que le permite utilizar una plantilla de presentación para mostrar el historial de búsqueda reciente de su cliente.
-seo-title: Configuración de búsquedas recientes
+description: Búsquedas recientes es un sistema basado en cookies que le permite usar una plantilla de presentación para mostrar el historial de búsqueda reciente de su cliente.
 solution: Target
 subtopic: Navigation
 title: Configuración de búsquedas recientes
-topic: Design,Site search and merchandising
+topic: Diseño, búsqueda de sitios y comercialización
 uuid: 8ab1b35c-f953-4c26-921f-524af1fea4ef
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '186'
 ht-degree: 2%
 
 ---
@@ -18,18 +16,18 @@ ht-degree: 2%
 
 # Configuración de búsquedas recientes{#configuring-recent-searches}
 
-Búsquedas recientes es un sistema basado en cookies que le permite utilizar una plantilla de presentación para mostrar el historial de búsqueda reciente de su cliente.
+Búsquedas recientes es un sistema basado en cookies que le permite usar una plantilla de presentación para mostrar el historial de búsqueda reciente de su cliente.
 
 La página Búsquedas recientes se utiliza para configurar el comportamiento de las búsquedas.
 
 Consulte el tema de referencia de la etiqueta de plantilla de presentación para obtener más información sobre las distintas etiquetas que puede utilizar para mostrar las búsquedas recientes en la plantilla de presentación.
 
-Consulte [Etiquetas de plantillas de presentación](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64).
+Consulte [Etiquetas de plantilla de presentación](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64).
 
 **Para configurar búsquedas recientes**
 
-1. En el menú programa, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Recent Searches]**.
-1. En la página [!DNL Recent Searches], establezca las opciones que desee.
+1. En el menú del programa, haga clic en **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Recent Searches]**.
+1. En la página [!DNL Recent Searches], configure las opciones que desee.
 
    <!-- 
    
@@ -47,10 +45,10 @@ Consulte [Etiquetas de plantillas de presentación](../c-appendices/c-templates.
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Habilitar búsquedas recientes </p> </td> 
-      <td colname="col2"> <p> Cuando se habilita el módulo Búsquedas recientes, la cookie "vsrecentsearches" se establece con los resultados de búsqueda salientes. </p> </td> 
+      <td colname="col2"> <p> Cuando el módulo Búsquedas recientes está habilitado, la cookie "vsrecentsearches" se configura con los resultados de búsqueda salientes. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Número de búsquedas que guardar </p> </td> 
+      <td colname="col1"> <p>Número de búsquedas que desea guardar </p> </td> 
       <td colname="col2"> <p>Configure cuántas búsquedas desea guardar en la cookie. </p> </td> 
       </tr> 
       <tr> 
@@ -62,13 +60,13 @@ Consulte [Etiquetas de plantillas de presentación](../c-appendices/c-templates.
 
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
 
       Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Haga clic **[!UICONTROL Live]**.
 
-      Consulte [Visualización de la configuración dinámica](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
+      Consulte [Visualización de la configuración de lanzamiento](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Haga clic **[!UICONTROL Push Live]**.
 
