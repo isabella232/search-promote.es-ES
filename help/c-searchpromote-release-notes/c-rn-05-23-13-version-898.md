@@ -1,21 +1,19 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Notas de revisión de Search&Promote 8.9.8 (23/05/2013)
+description: Search&amp;Notas de la versión de Promote 8.9.8.
 solution: Target
-title: Notas de revisión de Search&Promote 8.9.8 (23/05/2013)
-topic: Release Notes,Site search and merchandising
+title: Search&amp;Promote 8.9.8 Notas de la versión (23/05/2013)
+topic: Notas de la versión, búsqueda de sitios y comercialización
 uuid: ff4bfc53-1d0e-4b7d-83ad-54c81d3f9769
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 57%
+source-wordcount: '209'
+ht-degree: 55%
 
 ---
 
 
-# Notas de la versión de Search&amp;Promote 8.9.8 (23/05/2013){#search-promote-release-notes}
+# Notas de la versión 8.9.8 (23/05/2013){#search-promote-release-notes}
 
 <table> 
  <thead> 
@@ -34,11 +32,11 @@ ht-degree: 57%
 
 **Correcciones y mejoras**
 
-* El parámetro CGI de búsqueda back-end `sp_date_range_#` no funcionaba en los campos definidos por el usuario.
+* El parámetro de búsqueda backend CGI `sp_date_range_#` no funcionaba para los campos definidos por el usuario.
 
    Consulte [Parámetros CGI de búsqueda back-end](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8).
 
-* Al revertir la versión **[!UICONTROL History]** no se actualizó el contenido del campo de puntos de entrada de URL.
+* Al revertir la versión **[!UICONTROL History]** no se actualizaba el contenido del campo de puntos de entrada de la URL.
 
    Consulte [Uso de la opción Historial](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
@@ -47,5 +45,5 @@ ht-degree: 57%
 * La codificación JSON no gestionaba los caracteres codificados incorrectamente.
 * Ahora se ha añadido compatibilidad que le permite publicar de forma remota un índice gradual.
 
-   Consulte [Acerca del control remoto para indización](../c-about-index-menu/c-about-remote-control-for-indexing.md#concept_C79B322190E84106A434E5C6D4A4118F).
+   Consulte [Acerca del control remoto para la indexación](../c-about-index-menu/c-about-remote-control-for-indexing.md#concept_C79B322190E84106A434E5C6D4A4118F).
 
