@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Notas de revisión de Search&Promote 8.15.0 (19/6/2014)
+description: Search&amp;Notas de la versión de Promote 8.15.0.
 solution: Target
-title: Notas de revisión de Search&Promote 8.15.0 (19/6/2014)
-topic: Release Notes,Site search and merchandising
+title: Search&amp;Promote 8.15.0 Notas de la versión (19/6/2014)
+topic: Notas de la versión, búsqueda de sitios y comercialización
 uuid: bb250450-48b4-4563-84b9-66f2c3dc063a
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 58%
+source-wordcount: '112'
+ht-degree: 54%
 
 ---
 
@@ -19,9 +17,9 @@ ht-degree: 58%
 
 **Nuevas funciones**
 
-* Ramificación de frases: Ahora se admite la eliminación de sinónimos dentro de una frase.  Para activar y utilizar esta función en [!DNL Adobe Search&Promote], póngase en contacto con su administrador de cuentas técnico de Adobe.
+* Ramificación de frases : ahora se admite la derivación de sinónimos dentro de una frase.  Para activar y utilizar esta función en [!DNL Adobe Search&Promote], póngase en contacto con su administrador de cuentas técnico de Adobe.
 
-   Consulte también **[!UICONTROL Alternate Word Forms]** en la tabla de opciones de [Configuración de la coincidencia de los términos de búsqueda con el contenido web...](../c-about-linguistics-menu/c-about-words-and-language.md#task_351A9144A51F4B41923BDBACDEF3B616).
+   Consulte también **[!UICONTROL Alternate Word Forms]** en la tabla de opciones de [Configuración de la correspondencia entre los términos de búsqueda y el contenido web...](../c-about-linguistics-menu/c-about-words-and-language.md#task_351A9144A51F4B41923BDBACDEF3B616).
 
 **Correcciones y mejoras**
 
