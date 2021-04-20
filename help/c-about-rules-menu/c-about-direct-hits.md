@@ -2,7 +2,7 @@
 description: Las visitas directas permiten redirigir a un cliente a una dirección URL especificada cuando el cliente busca un término coincidente. Este tipo de funcionalidad le permite mejorar la navegación de la búsqueda del sitio web.
 solution: Target
 title: Acerca de las visitas directas
-topic: Reglas,Búsqueda de sitios y comercialización
+topic: Rules,Site search and merchandising
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -3,7 +3,7 @@ description: Puede utilizar Reglas de clasificación para controlar la posición
 solution: Target
 subtopic: Ranking Rules
 title: Acerca de las reglas de clasificación
-topic: Reglas,Búsqueda de sitios y comercialización
+topic: Rules,Site search and merchandising
 uuid: 21962f9a-1d9c-442f-a6c4-5f452436c640
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

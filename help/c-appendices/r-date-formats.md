@@ -2,7 +2,7 @@
 description: Puede definir los formatos de fecha que se utilizan cuando analiza e indexa cualquier campo con un tipo de datos "fecha".
 solution: Target
 title: Formatos de fecha
-topic: Apéndices, búsqueda de sitios y comercialización
+topic: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

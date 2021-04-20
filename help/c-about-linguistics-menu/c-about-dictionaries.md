@@ -2,7 +2,7 @@
 description: Puede utilizar Diccionarios para administrar una colección de diccionarios y sus sinónimos e hiponyms asociados.
 solution: Target
 title: Acerca de los diccionarios
-topic: Lingüística, búsqueda en el sitio y comercialización
+topic: Linguistics,Site search and merchandising
 uuid: d4463896-30fe-4385-a283-c930c8264a02
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -3,7 +3,7 @@ description: Utilice el menú Adobe Analytics para configurar la autenticación 
 solution: Target
 subtopic: Adobe Analytics
 title: Acerca del menú Adobe Analytics
-topic: Configuración,Búsqueda de sitios y comercialización
+topic: Settings,Site search and merchandising
 uuid: 5536edf1-d3a4-47af-a307-6e46f385f738
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Utilice las reglas de limpieza de consultas para analizar y modificar la consulta entrante.
 solution: Target
 title: Acerca de las reglas de limpieza de consultas
-topic: Reglas,Búsqueda de sitios y comercialización
+topic: Rules,Site search and merchandising
 uuid: 683af81f-f7c0-45f8-9212-e5e7cb82ccca
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

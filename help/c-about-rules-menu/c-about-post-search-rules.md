@@ -2,7 +2,7 @@
 description: Puede utilizar las reglas posteriores a la búsqueda para examinar los resultados de una búsqueda y determinar cómo afecta la búsqueda al contenido mostrado.
 solution: Target
 title: Acerca de las reglas posteriores a la búsqueda
-topic: Reglas,Búsqueda de sitios y comercialización
+topic: Rules,Site search and merchandising
 uuid: 312d1e4a-f5b6-4629-8645-17e6f6c09fc4
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

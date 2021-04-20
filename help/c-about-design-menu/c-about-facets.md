@@ -3,7 +3,7 @@ description: Puede usar Facetas para personalizar la capa de presentación y pro
 solution: Target
 subtopic: Navigation
 title: Acerca de las facetas
-topic: Diseño, búsqueda de sitios y comercialización
+topic: Design,Site search and merchandising
 uuid: 28bc4d4d-a84c-4a77-befb-b0fb3bbdb966
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Puede definir frases comunes que se utilizan en el sitio web para que, cuando un cliente introduzca una consulta de búsqueda, no necesite escribir comillas alrededor de ninguna de las frases que haya definido.
 solution: Target
 title: Acerca de las frases comunes
-topic: Lingüística, búsqueda en el sitio y comercialización
+topic: Linguistics,Site search and merchandising
 uuid: 0f980a22-d826-4476-97de-0e9c14549bc8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

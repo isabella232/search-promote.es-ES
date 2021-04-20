@@ -2,7 +2,7 @@
 description: La búsqueda de proximidad permite asociar una ubicación única con cualquier página del sitio web y luego buscar y ordenar los resultados por proximidad (distancia) desde una ubicación determinada.
 solution: Target
 title: Acerca de la búsqueda por proximidad
-topic: Apéndices, búsqueda de sitios y comercialización
+topic: Appendices,Site search and merchandising
 uuid: 24fc9265-3400-46a7-b6e0-4de5b049a39a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -3,7 +3,7 @@ description: Utilice Barra de faceta para reordenar grupos de facetas en una pá
 solution: Target
 subtopic: Navigation
 title: Acerca de Barra de faceta
-topic: Diseño, búsqueda de sitios y comercialización
+topic: Design,Site search and merchandising
 uuid: 6da2bd67-8c20-4955-9836-bc8ba88546c5
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

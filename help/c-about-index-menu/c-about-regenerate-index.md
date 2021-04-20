@@ -3,7 +3,7 @@ description: Puede usar Regenerate Index (Regenerar índice) para actualizar el 
 solution: Target
 subtopic: Regenerate Index
 title: Acerca de Regenerar índice
-topic: Índice,Búsqueda de sitios y comercialización
+topic: Index,Site search and merchandising
 uuid: 9d1f1d88-0453-4422-a625-a348febbf224
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

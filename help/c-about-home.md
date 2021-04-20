@@ -2,7 +2,7 @@
 description: Puede utilizar Inicio para ver una gran variedad de utilidades de informe que le proporcionan información general rápida sobre su cuenta de Search&Promote .
 solution: Target
 title: Acerca de Inicio
-topic: Inicio, búsqueda en el sitio y comercialización
+topic: Home,Site search and merchandising
 uuid: 5d4dbf5e-954d-46ae-a822-18a58af60de6
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -3,7 +3,7 @@ description: Puede utilizar Rollback para realizar una copia de seguridad y arch
 solution: Target
 subtopic: Rollback
 title: Acerca de la reversión para índices
-topic: Índice,Búsqueda de sitios y comercialización
+topic: Index,Site search and merchandising
 uuid: abed878a-71b3-4122-9822-7410f4427a9a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -3,7 +3,7 @@ description: Puede usar Índice de reclasificación para actualizar la informaci
 solution: Target
 subtopic: Re-Rank Index
 title: Acerca del Índice de reclasificación
-topic: Índice,Búsqueda de sitios y comercialización
+topic: Index,Site search and merchandising
 uuid: 5c2a4c12-5e06-4fcc-897c-c12fcc5d7aa8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

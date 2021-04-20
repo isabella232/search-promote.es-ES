@@ -3,7 +3,7 @@ description: Utilice el menú Búsqueda para establecer palabras, colecciones, r
 solution: Target
 subtopic: Searching
 title: Acerca del menú Búsqueda
-topic: Configuración,Búsqueda de sitios y comercialización
+topic: Settings,Site search and merchandising
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Puede configurar ¿Quiso decir? para que los clientes reciban sugerencias de términos de búsqueda válidos cuando hayan intentado búsquedas con errores. Las sugerencias se forman buscando la ortografía y escribiendo correcciones en los términos de búsqueda que resulten en una búsqueda válida.
 solution: Target
 title: Acerca de ¿quiso decir?
-topic: Lingüística, búsqueda en el sitio y comercialización
+topic: Linguistics,Site search and merchandising
 uuid: c5973541-3d6b-4fc9-bad4-66d4d3559fe8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

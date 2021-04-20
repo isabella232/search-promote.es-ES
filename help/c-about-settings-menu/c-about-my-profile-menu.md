@@ -3,7 +3,7 @@ description: Utilice el menú Mi perfil para establecer la información personal
 solution: Target
 subtopic: My Profile
 title: Acerca del menú Mi perfil
-topic: Configuración,Búsqueda de sitios y comercialización
+topic: Settings,Site search and merchandising
 uuid: 6a0a4e57-59fa-48fb-b712-eb16a9f47c3a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

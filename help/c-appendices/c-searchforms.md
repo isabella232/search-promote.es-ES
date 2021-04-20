@@ -2,7 +2,7 @@
 description: Obtenga información sobre los formularios de búsqueda en Search&amp;Promocionar
 solution: Target
 title: Buscar formularios
-topic: Apéndices, búsqueda de sitios y comercialización
+topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

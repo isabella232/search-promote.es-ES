@@ -3,7 +3,7 @@ description: Utilice el menú Rastreo para establecer las máscaras de fecha y U
 solution: Target
 subtopic: Crawling
 title: Acerca del menú Rastreo
-topic: Configuración,Búsqueda de sitios y comercialización
+topic: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

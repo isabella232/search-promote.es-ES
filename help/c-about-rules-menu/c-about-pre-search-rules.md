@@ -2,7 +2,7 @@
 description: Utilice reglas de búsqueda previa para analizar la consulta entrante y determinar qué plantilla de presentación utilizar. Las reglas de búsqueda previa se ejecutan en secuencia para cada consulta. Para modificar el orden de las reglas, puede usar arrastrar y soltar. El orden real no cambia hasta que no lo guarda.
 solution: Target
 title: Acerca de las reglas de búsqueda previa
-topic: Reglas,Búsqueda de sitios y comercialización
+topic: Rules,Site search and merchandising
 uuid: e75f9d9e-e8ca-4184-bf79-b1fdadb5c0fe
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

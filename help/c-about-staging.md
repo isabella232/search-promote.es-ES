@@ -2,7 +2,7 @@
 description: El ensayo permite probar y previsualizar los cambios en la configuración sin afectar al índice activo.
 solution: Target
 title: Acerca del ensayo
-topic: Ensayo, búsqueda de sitios y comercialización
+topic: Staging,Site search and merchandising
 uuid: 2e5889a6-2e9c-4ac7-9d6e-d35e7cafda5b
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

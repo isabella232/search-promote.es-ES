@@ -3,7 +3,7 @@ description: Utilice el menú Usuarios para ver y agregar usuarios, ver y agrega
 solution: Target
 subtopic: Users
 title: Acerca del menú Usuarios
-topic: Configuración,Búsqueda de sitios y comercialización
+topic: Settings,Site search and merchandising
 uuid: 6242b73c-5e8a-44b7-9942-0684530940bc
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

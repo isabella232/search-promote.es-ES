@@ -2,7 +2,7 @@
 description: Puede utilizar reglas comerciales para comercializar la búsqueda.
 solution: Target
 title: Acerca de las reglas comerciales
-topic: Reglas,Búsqueda de sitios y comercialización
+topic: Rules,Site search and merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

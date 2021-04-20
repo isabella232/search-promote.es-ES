@@ -2,7 +2,7 @@
 description: Si es nuevo en la navegación dinámica y de Search&Promote, comience aquí para ponerse en marcha con su cuenta. Entre otras cosas, aprenderá a indexar su sitio web y a personalizar el aspecto de los resultados de búsqueda.
 solution: Target
 title: Primeros pasos
-topic: Introducción, búsqueda de sitios y comercialización
+topic: Getting Started,Site search and merchandising
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

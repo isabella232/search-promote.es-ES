@@ -2,7 +2,7 @@
 description: La página Alertas proporciona un lugar central para ver y administrar todas las alertas que tienen que ver con su cuenta.
 solution: Target
 title: Acerca de las alertas
-topic: Informes, búsqueda de sitios y comercialización
+topic: Reports,Site search and merchandising
 uuid: 94524563-f9a6-40cf-89f3-e80b1d0113c7
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

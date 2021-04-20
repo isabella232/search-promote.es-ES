@@ -2,7 +2,7 @@
 description: Utilice el menú Informes para ver o restablecer informes de consultas de búsqueda de clientes.
 solution: Target
 title: Acerca del menú Informes
-topic: Informes, búsqueda de sitios y comercialización
+topic: Reports,Site search and merchandising
 uuid: 3ea856d7-dc07-455f-8dc7-c7f7f56355d7
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

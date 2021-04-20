@@ -2,7 +2,7 @@
 description: Puede utilizar Plantillas para administrar las plantillas de presentación y las plantillas de transporte.
 solution: Target
 title: Acerca de las plantillas
-topic: Diseño, búsqueda de sitios y comercialización
+topic: Design,Site search and merchandising
 uuid: f5805d3e-43bf-4e13-95df-b6bd6b762d11
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

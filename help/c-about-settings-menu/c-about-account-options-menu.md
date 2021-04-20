@@ -3,7 +3,7 @@ description: Utilice el menú Opciones de cuenta para actualizar la configuraci�
 solution: Target
 subtopic: Account Options
 title: Acerca del menú Opciones de cuenta
-topic: Configuración,Búsqueda de sitios y comercialización
+topic: Settings,Site search and merchandising
 uuid: 0f830033-de9e-4197-8d76-906c818662eb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

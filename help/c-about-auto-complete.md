@@ -3,7 +3,7 @@ description: Puede configurar varias áreas de Autocompletar para controlar la g
 solution: Target
 subtopic: Auto-Complete
 title: Acerca de la finalización automática
-topic: Diseño, búsqueda de sitios y comercialización
+topic: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

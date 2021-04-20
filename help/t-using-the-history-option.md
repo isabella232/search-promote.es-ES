@@ -2,7 +2,7 @@
 description: Puede utilizar Historial para revisar una lista de todas las revisiones realizadas en una función implementada, como una faceta, una ruta de exploración, un banner o una plantilla, por nombrar algunas.
 solution: Target
 title: Uso de la opción Historial
-topic: Uso de Historial, Búsqueda de sitios y comercialización
+topic: Using History,Site search and merchandising
 uuid: 48b9ee9d-cd61-41e7-b8c3-5f1665b9a9cb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
