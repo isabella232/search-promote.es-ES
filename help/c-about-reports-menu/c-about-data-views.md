@@ -2,16 +2,16 @@
 description: Vistas de datos muestra los resultados de la búsqueda con los meta campos. Cada columna es un meta campo y cada fila es el resultado de una consulta de búsqueda. Personalice las vistas de datos eligiendo y reorganizando columnas. Las vistas de datos también pueden tener títulos y descripciones personalizados.
 solution: Target
 title: Acerca de las vistas de datos
-topic: Reports,Site search and merchandising
+topic-legacy: Reports,Site search and merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
+exl-id: 9ef5eaef-85d6-41e9-af44-b4775755e5bf
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
-
 
 # Acerca de las vistas de datos{#about-data-views}
 
@@ -185,4 +185,3 @@ La vista de datos que seleccione se abre en una ventana independiente del explor
    * En la página [!DNL Data Views], en la columna [!DNL Title] de la tabla, haga clic en el nombre de una vista de datos que desee abrir.
 
    * En la página [!DNL Data Views], en la columna [!DNL Actions] de la tabla, haga clic **[!UICONTROL View]** en la fila con la vista de datos que desea abrir.
-
