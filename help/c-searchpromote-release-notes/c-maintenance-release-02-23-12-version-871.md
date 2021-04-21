@@ -2,16 +2,16 @@
 description: Search&amp;Notas de la versión de Promote 8.7.1.
 solution: Target
 title: Search&amp;Promote 8.7.1 Notas de la versión (23/02/2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 3fabf7b2-4a27-4f0a-862a-52f701a0631d
+exl-id: b10f0081-ed69-4c6b-86c9-816326b647f0
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 32%
+source-wordcount: '173'
+ht-degree: 33%
 
 ---
-
 
 # Notas de la versión 8.7.1 de Search&amp;Promote (23/02/2012){#search-promote-release-notes}
 
@@ -38,4 +38,3 @@ Mejora para buscar rendimiento de tiempo mediante la adición de asistencia téc
 * Conservación de marcas de hora para que las cachés de plantilla no se invaliden.
 * Algunos campos de parámetros de cambio se cortaron cuando la barra de desplazamiento aparecía en el cuadro de diálogo banner de Dynamic Media Classic .
 * Cualquier cambio de regla comercial que haya realizado en los parámetros de banner de Dynamic Media Classic funcionó en el área Ensayo, pero no tuvo efecto al activarse.
-
