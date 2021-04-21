@@ -3,16 +3,16 @@ description: Puede utilizar la actualización vertical para actualizar rápidame
 solution: Target
 subtopic: Vertical Update
 title: Acerca de la actualización vertical
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: ded09e89-5a52-4e8c-a6f7-3e25b4191183
+exl-id: 8d6a48c0-377d-4a15-bddc-c67e28037bfc
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
-
 
 # Acerca de la actualización vertical{#about-vertical-update}
 
@@ -134,4 +134,3 @@ No puede exportar archivos de registro de actualización vertical ni guardarlos.
    * Utilice las opciones de navegación **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** o **[!UICONTROL Go to line]** para desplazarse por el registro.
 
    * Utilice las opciones de visualización **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** o **[!UICONTROL Show]** para restringir lo que ve.
-
