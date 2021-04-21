@@ -2,16 +2,16 @@
 description: Search&amp;Notas de la versión de Promote 8.9.
 solution: Target
 title: Search&amp;Notas de la versión de Promote 8.9 (19/07/2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 3853c75d-19ed-4e36-9e81-dcbffe5f5b0c
+exl-id: d61bf0ee-60a9-4c89-8381-5514ba85cb99
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 65%
+source-wordcount: '281'
+ht-degree: 66%
 
 ---
-
 
 # Notas de la versión de Search&amp;Promote 8.9 (19/07/2012){#search-promote-release-notes}
 
@@ -39,4 +39,3 @@ ht-degree: 65%
 * Al hacer clic en Editar en algunos banners no se mostró la página Editar.
 * La nueva clasificación del código de actualización podría realizarse de un modo extraordinariamente lento.
 * Al eliminar o insertar un elemento de aspecto no funcionó si el nombre del aspecto utilizaba mayúsculas y minúsculas a la vez.
-
