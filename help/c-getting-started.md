@@ -2,16 +2,16 @@
 description: Si es nuevo en la navegación dinámica y de Search&Promote, comience aquí para ponerse en marcha con su cuenta. Entre otras cosas, aprenderá a indexar su sitio web y a personalizar el aspecto de los resultados de búsqueda.
 solution: Target
 title: Primeros pasos
-topic: Getting Started,Site search and merchandising
+topic-legacy: Getting Started,Site search and merchandising
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
+exl-id: f2772d7a-b558-403e-9e77-8c87302e2b02
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
-
 
 # Primeros pasos{#getting-started}
 
@@ -142,4 +142,3 @@ Hay muchas opciones adicionales que le permiten personalizar y controlar complet
 * Configure los diccionarios para que le permitan especificar grupos de palabras relacionadas (por ejemplo, comprar, comprar y adquirir). Estas palabras relacionadas ayudan a devolver resultados relevantes incluso cuando la consulta de búsqueda de un cliente no coincide exactamente con la terminología utilizada en las páginas web. Con el sinónimo utilizado en el ejemplo anterior, la consulta de búsqueda de un cliente de &quot;compra&quot; devuelve páginas que contienen la palabra &quot;compra&quot;.
 
    Consulte [Acerca de los diccionarios](c-about-linguistics-menu/c-about-dictionaries.md#concept_B8028B71EC8144669614C64578EDB034).
-
