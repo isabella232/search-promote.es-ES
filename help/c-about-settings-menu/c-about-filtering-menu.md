@@ -3,16 +3,16 @@ description: Utilice el menú Filtrado para utilizar secuencias de comandos que 
 solution: Target
 subtopic: Filtering
 title: Acerca del menú Filtrado
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: ebb08fa8-4e17-417d-868b-11fc2af9f284
+exl-id: 1a1c7b86-a29b-4c17-8743-ff3c2c91b63a
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '4008'
+source-wordcount: '4003'
 ht-degree: 1%
 
 ---
-
 
 # Acerca del menú Filtrado{#about-the-filtering-menu}
 
@@ -62,7 +62,7 @@ Algunas opciones de diferencia GNU que puede usar mientras está en modo **[!UIC
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> -n </span> </p> </td> 
-   <td colname="col2"> <p> produce diferencias en formato RCS; como <span class="codeph"> -f </span> excepto que cada comando especifica el número de líneas afectadas. </p> </td> 
+   <td colname="col2"> <p> produce diferencias en formato RCS; como <span class="codeph"> -f </span> excepto que cada comando especifica el número de líneas que se ven afectadas. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>-u </p> </td> 
@@ -164,7 +164,7 @@ Puede utilizar las siguientes variables en cualquier script de filtrado:
 
 El script de filtrado es un script Perl que se ejecuta para cada documento descargado del sitio web.
 
-La secuencia de comandos de filtrado se utiliza junto con una secuencia de comandos de inicialización, una secuencia de comandos de finalización y una secuencia de comandos de máscaras de URL.
+La secuencia de comandos de filtrado se utiliza junto con la secuencia de comandos de inicialización, la secuencia de comandos de finalización y la secuencia de comandos de máscaras de URL.
 
 Asegúrese de reconstruir el índice del sitio para que los resultados del script de filtrado sean visibles para los clientes.
 
