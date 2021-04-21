@@ -2,16 +2,16 @@
 description: Puede utilizar Plantillas para administrar las plantillas de presentación y las plantillas de transporte.
 solution: Target
 title: Acerca de las plantillas
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: f5805d3e-43bf-4e13-95df-b6bd6b762d11
+exl-id: 846f34b3-9857-494e-9010-3db0b48412d3
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2647'
 ht-degree: 1%
 
 ---
-
 
 # Acerca de las plantillas{#about-templates}
 
@@ -693,4 +693,3 @@ Consulte [Vista previa de la plantilla de presentación minimizada](../c-about-d
    * Haga clic **[!UICONTROL Push Live]**.
 
       Consulte [Inserción de la configuración del escenario en directo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
