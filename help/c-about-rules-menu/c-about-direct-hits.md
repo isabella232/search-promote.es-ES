@@ -2,16 +2,16 @@
 description: Las visitas directas permiten redirigir a un cliente a una dirección URL especificada cuando el cliente busca un término coincidente. Este tipo de funcionalidad le permite mejorar la navegación de la búsqueda del sitio web.
 solution: Target
 title: Acerca de las visitas directas
-topic: Rules,Site search and merchandising
+topic-legacy: Rules,Site search and merchandising
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
+exl-id: 251dfa47-f55a-469c-8fca-e187877b7759
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
-
 
 # Acerca de las visitas directas{#about-direct-hits}
 
@@ -95,4 +95,3 @@ Si prueba un término que no esté cubierto por una regla de visita directa, se 
    * Haga clic **[!UICONTROL Push Live]**.
 
       Consulte [Inserción de la configuración del escenario en directo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
