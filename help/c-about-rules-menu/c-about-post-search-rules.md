@@ -2,16 +2,16 @@
 description: Puede utilizar las reglas posteriores a la búsqueda para examinar los resultados de una búsqueda y determinar cómo afecta la búsqueda al contenido mostrado.
 solution: Target
 title: Acerca de las reglas posteriores a la búsqueda
-topic: Rules,Site search and merchandising
+topic-legacy: Rules,Site search and merchandising
 uuid: 312d1e4a-f5b6-4629-8645-17e6f6c09fc4
+exl-id: 021aaf99-050e-4d3a-a1da-45f0edfd7c35
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '2102'
-ht-degree: 0%
+source-wordcount: '2097'
+ht-degree: 1%
 
 ---
-
 
 # Acerca de las reglas posteriores a la búsqueda{#about-post-search-rules}
 
