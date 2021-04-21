@@ -2,16 +2,16 @@
 description: Utilice las cuentas del menú del producto para seleccionar una cuenta a la que desee acceder y utilizar.
 solution: Target
 title: Acerca del menú Cuentas
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
+exl-id: f3f43b71-cbcb-4325-88de-72db1c049700
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '167'
 ht-degree: 2%
 
 ---
-
 
 # Acerca del menú Cuentas{#about-the-accounts-menu}
 
@@ -40,4 +40,3 @@ Después de seleccionar una cuenta, aparecerá la página de inicio de búsqueda
 
    * En la tabla, en el encabezado de columna [!DNL Name] , haga clic en el nombre de la cuenta que desee utilizar y administrar.
    * En la tabla, en el encabezado de columna [!DNL Number] , haga clic en el número de cuenta que desee utilizar y administrar.
-
