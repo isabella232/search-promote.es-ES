@@ -2,16 +2,16 @@
 description: La página Alertas proporciona un lugar central para ver y administrar todas las alertas que tienen que ver con su cuenta.
 solution: Target
 title: Acerca de las alertas
-topic: Reports,Site search and merchandising
+topic-legacy: Reports,Site search and merchandising
 uuid: 94524563-f9a6-40cf-89f3-e80b1d0113c7
+exl-id: b6d637c9-2a2c-49b3-828b-3ae272bf28aa
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
-
 
 # Acerca de las alertas{#about-alerts}
 
@@ -50,4 +50,3 @@ La página Alertas proporciona un lugar central para ver y administrar todas las
    * Para seleccionar todas las alertas mostradas, seleccione la casilla de verificación situada en la parte superior de la columna izquierda.
 
       Si desea seleccionar todas las alertas coincidentes en lugar de una sola página de ellas, en la lista desplegable de la derecha, seleccione **[!UICONTROL All Alerts]** y, a continuación, seleccione la casilla de verificación en la parte superior de la columna.
-
