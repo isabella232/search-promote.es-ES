@@ -3,16 +3,16 @@ description: Puede usar el Índice incremental para indexar "partes" de su sitio
 solution: Target
 subtopic: Incremental Index
 title: Acerca del índice incremental
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: b1ee9b08-dcbe-4ffe-b0b4-d379daaac9b5
+exl-id: 41943f84-23f0-434c-8eef-a9075dd5c03d
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1357'
+source-wordcount: '1352'
 ht-degree: 1%
 
 ---
-
 
 # Acerca del índice incremental{#about-incremental-index}
 
@@ -254,4 +254,3 @@ No puede exportar registros ni guardarlos. El registro permanece disponible para
    * Utilice las opciones de navegación **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** o **[!UICONTROL Go to line]** para desplazarse por el registro.
 
    * Utilice las opciones de visualización **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** o **[!UICONTROL Show]** para restringir lo que ve.
-
