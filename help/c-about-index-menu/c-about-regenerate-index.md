@@ -3,16 +3,16 @@ description: Puede usar Regenerate Index (Regenerar índice) para actualizar el 
 solution: Target
 subtopic: Regenerate Index
 title: Acerca de Regenerar índice
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: 9d1f1d88-0453-4422-a625-a348febbf224
+exl-id: 4155a52c-33f6-4f54-b69b-2a092530f7aa
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '393'
 ht-degree: 1%
 
 ---
-
 
 # Acerca de Regenerar índice{#about-regenerate-index}
 
@@ -75,4 +75,3 @@ No puede exportar registros ni guardarlos. Sin embargo, el registro permanece di
    * Utilice las opciones de navegación **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** o **[!UICONTROL Go to line]** para desplazarse por el registro.
 
    * Utilice las opciones de visualización **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** o **[!UICONTROL Show]** para restringir lo que ve.
-
