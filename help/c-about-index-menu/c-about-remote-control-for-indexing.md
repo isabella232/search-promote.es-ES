@@ -2,16 +2,16 @@
 description: Siempre que cambie su sitio web, puede ejecutar un script o programa solicitando que el robot de búsqueda ejecute un índice usando control remoto.
 solution: Target
 title: Acerca del control remoto para la indexación
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: 20e230c6-5c1a-4bf4-bff3-b8236d14ab21
+exl-id: 1a7689f9-1e3f-48c8-a5f1-abe0efdb7768
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1037'
 ht-degree: 1%
 
 ---
-
 
 # Acerca del control remoto para la indexación{#about-remote-control-for-indexing}
 
