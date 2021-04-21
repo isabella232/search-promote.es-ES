@@ -2,16 +2,16 @@
 description: Obtenga información sobre el uso de las etiquetas de presentación y plantilla en Search&amp;Promote.
 solution: Target
 title: Plantillas
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 78299032-dc23-4dfe-b68f-cd57b2b6d7d8
+exl-id: f8cc4b5c-4e75-426b-8234-76af8bb0f4c5
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '15153'
+source-wordcount: '15148'
 ht-degree: 2%
 
 ---
-
 
 # Plantillas{#templates}
 
@@ -89,7 +89,7 @@ Las declaraciones son etiquetas guiadas-declaradas especiales que puede establec
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> 
      <!--In search-eng 1/31/13--> <span class="codeph"> &lt;guided-result-link&gt;&lt;/guided-result-link&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Para crear un vínculo a un resultado determinado, utilice la etiqueta <span class="codeph"> guided-result-link </span> . Al definir un atributo <span class="codeph"> gsname </span>, puede utilizar un campo del índice en lugar de la etiqueta estándar "loc" que hace referencia a la "search-url". También se puede pasar cualquier otro atributo, como class y target, que se muestre en la etiqueta de anclaje resultante. </p> </td> 
+   <td colname="col2"> <p>Para crear un vínculo a un resultado determinado, utilice la etiqueta <span class="codeph"> guided-result-link </span> . Al definir un atributo <span class="codeph"> gsname </span>, puede utilizar un campo del índice en lugar de la etiqueta "loc" estándar que hace referencia a la "search-url". También se puede pasar cualquier otro atributo, como class y target, que se muestre en la etiqueta de anclaje resultante. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
@@ -267,7 +267,7 @@ Consulte [Acerca de las facetas dinámicas](../c-about-design-menu/c-about-dynam
    <td colname="col2"> <p>Devuelve la etiqueta de visualización de la faceta. </p> <p>Si la faceta utiliza la etiqueta <span class="codeph"> &lt;display-name&gt; </span> en la plantilla de transporte, el contenido de esa etiqueta se convierte en la etiqueta. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--In search-eng version 1/31/13--> <span class="codeph"> &lt;guided-facet-rail&gt;&lt;/guided-facet-rail&gt; </span> </p> </td> 
    <td colname="col2"> <p> Define una sección de la plantilla de presentación que se utiliza como patrón de repetición para cada faceta del carril de facetas. </p> <p> Cada faceta que pertenece al carril de facetas utiliza esta sección para evaluar su salida. </p> <p>El siguiente es un ejemplo de carril de facetas: </p> <p> <code class="syntax html"> &lt;guided-facet-rail&gt; 
@@ -745,7 +745,7 @@ Las etiquetas de navegación de página se pueden utilizar para crear un conjunt
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-pages&gt;&lt;/guided-pages&gt; </span> </p> </td> 
    <td colname="col2"> <p>Etiqueta de bucle para la navegación de la página. Cualquier contenido entre las etiquetas de apertura y cierre se repite para cada página. </p> </td> 
@@ -757,7 +757,7 @@ Las etiquetas de navegación de página se pueden utilizar para crear un conjunt
    <td colname="col2"> <p>Crea un vínculo en la navegación de la página. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-page-link gsname="first|prev|next|last|viewall|viewpages"&gt;&lt;/guided-page-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Crea un vínculo a la primera, anterior, siguiente o última página. También puede crear un vínculo para ver todas las páginas en una página. </p> </td> 
@@ -889,7 +889,7 @@ Consulte [Configuración de búsquedas recientes](../c-about-design-menu/t-confi
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-recent-searches&gt;&lt;/guided-recent-searches&gt; </span> </p> </td> 
    <td colname="col2"> <p>Etiqueta de bucle para búsquedas recientes. Cualquier contenido entre las etiquetas de apertura y cierre se repite para cada página. </p> </td> 
   </tr> 
@@ -900,7 +900,7 @@ Consulte [Configuración de búsquedas recientes](../c-about-design-menu/t-confi
    <td colname="col2"> <p>Permite crear un vínculo a una búsqueda reciente. Admite el paso de cualquier atributo HTML directamente a la etiqueta de anclaje. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-recent-searches-path /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Permite obtener la ruta de URL relativa para una búsqueda reciente, dentro de un bucle <span class="codeph"> guided-recent-searches </span> . Normalmente utilizaría <span class="codeph"> guiado-reciente-búsqueda-enlace </span>. Sin embargo, si desea crear su propio vínculo, puede utilizar esta etiqueta. El siguiente es un ejemplo: </p> <p> <code class="syntax html"> &lt;guided-lt/&gt;a&amp;nbsp;href="&lt;guided_recent_searches_path&gt;"&gt;&lt;guided-recent-searches-value&gt;&lt;/a&gt; </code> </p> </td> 
   </tr> 
@@ -954,7 +954,7 @@ Consulte [Acerca de ¿quiso decir?](../c-about-linguistics-menu/c-about-did-you-
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matches search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-suggestions&gt;&lt;/guided-suggestions&gt; </span> </p> </td> 
    <td colname="col2"> <p>Esta es la etiqueta de bucle para omitir las sugerencias. </p> </td> 
@@ -1076,7 +1076,7 @@ Utilice las etiquetas siguientes para probar y mostrar el almacén en el que se 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-store /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Muestra la tienda actual. </p> </td> 
   </tr> 
@@ -1086,7 +1086,7 @@ Utilice las etiquetas siguientes para probar y mostrar el almacén en el que se 
    <td colname="col2"> <p>Detecta si el usuario está en una tienda. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-if-store gsname="store"&gt; &lt;guided-else-store&gt; &lt;/guided-if-store&gt; </span> </p> </td> 
    <td colname="col2"> <p>Detecta si el usuario está en el almacén que especifica el parámetro <span class="codeph"> gsname </span>. </p> </td> 
   </tr> 
@@ -1105,7 +1105,7 @@ Utilice las etiquetas siguientes para probar y mostrar el almacén en el que se 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-zone gsname="zone area"&gt; </span> </p> </td> 
    <td colname="col2"> <p>Puede ajustar cualquier contenido en etiquetas de zona para crear una zona fuera de esa área. Esto permite utilizar reglas comerciales para mostrar la zona según sea necesario. De forma predeterminada, las zonas siempre se muestran. Puede utilizar los parámetros opcionales de búsqueda y faceta para indicar qué búsqueda o faceta está asociada a la zona. Esta funcionalidad permite que el software omita las búsquedas o facetas cuando una zona está oculta, lo que mejora el rendimiento en el tiempo de búsqueda. Los atributos de altura y anchura son opcionales y se utilizan para configurar cómo se muestra el marcador de posición en el Generador de reglas visuales cuando se elimina una zona. </p> <p> Utilice la etiqueta <span class="codeph"> guided-if-facet[-not]-visible </span> en lugar de la zona siempre que sea posible. Simplifica la plantilla de presentación. </p> </td> 
   </tr> 
@@ -1208,7 +1208,7 @@ Las siguientes etiquetas están disponibles para permitirle hacer cosas más ava
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to match search-eng, 2/1/2013--> <span class="codeph"> &lt;guided-current-path&gt; </span> </p> </td> 
    <td colname="col2"> <p>Proporciona la ruta actual que se utiliza. Normalmente se utiliza para crear un vínculo que añade un nuevo parámetro a la búsqueda existente. De forma predeterminada, se omite la dirección URL en la ruta. Puede especificar el modo de escape que desea utilizar mediante el parámetro escape . </p> <p>Ejemplo: </p> <p> <code class="syntax html"> &lt;a&nbsp;href="&lt;guided-current-path&nbsp;/&gt;&amp;lang=fr"&gt; 
@@ -1586,7 +1586,7 @@ Consulte [Acerca de las etiquetas de bucle de resultados](../c-appendices/c-temp
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-index&gt; </span> </p> </td> 
    <td colname="col2"> <p>Devuelve el índice numérico del resultado actual. </p> </td> 
   </tr> 
@@ -1596,7 +1596,7 @@ Consulte [Acerca de las etiquetas de bucle de resultados](../c-appendices/c-temp
    <td colname="col2"> <p>Devuelve el título de la página del resultado actual. El atributo de longitud opcional se utiliza para limitar la longitud de las cadenas mostradas, con un valor predeterminado de 80 caracteres. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-bodytext length="XX" encoding="html/javascript/json/perl/url/none"&gt; </span> </p> </td> 
    <td colname="col2"> <p>Devuelve el texto del cuerpo comenzando desde la parte superior de la página. Los términos relevantes se muestran en negrita. El atributo de longitud opcional se utiliza para limitar la longitud de las cadenas mostradas, con un valor predeterminado de 80 caracteres. El atributo de codificación es opcional y puede codificar caracteres de salida con codificación HTML (predeterminada), codificación Javascript, codificación Perl o ninguno. </p> </td> 
   </tr> 
@@ -1715,7 +1715,7 @@ Consulte [Acerca de las etiquetas de bucle de resultados](../c-appendices/c-temp
    <td colname="col2"> <p> Estas etiquetas incluyen el HTML entre ellas si la siguiente llamada a <span class="codeph"> &lt;search-description&gt; </span> devuelve (o no devuelve) texto de la descripción del documento. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-bodytext&gt; ...  &lt;/search-if-bodytext&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-bodytext&gt; ...  &lt;/search-if-not-bodytext&gt; </span> </p> </td> 
    <td colname="col2"> <p>Estas etiquetas incluyen el HTML entre ellas si la siguiente llamada a <span class="codeph"> &lt;search-body text&gt; </span> devuelve (o no devuelve) texto del cuerpo del documento. </p> </td> 
   </tr> 
@@ -1789,7 +1789,7 @@ Consulte [Acerca de las etiquetas de bucle de resultados](../c-appendices/c-temp
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-first&gt; ...  &lt;/search-if-first&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-first&gt; ...  &lt;/search-if-not-first&gt; </span> </p> </td> 
    <td colname="col2"> <p>Estas etiquetas incluyen el texto entre ellas si el resultado actual es (o no) el primer resultado en la página (cuando se utiliza dentro de <span class="codeph"> &lt;search-results&gt; </span>) o el primer valor de campo (cuando se utiliza dentro de <span class="codeph"> &lt;search-field-values&gt; </span>). </p> </td> 
   </tr> 
@@ -1837,7 +1837,7 @@ Consulte [Acerca de las etiquetas de bucle de resultados](../c-appendices/c-temp
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>3 </p> </td> 
+   <td colname="col1"> <p>1 </p> </td> 
    <td colname="col2"> <p>Primer resultado </p> </td> 
    <td colname="col3"> <p>No </p> </td> 
    <td colname="col4"> <p>No </p> </td> 
@@ -1849,7 +1849,7 @@ Consulte [Acerca de las etiquetas de bucle de resultados](../c-appendices/c-temp
    <td colname="col4"> <p>Sí </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>3 </p> </td> 
+   <td colname="col1"> <p>1 </p> </td> 
    <td colname="col2"> <p>Tercer resultado </p> </td> 
    <td colname="col3"> <p>No </p> </td> 
    <td colname="col4"> <p>No </p> </td> 
@@ -1930,7 +1930,7 @@ Las siguientes etiquetas avanzadas muestran valores de campo de salida y datos r
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-value-list name="field-name" quotes="yes/no" commas="yes/no" data="values/counts/results" separator="X" sortby="none/values/counts/results" max-items="XX" date-format="date-format-string" gmt="yes/no" language="0/language-id" encoding="html/javascript/json/perl/url/none"&gt; </span> </p> </td> 
    <td colname="col2"> <p>Esta etiqueta muestra una lista de valores de campo únicos, recuentos de valores o recuentos de resultados en todo el conjunto de resultados. </p> <p>Esta etiqueta solo produce resultados para los campos especificados por los parámetros CGI <span class="codeph"> sp_sfvl_field </span> en la consulta de búsqueda. El atributo opcional "comillas" controla si los elementos individuales que salen están rodeados de comillas dobles (o comillas simples, si encoding=perl). El valor predeterminado de "comillas" es "sí". El atributo opcional "comas" controla si la salida de elementos individuales está separada por comas. El valor predeterminado de "comas" es "sí". El atributo opcional "data" controla si se genera cada valor de campo único (data="values"), el recuento total de cada valor de campo único (data="count") o el número de resultados que contienen cada valor único (data="results"). El valor predeterminado de "data" es "values". Para los campos que no son de lista, data="count" y data="results" son equivalentes. El atributo separator define el carácter o delimitador único que se debe insertar entre los valores de la salida. El atributo opcional "sortby" controla el orden del resultado; sortby="none" significa que no hay ningún orden en particular, sortby="values" significa ordenar por valores de campo (en orden ascendente o descendente según la propiedad Sorting del campo), sortby="count" significa ordenar en orden descendente por recuentos de valor de campo y sortby="results" significa ordenar en orden descendente por el número de resultados que contienen cada valor. </p> <p>Tenga en cuenta que sortby="count" y sortby="results" son equivalentes para los campos que no son de lista. El atributo opcional "max-items" limita el número de elementos que se van a generar. El valor predeterminado de "max-items" es -1, lo que significa "output all items". </p> <p>Hay un límite absoluto de 100 para el máximo de elementos. Los atributos "date-format", "gmt" e "language" solo son relevantes si el tipo de contenido del campo especificado es "date". El atributo "date-format" toma una cadena de formato de fecha de estilo UNIX como "%A, %B %d, %Y" (para "lunes, 25 de julio de 2016"). El valor predeterminado "gmt" es "sí" y controla si la parte horaria de la cadena de fecha debe aparecer en GMT ("sí") o en la zona horaria de la cuenta ("no"). </p> <p>Consulte <a href="../c-appendices/c-templates.md#section_4BBDBBEF2B96414497617CD4B52D96E4" type="section" format="dita" scope="local"> Cadenas de formato de fecha</a>. </p> <p>El atributo "language" controla las convenciones de idioma y configuración regional de la cadena de fecha de salida. "0" (el valor predeterminado) significa "Usar idioma de la cuenta". Cualquier otro valor de "idioma" se interpreta como un identificador de idioma específico, por ejemplo, "en_US" significa "inglés (Estados Unidos)". El atributo opcional "codificación" controla si los caracteres de cadena de salida son HTML codificados, JavaScript codificados, Perl codificados, URL codificados o no, para su salida en la página de resultados. El valor predeterminado de "codificación" es "html". </p> <p>Consulte <a href="../c-appendices/c-templates.md#section_0490DECC00E34691ADE5A9ED90A6D911" type="section" format="dita" scope="local"> Identificadores de idioma</a>. </p> </td> 
   </tr> 
@@ -1966,7 +1966,7 @@ Las siguientes etiquetas avanzadas enumeran y muestran los valores de campo de s
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-values name="field-name" sortby="none/values/counts/results" max-items="XX"&gt; ...  &lt;/search-field-values&gt; </span> </p> </td> 
    <td colname="col2"> <p>Esta etiqueta crea un bucle para enumerar valores de campo y datos relacionados para un campo en particular dentro de todo el conjunto de resultados. No anide esta etiqueta dentro de otra etiqueta <span class="codeph"> &lt;search-field-values&gt; </span>. El atributo "name" especifica el nombre del campo que contiene los valores que se van a enumerar. El atributo opcional "sortby" controla el orden de enumeración: "ninguno" significa que no hay un orden concreto, "valores" significa ordenar por valores de campo (en orden ascendente o descendente según la propiedad Sorting del campo), sortby="count" significa ordenar en orden descendente por recuentos de valor de campo y sortby="results" significa ordenar en orden descendente por el número de resultados que contienen cada valor. </p> <p>Tenga en cuenta que sortby="count" y sortby="results" son equivalentes para los campos que no son de lista. . El atributo opcional "max-items" limita el número de iteraciones al valor dado. El valor predeterminado de "max-items" es -1, lo que significa "enumerar todos los valores". </p> </td> 
   </tr> 
@@ -1976,7 +1976,7 @@ Las siguientes etiquetas avanzadas enumeran y muestran los valores de campo de s
    <td colname="col2"> <p>Esta etiqueta genera el valor del campo para la iteración de bucle actual &lt;search-field-values&gt;. Esta etiqueta solo es válida dentro de un bucle <span class="codeph"> &lt;search-field-values&gt; </span>. Los atributos "date-format", "gmt" e "language" solo son relevantes si el tipo de contenido del nombre de campo especificado en la etiqueta &lt;search-field-values&gt; que lo rodea es "date". El atributo "date-format" toma una cadena de formato de fecha de estilo UNIX como "%A, %B %d, %Y" (para "lunes, 25 de julio de 2020"). </p> <p>Consulte <a href="../c-appendices/c-templates.md#section_4BBDBBEF2B96414497617CD4B52D96E4" type="section" format="dita" scope="local"> Cadenas de formato de fecha</a>. </p> <p>El atributo opcional "codificación" controla si los caracteres de cadena de salida son HTML codificados, JavaScript codificados, Perl codificados, URL codificados o no, para su salida en la página de resultados. El valor predeterminado de "codificación" es "ninguno". Normalmente, no es necesario especificar el atributo de codificación. El valor predeterminado "gmt" es "sí" y controla si la parte horaria de la cadena de fecha debe aparecer en GMT ("sí") o en la zona horaria de la cuenta ("no"). El atributo "language" controla las convenciones de idioma y configuración regional de la cadena de fecha de salida. "0" (el valor predeterminado) significa "Usar idioma de la cuenta". Cualquier otro valor de "idioma" se interpreta como un identificador de idioma específico, por ejemplo, "en_US" significa "inglés (Estados Unidos)". </p> <p>Consulte <a href="../c-appendices/c-templates.md#section_0490DECC00E34691ADE5A9ED90A6D911" type="section" format="dita" scope="local"> Identificadores de idioma</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-value-count results="yes/no"&gt; </span> </p> </td> 
    <td colname="col2"> <p>Esta etiqueta genera el recuento asociado con la iteración de bucle <span class="codeph"> &lt;search-field-values&gt; </span> actual. El recuento de salida es el número de resultados en todo el conjunto de resultados que contiene el valor del campo (results="yes") o el recuento total del valor del campo en todo el conjunto de resultados. El valor predeterminado de "resultados" es "no". </p> <p>Para los campos que no son de lista, results="yes" y results="no" son equivalentes. Esta etiqueta solo es válida dentro de un bucle <span class="codeph"> &lt;search-field-values&gt; </span>. </p> </td> 
   </tr> 
@@ -2006,7 +2006,7 @@ Sugerencia proporciona un sencillo mensaje de usuario &quot;¿Quiso decir?&quot;
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-suggestions&gt; ...  &lt;/search-if-suggestions&gt; </span> </p> </td> 
    <td colname="col2"> <p>Rodee estas etiquetas con cualquier etiqueta de plantilla "Sugiera", como <span class="codeph"> &lt;search-sugerencia&gt; </span>, <span class="codeph"> &lt;search-sugerir-link&gt; </span>, etc. Si la búsqueda genera sugerencias, el motor de búsqueda genera y procesa todo entre las etiquetas de apertura y cierre. Si la búsqueda no genera sugerencias, no se genera ningún contenido anidado. </p> </td> 
   </tr> 
@@ -2200,7 +2200,7 @@ Las siguientes son etiquetas que hacen que un vínculo de anclaje rodee el HTML 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-next URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-next&gt; </span> </p> <p> <span class="codeph"> &lt;search-prev URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-prev&gt; </span> </p> </td> 
    <td colname="col2"> <p>Muestra la página siguiente o anterior de los resultados. </p> </td> 
   </tr> 
@@ -2231,7 +2231,7 @@ Etiquetas que permiten incluir HTML condicionalmente entre ellas.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-results&gt; ...  &lt;/search-if-results&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-results&gt; ...&lt;/search-if-not-results&gt; </span> </p> </td> 
    <td colname="col2"> <p>Estas etiquetas incluyen HTML si la página actual contiene algún resultado de búsqueda (o no). </p> </td> 
   </tr> 
@@ -2292,7 +2292,7 @@ Etiquetas que permiten controlar el estado de selección predeterminado de las c
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-input&gt; </span> </p> </td> 
    <td colname="col2"> <p>Se utiliza en una plantilla en lugar de una etiqueta <span class="codeph"> &lt;input&gt; </span>. Cuando la etiqueta se escribe en el explorador, la palabra <span class="codeph"> entrada </span> reemplaza a <span class="codeph"> search-input </span> y el resto de la información de la etiqueta se genera tal cual. Además, si el <span class="codeph"> nombre </span> especificado en la etiqueta aparece como un parámetro CGI y si el <span class="codeph"> valor </span> especificado en la etiqueta es el valor para ese parámetro CGI, la palabra <span class="codeph"> marcada </span> se agrega al final de la etiqueta. De este modo, puede hacer que el estado predeterminado del botón de opción o de la casilla de verificación en el resultado de la búsqueda sea el mismo que la consulta actual. </p> <p>Por ejemplo, el código HTML de una casilla de verificación puede tener el siguiente aspecto: </p> <p> <span class="codeph"> &lt;input type="checkbox" name="sp_w" value="exact"&gt;Sin coincidencia de sonido  </span> </p> <p>El código de plantilla correspondiente para esa casilla de verificación es el siguiente: </p> <p> <span class="codeph"> &lt;search-input type="checkbox" name="sp_w" value="exact"&gt;Sin coincidencia de sonido  </span> </p> <p>Si la cadena del parámetro CGI para la consulta contiene <span class="codeph"> sp_w=exacto </span>, la etiqueta escrita en el explorador con los resultados de búsqueda tiene el siguiente aspecto (la palabra <span class="codeph"> marcada </span> se inserta al final de la etiqueta): </p> <p> <span class="codeph"> &lt;input type="checkbox" name="sp_w" value="exact" checked=""&gt;Sin coincidencia de sonido  </span> </p> <p>Si la cadena del parámetro CGI para la consulta no contiene <span class="codeph"> sp_w=specific </span>, la etiqueta escrita en el explorador con los resultados de búsqueda tiene el siguiente aspecto (la palabra <span class="codeph"> marcada </span> no aparece en la etiqueta ): </p> <p> <span class="codeph"> &lt;input type="checkbox" name="sp_w" value="exact"&gt;Sin coincidencia de sonido  </span> </p> <p>La etiqueta <span class="codeph"> &lt;search-input&gt; </span> es útil para colocar casillas de verificación y botones de opción en la plantilla de búsqueda. Si tiene casillas de verificación o botones de opción que desea agregar a <span class="codeph"> &lt;form&gt; </span> en la plantilla de búsqueda, utilice <span class="codeph"> &lt;search-input...&gt; </span> en lugar de <span class="codeph"> &lt;input...&gt; </span>. </p> </td> 
   </tr> 
@@ -2320,7 +2320,7 @@ Etiquetas que permiten controlar el estado de selección predeterminado de las c
       &lt;/search-select&gt; </code> </p> <p>Si tiene cuadros de lista que desea agregar a <span class="codeph"> &lt;form&gt; </span> en la plantilla de búsqueda, utilice <span class="codeph"> &lt;search-select...&gt; </span> en lugar de <span class="codeph"> &lt;select...&gt; </span>, <span class="codeph"> &lt;/search-select&gt; </span> en lugar de <span class="codeph"> &lt;/select&gt; </span>/&gt;, <span class="codeph"> &lt;search-option...&gt; </span> en lugar de <span class="codeph"> &lt;option...&gt; </span> y <span class="codeph"> &lt;/search-option&gt; </span> en lugar de <span class="codeph"> &lt;/option&gt; </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-sort-by-field name="field-name" count="XX"&gt; ...  &lt;/search-sort-by-field&gt; </span> </p> </td> 
    <td colname="col2"> <p>Estas etiquetas avanzadas crean un vínculo de anclaje alrededor del HTML entre ellas. Cuando se hace clic en este anclaje, se muestra una página de resultados ordenados en un campo determinado. El atributo opcional <span class="codeph"> count </span> especifica el número de resultados que se mostrarán en la página de resultados. Si se omite <span class="codeph"> count </span> , se utiliza el recuento utilizado en la página actual. </p> </td> 
   </tr> 
