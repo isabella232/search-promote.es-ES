@@ -2,16 +2,16 @@
 description: Search&amp;Notas de la versión de Promote 8.13.0.
 solution: Target
 title: Search&amp;Promote 8.13.0 Notas de la versión (16/04/2014)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: b3524992-ff00-4a7c-a404-078242456734
+exl-id: cba582ad-d388-4317-af06-b8b12b300f02
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 56%
+source-wordcount: '324'
+ht-degree: 57%
 
 ---
-
 
 # Notas de la versión de Search&amp;Promote 8.13.0 (16/04/2014){#search-promote-release-notes}
 
@@ -49,4 +49,3 @@ ht-degree: 56%
 * La función de validación SPIN XPath devolvía un falso positivo.
 
 * Después de habilitar/deshabilitar SPIN, se redirigía al usuario a la página de inicio de sesión de centro del miembro.
-
