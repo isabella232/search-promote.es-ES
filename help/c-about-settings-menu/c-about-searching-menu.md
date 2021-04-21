@@ -3,16 +3,16 @@ description: Utilice el menú Búsqueda para establecer palabras, colecciones, r
 solution: Target
 subtopic: Searching
 title: Acerca del menú Búsqueda
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
+exl-id: 4cb70240-051b-4bf3-ae2a-b151acc7cba1
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '11170'
+source-wordcount: '11165'
 ht-degree: 1%
 
 ---
-
 
 # Acerca del menú Búsqueda{#about-the-searching-menu}
 
@@ -874,7 +874,7 @@ t_adding_url_mask_or_jp_address_restrictions.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p>Dirección URL a la que se deben enviar las solicitudes no permitidas </p> </td> 
-      <td colname="col2"> <p> Los usuarios restringidos se redirigen a la dirección URL que introduzca aquí. Esta opción le permite crear su propia página de error personalizada para mostrarla a los clientes a los que no se les permite buscar en el sitio. </p> <p>Si no especifica una dirección URL, se devuelve una página de error genérica cuando un usuario restringido intenta buscar en el sitio. </p> </td> 
+      <td colname="col2"> <p> Los usuarios restringidos se redirigen a la dirección URL que introduzca aquí. Esta opción le permite crear su propia página de error personalizada para que se muestre a los clientes a los que no se les permite buscar en el sitio. </p> <p>Si no especifica una dirección URL, se devuelve una página de error genérica cuando un usuario restringido intenta buscar en el sitio. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -1209,7 +1209,7 @@ t_creating_a_feed.xml
       <td colname="col3"> <p>Permite asignar campos de fuente específicos del proveedor a los campos de metadatos de comercialización o búsqueda del sitio. Este paso de asignación en el asistente es importante porque permite a Feeds correlacionar la información entre los campos del índice y los campos de los datos de la fuente. En la mayoría de los casos, excepto <span class="wintitle"> Fuentes genéricas </span>, las correlaciones se guardan en una plantilla de búsqueda generada dinámicamente. </p> <p>Cada fila de la tabla Mapas de campos representa una asignación de campo. En la columna <span class="wintitle"> Agregar o quitar </span> de la tabla, haga clic en <span class="uicontrol"> + </span> para agregar una nueva fila de asignación de campos; haga clic en <span class="uicontrol"> - </span> para eliminar de la tabla la fila de asignación de campos seleccionada actualmente. Para asociar un campo de fuente a un campo de metadatos de comercialización o búsqueda de sitio, utilice las respectivas listas desplegables para elegir los campos deseados. </p> <p> <b>Uso avanzado</b> </p> <p>Puede crear sus propios campos personalizados. En la lista desplegable <span class="wintitle"> Campos de fuente </span>, haga clic en <span class="uicontrol"> Personalizar </span>. En el campo de texto asociado, introduzca un nombre de etiqueta personalizado para ese campo. Esta opción personalizada es útil si una fuente necesita campos especiales específicos del proveedor. </p> <p>También puede crear un campo de metadatos personalizado. En la lista desplegable <span class="wintitle"> Campos de metadatos </span> , haga clic en <span class="uicontrol"> Personalizar </span>. En el campo de texto asociado, introduzca un valor de campo de metadatos personalizado. El valor se inserta en la plantilla generada previamente y también se puede utilizar para insertar etiquetas de plantilla de búsqueda personalizadas. </p> <p>Consulte <a href="../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4" type="reference" format="dita" scope="local"> Buscar etiquetas de plantilla </a>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Criterios de búsqueda </p> </td> 
       <td colname="col3"> <p>Cuando se generan los archivos de fuente, se utiliza una consulta de búsqueda para filtrar los datos. Puede definir los filtros que se utilizan para la consulta de búsqueda en este panel. </p> 
         <ul id="ul_8179321A58BB4C72B0CDB2B2BEC58FE4"> 
@@ -1274,7 +1274,7 @@ t_creating_a_feed.xml
       <td colname="col3"> <p>Permite asignar campos de fuente específicos del proveedor a los campos de metadatos de comercialización o búsqueda del sitio. Este paso de asignación en el asistente es importante porque permite a Feeds correlacionar la información entre los campos del índice y los campos de los datos de la fuente. En la mayoría de los casos, excepto <span class="wintitle"> Fuentes genéricas </span>, las correlaciones se guardan en una plantilla de búsqueda generada dinámicamente. </p> <p>Cada fila de la tabla Mapas de campos representa una asignación de campo. En la columna Add/Remove de la tabla, haga clic en <span class="uicontrol"> + </span> para añadir una nueva fila de asignación de campos; haga clic en <span class="uicontrol"> - </span> para eliminar de la tabla la fila de asignación de campos seleccionada actualmente. Para asociar un campo de fuente con un campo de metadatos, utilice las respectivas listas desplegables para elegir los campos deseados. </p> <p> <b>Uso avanzado</b> </p> <p>Puede crear sus propios campos personalizados. En la lista desplegable <span class="wintitle"> Campos de fuente </span>, haga clic en <span class="uicontrol"> Personalizar </span>. En el campo de texto asociado, introduzca un nombre de etiqueta personalizado para ese campo. Esta opción personalizada es útil si una fuente necesita campos especiales específicos del proveedor. </p> <p>También puede crear un campo de metadatos personalizado. En la lista desplegable <span class="wintitle"> Campos de metadatos </span> , haga clic en <span class="uicontrol"> Personalizar </span>. En el campo de texto asociado, introduzca un valor de campo de metadatos personalizado. El valor se inserta en la plantilla generada previamente y también se puede utilizar para insertar etiquetas de plantilla de búsqueda personalizadas. </p> <p>Consulte <a href="../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4" type="reference" format="dita" scope="local"> Buscar etiquetas de plantilla </a>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Criterios de búsqueda </p> </td> 
       <td colname="col3"> <p>Cuando se generan los archivos de fuente, se utiliza una consulta de búsqueda para filtrar los datos. Puede definir los filtros que se utilizan para la consulta de búsqueda en este panel. </p> 
         <ul id="ul_994585E89A044BD3A89A99D30F277432"> 
