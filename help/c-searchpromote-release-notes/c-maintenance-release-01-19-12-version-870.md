@@ -2,16 +2,16 @@
 description: Search&amp;Notas de la versión de Promote 8.7.
 solution: Target
 title: Search&amp;Promote 8.7 Notas de la versión (19/01/2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: b640a215-1e2f-4cda-9e02-c3db04326cca
+exl-id: 52faf509-7b09-4310-a08c-8865b57c6119
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---
-
 
 # Notas de la versión de Search&amp;Promote 8.7 (19/01/2012){#search-promote-release-notes}
 
@@ -30,4 +30,3 @@ ht-degree: 0%
 * El servicio de bloqueo de URL obsoleto bloquea la validación de puntos de entrada de URL.
 * El analizador JSON no puede analizar los resultados con caracteres UTF-8 de formato incorrecto.
 * La ruta de deshacer facetas rota para facetas de selección múltiple con un símbolo $.
-
