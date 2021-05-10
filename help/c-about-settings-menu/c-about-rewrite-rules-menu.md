@@ -7,9 +7,9 @@ topic-legacy: Settings,Site search and merchandising
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 exl-id: cff17ead-6997-4ff6-a995-7ca020b06d50
 translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: aa095add9eb656913792b3f14001dda66cdd7d67
 workflow-type: tm+mt
-source-wordcount: '10197'
+source-wordcount: '10178'
 ht-degree: 0%
 
 ---
@@ -281,14 +281,14 @@ t_adding_a_crawl_list_store_url_rule.xml
 
  -->
 
-**Para agregar reglas de URL de almacenamiento de listas de rastreo**
+**Para agregar reglas de URL del almacén de listas de rastreo:**
 
 1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Store URL Rules]**.
 1. En el campo [!DNL Crawl List Store URL Rules], introduzca las reglas que desee.
 
    Se permiten líneas en blanco y líneas de comentarios que empiecen por un carácter &#39;#&#39; (hash).
-1. (Opcional) En la página [!DNL Crawl List Store URL Rules], en el campo [!DNL Test Crawl List Store URL Rules], introduzca una URL de prueba cuyas reglas de rastreo desee probar y, a continuación, haga clic en **Probar**.
-1. Haga clic en **Guardar cambios**.
+1. (Opcional) En la página [!DNL Crawl List Store URL Rules], en el campo [!DNL Test Crawl List Store URL Rules], introduzca una URL de prueba cuyas reglas de rastreo desee probar y, a continuación, haga clic en **[!UICONTROL Test]**.
+1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) Reconstruya el índice del sitio provisional si desea obtener una vista previa de los resultados.
 
    Consulte [Configuración de un índice incremental de un sitio web provisional](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -566,14 +566,14 @@ t_adding_crawl_list_retrieve_url_rules.xml
 
  -->
 
-**Para agregar la lista de rastreo, recupere las reglas de URL**
+**Para agregar la lista de rastreo, recupere las reglas de URL:**
 
 1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]**.
 1. En el campo [!DNL Crawl List Retrieve URL Rules], introduzca las reglas que desee.
 
    Se permiten líneas en blanco y líneas de comentarios que empiecen por un carácter &#39;#&#39; (hash).
-1. (Opcional) En la página [!DNL Crawl List Retrieve URL Rules], en el campo [!DNL Test Crawl List Retrieve URL Rules], introduzca una URL de prueba cuyas reglas de rastreo desee probar y, a continuación, haga clic en **Probar**.
-1. Haga clic en **Guardar cambios**.
+1. (Opcional) En la página [!DNL Crawl List Retrieve URL Rules], en el campo [!DNL Test Crawl List Retrieve URL Rules], introduzca una URL de prueba cuyas reglas de rastreo desee probar y, a continuación, haga clic en **[!UICONTROL Test]**.
+1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) Reconstruya el índice del sitio provisional si desea obtener una vista previa de los resultados.
 
    Consulte [Configuración de un índice incremental de un sitio web provisional](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -637,22 +637,21 @@ RewriteRule Pattern Substitution [Flags]
 
 Consulte [Expresiones regulares](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
-Puede utilizar el carácter &quot;no&quot; (&#39;!&#39;) para prefijar el patrón. El carácter &quot;not&quot; permite negar un patrón, es decir, que sea verdadero solo si el título actual NO coincide con el patrón. El carácter &quot;not&quot; se puede usar cuando es mejor que coincida con un patrón negativo o como regla predeterminada final. Nota: No se pueden usar tanto el carácter &quot;no&quot; como los comodines agrupados en un patrón. Además, no se puede utilizar un patrón denegado cuando la cadena de sustitución contiene $N.
+Puede utilizar el carácter &quot;no&quot; (&#39;!&#39;) para prefijar el patrón. El carácter &quot;not&quot; permite negar un patrón, es decir, que sea verdadero solo si el título actual NO coincide con el patrón. El carácter &quot;not&quot; se puede usar cuando es mejor que coincida con un patrón negativo o como regla predeterminada final. Nota: No se pueden usar tanto el carácter &quot;no&quot; como los comodines agrupados en un patrón. Además, no se puede utilizar un patrón denegado cuando la cadena de sustitución contiene `$N`.
 
 Puede utilizar paréntesis para crear una referencia secundaria, a la que se puede hacer referencia mediante Substitution y CondPattern.
 
-**** SustituciónEl título se reemplaza por la cadena de sustitución. La cadena puede contener lo siguiente:
+Sustitución : el título se sustituye por la cadena de sustitución. La cadena puede contener lo siguiente:
 
 Texto sin formato : texto que se pasa sin cambiar.
 
 Las referencias de fondo proporcionan acceso a las partes agrupadas (entre paréntesis) del Patrón o CondPattern. Los siguientes son dos tipos de referencias invertidas:
 
-* Referencias de retorno de regla de reescritura
+* Referencias de retorno de regla de reescritura : coinciden con las referencias anteriores en el patrón de regla de reescritura correspondiente y toman el formato $N (0 &lt;= N &lt;= 9).
 
-   Estas coinciden con las referencias anteriores en el patrón de regla de reescritura correspondiente y toman la forma $N (0 &lt;= N &lt;= 9). Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
-* Reescribir referencias secundarias de cond
+   Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
-   Estas referencias coincidentes en la última coincidencia con RewriteCond CondPattern y toman la forma %N (0 &lt;= N &lt;= 9).
+* Rereferencias de RewriteCond : coinciden con referencias anteriores en el último CondPattern coincidente de RewriteCond y toman la forma %N (0 &lt;= N &lt;= 9).
 
 Variables Son variables del formulario %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el indicador `[E]` para obtener más información sobre la configuración de variables de entorno.
 
@@ -720,8 +719,11 @@ Texto sin formato : texto que se pasa sin cambiar.
 
 Las referencias de fondo proporcionan acceso a las partes agrupadas (entre paréntesis) del Patrón o CondPattern. Existen dos tipos de referencias secundarias:
 
-* Reescribir referencias de regla : coinciden con referencias anteriores en el patrón de regla de reescritura correspondiente y toman el formato $N (0 &lt;= N &lt;= 9). Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
-* Referencias de referencias de rewriteCond Estas referencias de coincidencia coinciden en el último CondPattern coincidente con RewriteCond y toman la forma %N (0 &lt;= N &lt;= 9).
+* Referencias de retorno de regla de reescritura : coinciden con las referencias anteriores en el patrón de regla de reescritura correspondiente y toman el formato $N (0 &lt;= N &lt;= 9).
+
+   Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* Rereferencias de RewriteCond : coinciden con referencias anteriores en el último CondPattern coincidente de RewriteCond y toman la forma %N (0 &lt;= N &lt;= 9).
 
 Variables Son variables del formulario %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el indicador `[E]` para obtener más información sobre la configuración de variables de entorno.
 
@@ -797,7 +799,15 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>}
 ```
 
-El patrón de la regla `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` contiene una referencia `(.*)` que coincide con el contenido del título que sigue a &quot;Mi empresa-&quot;. Recuerde que rodear una parte de un patrón con paréntesis ( ) crea una referencia secundaria a la que la sustitución puede hacer referencia. En este ejemplo, la sustitución (${toupper:**$1**}) reescribe esa referencia secundaria (**$1**) utilizando la función de toupper.
+Patrón de la regla
+
+`(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))`
+
+contiene una referencia `(.*)` que coincide con el contenido del título que sigue a &quot;Mi empresa-&quot;. Recuerde que rodear una parte de un patrón con paréntesis ( ) crea una referencia secundaria a la que la sustitución puede hacer referencia. En este ejemplo, la sustitución
+
+`(${toupper:**$1**})`
+
+reescribe esa referencia de retorno (`**$1**`) utilizando la función toupper .
 
 Por lo tanto, un título del formulario &quot;Mi empresa - bienvenida&quot; se reescribe como &quot;BIENVENIDO&quot;.
 
@@ -815,14 +825,14 @@ t_adding_crawl_title_rules.xml
 
  -->
 
-**Para agregar reglas de título de rastreo**
+**Para agregar reglas de título de rastreo:**
 
 1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl Title Rules]**.
 1. En el campo [!DNL Crawl Title Rules], introduzca las reglas que desee.
 
    Se permiten líneas en blanco y líneas de comentarios que empiecen por un carácter &#39;#&#39; (hash).
-1. (Opcional) En la página [!DNL Crawl Title Rules], en el campo [!DNL Test Crawl Title Rules], introduzca una URL de prueba cuyas reglas de búsqueda desee probar y, a continuación, haga clic en **Probar**.
-1. Haga clic en **Guardar cambios**.
+1. (Opcional) En la página [!DNL Crawl Title Rules], en el campo [!DNL Test Crawl Title Rules], introduzca una URL de prueba cuyas reglas de búsqueda desee probar y, a continuación, haga clic en **[!UICONTROL Test]**.
+1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) Reconstruya el índice del sitio provisional si desea obtener una vista previa de los resultados.
 
    Consulte [Configuración de un índice incremental de un sitio web provisional](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -983,15 +993,17 @@ Texto sin formato: Texto que se pasa sin cambiar.
 
 Las referencias de fondo proporcionan acceso a las partes agrupadas (entre paréntesis) del Patrón o CondPattern. Existen dos tipos de referencias secundarias:
 
-* ** RewriteRule BackReferences** Estas coinciden con las referencias anteriores en el patrón de regla de reescritura correspondiente y toman la forma $N (0 &lt;= N &lt;= 9). Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* Referencias de retorno de regla de reescritura : coinciden con las referencias anteriores en el patrón de regla de reescritura correspondiente y toman el formato $N (0 &lt;= N &lt;= 9).
 
-* **RewriteCond** BackReferencesEstas referencias coincidentes en el último CondPattern coincidente de RewriteCond y toman la forma %N (0  &lt;>
+   Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* Rereferencias de RewriteCond : coinciden con referencias anteriores en el último CondPattern coincidente de RewriteCond y toman la forma %N (0 &lt;= N &lt;= 9).
 
 Variables Son variables del formulario %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el indicador RewriteRule *`[E]`* para obtener más información sobre la configuración de variables.
 
 >[!NOTE]
 >
->Las reglas de reescritura generalmente utilizan variables. Todos los parámetros CGI de la dirección URL actual se convierten automáticamente en variables. Por ejemplo, la dirección URL de búsqueda `"https://search.atomz.com/search/?sp_a=sp00000000&sp_q="Product"&session=1234&id=5678"` proporcionará automáticamente cuatro variables, a las que se puede hacer referencia en las reglas de reescritura. En este ejemplo, una variable se llama &quot;session&quot; y su valor es &quot;1234&quot;, mientras que otra variable se denomina &quot;id&quot; y su valor es &quot;5678&quot;. (Las otras dos variables son `sp_a` y `sp_q`). Debe pasar todas las variables necesarias como campos ocultos desde el formulario de búsqueda de la página web. En este ejemplo, debe pasar los valores &quot;sesión&quot; e &quot;id&quot;, que identifican al usuario del sitio web que realiza la búsqueda. Para pasar un campo oculto en el formulario de búsqueda, utilice una etiqueta como `<input type=hidden name="session" value="1234">`.
+>Las reglas de reescritura generalmente utilizan variables. Todos los parámetros CGI de la dirección URL actual se convierten automáticamente en variables. Por ejemplo, la dirección URL de búsqueda `"https://search.atomz.com/search/?sp_a=sp00000000&sp_q="Product"&session=1234&id=5678"` proporciona automáticamente cuatro variables, a las que se puede hacer referencia en las reglas de reescritura. En este ejemplo, una variable se llama &quot;session&quot; y su valor es &quot;1234&quot;, mientras que otra variable se denomina &quot;id&quot; y su valor es &quot;5678&quot;. (Las otras dos variables son `sp_a` y `sp_q`). Debe pasar todas las variables necesarias como campos ocultos desde el formulario de búsqueda de la página web. En este ejemplo, debe pasar los valores &quot;sesión&quot; e &quot;id&quot;, que identifican al usuario del sitio web que realiza la búsqueda. Para pasar un campo oculto en el formulario de búsqueda, utilice una etiqueta como `<input type=hidden name="session" value="1234">`.
 
 Funciones Estas son funciones del formulario ${NAME_OF_FUNCTION:key} donde NAME_OF_FUNCTION es:
 
@@ -1070,14 +1082,15 @@ t_adding_search_url_rules.xml
 
  -->
 
-**Para agregar reglas de URL de búsqueda**
+**Para agregar reglas de URL de búsqueda:**
 
 1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search URL Rules]**.
 1. En el campo [!DNL Search URL Rules], introduzca las reglas que desee.
 
    Se permiten líneas en blanco y líneas de comentarios que empiecen por un carácter &#39;#&#39; (hash).
-1. (Opcional) En la página [!DNL Search URL Rules], en el campo [!DNL Test Search URL Rules], introduzca una URL de prueba cuyas reglas de rastreo desee probar y, a continuación, haga clic en **Probar**.
-1. Haga clic en **Guardar cambios**.
+
+1. (Opcional) En la página [!DNL Search URL Rules], en el campo [!DNL Test Search URL Rules], introduzca una URL de prueba cuyas reglas de rastreo desee probar y, a continuación, haga clic en **[!UICONTROL Test]**.
+1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) Reconstruya el índice del sitio provisional si desea obtener una vista previa de los resultados.
 
    Consulte [Configuración de un índice incremental de un sitio web provisional](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -1143,9 +1156,11 @@ Puede utilizar paréntesis para crear una referencia secundaria, a la que se pue
 
 Texto sin formato : texto que se pasa sin cambiar.
 
-**** ReferenciasProporcionar acceso a las partes agrupadas (entre paréntesis) del Patrón o CondPattern. Los siguientes son dos tipos de referencias invertidas:
+* Referencias de fondo : Proporcione acceso a las partes agrupadas (entre paréntesis) del Patrón o CondPattern. Los siguientes son dos tipos de referencias invertidas:
 
-* **RewriteRule** BackReferencesEstas referencias se corresponden con las del patrón de regla de reescritura correspondiente y toman el formato $N (0)  &lt;> Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* Referencias de retorno de regla de reescritura : coinciden con las referencias anteriores en el patrón de regla de reescritura correspondiente y toman el formato $N (0 &lt;= N &lt;= 9).
+
+   Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
 * ** Referencias de RewriteCond** Estas referencias de coincidencia coinciden con las anteriores en el último CondPattern de RewriteCond coincidente y toman la forma %N (0 &lt;= N &lt;= 9).
 
@@ -1213,9 +1228,11 @@ Texto sin formato : texto que se pasa sin cambiar.
 
 Las referencias de fondo proporcionan acceso a las partes agrupadas (entre paréntesis) del Patrón o CondPattern. Existen dos tipos de referencias secundarias:
 
-* **RewriteRule** BackReferencesEstas referencias se corresponden con las del patrón de regla de reescritura correspondiente y toman el formato $N (0)  &lt;> Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* Referencias de retorno de regla de reescritura : coinciden con las referencias anteriores en el patrón de regla de reescritura correspondiente y toman el formato $N (0 &lt;= N &lt;= 9).
 
-* **RewriteCond** BackReferencesEstas referencias coincidentes en el último CondPattern coincidente de RewriteCond y toman la forma %N (0  &lt;>
+   Por ejemplo, `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* Rereferencias de RewriteCond : coinciden con referencias anteriores en el último CondPattern coincidente de RewriteCond y toman la forma %N (0 &lt;= N &lt;= 9).
 
 **** VariablesSon variables con la forma %{NAME_OF_VARIABLE} donde NAME_OF_VARIABLE puede ser una cadena para el nombre de una variable definida. Consulte el indicador `[E]` para obtener más información sobre la configuración de variables de entorno. Las variables también se pueden definir en el formulario de búsqueda que generó los resultados de la búsqueda.
 
@@ -1291,7 +1308,11 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>} 
 ```
 
-El patrón de la regla `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` contiene una referencia **`(.*)`** que coincide con el contenido del título que sigue a &quot;Mi empresa-&quot;. Recuerde que rodear una parte de un patrón con paréntesis ( ) crea una referencia secundaria a la que la sustitución puede hacer referencia. En este ejemplo, la sustitución (${toupper:**$1**}) reescribe esa referencia secundaria (**$1**) utilizando la función de toupper.
+El patrón de la regla `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` contiene una referencia **`(.*)`** que coincide con el contenido del título que sigue a &quot;Mi empresa-&quot;. Recuerde que rodear una parte de un patrón con paréntesis ( ) crea una referencia secundaria a la que la sustitución puede hacer referencia. En este ejemplo, la sustitución
+
+`(${toupper:**$1**})`
+
+reescribe esa referencia de retorno (**$1**) utilizando la función de toupper.
 
 Por lo tanto, un título del formulario &quot;Mi empresa - bienvenida&quot; se reescribe como &quot;BIENVENIDO&quot;.
 
@@ -1309,14 +1330,14 @@ t_adding_search_title_rules.xml
 
  -->
 
-**Para agregar reglas de título de búsqueda**
+**Para agregar reglas de título de búsqueda:**
 
 1. En el menú del producto, haga clic en **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search Title Rules]**.
 1. En el campo [!DNL Search Title Rules], introduzca las reglas que desee.
 
    Se permiten líneas en blanco y líneas de comentarios que empiecen por un carácter &#39;#&#39; (hash).
-1. (Opcional) En la página [!DNL Search Title Rules], en el campo [!DNL Test Search Title Rules], introduzca un título de prueba y haga clic en **Prueba**.
-1. Haga clic en **Guardar cambios**.
+1. (Opcional) En la página [!DNL Search Title Rules], en el campo [!DNL Test Search Title Rules], introduzca un título de prueba y haga clic en **[!UICONTROL Test]**.
+1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) Reconstruya el índice del sitio provisional si desea obtener una vista previa de los resultados.
 
    Consulte [Configuración de un índice incremental de un sitio web provisional](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
