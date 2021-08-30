@@ -6,15 +6,14 @@ title: Acerca de la finalización automática
 topic-legacy: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 exl-id: a1d08c0a-6c68-4da2-88d2-fe953d333536
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1486'
 ht-degree: 1%
 
 ---
 
-# Acerca del autocompletado{#about-auto-complete}
+# Acerca de la finalización automática{#about-auto-complete}
 
 Puede configurar varias áreas de Autocompletar para controlar la generación del formulario de búsqueda habilitado para autocompletar y el archivo autocomplete_data.js, que se incluye como parte del formulario de búsqueda habilitado para autocompletar.
 
@@ -22,7 +21,7 @@ Puede configurar varias áreas de Autocompletar para controlar la generación de
 
 El archivo [!DNL autocomplete_data.js] se regenera y publica en la red de contenido de búsqueda cada vez que se guardan cambios en la página Configuración de autocompletar.
 
-## Configuración del autocompletado {#task_F491F2BFC4D24A61BBDC48B9059C11BB}
+## Configuración de la finalización automática {#task_F491F2BFC4D24A61BBDC48B9059C11BB}
 
 Puede configurar las opciones que controlan la generación del formulario de búsqueda habilitado para autocompletar y el archivo.
 
@@ -97,7 +96,7 @@ Consulte [Configuración de CSS de autocompletar](c-about-auto-complete.md#task_
 1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic en **[!UICONTROL History]** si desea revertir cualquier cambio realizado.
 
       Consulte [Uso de la opción Historial](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
@@ -109,7 +108,7 @@ Consulte [Configuración de CSS de autocompletar](c-about-auto-complete.md#task_
 
       Consulte [Inserción de la configuración del escenario en directo](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Configuración de la lista de palabras de autocompletar {#task_1F8E0F346263443383F8CFD2C7AB35D4}
+## Configuración de la lista de palabras de finalización automática {#task_1F8E0F346263443383F8CFD2C7AB35D4}
 
 Configure la lista de palabras y frases que la función de completado automático muestra a un cliente como sugerencias.
 
@@ -182,7 +181,7 @@ Consulte [Configuración de CSS de autocompletar](c-about-auto-complete.md#task_
 1. Haga clic **[!UICONTROL Save Changes]**.
 1. (Opcional) Realice cualquiera de las siguientes acciones:
 
-   * Haga clic en **[!UICONTROL History]** para revertir cualquier cambio que haya realizado.
+   * Haga clic en **[!UICONTROL History]** si desea revertir cualquier cambio realizado.
    * Haga clic en **[!UICONTROL Preview Word List]** para guardar los cambios realizados y, a continuación, abra la página [!DNL Auto-Complete Word List Preview] donde podrá revisar la lista de sugerencias de autocompletar. Utilice las opciones de navegación cercanas a la parte superior de la página para revisar y refinar la lista mostrada. Cuando haya terminado, haga clic en **[!UICONTROL Close]** para volver a la página [!DNL Auto-Complete Word List].
 
       Consulte [Uso de la opción Historial](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
@@ -195,7 +194,7 @@ Consulte [Configuración de CSS de autocompletar](c-about-auto-complete.md#task_
 
       Consulte [Inserción de la configuración del escenario en directo](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Configuración del CSS de autocompletar {#task_EECE35DEB6C94F4A8A5B42B4DED76D96}
+## Configuración de la CSS de finalización automática {#task_EECE35DEB6C94F4A8A5B42B4DED76D96}
 
 Utilice la CSS de compleción automática para configurar la hoja de estilos en cascada de autocompletar que desea utilizar.
 
@@ -207,7 +206,7 @@ t_configuring_auto-complete_css.xml
 
 La función de autocompletar CSS controla el contenido de [!DNL autocomplete_styles.css], que se incluye como parte del formulario de búsqueda habilitado para autocompletar. El CSS que especifique aquí controla la presentación visual de la lista de sugerencias de autocompletar. Para ver un ejemplo de las ideas de presentación visual que son posibles, consulte lo siguiente:
 
-[https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html](https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html).
+<!-- 404 DEAD LINK [https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html](https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html). -->
 
 [Configuración de la lista de palabras de finalización automática](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4).
 
@@ -240,7 +239,7 @@ Consulte [Copia del código HTML del formulario de búsqueda en el...](c-about-a
 
       Consulte [Inserción de la configuración del escenario en directo](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Vista preliminar del formulario de búsqueda tal como aparecería en su sitio web {#task_437B35EFA5424603A08AF8E79E6B4714}
+## Vista previa del formulario de búsqueda tal como aparecería en el sitio web {#task_437B35EFA5424603A08AF8E79E6B4714}
 
 Según la configuración de la CSS de completado automático y de completado automático, puede obtener una vista previa del aspecto del formulario de búsqueda si desea agregar el código HTML a su sitio web.
 

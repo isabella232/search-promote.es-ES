@@ -6,10 +6,9 @@ title: Acerca del menú Rastreo
 topic-legacy: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 exl-id: 22dbbc30-bf1c-4d51-8fb0-708115ba844b
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '11011'
+source-wordcount: '11015'
 ht-degree: 0%
 
 ---
@@ -97,7 +96,7 @@ Consulte también [Acerca de los tipos de contenido](../c-about-settings-menu/c-
 
 Consulte también [Acerca del conector de índice](../c-about-settings-menu/c-about-crawling-menu.md#concept_CA6921E2FBF641F9B4F60C92B32AFA84).
 
-## Añadir varios puntos de entrada de URL que desea indexar {#task_2338A47387D74CFDAC4D4EF4A367ED45}
+## Adición de varios puntos de entrada de URL que desee indexar {#task_2338A47387D74CFDAC4D4EF4A367ED45}
 
 Si el sitio web tiene varios dominios o subdominios y desea que se rastreen, puede utilizar puntos de entrada de URL para agregar más direcciones URL.
 
@@ -301,7 +300,7 @@ Una coma no es válida como separador entre la máscara y la palabra clave; solo
  </tbody> 
 </table>
 
-## Añadir máscaras de URL para indexar o no indexar partes del sitio web {#task_E1AFC17C746048B8843013D979E082C1}
+## Adición de máscaras de URL para indexar o no indexar partes del sitio web {#task_E1AFC17C746048B8843013D979E082C1}
 
 Puede utilizar [!DNL URL Masks] para definir qué partes del sitio web desea o no desea rastrear e indexar.
 
@@ -341,7 +340,7 @@ Consulte [Configuración de un índice incremental de un sitio web provisional](
 
       Consulte [Inserción de la configuración del escenario en directo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Acerca de las máscaras de fecha {#concept_F4F1F58A646F4A86B8650EC46FDCEF66}
+## Acerca de las máscaras de fechas {#concept_F4F1F58A646F4A86B8650EC46FDCEF66}
 
 Puede utilizar Máscaras de fecha para incluir o excluir archivos de los resultados de búsqueda en función de la edad del archivo.
 
@@ -518,7 +517,7 @@ Una coma no es válida como separador entre la máscara y la palabra clave; solo
  </tbody> 
 </table>
 
-## Agregar máscaras de fecha para indexar o no indexar partes del sitio web {#task_0010543C55F648D2B5DEFEFAD60FAF04}
+## Adición de máscaras de fecha para indexar o no partes del sitio web {#task_0010543C55F648D2B5DEFEFAD60FAF04}
 
 Puede utilizar Máscaras de fecha para incluir o excluir archivos de los resultados de búsqueda de clientes en función de la edad de los archivos.
 
@@ -597,7 +596,7 @@ https://www.mysite.com/path6 name6 password6
 
 En la lista anterior, se utiliza la primera contraseña que contiene un dominio o una dirección URL que coincide con la solicitud de autenticación del servidor. Incluso si el archivo en `https://www.mysite.com/path1/path2/index.html` está en `Realm3`, por ejemplo, `name2` y `password2` se utilizan porque la contraseña definida con la dirección URL se muestra por encima de la definida con el dominio.
 
-## Adición de contraseñas para acceder a áreas del sitio web que requieren autenticación {#task_DED19D476FF04B48BB6456D5ECB8628A}
+## Adición de contraseñas para acceder a las áreas del sitio web que requieren autenticación {#task_DED19D476FF04B48BB6456D5ECB8628A}
 
 Puede utilizar Contraseñas para acceder a áreas del sitio web protegidas con contraseña con fines de rastreo e indexación.
 
@@ -740,7 +739,7 @@ Tenga en cuenta que cada conexión adicional aumenta la carga que se coloca en e
 
       Consulte [Inserción de la configuración del escenario en directo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Acerca del envío de formulario {#concept_CADD5D7CF373497DAA6F8564D7BC8502}
+## Acerca del envío del formulario {#concept_CADD5D7CF373497DAA6F8564D7BC8502}
 
 Puede utilizar el envío de formulario para ayudarle a reconocer y procesar los formularios en su sitio web.
 
@@ -1149,7 +1148,7 @@ Antes de que los efectos de la definición nueva y habilitada sean visibles para
       <td colname="col2"> <p>Nombre exclusivo de la configuración del conector de índice. Puede utilizar caracteres alfanuméricos. También se permiten los caracteres "_" y "-". </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Tipo  </p> </td> 
+      <td colname="col1"> <p>Tipo </p> </td> 
       <td colname="col2"> <p>La fuente de los datos. El tipo de fuente de datos que seleccione afecta a las opciones resultantes que están disponibles en la página <span class="wintitle"> Agregar </span> Conector de índice. Puede elegir entre las siguientes opciones: </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Texto </span> <p>Archivos de texto plano simples, delimitados por comas, delimitados por tabulaciones u otros formatos delimitados de forma consistente. Cada línea de texto delimitada por líneas nuevas corresponde a un documento individual y se analiza utilizando el delimitador especificado. </p> <p>Puede asignar cada valor, o columna, a un campo de metadatos, al que se hace referencia en el número de columna, a partir del 1 (uno). </p> </li> 
@@ -1326,7 +1325,7 @@ Antes de que los efectos de la definición nueva y habilitada sean visibles para
       <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>El atributo <span class="codeph"> contenido </span> de cualquier elemento <span class="codeph"> meta </span> contenido dentro de un elemento <span class="codeph"> metadatos </span>, que se encuentra dentro de un elemento <span class="codeph"> registro </span>, cuyo atributo name es <span class="codeph"> título </span>, se asigna al título </span> del campo de metadatos&gt;.<span class="codeph"> </span></p> </li> 
       <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>El atributo <span class="codeph"> contenido </span> de cualquier elemento <span class="codeph"> meta </span> que se encuentre dentro de un elemento <span class="codeph"> metadatos </span> que se encuentra dentro del elemento <span class="codeph"> registro </span>, cuyo atributo name es <span class="codeph"> descripción </span>, se asigna al campo de metadatos <span class="codeph"> desc </span>. </p> </li> 
       <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>El atributo <span class="codeph"> contenido </span> de cualquier elemento <span class="codeph"> meta </span> contenido dentro de un elemento <span class="codeph"> metadatos </span>, que se encuentra dentro del elemento <span class="codeph"> registro </span>, cuyo atributo name es <span class="codeph"> descripción </span>, se asigna al campo de metadatos <span class="codeph"> cuerpo </span>&gt;. </p> </li> 
-      </ul> </p> <p>XPath es una notación relativamente complicada. Encontrará más información en la siguiente ubicación: </p> <p>Consulte <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+      </ul> </p> <p>XPath es una notación relativamente complicada. Encontrará más información en la siguiente ubicación: </p> <p>Consulte <a href="https://www.w3schools.com/xml/xpath_intro.asp" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Campo </span> <p>Define el valor del atributo name que se utiliza para cada etiqueta <span class="codeph"> &lt;meta&gt; </span> generada. </p> </li> 
       <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadatos? </span> <p>Hace que <span class="uicontrol"> Field </span> se convierta en una lista desplegable desde la cual puede seleccionar campos de metadatos definidos para la cuenta actual. </p> <p>El valor <span class="uicontrol"> Field </span> puede ser un campo de metadatos no definido, si lo desea. Un campo de metadatos no definido a veces resulta útil para crear contenido utilizado por el <span class="wintitle"> script de filtrado </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Acerca del filtrado de secuencias de comandos </a>. </p> <p>Cuando el conector de índice procesa documentos XML con varias visitas en cualquier campo de mapa, los varios valores se concatenan en un solo valor en el documento en caché resultante. De forma predeterminada, estos valores se combinan con un delimitador de coma. Sin embargo, supongamos que el valor <span class="wintitle"> Field </span> correspondiente es un campo de metadatos definido. Además, ese campo tiene establecido el atributo <span class="wintitle"> Lista de permitidos </span> . En este caso, el valor de los delimitadores de lista del campo, que es el primer delimitador definido, se utiliza en la concatenación. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Clave principal  </span> <p>Solo se identifica una definición de mapa como clave principal. Este campo se convierte en la referencia única que se presenta cuando este documento se agrega al índice. Este valor se utiliza en la dirección URL del documento en el índice. </p> <p>Los valores <span class="uicontrol"> Clave principal </span> deben ser únicos en todos los documentos representados por la configuración del conector de índice; cualquier duplicado encontrado se omitirá. Si los documentos de origen no contienen un solo valor único para su uso como <span class="uicontrol"> Clave principal </span>, pero dos o más campos juntos <i>pueden</i> formar un identificador único, puede definir la <span class="uicontrol"> Clave principal </span> combinando varias definiciones de etiqueta </span> con una barra vertical ("|") que delimite los valores.<span class="uicontrol"> </span></p> </li> 
@@ -1382,7 +1381,7 @@ Antes de que los efectos de la definición nueva y habilitada sean visibles para
       <li id="li_FA7DF3D1942248B98660F3D0C82F4563"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>El atributo <span class="codeph"> contenido </span> de cualquier elemento <span class="codeph"> meta </span> contenido dentro de un elemento <span class="codeph"> metadatos </span>, que se encuentra dentro de un elemento <span class="codeph"> registro </span>, cuyo atributo name es <span class="codeph"> título </span>, se asigna al título </span> del campo de metadatos&gt;.<span class="codeph"> </span></p> </li> 
       <li id="li_D8000A116FF84DE59ED19C656DDD3BC1"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>El atributo <span class="codeph"> contenido </span> de cualquier elemento <span class="codeph"> meta </span> que se encuentre dentro de un elemento <span class="codeph"> metadatos </span> que se encuentra dentro del elemento <span class="codeph"> registro </span>, cuyo atributo name es <span class="codeph"> descripción </span>, se asigna al campo de metadatos <span class="codeph"> desc </span>. </p> </li> 
       <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>El atributo <span class="codeph"> contenido </span> de cualquier elemento <span class="codeph"> meta </span> contenido dentro de un elemento <span class="codeph"> metadatos </span>, que se encuentra dentro del elemento <span class="codeph"> registro </span>, cuyo atributo name es <span class="codeph"> descripción </span>, se asigna al campo de metadatos <span class="codeph"> cuerpo </span>&gt;. </p> </li> 
-      </ul> </p> <p>XPath es una notación relativamente complicada. Encontrará más información en la siguiente ubicación: </p> <p>Consulte <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+      </ul> </p> <p>XPath es una notación relativamente complicada. Encontrará más información en la siguiente ubicación: </p> <p>Consulte <a href="https://www.w3schools.com/xml/xpath_intro.asp" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Campo </span> <p>Define el valor del atributo name que se utiliza para cada etiqueta &lt;meta&gt; generada. </p> </li> 
       <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadatos? </span> <p>Hace que <span class="uicontrol"> Field </span> se convierta en una lista desplegable desde la cual puede seleccionar campos de metadatos definidos para la cuenta actual. </p> <p>El valor <span class="uicontrol"> Field </span> puede ser un campo de metadatos no definido, si lo desea. Un campo de metadatos no definido a veces resulta útil para crear contenido utilizado por el <span class="wintitle"> script de filtrado </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Acerca del filtrado de secuencias de comandos </a>. </p> <p>Cuando el conector de índice procesa documentos XML con varias visitas en cualquier campo de mapa, los varios valores se concatenan en un solo valor en el documento en caché resultante. De forma predeterminada, estos valores se combinan con un delimitador de coma. Sin embargo, supongamos que el valor <span class="wintitle"> Field </span> correspondiente es un campo de metadatos definido. Además, ese campo tiene establecido el atributo <span class="wintitle"> Lista de permitidos </span> . En este caso, el valor de los delimitadores de lista del campo, que es el primer delimitador definido, se utiliza en la concatenación. </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Clave principal  </span> <p>Solo se identifica una definición de mapa como clave principal. Este campo se convierte en la referencia única que se presenta cuando este documento se agrega al índice. Este valor se utiliza en la dirección URL del documento en el índice. </p> <p>Los valores <span class="uicontrol"> Clave principal </span> deben ser únicos en todos los documentos representados por la configuración del conector de índice; cualquier duplicado encontrado se omitirá. Si los documentos de origen no contienen un solo valor único para su uso como <span class="uicontrol"> Clave principal </span>, pero dos o más campos juntos <i>pueden</i> formar un identificador único, puede definir la <span class="uicontrol"> Clave principal </span> combinando varias definiciones de etiqueta </span> con una barra vertical ("|") que delimite los valores.<span class="uicontrol"> </span></p> </li> 
@@ -1413,7 +1412,7 @@ Antes de que los efectos de la definición nueva y habilitada sean visibles para
 
       Consulte [Inserción de la configuración del escenario en directo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Edición de la definición del conector de índice {#task_DCFC9C6A9964421DB5AB6C25DEE98DE9}
+## Edición de una definición de conector de índice {#task_DCFC9C6A9964421DB5AB6C25DEE98DE9}
 
 Puede editar un conector de índice existente que haya definido.
 

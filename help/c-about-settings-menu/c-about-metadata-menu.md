@@ -6,10 +6,9 @@ title: Acerca del menú Metadatos
 topic-legacy: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 exl-id: 53d62da9-c5bd-4c4a-bb89-743704f66f7f
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '8024'
+source-wordcount: '8028'
 ht-degree: 1%
 
 ---
@@ -414,7 +413,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
    <td colname="col1"> <p> <span class="codeph"> field  </span> </p> </td> 
    <td colname="col2"> <p>Se requiere un nombre de campo. Los siguientes son diez nombres de campo predefinidos que puede utilizar: </p> <p> 
      <ul id="ul_B9336FA53023474EAEE399116E7FC972"> 
-      <li id="li_C621203DCD2B4875A54A1DD19F0B5B90"> <span class="codeph"> alt  </span> </li> 
+      <li id="li_C621203DCD2B4875A54A1DD19F0B5B90"> <span class="codeph"> Alt </span> </li> 
       <li id="li_9217E6A037254BEDBB8D006B70D7670D"> <span class="codeph"> body </span> </li> 
       <li id="li_DCDC50F93F224F02897419B745E09399"> <span class="codeph"> charset </span> </li> 
       <li id="li_D95668236B6547B99966668C82B302AB"> <span class="codeph"> date </span> </li> 
@@ -611,7 +610,7 @@ Antes de que los efectos de la definición nueva y habilitada sean visibles para
       <td colname="col2"> <p>Nombre exclusivo de la configuración del cargador de atributos. Puede utilizar caracteres alfanuméricos. También se permiten los caracteres "_" y "-". </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Tipo  </p> </td> 
+      <td colname="col1"> <p>Tipo </p> </td> 
       <td colname="col2"> <p>La fuente de los datos. El tipo de fuente de datos que seleccione afecta a las opciones resultantes que están disponibles en la página <span class="wintitle"> Cargador de atributos Agregar </span> . Puede elegir entre las siguientes opciones: </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Texto </span> <p>Archivos de texto plano simples, delimitados por comas, delimitados por tabulaciones u otros formatos delimitados de forma consistente. Cada línea de texto delimitada por líneas nuevas corresponde a un documento individual y se analiza utilizando el delimitador especificado. </p> <p>Puede asignar cada valor, o columna, a un campo de metadatos, al que se hace referencia en el número de columna, a partir del 1 (uno). </p> </li> 
@@ -770,7 +769,7 @@ Antes de que los efectos de la definición nueva y habilitada sean visibles para
         <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code class="syntax xml"> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>El atributo <span class="codeph"> contenido </span> de cualquier elemento <span class="codeph"> meta </span> contenido dentro de un elemento <span class="codeph"> metadatos </span>, que se encuentra dentro de un elemento <span class="codeph"> registro </span>, cuyo atributo name es <span class="codeph"> título </span>, se asigna al título </span> del campo de metadatos&gt;.<span class="codeph"> </span></p> </li> 
         <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>El atributo <span class="codeph"> contenido </span> de cualquier elemento <span class="codeph"> meta </span> que se encuentre dentro de un elemento <span class="codeph"> metadatos </span> que se encuentra dentro del elemento <span class="codeph"> registro </span>, cuyo atributo name es <span class="codeph"> descripción </span>, se asigna al campo de metadatos <span class="codeph"> desc </span>. </p> </li> 
         <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>El atributo <span class="codeph"> contenido </span> de cualquier elemento <span class="codeph"> meta </span> contenido dentro de un elemento <span class="codeph"> metadatos </span>, que se encuentra dentro del elemento <span class="codeph"> registro </span>, cuyo atributo name es <span class="codeph"> descripción </span>, se asigna al campo de metadatos <span class="codeph"> cuerpo </span>&gt;. </p> </li> 
-        </ul> </p> <p>XPath es una notación relativamente complicada. Encontrará más información en la siguiente ubicación: </p> <p>Consulte <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+        </ul> </p> <p>XPath es una notación relativamente complicada. Encontrará más información en la siguiente ubicación: </p> <p>Consulte <a href="https://www.w3schools.com/xml/xpath_intro.asp" scope="external" format="html"> https://www.w3schools.com/xml/xpath_intro.asp </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Campo </span> <p>Define el valor del atributo name que se utiliza para cada etiqueta <span class="codeph"> &lt;meta&gt; </span> generada. </p> </li> 
       <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadatos? </span> <p>Hace que <span class="uicontrol"> Field </span> se convierta en una lista desplegable desde la cual puede seleccionar campos de metadatos definidos para la cuenta actual. </p> <p>El valor <span class="uicontrol"> Field </span> puede ser un campo de metadatos no definido, si lo desea. Un campo de metadatos no definido a veces resulta útil para crear contenido utilizado por el <span class="wintitle"> script de filtrado </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Acerca del filtrado de secuencias de comandos </a>. </p> <p>Cuando el cargador de atributos procesa documentos XML con varias visitas en cualquier campo de asignación, los valores múltiples se concatenan en un solo valor en el documento en caché resultante. De forma predeterminada, estos valores se combinan con un delimitador de coma. Sin embargo, supongamos que el valor <span class="wintitle"> Field </span> correspondiente es un campo de metadatos definido. Además, ese campo tiene establecido el atributo <span class="wintitle"> Lista de permitidos </span> . En este caso, el valor de los delimitadores de lista del campo, que es el primer delimitador definido, se utiliza en la concatenación. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Clave principal  </span> <p>Solo se identifica un campo como clave principal. Este campo se utilizará como la "clave externa" para hacer coincidir los datos del cargador de atributos con el documento correspondiente del índice. </p> </li> 
@@ -798,7 +797,7 @@ Antes de que los efectos de la definición nueva y habilitada sean visibles para
 
       Consulte [Inserción de la configuración del escenario en directo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Edición de la definición del cargador de atributos {#task_AA2D1B2BCAFA44A6A0C59A0318274E80}
+## Edición de una definición de cargador de atributos {#task_AA2D1B2BCAFA44A6A0C59A0318274E80}
 
 Puede editar un cargador de atributos existente que haya definido.
 
@@ -986,7 +985,7 @@ Consulte [Carga de datos del cargador de atributos](../c-about-settings-menu/c-a
 1. En la página [!DNL Attribute Loader Data Log], utilice las opciones de navegación y visualización de la parte superior e inferior de la página para ver la información de registro.
 1. Cuando haya terminado, cierre la página para volver a la página [!DNL Attribute Loader Definitions].
 
-## Eliminación de una definición del cargador de atributos {#task_E8980F66888B476E98C228C1D307EDF8}
+## Eliminación de una definición de cargador de atributos {#task_E8980F66888B476E98C228C1D307EDF8}
 
 Puede eliminar una definición de cargador de atributos existente que ya no necesite ni utilice.
 

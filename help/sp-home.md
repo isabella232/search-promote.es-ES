@@ -5,10 +5,10 @@ solution: Target
 topic-legacy: Site search and merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 exl-id: 6920dbf0-beeb-4723-8178-4da37f0b03ed
-source-git-commit: bd8341e6bd955dbf5496351594938b65e1bd2948
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 22%
+source-wordcount: '106'
+ht-degree: 26%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 22%
 
 * **IMPORTANTE:** [Anuncio de fin de servicio de Search&amp;Promote de Adobe](/help/sp-eol.md).
 
-* Notas de la versión de Adobe Marketing Cloud : contiene nuevas funciones, correcciones y problemas conocidos en todas las soluciones de Marketing Cloud. Los lanzamientos de las funciones tienen lugar en primavera y otoño, si bien las versiones de mantenimiento se lanzan mensualmente.
+* Notas de la versión de Adobe Experience Cloud : contiene nuevas funciones, correcciones y problemas conocidos en todas las soluciones de Experience Cloud. Los lanzamientos de las funciones tienen lugar en primavera y otoño, si bien las versiones de mantenimiento se lanzan mensualmente.
 
-   Acceso anticipado: Regístrese en la [actualización de producto prioritaria del Adobe](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) para recibir las notas de la versión de Adobe Marketing Cloud una semana antes de cada versión.
+<!--   Early Access: Sign up for the [Adobe Priority Product Update](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) to receive Adobe Marketing Cloud release notes one week before each release. -->
 
 * Últimas notas de la versión del Search&amp;Promote de Adobe:
 
@@ -32,6 +32,6 @@ ht-degree: 22%
 
 ## Otra información {#topic_34A00195904D4AE7AE982D3746F693AA}
 
-[sitio web del Search&amp;Promote de Adobe](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html)
+<!-- [Adobe Search&amp;Promote website](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html) -->
 
 [Industry Insights](https://blog.adobe.com/en/topics/digital-transformation.html): el blog de Adobe para marketing digital.

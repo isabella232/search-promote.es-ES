@@ -5,10 +5,9 @@ title: Buscar formularios
 topic-legacy: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 exl-id: 9771a19d-86a8-41db-9c80-d734fbd10ab7
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '2926'
+source-wordcount: '2899'
 ht-degree: 0%
 
 ---
@@ -103,9 +102,9 @@ La etiqueta `<search-input>` genera una etiqueta `<input>` e incluye el atributo
 
 Puede configurar los conjuntos de marcos para que funcionen con la búsqueda o comercialización del sitio.
 
-Para obtener más información sobre los marcos HTML y el elemento de conjunto de marcos HTML, consulte la siguiente URL:
+<!-- 404 DEAD LINK To learn more about HTML frames and the HTML frameset element, see the following URL:
 
-[https://www.w3schools.com/html/html_frames.asp](https://www.w3schools.com/html/html_frames.asp)
+[https://www.w3schools.com/html/html_frames.asp](https://www.w3schools.com/html/html_frames.asp) -->
 
 Si su sitio utiliza marcos, puede especificar un marco de destino para los vínculos de resultados de búsqueda. El destino predeterminado es _self, que abre vínculos en el marco o ventana del explorador actual. En su lugar, puede especificar objetivos específicos del sitio o reservados para el explorador:
 
@@ -197,7 +196,7 @@ Si ha colocado el código del formulario de búsqueda en el marco de navegación
 
 Cuando un cliente realiza una búsqueda de su sitio web, los resultados de la búsqueda aparecen en el marco &quot;body&quot; de la página web.
 
-## Definición del objetivo para los vínculos realizados desde la página de resultados de búsqueda {#section_523248C5AC424D878321C21A23A5CD66}
+## Definición del objetivo para los vínculos realizados desde la página de resultados de la búsqueda {#section_523248C5AC424D878321C21A23A5CD66}
 
 Puede configurar el marco de destino editando directamente la plantilla.
 
@@ -433,7 +432,7 @@ Consulte [Copia del código HTML del formulario de búsqueda en el...](../c-abou
  </tbody> 
 </table>
 
-## Búsqueda avanzada de código HTML {#reference_9AAD4A46B68D4D48865508982CB86DB9}
+## Código HTML del formulario de búsqueda avanzada {#reference_9AAD4A46B68D4D48865508982CB86DB9}
 
 El código de formulario HTML que se utiliza para generar el formulario de búsqueda avanzada que se muestra en la parte superior del tema Ejemplo de formulario de búsqueda avanzada.
 
